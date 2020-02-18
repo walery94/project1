@@ -1,0 +1,69 @@
+.subscription {
+  width: 325px;
+  min-height: 525px;
+  padding: 24px;
+
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.subscription h3 {
+  width: 275px;
+  margin: 0;
+  margin-bottom: 16px;
+
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 23px;
+  letter-spacing: -0.01em;
+  color: #222222;
+}
+
+.subscription__latter {
+  margin-bottom: 69px;
+}
+
+.subscription p {
+  margin: 0;
+  margin-bottom: 16px;
+
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #7D7D7D;
+}
+
+.subscription__social {
+  margin-bottom: 24px;
+}
+
+.subscription__list,
+.subscription__items {
+  display: flex;
+  border: 1px solid #E0E0E0;
+  border-radius: 5px;
+}
+
+.subscription__icon {
+  width: 56px;
+  height: 48px;
+  border-right: 1px solid #E0E0E0;
+}
+
+.subscription__icon--yt {
+  border-right: none;
+}
+
+.subscription__app {
+  height: 48px;
+}
+
+.subscription__app--apple {
+  width: 136px;
+  border-right: 1px solid #E0E0E0;
+}
+
+.subscription__app--android{
+  width: 142px;
+}
