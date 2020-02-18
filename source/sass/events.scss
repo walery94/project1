@@ -1,0 +1,41 @@
+.events {
+  background-color: #00AED6;
+}
+
+.events__box {
+  width: 1124px;
+  margin: 0 auto;
+}
+
+.events h2 {
+  margin: 0;
+  margin-bottom: 24px;
+
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 44px;
+  letter-spacing: -0.01em;
+  color: #ffffff;
+}
+
+.events__list {
+  display: flex;
+  margin-bottom: 24px;
+}
+
+.events__button {
+  margin-left: 8px;
+}
+
+.events__button:first-child {
+  margin-left: 0;
+}
+
+.events__items {
+  display: flex;
+}
+
+.events__item:nth-child(2n) {
+  margin-left: 24px;
+  margin-right: 25px;
+}
