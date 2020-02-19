@@ -4,11 +4,12 @@
   padding: 10px 8px;
 
   font-family: "MuseoSansCyrl", "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.05em;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 17px;
   color: $main-color;
   text-align: center;
+  text-decoration: none;
 
   background-color: transparent;
 
@@ -20,16 +21,59 @@
   cursor: pointer;
 
   &:hover {
-    color: $complementary-color;
-    background-color: $main-color;
-    border-color: $complementary-color;
+    color: #00AED6;
+    background-color: #ffffff;
+    border-color: #ffffff;
   }
 
   &:active {
-    opacity: 0.7;
+    color: #00AED6;
+    background-color: #ffffff;
+    border-color: #ffffff;
   }
 
   &:focus {
-    opacity: 0.5;
+    color: #00AED6;
+    background-color: #ffffff;
+    border-color: #ffffff;
+  }
+}
+
+.button span {
+  display: inline-block;
+  margin-left: 4px;
+
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: -0.05em;
+  color: #E0E0E0;
+  text-transform: uppercase;
+}
+
+.button--shops {
+
+  &:hover {
+    color: #65AA0F;
+  }
+
+  &:active {
+    color: #65AA0F;
+  }
+
+  &:focus {
+    color: #65AA0F;
+  }
+
+  &:hover span {
+    color: #65AA0F;
+  }
+
+  &:active span {
+    color: #65AA0F;
+  }
+
+  &:focus span {
+    color: #65AA0F;
   }
 }

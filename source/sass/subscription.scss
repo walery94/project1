@@ -5,6 +5,7 @@
 
   background-color: #ffffff;
   border-radius: 5px;
+
   box-sizing: border-box;
 }
 
@@ -34,6 +35,38 @@
   color: #7D7D7D;
 }
 
+.subscription__form input {
+  width: 100%;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 16px;
+
+  border: 1px solid #E0E0E0;
+  border-radius: 5px 5px 0 0;
+
+  box-sizing: border-box;
+
+  &::placeholder {
+    color: #7D7D7D;
+  }
+}
+
+.subscription__button {
+  width: 100%;
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  color: #00AED6;
+
+  border: 1px solid #E0E0E0;
+  border-top: none;
+  border-radius: 0 0 5px 5px;
+  background-color: transparent;
+
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
 .subscription__social {
   margin-bottom: 24px;
 }
@@ -41,6 +74,7 @@
 .subscription__list,
 .subscription__items {
   display: flex;
+
   border: 1px solid #E0E0E0;
   border-radius: 5px;
 }
@@ -51,7 +85,27 @@
   border-right: 1px solid #E0E0E0;
 }
 
-.subscription__icon--yt {
+.subscription__fb {
+  margin-top: 12px;
+  margin-left: 23px;
+}
+
+.subscription__vk {
+  margin-top: 15px;
+  margin-left: 13px;
+}
+
+.subscription__od {
+  margin-top: 11px;
+  margin-left: 20px;
+}
+
+.subscription__youtube {
+  margin-top: 14px;
+  margin-left: 15px;
+}
+
+.subscription__icon--youtube {
   border-right: none;
 }
 
@@ -61,9 +115,19 @@
 
 .subscription__app--apple {
   width: 136px;
+
+  background-image: url("../img/app-store.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 92px 23px;
   border-right: 1px solid #E0E0E0;
 }
 
 .subscription__app--android{
   width: 142px;
+
+  background-image: url("../img/google-play.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100px 24px;
 }

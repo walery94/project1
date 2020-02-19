@@ -10,6 +10,7 @@
   background-color: #ffffff;
   border-radius: 5px;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 .card img {
@@ -59,12 +60,18 @@
   width: 16px;
   height: 16px;
   margin-right: 8px;
-  background-color: red;
 }
 
 .card__box a {
   display: block;
   width: 19px;
   height: 8px;
-  background-color: red;
+}
+
+.card__clock {
+  fill: #7D7D7D;
+}
+
+.card__arrow {
+  fill: #00AED6;;
 }
