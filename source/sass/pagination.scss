@@ -1,0 +1,134 @@
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  padding-left: 64px;
+  padding-right: 64px;
+  border-bottom: 1px solid $border;
+
+  @media (max-width: $tablet-width) {
+    padding: 0;
+    border-bottom: none;
+  }
+}
+
+.pagination a {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 108%;
+  text-decoration: none;
+  color: $text-color;
+}
+
+.pagination__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 0;
+  margin-right: 20px;
+  padding: 0;
+  list-style: none;
+
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.pagination__item {
+  margin-right: 14px;
+}
+
+.pagination__item a {
+  padding-bottom: 16px;
+
+  &:hover,
+  &:focus {
+    border-bottom: 4px solid #00aed6;
+  }
+}
+
+.pagination__search {
+  display: flex;
+  flex-wrap: wrap;
+  width: 185px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.pagination__link {
+  position: relative;
+  margin-right: 16px;
+  padding-left: 32px;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+
+  &--search::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 22px;
+    height: 22px;
+    background-image: url("../img/icon-search.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--floor::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 24px;
+    background-image: url("../img/icon-floor3.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.pagination__search-form {
+  display: none;
+
+  @media (max-width: $tablet-width) {
+    display: block;
+    width: 100%;
+    height: 56px;
+    border-bottom: 1px solid $border;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 90px;
+      left: 25px;
+      z-index: 1;
+      width: 22px;
+      height: 22px;
+      background-image: url("../img/icon-search.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+}
+
+.pagination__search-input {
+  @media (max-width: $tablet-width) {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 56px;
+    padding-left: 64px;
+    font-size: 24px;
+    line-height: 96%;
+    border: none;
+  }
+}
