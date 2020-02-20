@@ -1,0 +1,36 @@
+.fitness-menu {
+  position: relative;
+  //width: 480px;
+  width: 100%;
+  margin-bottom: 48px;
+}
+
+.fitness-menu__title span {
+  margin-left: 45px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 108%;
+  letter-spacing: 0.04em;
+}
+
+.fitness-menu__icon {
+  position: absolute;
+  top: 4px;
+  right: 0;
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
+}
+
+.fitness-menu__icon svg {
+  fill: $complementary-color;
+}
+
+.fitness-menu__paragraph {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 118%;
+  color: #7d7d7d;
+}
