@@ -1,0 +1,26 @@
+.footer-menu {
+  display: flex;
+  justify-content: space-between;
+  min-height: 104px;
+  padding-left: 64px;
+  padding-right: 64px;
+}
+
+.footer-menu__link {
+  margin-right: 24px;
+  padding-top: 40px;
+  font-size: 16px;
+  line-height: 108%;
+  text-decoration: none;
+  color: #7d7d7d;
+
+  &:last-of-type {
+    margin-right: 0;
+    margin-left: 42%;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
+}

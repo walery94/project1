@@ -1,0 +1,120 @@
+.stocks-menu {
+  //width: 472px;
+  width: 100%;
+}
+
+.stocks-menu__paragraph {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 118%;
+  color: #7d7d7d;
+}
+
+.stocks-menu__input{
+  position: relative;
+  box-sizing: border-box;
+  width: 85%;
+  height: 48px;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 108%;
+  border: 1px solid $border;
+  border-radius: 5px 0 0 5px;
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
+}
+
+.stocks-menu__button {
+  position: absolute;
+  height: 48px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 108%;
+  color: $complementary-color;
+  border: 1px solid $border;
+  border-radius: 0 5px 5px 0;
+  background-color: #ffffff;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
+}
+
+.stocks-menu__social {
+  display: flex;
+  min-width: 85%;
+}
+
+.stocks-menu__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  text-decoration: none;
+
+  &--fb {
+    background-image: url("../img/icon-f.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--vk {
+    background-image: url("../img/icon-vk.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--inst {
+    background-image: url("../img/icon-insta.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--od {
+    background-image: url("../img/icon-ok.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--youtube {
+    background-image: url("../img/icon-youtube.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
+}
+
+.stocks-menu__app {
+  width: 128px;
+  height: 48px;
+  margin-left: 10px;
+
+  &--apple {
+    background-image: url("../img/app-store.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--google {
+    background-image: url("../img/google-play.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
+}
