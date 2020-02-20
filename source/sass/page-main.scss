@@ -1,7 +1,6 @@
-.page-main__box {
-  max-width: 1024px;
-  margin: 0 auto;
-  
-  background-color: #ffffff;
-  border-radius: 5px;
+.page-main {
+  background-image: url("../img/background-blue-up-desktop2.png"), url("../img/background-green-desktop2.png"), url("../img/background-red-desktop2.png"), url("../img/background-pink-desktop2.png"), url("../img/background-blue-down-desktop2.png"), url("../img/backgroung-yellow-desktop2.png"), url("../img/background-purple-desktop2.png"), url("../img/background-orange-desktop2.png");
+  background-repeat: no-repeat;
+  background-position-y: -90px, 430px, 2160px, 4500px, 4600px, 3630px, 2940px, 1300px;
+  background-size: contain;
 }

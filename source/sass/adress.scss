@@ -1,0 +1,89 @@
+.adress {
+  margin-bottom: 64px;
+}
+
+.adress__box {
+  width: 1024px;
+  margin: 0 auto;
+}
+
+.adress__box h2 {
+  margin: 0;
+  margin-bottom: 24px;
+
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 44px;
+  letter-spacing: -0.01em;
+  color: #222222;;
+}
+
+.adress__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+
+.adress__button {
+  margin-right: 8px;
+  margin-bottom: 8px;
+}
+
+.adress__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.adress__info {
+  width: 325px;
+}
+
+.adress__item,
+.adress__button,
+.adress__taxi {
+  position: relative;
+  display: block;
+  margin-bottom: 23px;
+
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 17px;
+  color: #222222;
+  text-decoration: none;
+}
+
+.adress__item {
+  margin-left: 30px;
+}
+
+.adress__item span {
+  position: absolute;
+  left: -30px;
+}
+
+.adress__taxi {
+  width: 100%;
+  padding-left: 119px;
+  padding-top: 20px;
+  padding-bottom: 19px;
+
+  border: 1px solid #E0E0E0;
+  border-radius: 5px;
+  box-sizing: border-box;
+  box-shadow: 0px 12px 16px rgba(0, 0, 0, 0.08);
+}
+
+.adress__taxi span {
+  position: absolute;
+  display: block;
+  top: 16px;
+  left: 85px;
+  width: 24px;
+  height: 24px;
+
+  background-image: url("../img/icon-taxi.svg");
+  background-repeat: no-repeat;
+  background-size: 24px 24px;
+}
+
+
