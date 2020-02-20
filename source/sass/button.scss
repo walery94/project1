@@ -37,6 +37,18 @@
     background-color: #ffffff;
     border-color: #ffffff;
   }
+
+  &:hover span {
+    color: #00AED6;
+  }
+
+  &:active span {
+    color: #00AED6;
+  }
+
+  &:focus span {
+    color: #00AED6;
+  }
 }
 
 .button span {
@@ -76,4 +88,28 @@
   &:focus span {
     color: #65AA0F;
   }
+}
+
+.button--more {
+  display: flex;
+  justify-content: center;
+  min-width: 500px;
+  margin: 0 auto;
+  padding: 21px 22px 20px 54px;
+
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 23px;
+  letter-spacing: -0.01em;
+  color: #222222;
+  text-align: center;
+
+  background: #ffffff;
+  box-shadow: 0px 12px 16px rgba(0, 0, 0, 0.08);
+  border: none;
+}
+
+.button--more span {
+  margin-right: 8px;
+  fill: #00AED6;
 }

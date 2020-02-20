@@ -1,5 +1,5 @@
 .events {
-  background-color: #00AED6;
+  margin-bottom: 64px;
 }
 
 .events__box {
@@ -20,6 +20,7 @@
 
 .events__list {
   display: flex;
+  flex-wrap: wrap;
   margin-bottom: 24px;
 }
 
@@ -33,6 +34,11 @@
 
 .events__items {
   display: flex;
+  flex-wrap: wrap;
+}
+
+.events__item {
+  margin-bottom: 24px;
 }
 
 .events__item:nth-child(2n) {

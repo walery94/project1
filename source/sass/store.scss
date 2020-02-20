@@ -1,0 +1,49 @@
+.store {
+  margin-bottom: 64px;
+}
+
+.store__box {
+  width: 1024px;
+  margin: 0 auto;
+}
+
+.store__box h2 {
+  margin: 0;
+  margin-bottom: 24px;
+
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 44px;
+  letter-spacing: -0.01em;
+  color: #ffffff;
+}
+
+.store__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+
+.store__button {
+  margin-right: 8px;
+  margin-bottom: 8px;
+}
+
+.store__items {
+  display: flex;
+  flex-wrap: wrap
+}
+
+.store__item {
+  margin-right: 24px;
+  margin-bottom: 24px;
+}
+
+.store__item:nth-child(4n) {
+  margin-right: 0;
+}
+
+.store--services {
+  padding-bottom: 50px;
+  margin-bottom: 14px;
+}

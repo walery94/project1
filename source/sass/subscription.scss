@@ -1,6 +1,8 @@
 .subscription {
-  width: 325px;
-  min-height: 525px;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1024px;
+  margin: 0 auto;
   padding: 24px;
 
   background-color: #ffffff;
@@ -21,10 +23,6 @@
   color: #222222;
 }
 
-.subscription__latter {
-  margin-bottom: 69px;
-}
-
 .subscription p {
   margin: 0;
   margin-bottom: 16px;
@@ -35,14 +33,19 @@
   color: #7D7D7D;
 }
 
+.subscription__form {
+  display: flex;
+  margin-bottom: 16px;
+}
+
 .subscription__form input {
-  width: 100%;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  width: 413px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   padding-left: 16px;
 
   border: 1px solid #E0E0E0;
-  border-radius: 5px 5px 0 0;
+  border-radius: 5px 0 0 5px;
 
   box-sizing: border-box;
 
@@ -52,15 +55,15 @@
 }
 
 .subscription__button {
-  width: 100%;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  width: 213px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 
   color: #00AED6;
 
   border: 1px solid #E0E0E0;
-  border-top: none;
-  border-radius: 0 0 5px 5px;
+  border-left: none;
+  border-radius: 0 5px 5px 0;
   background-color: transparent;
 
   box-sizing: border-box;
@@ -88,16 +91,19 @@
 .subscription__fb {
   margin-top: 12px;
   margin-left: 23px;
+  fill: #3C5A99;
 }
 
 .subscription__vk {
   margin-top: 15px;
   margin-left: 13px;
+  fill: #5181B8;
 }
 
 .subscription__od {
   margin-top: 11px;
   margin-left: 20px;
+  fill: #F7931E;
 }
 
 .subscription__youtube {
@@ -105,9 +111,22 @@
   margin-left: 15px;
 }
 
+.subscription__icon--inst {
+  background-image: url("../img/icon-insta.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 27px 27px;
+}
+
 .subscription__icon--youtube {
   border-right: none;
+  stroke: #E0E0E0;
+  fill: #FF0000;
 }
+
+// .icon-youtube-play {
+//   fill: #ffffff;
+// }
 
 .subscription__app {
   height: 48px;

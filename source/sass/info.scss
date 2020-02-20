@@ -1,0 +1,212 @@
+.info {
+  padding-bottom: 136px;
+
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 17px;
+  color: #222222;
+}
+
+.info__box {
+  width: 1024px;
+  margin: 0 auto;
+}
+
+.info__box h2 {
+  margin: 0;
+  margin-bottom: 24px;
+
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 44px;
+  letter-spacing: -0.01em;
+}
+
+.info__box p {
+  width: 500px;
+  margin: 0;
+  margin-bottom: 24px;
+
+  font-size: 16px;
+  line-height: 19px;
+  color: #7D7D7D;
+}
+
+.info__form {
+  display: flex;
+  margin-bottom: 16px;
+}
+
+.info__form input {
+  width: 349px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 16px;
+
+  border: 1px solid #E0E0E0;
+  border-radius: 5px 0 0 5px;
+
+  box-sizing: border-box;
+
+  &::placeholder {
+    color: #7D7D7D;
+  }
+}
+
+.info__button {
+  width: 238px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  color: #ffffff;
+
+  background-color: #00AED6;
+  border: none;
+  border-radius: 0 5px 5px 0;
+
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.info__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info__social {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 325px;
+}
+
+.info__icon {
+  margin-bottom: 16px;
+}
+
+.info__icon--fb,
+.info__icon--vk,
+.info__app {
+  width: 154px;
+  height: 56px;
+
+  border-radius: 5px;
+}
+
+.info__icon--fb {
+  background-color: #3C5A99;
+}
+
+.info__icon--vk {
+  background-color: #5181B8;
+}
+
+.info__fb,
+.info__vk,
+.info__od {
+  fill: #ffffff;
+
+}
+
+.info__fb {
+  margin-left: 70px;
+  margin-top: 10px;
+}
+
+.info__vk {
+  margin-left: 45px;
+  margin-top: 14px;
+}
+
+.info__icon--inst,
+.info__icon--od,
+.info__icon--youtube {
+  width: 98px;
+  height: 56px;
+
+  border-radius: 5px;
+}
+
+.info__icon--inst {
+  background: radial-gradient(179.06% 43.44% at -16.75% 7.2%, #3771C8 0%, #3771C8 12.8%, rgba(102, 0, 255, 0) 100%), radial-gradient(92.18% 99.11% at 26.56% 107.7%, #FFDD55 0%, #FFDD55 10%, #FF543E 50%, #C837AB 100%), #D73576;
+}
+
+.info__icon--od {
+  background-color: #F7931E;
+}
+
+.info__icon--youtube {
+  background-color: #FF0000;
+}
+
+.info__inst {
+  margin-left: 30px;
+  margin-top: 10px;
+}
+
+.info__youtube {
+  margin-left: 25px;
+  margin-top: 13px;
+
+  stroke: #FF0000;
+  fill: #ffffff;
+}
+
+.info__od {
+  margin-left: 35px;
+  margin-top: 10px;
+}
+
+.icon-youtube-play {
+  fill: #FF0000;
+}
+
+.info__app {
+  background-color: #000000;
+}
+
+.info__app--apple {
+  background-image: url("../img/icon-apple-white.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 107px 27px;
+}
+
+.info__app--android {
+  background-image: url("../img/icon-google-white.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 116px 28px;
+}
+
+.info__notes {
+  display: flex;
+  margin-bottom: 80px;
+}
+
+.info__notes ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.info__notes li {
+  margin-bottom: 16px;
+}
+
+.info__notes a {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 17px;
+  color: #222222;
+  text-decoration: none;
+}
+
+.info__menu a {
+  font-weight: 300;
+}
+
+.info__menu {
+  margin-left: 118px;
+}
+
