@@ -1,8 +1,11 @@
 .fitness-menu {
   position: relative;
-  //width: 480px;
   width: 100%;
   margin-bottom: 48px;
+
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .fitness-menu__title span {
@@ -15,8 +18,27 @@
 
 .fitness-menu__icon {
   position: absolute;
-  top: 4px;
+  top: 6px;
   right: 0;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 108%;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $text-color;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    right: -30px;
+    width: 19px;
+    height: 8px;
+    background-image: url("../img/icon-arrow.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 
   &:hover,
   &:focus {

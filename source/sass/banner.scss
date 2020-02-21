@@ -1,0 +1,49 @@
+.banner {
+  position: relative;
+  width: 100%;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -1px;
+    width: 100%;
+    height: 569px;
+    background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 95.1%);
+    transform: rotate(0.25deg);
+  }
+}
+
+.banner__title {
+  position: absolute;
+  margin: 0;
+  margin-left: 5.5%;
+  padding: 0;
+  padding-top: 40px;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 108%;
+  letter-spacing: -0.01em;
+  color: #ffffff;
+
+  @media (max-width: $tablet-width) {
+    width: 200px;
+    font-size: 36px;
+    line-height: 108%;
+    letter-spacing: -0.01em;
+  }
+}
+
+.banner__title span {
+  display: block;
+
+  @media (max-width: $tablet-width) {
+    &:last-of-type {
+      display: none;
+    }
+  }
+}
+
+.banner__image {
+  width: 100%;
+}

@@ -1,6 +1,10 @@
 .services-menu {
   width: 44%;
   margin-right: 6%;
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+  }
 }
 
 .services-menu__list {

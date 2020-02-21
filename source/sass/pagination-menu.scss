@@ -18,6 +18,18 @@
     background-repeat: no-repeat;
     background-position: center;
   }
+
+  @media (max-width: $tablet-width) {
+    &::before {
+      left: 30px;
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+    &::before {
+      left: 16px;
+    }
+  }
 }
 
 .pagination-menu__search-form input {
@@ -30,9 +42,29 @@
   border: none;
   background-color: transparent;
 
+  &:last-of-type {
+    display: none;
+  }
+
   &:hover,
   &:focus {
     opacity: 0.5;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding-left: 60px;
+
+    &:first-of-type {
+      display: none;
+    }
+
+    &:last-of-type {
+      display: block;
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-left: 46px;
   }
 }
 
@@ -61,5 +93,40 @@
   &:hover,
   &:focus {
     opacity: 0.5;
+  }
+
+  @media (max-width: $tablet-width) {
+    top: 95px;
+    left: 0;
+    color: #ffffff;
+
+    &::before {
+      display: none;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 115px;
+      width: 22px;
+      height: 24px;
+      background-image: url("../img/icon-floor3.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-left: 16px;
+
+    &::after {
+      left: 99px;
+    }
+  }
+}
+
+.pagination-menu__scheme span {
+  @media (max-width: $tablet-width) {
+    display: none;
   }
 }
