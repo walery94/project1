@@ -1,0 +1,64 @@
+.fitness {
+  margin-bottom: 64px;
+}
+
+.fitness h2 {
+  width: 1024px;
+  margin: 0 auto;
+  margin-bottom: 24px;
+
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 44px;
+  letter-spacing: -0.01em;
+  color: #ffffff;
+}
+
+.fitness__box {
+  display: flex;
+}
+
+.fitness__description {
+  width: 238px;
+}
+
+.fitness__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 24px;
+}
+
+.fitness__description p {
+  margin: 0;
+
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 17px;
+  color: #FFFFFF;
+}
+
+.fitness__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.fitness__container ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.fitness__container li {
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 17px;
+  color: #FFFFFF;
+}
+
+.fitness__arrow {
+  margin-top: 82px;
+  fill: #FFFFFF;
+}
+

@@ -1,0 +1,39 @@
+.slider {
+  position: relative;
+  width: 822px;
+}
+
+.slider__list {
+  width: 822px;
+}
+
+.slider__button {
+  position: absolute;
+  top: 175px;
+
+  width: 48px;
+  height: 48px;
+  font-size: 0;
+
+  background-color: #ffffff;
+
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.slider__button--next {
+  right: 16px;
+}
+
+.slider__button--prev {
+  left: 16px;
+}
+
+.slider__arrow {
+  fill: #00AED6;
+}
+
+.slider__button--prev .slider__arrow {
+  transform: rotate(180deg);
+}
