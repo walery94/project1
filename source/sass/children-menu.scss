@@ -1,5 +1,9 @@
 .children-menu {
   width: 45%;
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+  }
 }
 
 .children-menu__link:hover,
