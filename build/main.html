@@ -5,10 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Главная</title>
+  <link rel="stylesheet" type="text/css" href="slick/slick.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-<header class="main-header">
+<header class="main-header none">
   <h1 class="visually-hidden">Ривьера</h1>
   <section class="site-navigation">
     <h2 class="visually-hidden">Навигация по сайту</h2>
@@ -136,63 +137,78 @@
   <main class="page-main">
     <section class="events">
       <div class="events__box">
-        <h2>Акции и события</h2>
+        <h2><span>Акции и события</span><span>События</span></h2>
         <div class="events__list">
           <a class="events__button button" href="#">Все</a>
           <a class="events__button button" href="#">Скидки и акции</a>
-          <a class="events__button button" href="#">Скидки и акции</a>
+          <a class="events__button button" href="#">Мероприятия</a>
           <a class="events__button button" href="#">Новости</a>
         </div>
         <div class="events__items">
           <article class="events__item card">
-            <img src="img/events-desktop-girl@1x.png" alt="Фото события" width="325">
+            <picture>
+              <source media="(max-width: 767px)" srcset="img/events-mobile-fest@1x.png">
+              <img src="img/events-desktop-girl@1x.png" alt="Фото события" width="325">
+            </picture>
             <h3>Beauty day в Ривьере</h3>
-            <div class="card__box">
-              <span>
-                <svg class="card__clock" width="16" height="16">
-                  <use xlink:href="#icon-clock"></use>
-                </svg>
-              </span>
-              <p>8 февраля, 15:00</p>
-              <a class="card__link" href="#">
-                <svg class="card__arrow" width="19" height="8">
-                  <use xlink:href="#icon-arrow"></use>
-                </svg>
-              </a>
+            <div class="card__case">
+              <div class="card__box">
+                <span>
+                  <svg class="card__clock" width="16" height="16">
+                    <use xlink:href="#icon-clock"></use>
+                  </svg>
+                </span>
+                <p>8 февраля, 15:00</p>
+                <a class="card__link" href="#">
+                  <svg class="card__arrow" width="19" height="8">
+                    <use xlink:href="#icon-arrow"></use>
+                  </svg>
+                </a>
+              </div>
             </div>
           </article>
           <article class="events__item card">
-            <img src="img/events-desktop-comp@1x.png" alt="Фото события" width="325">
-            <h3>Бесплатные детские мастер-классы в феврале</h3>
-            <div class="card__box">
-              <span>
-                <svg class="card__clock" width="16" height="16">
-                  <use xlink:href="#icon-clock"></use>
-                </svg>
-              </span>
-              <p>Весь февраль</p>
-              <a class="card__link" href="#">
-                <svg class="card__arrow" width="19" height="8">
-                  <use xlink:href="#icon-arrow"></use>
-                </svg>
-              </a>
+            <picture>
+              <source media="(max-width: 767px)" srcset="img/events-mobile-girl@1x.png">
+              <img src="img/events-desktop-comp@1x.png" alt="Фото события" width="325">
+            </picture>
+            <h3>Бесплатные детские мастер-классы в&nbsp;феврале</h3>
+            <div class="card__case">
+              <div class="card__box">
+                <span>
+                  <svg class="card__clock" width="16" height="16">
+                    <use xlink:href="#icon-clock"></use>
+                  </svg>
+                </span>
+                <p>Весь февраль</p>
+                <a class="card__link" href="#">
+                  <svg class="card__arrow" width="19" height="8">
+                    <use xlink:href="#icon-arrow"></use>
+                  </svg>
+                </a>
+              </div>
             </div>
           </article>
           <article class="events__item card">
-            <img src="img/events-desktop-meat@1x.png" alt="Фото события" width="325">
+            <picture>
+              <source media="(max-width: 767px)" srcset="img/events-mobile-teen@1x.png">
+              <img src="img/events-desktop-meat@1x.png" alt="Фото события" width="325">
+            </picture>
             <h3>День рождения ресторана «Мясо & Рыба»</h3>
-            <div class="card__box">
-              <span>
-                <svg class="card__clock" width="16" height="16">
-                  <use xlink:href="#icon-clock"></use>
-                </svg>
-              </span>
-              <p>21–22 февраля</p>
-              <a class="card__link" href="#">
-                <svg class="card__arrow" width="19" height="8">
-                  <use xlink:href="#icon-arrow"></use>
-                </svg>
-              </a>
+            <div class="card__case">
+              <div class="card__box">
+                <span>
+                  <svg class="card__clock" width="16" height="16">
+                    <use xlink:href="#icon-clock"></use>
+                  </svg>
+                </span>
+                <p>21–22 февраля</p>
+                <a class="card__link" href="#">
+                  <svg class="card__arrow" width="19" height="8">
+                    <use xlink:href="#icon-arrow"></use>
+                  </svg>
+                </a>
+              </div>
             </div>
           </article>
         </div>
@@ -262,7 +278,7 @@
           <a class="store__button button button--shops" href="#">Детские товары<span>17</span></a>
           <a class="store__button button button--shops" href="#">Мебель<span>3</span></a>
           <a class="store__button button button--shops" href="#">Необычные вещи<span>3</span></a>
-          <a class="store__button button button--shops" href="#">Зоомагазин<span></span></a>
+          <a class="store__button button button--shops" href="#">Зоомагазин</a>
           <a class="store__button button button--shops" href="#">Нижнее белье, домашняя одежда и купальники<span>8</span></a>
           <a class="store__button button button--shops" href="#">Сумки и аксессуары<span>21</span></a>
           <a class="store__button button button--shops" href="#">Часы<span>2</span></a>
@@ -271,84 +287,92 @@
           <a class="store__button button button--shops" href="#">Товары для дома<span>5</span></a>
           <a class="store__button button button--shops" href="#">Аптеки<span>2</span></a>
           <a class="store__button button button--shops" href="#">Салоны сотовой связи<span>4</span></a>
-          <a class="store__button button button--shops" href="#">Продукты<span></span></a>
+          <a class="store__button button button--shops" href="#">Продукты</a>
           <a class="store__button button button--shops" href="#">Товары для праздников<span>6</span></a>
           <a class="store__button button button--shops" href="#">Табак<span>2</span></a>
           <a class="store__button button button--shops" href="#">Спорт<span>4</span></a>
           <a class="store__button button button--shops" href="#">Салоны оптики<span>2</span></a>
           <a class="store__button button button--shops" href="#">Туризм и активный отдых<span>3</span></a>
         </div>
-        <div class="store__items">
+        <div class="store__items store__items--shops">
           <article class="store__item card card--shops">
             <img src="img/shop-desktop-ostin@1x.png" alt="Фото события" width="238">
             <h3>Магазин одежды O’STIN</h3>
             <b>Скидки до 30%</b>
-            <div class="card__box">
-              <span>
-                <svg class="card__floor" width="16" height="16">
-                  <use xlink:href="#icon-floor2"></use>
-                </svg>
-              </span>
-              <p>2-й этаж</p>
-              <a class="card__link" href="#">
-                <svg class="card__arrow" width="19" height="8">
-                  <use xlink:href="#icon-arrow"></use>
-                </svg>
-              </a>
+            <div class="card__case">
+              <div class="card__box">
+                <span>
+                  <svg class="card__floor" width="16" height="16">
+                    <use xlink:href="#icon-floor2"></use>
+                  </svg>
+                </span>
+                <p>2-й этаж</p>
+                <a class="card__link" href="#">
+                  <svg class="card__arrow" width="19" height="8">
+                    <use xlink:href="#icon-arrow"></use>
+                  </svg>
+                </a>
+              </div>
             </div>
           </article>
           <article class="store__item card card--shops">
             <img src="img/shop-desktop-uiqlo@1x.png" alt="Фото события" width="238">
             <h3>Магазин одежды UIQLO</h3>
             <b>Скидки до 30%</b>
-            <div class="card__box">
-              <span>
-                <svg class="card__floor" width="16" height="16">
-                  <use xlink:href="#icon-floor2"></use>
-                </svg>
-              </span>
-              <p>2-й этаж</p>
-              <a class="card__link" href="#">
-                <svg class="card__arrow" width="19" height="8">
-                  <use xlink:href="#icon-arrow"></use>
-                </svg>
-              </a>
+            <div class="card__case">
+              <div class="card__box">
+                <span>
+                  <svg class="card__floor" width="16" height="16">
+                    <use xlink:href="#icon-floor2"></use>
+                  </svg>
+                </span>
+                <p>2-й этаж</p>
+                <a class="card__link" href="#">
+                  <svg class="card__arrow" width="19" height="8">
+                    <use xlink:href="#icon-arrow"></use>
+                  </svg>
+                </a>
+              </div>
             </div>
           </article>
           <article class="store__item card card--shops">
             <img src="img/shop-desktop-colins@1x.png" alt="Фото события" width="238">
             <h3>Магазин одежды Colin’s</h3>
             <b>Скидки до 20%</b>
-            <div class="card__box">
-              <span>
-                <svg class="card__floor" width="16" height="16">
-                  <use xlink:href="#icon-floor2"></use>
-                </svg>
-              </span>
-              <p>2-й этаж</p>
-              <a class="card__link" href="#">
-                <svg class="card__arrow" width="19" height="8">
-                  <use xlink:href="#icon-arrow"></use>
-                </svg>
-              </a>
+            <div class="card__case">
+              <div class="card__box">
+                <span>
+                  <svg class="card__floor" width="16" height="16">
+                    <use xlink:href="#icon-floor2"></use>
+                  </svg>
+                </span>
+                <p>2-й этаж</p>
+                <a class="card__link" href="#">
+                  <svg class="card__arrow" width="19" height="8">
+                    <use xlink:href="#icon-arrow"></use>
+                  </svg>
+                </a>
+              </div>
             </div>
           </article>
           <article class="store__item card card--shops">
             <img src="img/shop-desktop-calzedonia@1x.png" alt="Фото события" width="238">
             <h3>Магазин белья Calzedonia</h3>
             <b>Скидки до 70%</b>
-            <div class="card__box">
-              <span>
-                <svg class="card__floor" width="16" height="16">
-                  <use xlink:href="#icon-floor2"></use>
-                </svg>
-              </span>
-              <p>2-й этаж</p>
-              <a class="card__link" href="#">
-                <svg class="card__arrow" width="19" height="8">
-                  <use xlink:href="#icon-arrow"></use>
-                </svg>
-              </a>
+            <div class="card__case">
+              <div class="card__box">
+                <span>
+                  <svg class="card__floor" width="16" height="16">
+                    <use xlink:href="#icon-floor2"></use>
+                  </svg>
+                </span>
+                <p>2-й этаж</p>
+                <a class="card__link" href="#">
+                  <svg class="card__arrow" width="19" height="8">
+                    <use xlink:href="#icon-arrow"></use>
+                  </svg>
+                </a>
+              </div>
             </div>
           </article>
         </div>
@@ -364,84 +388,92 @@
         <h2>36 видов развлечений</h2>
         <div class="store__list">
           <a class="store__button button" href="#">Все<span>36</span></a>
-          <a class="store__button button" href="#">Бластеры<span></span></a>
+          <a class="store__button button" href="#">Бластеры</a>
           <a class="store__button button" href="#">Парки и города<span>4</span></a>
           <a class="store__button button" href="#">Танцы<span>4</span></a>
           <a class="store__button button" href="#">Киберзона<span>2</span></a>
-          <a class="store__button button" href="#">Батуты<span></span></a>
+          <a class="store__button button" href="#">Батуты</a>
           <a class="store__button button" href="#">Авто<span>3</span></a>
           <a class="store__button button" href="#">Животные<span>2</span></a>
           <a class="store__button button" href="#">Для малышей<span>8</span></a>
         </div>
-        <div class="store__items">
+        <div class="store__items store__items--shops">
           <article class="store__item card card--shops">
             <img src="img/artbox-desktop@1x.png" alt="Фото события" width="238">
             <h3>Интерактивное выставочное пространство</h3>
             <b>Скидки до 30%</b>
-            <div class="card__box">
-              <span>
-                <svg class="card__floor" width="16" height="16">
-                  <use xlink:href="#icon-floor2"></use>
-                </svg>
-              </span>
-              <p>2-й этаж</p>
-              <a class="card__link" href="#">
-                <svg class="card__arrow" width="19" height="8">
-                  <use xlink:href="#icon-arrow"></use>
-                </svg>
-              </a>
+            <div class="card__case">
+              <div class="card__box">
+                <span>
+                  <svg class="card__floor" width="16" height="16">
+                    <use xlink:href="#icon-floor2"></use>
+                  </svg>
+                </span>
+                <p>2-й этаж</p>
+                <a class="card__link" href="#">
+                  <svg class="card__arrow" width="19" height="8">
+                    <use xlink:href="#icon-arrow"></use>
+                  </svg>
+                </a>
+              </div>
             </div>
           </article>
           <article class="store__item card card--shops">
             <img src="img/carting-desktop@1x.png" alt="Фото события" width="238">
             <h3>Электрический картинг</h3>
-            <div class="card__box">
-              <span>
-                <svg class="card__floor" width="16" height="16">
-                  <use xlink:href="#icon-floor2"></use>
-                </svg>
-              </span>
-              <p>2-й этаж</p>
-              <a class="card__link" href="#">
-                <svg class="card__arrow" width="19" height="8">
-                  <use xlink:href="#icon-arrow"></use>
-                </svg>
-              </a>
+            <div class="card__case">
+              <div class="card__box">
+                <span>
+                  <svg class="card__floor" width="16" height="16">
+                    <use xlink:href="#icon-floor2"></use>
+                  </svg>
+                </span>
+                <p>2-й этаж</p>
+                <a class="card__link" href="#">
+                  <svg class="card__arrow" width="19" height="8">
+                    <use xlink:href="#icon-arrow"></use>
+                  </svg>
+                </a>
+              </div>
             </div>
           </article>
           <article class="store__item card card--shops">
             <img src="img/hellopark-desktop@1x.png" alt="Фото события" width="238">
             <h3>Мультимедий- ный парк развлечений</h3>
-            <div class="card__box">
-              <span>
-                <svg class="card__floor" width="16" height="16">
-                  <use xlink:href="#icon-floor2"></use>
-                </svg>
-              </span>
-              <p>2-й этаж</p>
-              <a class="card__link" href="#">
-                <svg class="card__arrow" width="19" height="8">
-                  <use xlink:href="#icon-arrow"></use>
-                </svg>
-              </a>
+            <div class="card__case">
+              <div class="card__box">
+                <span>
+                  <svg class="card__floor" width="16" height="16">
+                    <use xlink:href="#icon-floor2"></use>
+                  </svg>
+                </span>
+                <p>2-й этаж</p>
+                <a class="card__link" href="#">
+                  <svg class="card__arrow" width="19" height="8">
+                    <use xlink:href="#icon-arrow"></use>
+                  </svg>
+                </a>
+              </div>
             </div>
           </article>
           <article class="store__item card card--shops">
             <img src="img/just-jump-desktop@1x.png" alt="Фото события" width="238">
             <h3>Батутная арена Just jump!</h3>
             <b>Скидки до 70%</b>
-            <div class="card__box">
-              <span>
-                <svg class="card__floor" width="16" height="16">
-                  <use xlink:href="#icon-floor2"></use>
-                </svg>
-              </span>
-              <p>2-й этаж</p>
-              <a class="card__link" href="#">
-                <svg class="card__arrow" width="19" height="8">
-                  <use xlink:href="#icon-arrow"></use>
-                </svg>
-              </a>
+            <div class="card__case">
+              <div class="card__box">
+                <span>
+                  <svg class="card__floor" width="16" height="16">
+                    <use xlink:href="#icon-floor2"></use>
+                  </svg>
+                </span>
+                <p>2-й этаж</p>
+                <a class="card__link" href="#">
+                  <svg class="card__arrow" width="19" height="8">
+                    <use xlink:href="#icon-arrow"></use>
+                  </svg>
+                </a>
+              </div>
             </div>
           </article>
         </div>
@@ -465,75 +497,91 @@
           <a class="store__button button" href="#">Пицца<span>6</span></a>
           <a class="store__button button" href="#">Мороженое и сладости<span>5</span></a>
         </div>
-        <div class="store__items">
+        <div class="store__items store__items--shops">
           <article class="store__item card card--shops">
             <img src="img/food-desktop-img1@1x.png" alt="Фото события" width="238">
             <h3>Dim Sum & Co</h3>
             <b>Скидки до 30%</b>
-            <div class="card__box">
-              <span>
-                <svg class="card__floor" width="16" height="16">
-                  <use xlink:href="#icon-floor2"></use>
-                </svg>
-              </span>
-              <p>2-й этаж</p>
-              <a class="card__link" href="#">
-                <svg class="card__arrow" width="19" height="8">
-                  <use xlink:href="#icon-arrow"></use>
-                </svg>
-              </a>
+            <div class="card__case">
+              <div class="card__box">
+                <span>
+                  <svg class="card__clock" width="16" height="16">
+                    <use xlink:href="#icon-clock"></use>
+                  </svg>
+                </span>
+                <p>10:00—22:00</p>
+              </div>
+              <div class="card__box">
+                <span>
+                  <svg class="card__floor" width="16" height="16">
+                    <use xlink:href="#icon-floor2"></use>
+                  </svg>
+                </span>
+                <p>2-й этаж</p>
+                <a class="card__link" href="#">
+                  <svg class="card__arrow" width="19" height="8">
+                    <use xlink:href="#icon-arrow"></use>
+                  </svg>
+                </a>
+              </div>
             </div>
           </article>
           <article class="store__item card card--shops">
             <img src="img/food-desktop-img2@1x.png" alt="Фото события" width="238">
             <h3>KFC</h3>
-            <div class="card__box">
-              <span>
-                <svg class="card__floor" width="16" height="16">
-                  <use xlink:href="#icon-floor2"></use>
-                </svg>
-              </span>
-              <p>2-й этаж</p>
-              <a class="card__link" href="#">
-                <svg class="card__arrow" width="19" height="8">
-                  <use xlink:href="#icon-arrow"></use>
-                </svg>
-              </a>
+            <div class="card__case">
+              <div class="card__box">
+                <span>
+                  <svg class="card__floor" width="16" height="16">
+                    <use xlink:href="#icon-floor2"></use>
+                  </svg>
+                </span>
+                <p>2-й этаж</p>
+                <a class="card__link" href="#">
+                  <svg class="card__arrow" width="19" height="8">
+                    <use xlink:href="#icon-arrow"></use>
+                  </svg>
+                </a>
+              </div>
             </div>
           </article>
           <article class="store__item card card--shops">
             <img src="img/food-desktop-img3@1x.png" alt="Фото события" width="238">
             <h3>STAR HIT CAFE</h3>
-            <div class="card__box">
-              <span>
-                <svg class="card__floor" width="16" height="16">
-                  <use xlink:href="#icon-floor2"></use>
-                </svg>
-              </span>
-              <p>2-й этаж</p>
-              <a class="card__link" href="#">
-                <svg class="card__arrow" width="19" height="8">
-                  <use xlink:href="#icon-arrow"></use>
-                </svg>
-              </a>
+            <div class="card__case">
+              <div class="card__box">
+                <span>
+                  <svg class="card__floor" width="16" height="16">
+                    <use xlink:href="#icon-floor2"></use>
+                  </svg>
+                </span>
+                <p>2-й этаж</p>
+                <a class="card__link" href="#">
+                  <svg class="card__arrow" width="19" height="8">
+                    <use xlink:href="#icon-arrow"></use>
+                  </svg>
+                </a>
+              </div>
             </div>
           </article>
           <article class="store__item card card--shops">
             <img src="img/food-desktop-img4@1x.png" alt="Фото события" width="238">
             <h3>Ресторан «Баварская кухня»</h3>
             <b>Скидки до 70%</b>
-            <div class="card__box">
-              <span>
-                <svg class="card__floor" width="16" height="16">
-                  <use xlink:href="#icon-floor2"></use>
-                </svg>
-              </span>
-              <p>2-й этаж</p>
-              <a class="card__link" href="#">
-                <svg class="card__arrow" width="19" height="8">
-                  <use xlink:href="#icon-arrow"></use>
-                </svg>
-              </a>
+            <div class="card__case">
+              <div class="card__box">
+                <span>
+                  <svg class="card__floor" width="16" height="16">
+                    <use xlink:href="#icon-floor2"></use>
+                  </svg>
+                </span>
+                <p>2-й этаж</p>
+                <a class="card__link" href="#">
+                  <svg class="card__arrow" width="19" height="8">
+                    <use xlink:href="#icon-arrow"></use>
+                  </svg>
+                </a>
+              </div>
             </div>
           </article>
         </div>
@@ -546,22 +594,20 @@
     </section>
     <section class="store store--cinema">
       <div class="store__box">
-        <h2>9 кинозалов с 3D и Dolby Atmos</h2>
+        <h2><span>9 кинозалов</span><span>с 3D и Dolby Atmos</span></h2>
         <div class="store__list">
-          <a class="store__button button" href="#">Все<span>24</span></a>
-          <a class="store__button button" href="#">Кафе<span>8</span></a>
-          <a class="store__button button" href="#">Рестораны<span>9</span></a>
-          <a class="store__button button" href="#">Кофейни<span>4</span></a>
-          <a class="store__button button" href="#">Фастфуд<span>4</span></a>
-          <a class="store__button button" href="#">Японская кухня<span>2</span></a>
-          <a class="store__button button" href="#">Пицца<span>6</span></a>
-          <a class="store__button button" href="#">Мороженое и сладости<span>5</span></a>
+          <a class="store__button button button--cinema" href="#">Все<span>24</span></a>
+          <a class="store__button button button--cinema" href="#">Сегодня<span>19 фев, СР</span></a>
+          <a class="store__button button button--cinema" href="#">Завтра<span>20 фев, чт</span></a>
+          <a class="store__button button button--cinema" href="#">Послезавтра<span>21 фев, пт</span></a>
+          <a class="store__button button button--cinema" href="#">Мероприятия</a>
         </div>
-        <div class="store__items">
+        <div class="store__items store__items--shops">
           <article class="store__item card card--cinema">
-            <img src="img/movie-desktop-img1@1x.png" alt="Фото события" width="238">
+            <img src="img/movie-mobile-img1@1x.png" alt="Фото события" width="238">
             <span>Анимация</span>
             <h3>Камуфляж и&nbsp;шпионаж</h3>
+            <p class="card__hit">Хит</p>
             <div class="card__list">
               <p>6+</p>
               <p>3D Atmos</p>
@@ -614,6 +660,7 @@
             <img src="img/movie-desktop-img3@1x.png" alt="Фото события" width="238">
             <span>Комедия</span>
             <h3>Холоп</h3>
+            <p class="card__hit">Хит</p>
             <div class="card__list">
               <p>6+</p>
               <p>3D Atmos</p>
@@ -670,86 +717,160 @@
         </span><b>Показать еще фильмы</b></button>
       </div>
     </section>
+    <section class="fitness">
+      <h2><span>Фитнес-клуб 24×7 Lomov Gym</span><span>Фитнес-клуб Lomov Gym 24×7</span></h2>
+      <div class="fitness__box">
+        <div class="fitness__slider slider">
+          <div class="slider__list">
+            <div class="slider__slid">
+              <picture>
+                <source media="(max-width: 767px)" srcset="img/fitness-mobile-img1@1x.png">
+                <img src="img/fitness-desktop-img1@1x.png" alt="Фитнес зал, раздевалки">
+              </picture>
+            </div>
+            <div class="slider__slid">
+              <picture>
+                <source media="(max-width: 767px)" srcset="img/fitness-mobile-img1@1x.png">
+                <img src="img/fitness-desktop-img2@1x.png" alt="Фитнес зал, тренажеры">
+              </picture>
+            </div>
+            <div class="slider__slid">
+              <picture>
+                <source media="(max-width: 767px)" srcset="img/fitness-mobile-img1@1x.png">
+                <img src="img/fitness-desktop-img1@1x.png" alt="Фитнес зал, раздевалки">
+              </picture>
+            </div>
+            <div class="slider__slid">
+              <picture>
+                <source media="(max-width: 767px)" srcset="img/fitness-mobile-img1@1x.png">
+                <img src="img/fitness-desktop-img2@1x.png" alt="Фитнес зал, тренажеры">
+              </picture>
+            </div>
+          </div>
+          <button class="slider__button slider__button--next" type="button">
+            <svg class="slider__arrow" width="28" height="12">
+              <use xlink:href="#icon-arrow"></use>
+            </svg>
+          </button>
+          <button class="slider__button slider__button--prev" type="button">
+            <svg class="slider__arrow" width="28" height="12">
+              <use xlink:href="#icon-arrow"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="fitness__description">
+          <p>Лучший фитнес&#8209;проект 2018
+            года, победитель в номинации
+            «Стартап и инновации 2018»,
+            вошел в топ-5 лучших
+            фитнес&#8209;клубов России
+            с&nbsp;дизайнерским интерьером
+            по версии журнала
+            Architectural Digest.</p>
+          <div class="fitness__container">
+            <ul>
+              <li>3000 м<sup>2</sup></li>
+              <li>1000 тренажеров</li>
+              <li>600 шкафчиков</li>
+              <li>30 душевых</li>
+            </ul>
+            <a class="fitness__link" href="#">
+              <svg class="fitness__arrow" width="20" height="11">
+                <use xlink:href="#icon-arrow"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
     <section class="store store--children">
       <div class="store__box">
-        <h2>Всё для детей</h2>
+        <h2><span>Всё для детей</span><span>Для детей</span></h2>
         <div class="store__list">
           <a class="store__button button" href="#">Все<span>36</span></a>
           <a class="store__button button" href="#">Развлечения<span>10</span></a>
           <a class="store__button button" href="#">Товары<span>3</span></a>
           <a class="store__button button" href="#">Еда<span>4</span></a>
           <a class="store__button button" href="#">Услуги<span>2</span></a>
-          <a class="store__button button" href="#">Мероприятия<span></span></a>
+          <a class="store__button button" href="#">Мероприятия</a>
         </div>
-        <div class="store__items">
+        <div class="store__items store__items--shops">
           <article class="store__item card card--shops">
             <img src="img/walk-dark-desktop@1x.png" alt="Фото события" width="238">
             <h3>Интерактивное выставочное пространство</h3>
             <b>Скидки до 30%</b>
-            <div class="card__box">
-              <span>
-                <svg class="card__floor" width="16" height="16">
-                  <use xlink:href="#icon-floor2"></use>
-                </svg>
-              </span>
-              <p>2-й этаж</p>
-              <a class="card__link" href="#">
-                <svg class="card__arrow" width="19" height="8">
-                  <use xlink:href="#icon-arrow"></use>
-                </svg>
-              </a>
+            <div class="card__case">
+              <div class="card__box">
+                <span>
+                  <svg class="card__floor" width="16" height="16">
+                    <use xlink:href="#icon-floor2"></use>
+                  </svg>
+                </span>
+                <p>2-й этаж</p>
+                <a class="card__link" href="#">
+                  <svg class="card__arrow" width="19" height="8">
+                    <use xlink:href="#icon-arrow"></use>
+                  </svg>
+                </a>
+              </div>
             </div>
           </article>
           <article class="store__item card card--shops">
             <img src="img/kidburg-desktop@1x.png" alt="Фото события" width="238">
-            <h3>Город профессий для детей</h3>
-            <div class="card__box">
-              <span>
-                <svg class="card__floor" width="16" height="16">
-                  <use xlink:href="#icon-floor2"></use>
-                </svg>
-              </span>
-              <p>2-й этаж</p>
-              <a class="card__link" href="#">
-                <svg class="card__arrow" width="19" height="8">
-                  <use xlink:href="#icon-arrow"></use>
-                </svg>
-              </a>
+            <h3>Город профессий для&nbsp;детей</h3>
+            <div class="card__case">
+              <div class="card__box">
+                <span>
+                  <svg class="card__floor" width="16" height="16">
+                    <use xlink:href="#icon-floor2"></use>
+                  </svg>
+                </span>
+                <p>2-й этаж</p>
+                <a class="card__link" href="#">
+                  <svg class="card__arrow" width="19" height="8">
+                    <use xlink:href="#icon-arrow"></use>
+                  </svg>
+                </a>
+              </div>
             </div>
           </article>
           <article class="store__item card card--shops">
             <img src="img/hellopark-desktop@1x.png" alt="Фото события" width="238">
             <h3>Мультимедий- ный парк развлечений</h3>
-            <div class="card__box">
-              <span>
-                <svg class="card__floor" width="16" height="16">
-                  <use xlink:href="#icon-floor2"></use>
-                </svg>
-              </span>
-              <p>2-й этаж</p>
-              <a class="card__link" href="#">
-                <svg class="card__arrow" width="19" height="8">
-                  <use xlink:href="#icon-arrow"></use>
-                </svg>
-              </a>
+            <div class="card__case">
+              <div class="card__box">
+                <span>
+                  <svg class="card__floor" width="16" height="16">
+                    <use xlink:href="#icon-floor2"></use>
+                  </svg>
+                </span>
+                <p>2-й этаж</p>
+                <a class="card__link" href="#">
+                  <svg class="card__arrow" width="19" height="8">
+                    <use xlink:href="#icon-arrow"></use>
+                  </svg>
+                </a>
+              </div>
             </div>
           </article>
           <article class="store__item card card--shops">
             <img src="img/just-jump-desktop@1x.png" alt="Фото события" width="238">
             <h3>Батутная арена Just jump!</h3>
             <b>Скидки до 70%</b>
-            <div class="card__box">
-              <span>
-                <svg class="card__floor" width="16" height="16">
-                  <use xlink:href="#icon-floor2"></use>
-                </svg>
-              </span>
-              <p>2-й этаж</p>
-              <a class="card__link" href="#">
-                <svg class="card__arrow" width="19" height="8">
-                  <use xlink:href="#icon-arrow"></use>
-                </svg>
-              </a>
+            <div class="card__case">
+              <div class="card__box">
+                <span>
+                  <svg class="card__floor" width="16" height="16">
+                    <use xlink:href="#icon-floor2"></use>
+                  </svg>
+                </span>
+                <p>2-й этаж</p>
+                <a class="card__link" href="#">
+                  <svg class="card__arrow" width="19" height="8">
+                    <use xlink:href="#icon-arrow"></use>
+                  </svg>
+                </a>
+              </div>
             </div>
           </article>
         </div>
@@ -762,162 +883,250 @@
     </section>
     <section class="store store--services">
       <div class="store__box">
-        <h2>Услуги и сервисы</h2>
+        <h2>Услуги и&nbsp;сервисы</h2>
         <div class="store__list">
           <a class="store__button button button--shops" href="#">Бесплатные<span>15</span></a>
           <a class="store__button button button--shops" href="#">Банки, банкоматы, терминалы и обмен валюты<span>8</span></a>
           <a class="store__button button button--shops" href="#">Авто и транспорт<span>8</span></a>
           <a class="store__button button button--shops" href="#">Детям<span>23</span></a>
-          <a class="store__button button button--shops" href="#">Туалеты<span></span></a>
-          <a class="store__button button button--shops" href="#">Гардероб<span></span></a>
-          <a class="store__button button button--shops" href="#">Wi-Fi<span></span></a>
+          <a class="store__button button button--shops" href="#">Туалеты</a>
+          <a class="store__button button button--shops" href="#">Гардероб</a>
+          <a class="store__button button button--shops" href="#">Wi-Fi</a>
           <a class="store__button button button--shops" href="#">Интернет, ТВ, телефоны и гаджеты<span>14</span></a>
           <a class="store__button button button--shops" href="#">Бытовые услуги<span>12</span></a>
-          <a class="store__button button button--shops" href="#">Гравировка<span></span></a>
-          <a class="store__button button button--shops" href="#">Обслуживание лыж и сноубордов<span></span></a>
+          <a class="store__button button button--shops" href="#">Гравировка</a>
+          <a class="store__button button button--shops" href="#">Обслуживание лыж и сноубордов</a>
           <a class="store__button button button--shops" href="#">Оптика<span>2</span></a>
           <a class="store__button button button--shops" href="#">Красота и спорт<span>8</span></a>
           <a class="store__button button button--shops" href="#">Турагентства<span>3</span></a>
           <a class="store__button button button--shops" href="#">Фотоуслуги<span>2</span></a>
-          <a class="store__button button button--shops" href="#">Ювелирный ломбард<span></span></a>
+          <a class="store__button button button--shops" href="#">Ювелирный ломбард</a>
           <a class="store__button button button--shops" href="#">Бюро находок<span></span></a>
-          <a class="store__button button button--shops" href="#">Стойка информации<span></span></a>
+          <a class="store__button button button--shops" href="#">Стойка информации</a>
         </div>
-        <div class="store__items">
+        <div class="store__items store__items--services">
           <article class="store__item card card--services">
-            <h3>Парковка для посетителей</h3>
-            <b>Бесплатно</b>
-            <div class="card__box">
-              <span>
-                <svg class="card__floor" width="16" height="16">
-                  <use xlink:href="#icon-floor2"></use>
-                </svg>
-              </span>
-              <p>2-й этаж</p>
-              <a class="card__link" href="#">
-                <svg class="card__arrow" width="19" height="8">
-                  <use xlink:href="#icon-arrow"></use>
-                </svg>
-              </a>
+            <div class="store__container">
+              <h3>Парковка для посетителей</h3>
+              <b>Бесплатно</b>
+              <div class="card__case">
+                <div class="card__box">
+                  <span>
+                    <svg class="card__clock" width="16" height="16">
+                      <use xlink:href="#icon-clock"></use>
+                    </svg>
+                  </span>
+                  <p>7:00—2:00</p>
+                </div>
+                <div class="card__box">
+                  <span>
+                    <svg class="card__floor" width="16" height="16">
+                      <use xlink:href="#icon-floor2"></use>
+                    </svg>
+                  </span>
+                  <p>&ndash;2-й этаж</p>
+                  <a class="card__link" href="#">
+                    <svg class="card__arrow" width="19" height="8">
+                      <use xlink:href="#icon-arrow"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
             </div>
           </article>
           <article class="store__item card card--services">
-            <h3>Парковка для каршеринга</h3>
-            <b>Бесплатно</b>
-            <div class="card__box">
-              <span>
-                <svg class="card__floor" width="16" height="16">
-                  <use xlink:href="#icon-floor2"></use>
-                </svg>
-              </span>
-              <p>2-й этаж</p>
-              <a class="card__link" href="#">
-                <svg class="card__arrow" width="19" height="8">
-                  <use xlink:href="#icon-arrow"></use>
-                </svg>
-              </a>
+            <div class="store__container">
+              <h3>Парковка для&nbsp;каршеринга</h3>
+              <b>Бесплатно</b>
+              <div class="card__case">
+                <div class="card__box">
+                  <span>
+                    <svg class="card__clock" width="16" height="16">
+                      <use xlink:href="#icon-clock"></use>
+                    </svg>
+                  </span>
+                  <p>7:00—2:00</p>
+                </div>
+                <div class="card__box">
+                  <span>
+                    <svg class="card__floor" width="16" height="16">
+                      <use xlink:href="#icon-floor2"></use>
+                    </svg>
+                  </span>
+                  <p>&ndash;2-й этаж</p>
+                  <a class="card__link" href="#">
+                    <svg class="card__arrow" width="19" height="8">
+                      <use xlink:href="#icon-arrow"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
             </div>
           </article>
           <article class="store__item card card--services">
-            <h3>Автобус м. Автозаводская</h3>
-            <b>Бесплатно</b>
-            <div class="card__box">
-              <span>
-                <svg class="card__floor" width="16" height="16">
-                  <use xlink:href="#icon-floor2"></use>
-                </svg>
-              </span>
-              <p>2-й этаж</p>
-              <a class="card__link" href="#">
-                <svg class="card__arrow" width="19" height="8">
-                  <use xlink:href="#icon-arrow"></use>
-                </svg>
-              </a>
+            <div class="store__container">
+              <h3>Автобус м. Автозаводская</h3>
+              <b>Бесплатно</b>
+              <div class="card__case">
+                <div class="card__box">
+                  <span>
+                    <svg class="card__clock" width="16" height="16">
+                      <use xlink:href="#icon-clock"></use>
+                    </svg>
+                  </span>
+                  <p>10:00—22:00</p>
+                </div>
+                <div class="card__box">
+                  <span>
+                    <svg class="card__floor" width="16" height="16">
+                      <use xlink:href="#icon-floor2"></use>
+                    </svg>
+                  </span>
+                  <p>каждые 10 минут</p>
+                  <a class="card__link" href="#">
+                    <svg class="card__arrow" width="19" height="8">
+                      <use xlink:href="#icon-arrow"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
             </div>
           </article>
           <article class="store__item card card--services">
-            <h3>Wi-Fi</h3>
-            <b>Бесплатно</b>
-            <div class="card__box">
-              <span>
-                <svg class="card__floor" width="16" height="16">
-                  <use xlink:href="#icon-floor2"></use>
-                </svg>
-              </span>
-              <p>2-й этаж</p>
-              <a class="card__link" href="#">
-                <svg class="card__arrow" width="19" height="8">
-                  <use xlink:href="#icon-arrow"></use>
-                </svg>
-              </a>
+            <div class="store__container">
+              <h3>Wi-Fi</h3>
+              <b>Бесплатно</b>
+              <div class="card__case">
+                <div class="card__box">
+                  <span>
+                    <svg class="card__floor" width="16" height="16">
+                      <use xlink:href="#icon-floor2"></use>
+                    </svg>
+                  </span>
+                  <p>Везде</p>
+                  <a class="card__link" href="#">
+                    <svg class="card__arrow" width="19" height="8">
+                      <use xlink:href="#icon-arrow"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
             </div>
           </article>
           <article class="store__item card card--services">
-            <h3>Детская коляска</h3>
-            <b>Бесплатно</b>
-            <div class="card__box">
-              <span>
-                <svg class="card__floor" width="16" height="16">
-                  <use xlink:href="#icon-floor2"></use>
-                </svg>
-              </span>
-              <p>2-й этаж</p>
-              <a class="card__link" href="#">
-                <svg class="card__arrow" width="19" height="8">
-                  <use xlink:href="#icon-arrow"></use>
-                </svg>
-              </a>
+            <div class="store__container">
+              <h3>Детская коляска</h3>
+              <b>Бесплатно</b>
+              <div class="card__case">
+                <div class="card__box">
+                  <span>
+                    <svg class="card__clock" width="16" height="16">
+                      <use xlink:href="#icon-clock"></use>
+                    </svg>
+                  </span>
+                  <p>7:00—2:00</p>
+                </div>
+                <div class="card__box">
+                  <span>
+                    <svg class="card__floor" width="16" height="16">
+                      <use xlink:href="#icon-floor2"></use>
+                    </svg>
+                  </span>
+                  <p>&ndash;2-й этаж</p>
+                  <a class="card__link" href="#">
+                    <svg class="card__arrow" width="19" height="8">
+                      <use xlink:href="#icon-arrow"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
             </div>
           </article>
           <article class="store__item card card--services">
-            <h3>Детские браслеты</h3>
-            <b>Бесплатно</b>
-            <div class="card__box">
-              <span>
-                <svg class="card__floor" width="16" height="16">
-                  <use xlink:href="#icon-floor2"></use>
-                </svg>
-              </span>
-              <p>2-й этаж</p>
-              <a class="card__link" href="#">
-                <svg class="card__arrow" width="19" height="8">
-                  <use xlink:href="#icon-arrow"></use>
-                </svg>
-              </a>
+            <div class="store__container">
+              <h3>Детские браслеты</h3>
+              <b>Бесплатно</b>
+              <div class="card__case">
+                <div class="card__box">
+                  <span>
+                    <svg class="card__clock" width="16" height="16">
+                      <use xlink:href="#icon-clock"></use>
+                    </svg>
+                  </span>
+                  <p>7:00—2:00</p>
+                </div>
+                <div class="card__box">
+                  <span>
+                    <svg class="card__floor" width="16" height="16">
+                      <use xlink:href="#icon-floor2"></use>
+                    </svg>
+                  </span>
+                  <p>&ndash;2-й этаж</p>
+                  <a class="card__link" href="#">
+                    <svg class="card__arrow" width="19" height="8">
+                      <use xlink:href="#icon-arrow"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
             </div>
           </article>
           <article class="store__item card card--services">
-            <h3>Гардероб</h3>
-            <b>Бесплатно</b>
-            <div class="card__box">
-              <span>
-                <svg class="card__floor" width="16" height="16">
-                  <use xlink:href="#icon-floor2"></use>
-                </svg>
-              </span>
-              <p>2-й этаж</p>
-              <a class="card__link" href="#">
-                <svg class="card__arrow" width="19" height="8">
-                  <use xlink:href="#icon-arrow"></use>
-                </svg>
-              </a>
+            <div class="store__container">
+              <h3>Гардероб</h3>
+              <b>Бесплатно</b>
+              <div class="card__case">
+                <div class="card__box">
+                  <span>
+                    <svg class="card__clock" width="16" height="16">
+                      <use xlink:href="#icon-clock"></use>
+                    </svg>
+                  </span>
+                  <p>7:00—2:00</p>
+                </div>
+                <div class="card__box">
+                  <span>
+                    <svg class="card__floor" width="16" height="16">
+                      <use xlink:href="#icon-floor2"></use>
+                    </svg>
+                  </span>
+                  <p>&ndash;2-й этаж</p>
+                  <a class="card__link" href="#">
+                    <svg class="card__arrow" width="19" height="8">
+                      <use xlink:href="#icon-arrow"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
             </div>
           </article>
           <article class="store__item card card--services">
-            <h3>Вызов такси</h3>
-            <b>Бесплатно</b>
-            <div class="card__box">
-              <span>
-                <svg class="card__floor" width="16" height="16">
-                  <use xlink:href="#icon-floor2"></use>
-                </svg>
-              </span>
-              <p>2-й этаж</p>
-              <a class="card__link" href="#">
-                <svg class="card__arrow" width="19" height="8">
-                  <use xlink:href="#icon-arrow"></use>
-                </svg>
-              </a>
+            <div class="store__container">
+              <h3>Вызов такси</h3>
+              <b>Бесплатно</b>
+              <div class="card__case">
+                <div class="card__box">
+                  <span>
+                    <svg class="card__clock" width="16" height="16">
+                      <use xlink:href="#icon-clock"></use>
+                    </svg>
+                  </span>
+                  <p>7:00—2:00</p>
+                </div>
+                <div class="card__box">
+                  <span>
+                    <svg class="card__floor" width="16" height="16">
+                      <use xlink:href="#icon-floor2"></use>
+                    </svg>
+                  </span>
+                  <p>&ndash;2-й этаж</p>
+                  <a class="card__link" href="#">
+                    <svg class="card__arrow" width="19" height="8">
+                      <use xlink:href="#icon-arrow"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
             </div>
           </article>
         </div>
@@ -932,16 +1141,19 @@
   <footer class="page-footer">
     <section class="adress">
       <div class="adress__box">
-        <h2>Как попасть в Ривьеру</h2>
+        <h2>Как попасть в&nbsp;Ривьеру</h2>
         <div class="adress__list">
-          <a class="adress__button button button--adress" href="#">Бесплатные</a>
-          <a class="adress__button button button--adress" href="#">Банки, банкоматы, терминалы и обмен валюты</a>
-          <a class="adress__button button button--adress" href="#">Авто и транспорт</a>
-          <a class="adress__button button button--adress" href="#">Детям</a>
+          <a class="adress__button button button--adress" href="#">Как добраться</a>
+          <a class="adress__button button button--adress" href="#">Парковки</a>
+          <a class="adress__button button button--adress" href="#">Арендаторам и рекламодателям</a>
+          <a class="adress__button button button--adress" href="#">Соцсети и обратная связь</a>
         </div>
         <div class="adress__container">
           <div class="adress__map">
-            <img src="img/map-desktop@1x.png" alt="Карта подъезда к Ривьере" width="675">
+            <picture>
+              <source media="(max-width: 767px)" srcset="img/map-mobile@1x.png">
+              <img src="img/map-desktop@1x.png" alt="Карта подъезда к Ривьере" width="675">
+            </picture>
           </div>
           <div class="adress__info">
             <a class="adress__item adress__item--location"><span>
@@ -964,7 +1176,7 @@
                 <use xlink:href="#icon-clock"></use>
               </svg>
             </span>Ежедневно с 10:00 до 22:00</a>
-            <a class="adress__item adress__item--location"><span>
+            <a class="adress__item adress__item--scheme"><span>
               <svg width="24" height="24">
                 <use xlink:href="#icon-floor3"></use>
               </svg>
@@ -1034,9 +1246,75 @@
             </ul>
           </nav>
         </div>
-        <b>© 2009–2020 Ривьера</b>
       </div>
+      <b>&#169; 2009–2020 Ривьера</b>
     </section>
   </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="slick/slick.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.slider__list').slick({
+        dots: false,
+        infinite: true,
+        speed: 300,
+        nextArrow: document.querySelector('.slider__button--next'),
+        prevArrow: document.querySelector('.slider__button--prev'),
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        variableWidth: true,
+        responsive: [
+          {
+            breakpoint: 767,
+            settings: {
+              arrows : false,
+              slidesToShow: 1
+            }
+          }
+        ]
+      });
+      $(window).on('load resize', function() {
+        if ($(window).width() < 1024) {
+            $('.events__items:not(.slick-initialized)').slick({
+              dots: false,
+              infinite: true,
+              speed: 100,
+              slidesToShow: 2,
+              arrows : false,
+              variableWidth: true,
+              responsive: [
+                {
+                  breakpoint: 767,
+                  settings: {
+                    slidesToShow: 1
+                  }
+                }
+              ]
+            });
+            $('.store__items--shops:not(.slick-initialized)').slick({
+              dots: false,
+              infinite: true,
+              speed: 100,
+              slidesToShow: 2,
+              arrows : false,
+              variableWidth: true
+            });
+            $('.store__items--services:not(.slick-initialized)').slick({
+              dots: false,
+              rows: 2,
+              infinite: true,
+              speed: 100,
+              slidesToShow: 2,
+              arrows : false,
+              variableWidth: true
+            });
+        } else {
+            $(".events__items.slick-initialized").slick("unslick");
+            $(".store__items--shops.slick-initialized").slick("unslick");
+            $(".store__items--services.slick-initialized").slick("unslick");
+        }
+        });
+    });
+  </script>
 </body>
 </html>

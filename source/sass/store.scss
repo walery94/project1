@@ -9,7 +9,7 @@
 
 .store__box h2 {
   margin: 0;
-  margin-bottom: 24px;
+  margin-bottom: 23px;
 
   font-weight: bold;
   font-size: 48px;
@@ -46,4 +46,149 @@
 .store--services {
   padding-bottom: 50px;
   margin-bottom: 14px;
+}
+
+.store__container {
+  display: flex;
+  flex-direction: column;
+  min-height: 172px;
+}
+
+.store--children h2 span:last-child {
+  display: none;
+}
+
+@media (max-width: $tablet-width) {
+
+  .store {
+    margin-bottom: 24px;
+  }
+
+  .store__box {
+    width: 100%;
+  }
+
+  .store h2 {
+    margin-left: 24px;
+    margin-bottom: 17px;
+  }
+
+  .store__list {
+    margin-left: 24px;
+  }
+
+  .store__items {
+    margin-left: 24px;
+  }
+
+  .store__item {
+    width: 238px;
+    margin-left: 24px;
+    margin-right: 0;
+  }
+
+  .store__item .slick-slide {
+    width: 238px;
+    outline: none;
+  }
+
+  .store--services .slick-initialized .slick-slide {
+    display: block;
+  }
+
+  .store--services .slick-list {
+    margin-left: -24px;
+  }
+
+  .store--services .slick-slide {
+    margin-left: 24px;
+  }
+
+  .store__container {
+    display: flex;
+    flex-direction: column;
+    min-height: 172px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+
+  .store {
+    margin-bottom: 23px;
+  }
+
+  .store--shops .store__button:first-child,
+  .store--services .store__button:first-child {
+    order: 1;
+  }
+
+  .store--shops .store__button:nth-child(2) {
+    display: none;
+  }
+
+  .store h2,
+  .store__list,
+  .store__items {
+    margin-left: 16px;
+  }
+
+  .store h2 span:last-child {
+    display: none;
+  }
+
+  .store--cinema .store__button:first-child {
+    display: none;
+  }
+
+  .store--cinema .store__button span {
+    display: none;
+  }
+
+  .store__list {
+    margin-bottom: 12px;
+  }
+
+  .store__button {
+    margin-right: 4px;
+    margin-bottom: 4px;
+    padding-bottom: 6px;
+  }
+
+  .store__item {
+    width: 220px;
+    margin-left: 16px;
+    margin-right: 0;
+  }
+
+  .store__item .slick-slide {
+    width: 220px;
+  }
+
+  .store--children h2 span:first-child {
+    display: none;
+  }
+
+  .store--children h2 span:last-child {
+    display: inline;
+  }
+
+  .store--services {
+    padding-bottom: 58px;
+  }
+
+  .store--services .slick-list {
+    margin-left: -16px;
+  }
+
+  .store--services .slick-slide {
+    margin-left: 16px;
+  }
+
+  .store--services .store__item {
+    margin-bottom: 11px;
+  }
+
+  .store--services .store__container {
+    min-height: 190px;
+  }
 }

@@ -1,11 +1,12 @@
 .card {
+  position: relative;
   display: flex;
   flex-direction: column;
 
   width: 325px;
-  min-height: 525px;
+  min-height: 545px;
 
-  padding-bottom: 24px;
+  padding-bottom: 21px;
 
   font-weight: 600;
   font-size: 12px;
@@ -39,26 +40,46 @@
   letter-spacing: -0.01em;
 }
 
+.card__hit {
+  position: absolute;
+  top: 5px;
+  left: 24px;
+
+  width: 41px;
+  height: 27px;
+  padding-top: 7px;
+
+  color: #ffffff;
+  text-align: center;
+
+  background-color: #AA0061;
+  border-radius: 5px;
+  text-transform: uppercase;
+  box-sizing: border-box;
+}
+
 .card b {
   position: relative;
-  width: 135px;
+  width: 136px;
   margin-left: 24px;
-  padding: 7px 8px 7px 24px;
+  padding: 7px 0 6px 22px;
 
+  font-weight: 500;
   color: #65AA0F;
   text-transform: uppercase;
 
   border: 0.5px solid #65AA0F;
   border-radius: 5px;
+  box-sizing: border-box;
 
   &::before {
     content: "";
     position: absolute;
-    top: 8px;
-    left: 10px;
+    top: 9px;
+    left: 8px;
 
-    width: 8px;
-    height: 8px;
+    width: 6px;
+    height: 6px;
 
     background-color: transparent;
     border: 1px solid #65AA0F;
@@ -66,13 +87,21 @@
   }
 }
 
+.card__case {
+  margin-top: auto;
+}
+
 .card__box {
   display: flex;
 
   width: 275px;
 
-  margin-top: auto;
   margin-left: 24px;
+  margin-bottom: 9px;
+}
+
+.card__box:last-child {
+  margin-bottom: 0;
 }
 
 .card__box span {
@@ -124,6 +153,7 @@
   width: 188px;
   margin: 0 auto;
   margin-top: auto;
+  margin-bottom: 4px;
 }
 
 .card__list p {
@@ -176,6 +206,7 @@
 .card--cinema {
   width: 238px;
   min-height: 518px;
+  padding-bottom: 13px;
 }
 
 .card--cinema span {
@@ -198,13 +229,184 @@
 .card--services {
   width: 238px;
   min-height: 220px;
-  padding-top: 24px;
+  padding-top: 26px;
 }
 
 .card--services h3 {
   width: 180px;
 }
 
+.card--services b {
+  width: 107px;
+}
+
 .card--services .card__box {
   width: 188px;
+}
+
+@media (max-width: $mobile-width) {
+
+  .card {
+    width: 220px;
+    min-height: 440px;
+    padding-bottom: 13px;
+    overflow: hidden;
+  }
+
+  .card img {
+    width: 220px;
+    height: 220px;
+
+  }
+
+  .card--cinema {
+    padding-bottom: 3px;
+  }
+
+  .card--shops img {
+    margin-bottom: 16px;
+  }
+
+  .card--cinema img {
+    margin-bottom: 20px;
+  }
+
+  .card h3 {
+    width: 188px;
+    margin-left: 16px;
+  }
+
+  .card b {
+    margin-left: 16px;
+  }
+
+  .card__box {
+    width: 188px;
+
+    margin-top: auto;
+    margin-left: 16px;
+  }
+
+  // .card__box span {
+  //   margin-top: -3px;
+  //   margin-right: 8px;
+  // }
+
+  // .card__box p {
+  //   margin: 0;
+  //   text-transform: uppercase;
+  // }
+
+  // .card__box a {
+  //   display: block;
+  //   width: 19px;
+  //   height: 8px;
+  //   margin-left: auto;
+  // }
+
+  // .card__clock,
+  // .card__floor {
+  //   fill: #7D7D7D;
+  // }
+
+  // .card__arrow {
+  //   fill: #00AED6;
+  // }
+
+  // .card--shops {
+  //   width: 238px;
+  //   min-height: 458px;
+  // }
+
+  // .card--shops h3 {
+  //   width: 188px;
+  // }
+
+  // .card--shops img {
+  //   width: 238px;
+  //   height: 238px;
+  // }
+
+  // .card--shops .card__box {
+  //   width: 188px;
+  // }
+
+  // .card__list {
+  //   display: flex;
+  //   width: 188px;
+  //   margin: 0 auto;
+  //   margin-top: auto;
+  // }
+
+  // .card__list p {
+  //   padding: 7px 8px;
+  //   margin-right: 8px;
+
+  //   font-weight: 600;
+  //   text-transform: uppercase;
+  //   color: #AA0061;
+
+  //   border: 0.5px solid #AA0061;
+  //   border-radius: 5px;
+  // }
+
+  .card__items ul {
+    margin-left: 16px;
+  }
+
+  // .card__items li {
+  //   position: relative;
+  //   margin-right: 20px;
+  //   margin-bottom: 10px;
+  // }
+
+  // .card__items li:first-child::after {
+  //   content: "";
+  //   position: absolute;
+  //   top: 4px;
+  //   right: -5px;
+
+  //   width: 4px;
+  //   height: 4px;
+
+  //   background-color: #CC0000;
+  //   border-radius: 50%;
+  // }
+
+  // .card__items li:nth-child(3n) {
+  //   margin-right: 0;
+  // }
+
+  .card--cinema {
+    min-height: 500px;
+  }
+
+  .card--cinema span {
+    margin-left: 16px;
+    margin-bottom: 3px;
+  }
+
+  // .card--cinema h3 {
+  //   width: 185px;
+  //   font-weight: 500;
+  // }
+
+  // .card--cinema img {
+  //   width: 238px;
+  //   height: 238px;
+  // }
+
+  .card--services {
+    min-height: 220px;
+    padding-top: 16px;
+    padding-bottom: 0;
+  }
+
+  // .card--services h3 {
+  //   width: 180px;
+  // }
+
+  // .card--services .card__box {
+  //   width: 188px;
+  // }
 }

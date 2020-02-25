@@ -3,7 +3,10 @@
   justify-content: space-between;
   max-width: 1024px;
   margin: 0 auto;
-  padding: 24px;
+  padding-top: 25px;
+  padding-left: 24px;
+  padding-bottom: 24px;
+  padding-right: 24px;
 
   background-color: #ffffff;
   border-radius: 5px;
@@ -23,7 +26,12 @@
   color: #222222;
 }
 
+.subscription__email {
+  width: 100%;
+}
+
 .subscription p {
+  max-width: 630px;
   margin: 0;
   margin-bottom: 16px;
 
@@ -36,12 +44,13 @@
 .subscription__form {
   display: flex;
   margin-bottom: 16px;
+  max-width: 627px;
 }
 
 .subscription__form input {
-  width: 413px;
+  width: 100%;
   padding-top: 15px;
-  padding-bottom: 15px;
+  padding-bottom: 13px;
   padding-left: 16px;
 
   border: 1px solid #E0E0E0;
@@ -55,10 +64,13 @@
 }
 
 .subscription__button {
-  width: 213px;
+  width: 315px;
   padding-top: 15px;
-  padding-bottom: 15px;
+  padding-bottom: 13px;
 
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 17px;
   color: #00AED6;
 
   border: 1px solid #E0E0E0;
@@ -67,11 +79,16 @@
   background-color: transparent;
 
   box-sizing: border-box;
+  outline: none;
   cursor: pointer;
 }
 
 .subscription__social {
   margin-bottom: 24px;
+}
+
+.subscription__container:last-child {
+  width: 278px;
 }
 
 .subscription__list,
@@ -83,8 +100,8 @@
 }
 
 .subscription__icon {
-  width: 56px;
-  height: 48px;
+  width: 55px;
+  height: 46px;
   border-right: 1px solid #E0E0E0;
 }
 
@@ -129,7 +146,7 @@
 // }
 
 .subscription__app {
-  height: 48px;
+  height: 46px;
 }
 
 .subscription__app--apple {
@@ -149,4 +166,18 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100px 24px;
+}
+
+@media (max-width: $tablet-width) {
+
+  .subscription {
+    margin-left: 24px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+
+  .subscription {
+    display: none;
+  }
 }

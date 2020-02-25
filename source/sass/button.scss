@@ -1,14 +1,13 @@
 .button {
   display: block;
 
-  padding: 10px 8px;
+  padding: 8px 10px;
 
   font-family: "MuseoSansCyrl", "Arial", sans-serif;
   font-weight: 600;
   font-size: 16px;
   line-height: 17px;
   color: $main-color;
-  text-align: center;
   text-decoration: none;
 
   background-color: transparent;
@@ -64,6 +63,8 @@
 }
 
 .button--shops {
+  padding-left: 11px;
+  padding-bottom: 6px;
 
   &:hover {
     color: #65AA0F;
@@ -93,9 +94,9 @@
 .button--more {
   display: flex;
   justify-content: center;
-  min-width: 500px;
+  width: 500px;
   margin: 0 auto;
-  padding: 21px 22px 20px 54px;
+  padding: 21px 0 15px 0;
 
   font-weight: 600;
   font-size: 24px;
@@ -110,6 +111,25 @@
 }
 
 .button--more span {
-  margin-right: 8px;
+  margin-right: 10px;
   fill: #00AED6;
+}
+
+.button--cinema {
+  letter-spacing: 0.05em;
+}
+
+@media (max-width: $tablet-width) {
+
+  .button--more {
+    display: none;
+  }
+}
+
+@media (max-width: $mobile-width) {
+
+  .button--cinema {
+    letter-spacing: 0;
+    padding-bottom: 8px;
+  }
 }
