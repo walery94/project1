@@ -1,6 +1,25 @@
 .page-main {
+  // background-color: grey;
   background-image: url("../img/background-blue-up-desktop2.png"), url("../img/background-green-desktop2.png"), url("../img/background-red-desktop2.png"), url("../img/background-pink-desktop2.png"), url("../img/background-blue-down-desktop2.png"), url("../img/backgroung-yellow-desktop2.png"), url("../img/background-purple-desktop2.png"), url("../img/background-orange-desktop2.png");
   background-repeat: no-repeat;
-  background-position-y: -90px, 430px, 2160px, 4500px, 5100px, 3630px, 2940px, 1300px;
+  background-position-y: -101px, 420px, 2125px, 4380px, 5066px, 3575px, 2940px, 1300px;
   background-size: contain;
+}
+
+@media (max-width: $mobile-width) {
+
+  .page-main {
+    background-image:
+      url("../img/background-green-mobile2.png"),
+      url("../img/background-blue-up-mobile2.png"),
+      url("../img/background-red-mobile2.png"),
+      url("../img/background-pink-mobile2.png"),
+      url("../img/background-blue-down-mobile2.png"),
+      url("../img/background-yellow-mobile2.png"),
+      url("../img/background-purple-mobile2.png"),
+      url("../img/background-orange-mobile2.png");
+    background-repeat: no-repeat;
+    background-position-y: 450px, -75px, 2160px, 4140px, 4934px, 3435px, 2800px, 1300px;
+    background-size: contain;
+  }
 }

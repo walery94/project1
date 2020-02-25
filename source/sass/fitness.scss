@@ -1,5 +1,5 @@
 .fitness {
-  margin-bottom: 64px;
+  margin-bottom: 40px;
 }
 
 .fitness h2 {
@@ -14,19 +14,27 @@
   color: #ffffff;
 }
 
+.fitness h2 span:last-child {
+  display: none;
+}
+
 .fitness__box {
   display: flex;
 }
 
-.fitness__description {
-  width: 238px;
+.fitness__slider {
+  margin-bottom: 24px;
 }
 
 .fitness__description {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-left: 24px;
+
+  width: 238px;
+  margin-left: 19px;
+  padding-top: 27px;
+  padding-bottom: 47px;
 }
 
 .fitness__description p {
@@ -50,7 +58,7 @@
 }
 
 .fitness__container li {
-  margin-bottom: 8px;
+  margin-bottom: 4px;
   font-weight: 600;
   font-size: 16px;
   line-height: 17px;
@@ -58,7 +66,75 @@
 }
 
 .fitness__arrow {
-  margin-top: 82px;
+  margin-top: 67px;
   fill: #FFFFFF;
 }
 
+@media (max-width: $tablet-width) {
+
+  .fitness h2 {
+    width: 100%;
+    margin-left: 24px;
+  }
+
+  .fitness__box {
+    display: block;
+  }
+
+  .fitness__description {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 700px;
+    margin: 0 auto;
+  }
+
+  .fitness__description p {
+    width: 300px;
+  }
+
+  .fitness__container {
+    width: 300px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+
+  .fitness {
+    margin-bottom: 51px;
+  }
+
+  .fitness h2 {
+    margin-left: 16px;
+  }
+
+  .fitness h2 span:first-child {
+    display: none;
+  }
+
+  .fitness h2 span:last-child {
+    display: inline;
+  }
+
+  .fitness__slider {
+    margin-bottom: 7px;
+  }
+
+  .fitness__description {
+    width: 328px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .fitness__description p {
+    width: 176px;
+  }
+
+  .fitness__container {
+    flex-direction: column;
+    width: 138px;
+  }
+
+  .fitness__link {
+    align-self: flex-end;
+  }
+}
