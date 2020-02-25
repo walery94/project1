@@ -1,0 +1,40 @@
+.address-menu {
+  display: none;
+
+  @media (max-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.address-menu__list {
+  margin: 0;
+  margin-top: 16px;
+  padding: 0;
+  padding-left: 30px;
+  list-style: none;
+}
+
+.address-menu__item {
+  position: relative;
+  margin-bottom: 23px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.address-menu__link {
+  position: relative;
+  margin-left: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 108%;
+  text-decoration: none;
+  color: #00aed6;
+}
+
+.address-menu__link svg {
+  position: absolute;
+  left: -40px;
+  fill: #ffffff;
+}

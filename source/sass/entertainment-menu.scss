@@ -1,0 +1,12 @@
+.entertainment-menu {
+  margin-bottom: 41px;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+}
+
+.entertainment-menu__link:hover,
+.entertainment-menu__link:focus {
+  color: #65aa0f;
+}

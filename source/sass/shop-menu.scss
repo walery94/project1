@@ -1,0 +1,32 @@
+.shop-menu {
+  width: 44%;
+  margin-bottom: 40px;
+  margin-right: 6%;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+}
+
+.shop-menu__title {
+  @media (max-width: $tablet-width) {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 12px;
+      right: -30px;
+      width: 19px;
+      height: 8px;
+      background-image: url("../img/icon-arrow.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+.shop-menu__link:hover,
+.shop-menu__link:focus {
+  color: #65aa0f;
+}

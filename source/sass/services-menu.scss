@@ -1,0 +1,21 @@
+.services-menu {
+  width: 44%;
+  margin-right: 6%;
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+  }
+}
+
+.services-menu__list {
+  &:first-of-type {
+    width: 188px;
+    margin-bottom: 48px;
+    margin-right: 24px;
+  }
+}
+
+.services-menu__link:hover,
+.services-menu__list:focus {
+  color: #65aa0f;
+}
