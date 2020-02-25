@@ -10,13 +10,16 @@
 
 .shop-menu__title {
   @media (max-width: $tablet-width) {
+    display: flex;
     position: relative;
 
     &::after {
       content: "";
       position: absolute;
-      top: 12px;
-      right: -30px;
+      top: 16px;
+      //right: 10px;
+      left: 130px;
+      align-content: center;
       width: 19px;
       height: 8px;
       background-image: url("../img/icon-arrow.svg");
