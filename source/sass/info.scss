@@ -212,6 +212,12 @@
   margin-left: 118px;
 }
 
+.info b {
+  display: block;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
 @media (max-width: $tablet-width) {
 
   .info__box {
@@ -229,6 +235,15 @@
 
   .info__social {
     margin-bottom: 24px;
+  }
+
+  .info--clothes .info__box {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+
+  .info b {
+    max-width: 768px;
   }
 }
 
@@ -313,5 +328,9 @@
     font-size: 14px;
     line-height: 17px;
     text-align: center;
+  }
+
+  .info--clothes .info__box {
+    max-width: 328px;
   }
 }

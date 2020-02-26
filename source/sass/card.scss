@@ -244,6 +244,34 @@
   width: 188px;
 }
 
+.card--clothes {
+  width: 238px;
+  min-height: 458px;
+
+  border: 1px solid #E0E0E0;
+
+  &:hover {
+    box-shadow: 0px 12px 16px rgba(0, 0, 0, 0.08);
+  }
+}
+
+.card--clothes h3 {
+  width: 188px;
+}
+
+.card--clothes img {
+  width: 238px;
+  height: 238px;
+}
+
+.card--clothes .card__box {
+  width: 188px;
+}
+
+.card__discount {
+  display: none;
+}
+
 @media (max-width: $mobile-width) {
 
   .card {
@@ -287,95 +315,9 @@
     margin-left: 16px;
   }
 
-  // .card__box span {
-  //   margin-top: -3px;
-  //   margin-right: 8px;
-  // }
-
-  // .card__box p {
-  //   margin: 0;
-  //   text-transform: uppercase;
-  // }
-
-  // .card__box a {
-  //   display: block;
-  //   width: 19px;
-  //   height: 8px;
-  //   margin-left: auto;
-  // }
-
-  // .card__clock,
-  // .card__floor {
-  //   fill: #7D7D7D;
-  // }
-
-  // .card__arrow {
-  //   fill: #00AED6;
-  // }
-
-  // .card--shops {
-  //   width: 238px;
-  //   min-height: 458px;
-  // }
-
-  // .card--shops h3 {
-  //   width: 188px;
-  // }
-
-  // .card--shops img {
-  //   width: 238px;
-  //   height: 238px;
-  // }
-
-  // .card--shops .card__box {
-  //   width: 188px;
-  // }
-
-  // .card__list {
-  //   display: flex;
-  //   width: 188px;
-  //   margin: 0 auto;
-  //   margin-top: auto;
-  // }
-
-  // .card__list p {
-  //   padding: 7px 8px;
-  //   margin-right: 8px;
-
-  //   font-weight: 600;
-  //   text-transform: uppercase;
-  //   color: #AA0061;
-
-  //   border: 0.5px solid #AA0061;
-  //   border-radius: 5px;
-  // }
-
   .card__items ul {
     margin-left: 16px;
   }
-
-  // .card__items li {
-  //   position: relative;
-  //   margin-right: 20px;
-  //   margin-bottom: 10px;
-  // }
-
-  // .card__items li:first-child::after {
-  //   content: "";
-  //   position: absolute;
-  //   top: 4px;
-  //   right: -5px;
-
-  //   width: 4px;
-  //   height: 4px;
-
-  //   background-color: #CC0000;
-  //   border-radius: 50%;
-  // }
-
-  // .card__items li:nth-child(3n) {
-  //   margin-right: 0;
-  // }
 
   .card--cinema {
     min-height: 500px;
@@ -386,27 +328,76 @@
     margin-bottom: 3px;
   }
 
-  // .card--cinema h3 {
-  //   width: 185px;
-  //   font-weight: 500;
-  // }
-
-  // .card--cinema img {
-  //   width: 238px;
-  //   height: 238px;
-  // }
-
   .card--services {
     min-height: 220px;
     padding-top: 16px;
     padding-bottom: 0;
   }
 
-  // .card--services h3 {
-  //   width: 180px;
-  // }
+  .card--clothes {
+    width: 156px;
+    min-height: 188px;
+    padding-bottom: 7px;
 
-  // .card--services .card__box {
-  //   width: 188px;
-  // }
+    border: 1px solid #E0E0E0;
+
+    &:hover {
+      box-shadow: 0px 12px 16px rgba(0, 0, 0, 0.08);
+    }
+  }
+
+  .card--clothes h3 {
+    display: none;
+  }
+
+  .card--clothes img {
+    width: 156px;
+    height: 156px;
+    margin-bottom: 0;
+  }
+
+  .card--clothes b {
+    display: none;
+  }
+
+  .card--clothes .card__case {
+    margin-top: 0;
+    border-top: 1px solid #E0E0E0;
+  }
+
+  .card--clothes .card__box {
+    display: none;
+  }
+
+  .card__discount {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 27px;
+    padding-right: 8px;
+    padding-top: 9px;
+
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 13px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #222222;
+    box-sizing: border-box;
+  }
+
+  .card__discount p {
+    position: relative;
+    margin: 0;
+    padding: 0;
+  }
+
+  .card__discount p span {
+    position: absolute;
+    top: -2px;
+    left: -20px;
+  }
+
+  .card__discount p:last-child {
+    color: #65AA0F;
+  }
 }

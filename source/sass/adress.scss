@@ -131,6 +131,11 @@
   .adress__taxi span {
     left: 150px;
   }
+
+  .adress--clothes .adress__box {
+    max-width: 768px;
+    margin: 0 auto;
+  }
 }
 
 @media (max-width: $mobile-width) {
@@ -147,7 +152,7 @@
 
   .adress__box h2,
   .adress__list {
-    width: 316px;
+    width: 328px;
     margin: 0 auto;
   }
 
@@ -163,9 +168,21 @@
     margin-bottom: 4px;
   }
 
+  .adress--clothes .adress__map {
+    margin-bottom: 22px;
+  }
+
   .adress__map img {
     width: 352px;
     height: 169px;
+  }
+
+  .adress--clothes .adress__map img {
+    display: block;
+    width: 352px;
+    height: 169px;
+    margin: 0 auto;
+    margin-top: -4px;
   }
 
   .adress__container {
@@ -177,6 +194,11 @@
     width: 100%;
   }
 
+  .adress--clothes .adress__info {
+    width: 328px;
+    margin: 0 auto;
+  }
+
   .adress__map {
     margin-bottom: 14px;
   }
@@ -184,6 +206,10 @@
   .adress__item {
     margin-left: 46px;
     width: 260px;
+  }
+
+  .adress--clothes .adress__item {
+    margin-left: 31px;
   }
 
   .adress__taxi {
