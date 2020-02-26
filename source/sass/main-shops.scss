@@ -1,0 +1,32 @@
+.main-shops__title {
+  margin: 0;
+  margin-bottom: 32px;
+  padding: 0;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 92%;
+  letter-spacing: -0.01em;
+  color: $text-color;
+}
+
+.main-shops__span {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 128%;
+  letter-spacing: -0.05em;
+  text-transform: uppercase;
+}
+
+.main-shops__footer {
+  width: 1024px;
+  margin: 0 auto;
+  margin-bottom: 112px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 108%;
+  color: $text-color;
+
+  @media (max-width: $tablet-width) {
+    width: 92%;
+  }
+}

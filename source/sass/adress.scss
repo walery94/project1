@@ -101,6 +101,13 @@
   .adress__box {
     width: 100%;
     margin-left: 24px;
+
+    &--shops {
+      width: 92%;
+      margin-left: 0;
+      padding-left: 30px;
+      padding-right: 30px;
+    }
   }
 
   .adress__container {
@@ -112,6 +119,10 @@
     flex-wrap: wrap;
     justify-content: space-between;
     width: 700px;
+
+    &--shops {
+      width: 79%;
+    }
   }
 
   .adress__map {
@@ -148,12 +159,24 @@
   .adress__box {
     width: 100%;
     margin-left: 0;
+
+    &--shops {
+      width: 92%;
+      padding-left: 16px;
+      padding-right: 16px;
+    }
   }
 
-  .adress__box h2,
+  .adress__title,
   .adress__list {
     width: 328px;
     margin: 0 auto;
+  }
+
+  .adress__title--shops,
+  .adress__list--shops {
+    width: 100%;
+    margin: 0;
   }
 
   .adress__box h2 {

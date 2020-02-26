@@ -3,8 +3,8 @@
   justify-content: space-between;
   padding-top: 17px;
   padding-bottom: 17px;
-  padding-left: 64px;
-  padding-right: 64px;
+  padding-left: 5.5%;
+  padding-right: 5.5%;
   border-bottom: 1px solid $border;
 
   @media (max-width: $tablet-width) {
@@ -27,7 +27,6 @@
   flex-wrap: wrap;
   width: 81%;
   margin: 0;
-  //margin-right: 20px;
   padding: 0;
   list-style: none;
 
@@ -98,6 +97,11 @@
     background-image: url("../img/icon-floor3.svg");
     background-repeat: no-repeat;
     background-position: center;
+  }
+
+  &--shops {
+    padding-bottom: 16px;
+    border-bottom: 4px solid #00aed6;
   }
 
   &:hover,
