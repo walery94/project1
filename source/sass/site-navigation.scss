@@ -60,6 +60,12 @@
   @media (max-width: $mobile-width) {
     top: 40%;
   }
+
+  &--shops {
+    @media (max-width: $tablet-width) {
+      display: none;
+    }
+  }
 }
 
 .site-navigation__item {

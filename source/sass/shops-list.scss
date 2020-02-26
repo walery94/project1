@@ -1,0 +1,102 @@
+.shops-list {
+  width: 1024px;
+  margin: 0 auto;
+
+  @media (max-width: $tablet-width) {
+    width: 92%;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+.shops-list__inner-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 80px;
+
+  @media (max-width: $tablet-width) {
+    flex-direction: column;
+  }
+}
+
+.shops-list__title {
+  position: relative;
+  margin: 0;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  padding: 0;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 108%;
+  letter-spacing: -0.01em;
+  color: $text-color;
+
+  @media (max-width: $tablet-width) {
+    //width: 255px;
+    margin-top: 24px;
+    font-size: 48px;
+    line-height: 92%;
+  }
+}
+
+.shops-list__list {
+  width: 295px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  &:nth-of-type(2) {
+    width: 300px;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: auto;
+  }
+}
+
+.shops-list__list a {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 96%;
+  text-decoration: none;
+  color: $text-color;
+
+  &:hover,
+  &:focus {
+    color: #65aa0f;
+  }
+}
+
+.shops-list__item {
+  margin-bottom: 16px;
+}
+
+.shops-list__span {
+  margin-left: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 128%;
+  letter-spacing: -0.05em;
+  text-transform: uppercase;
+  color: #7d7d7d;
+
+  &--title {
+    position: absolute;
+    bottom: 40px;
+    font-size: 24px;
+    line-height: 96%;
+    letter-spacing: -0.01em;
+    color: #00aed6;
+
+    @media (max-width: $tablet-width) {
+      bottom: 25px;
+      font-size: 16px;
+    }
+  }
+}
