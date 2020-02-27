@@ -11,7 +11,6 @@
       content: "";
       position: absolute;
       top: 16px;
-      //right: -30px;
       left: 215px;
       align-content: center;
       width: 19px;
@@ -24,6 +23,10 @@
 }
 
 .stocks-menu__paragraph {
+  margin: 0;
+  margin-top: 13px;
+  margin-bottom: 17px;
+  padding: 0;
   font-size: 14px;
   font-weight: 500;
   line-height: 118%;
@@ -85,7 +88,6 @@
 
 .stocks-menu__social {
   display: flex;
-  position: absolute;
   min-width: 45%;
 
   @media (max-width: $tablet-width) {
