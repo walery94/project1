@@ -58,6 +58,18 @@
   display: none;
 }
 
+.store--shop {
+  margin-bottom: 40px;
+}
+
+.store--shop .card {
+  border: 1px solid #E0E0E0;
+}
+
+.store--shop h2 {
+  color: #222222;
+}
+
 @media (max-width: $tablet-width) {
 
   .store {
@@ -190,5 +202,13 @@
 
   .store--services .store__container {
     min-height: 190px;
+  }
+
+  .store--shop h2 {
+    width: 327px;
+    margin-bottom: 13px;
+
+    font-size: 36px;
+    line-height: 39px;
   }
 }

@@ -47,6 +47,41 @@
   margin-right: 25px;
 }
 
+.events--shop {
+  margin-bottom: 40px;
+}
+
+.events--shop .card {
+  border: 1px solid #E0E0E0;
+}
+
+.events--shop h2 {
+  margin-bottom: 25px;
+  color: #222222;
+}
+
+.events--shop .card:hover {
+  background-color: #00AED6;
+}
+
+.events--shop .card:hover h3,
+.events--shop .card:hover b,
+.events--shop .card:hover p {
+  color: #ffffff;
+}
+
+.events--shop .card:hover b {
+  border: 0.5px solid #ffffff;
+
+  &::before {
+    border: 0.5px solid #ffffff;
+  }
+}
+
+.events--shop .card:hover .card__clock {
+  fill: #ffffff;
+}
+
 @media (max-width: $tablet-width) {
 
   .events__box {
@@ -120,5 +155,10 @@
 
   .events__item .slick-slide {
     width: 220px;
+  }
+
+  .events--shop h2 {
+    font-size: 36px;
+    line-height: 39px;
   }
 }
