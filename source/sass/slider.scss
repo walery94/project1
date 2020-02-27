@@ -39,6 +39,30 @@
   transform: rotate(180deg);
 }
 
+.slider--shop {
+  width: 100%;
+}
+
+.slider--shop .slider__list {
+  width: 100%;
+}
+
+.slider--shop .slick-slide {
+  margin-left: 8px;
+}
+
+.slider--shop .slider__button {
+  top: 220px;
+}
+
+.slider--shop .slider__button--prev {
+  left: 16px;
+}
+
+.slider--shop .slider__button--next {
+  right: 16px;
+}
+
 @media (max-width: $tablet-width) {
 
   .slider {
