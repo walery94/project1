@@ -47,6 +47,7 @@
   line-height: 96%;
   letter-spacing: -0.01em;
   text-decoration: none;
+  hyphens: auto;
   color: $text-color;
 
   @media (max-width: $tablet-width) {

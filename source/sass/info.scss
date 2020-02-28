@@ -24,6 +24,7 @@
   font-size: 48px;
   line-height: 44px;
   letter-spacing: -0.01em;
+  hyphens: auto;
 }
 
 .info__box p {
@@ -33,7 +34,7 @@
 
   font-size: 16px;
   line-height: 19px;
-  color: #7D7D7D;
+  color: #7d7d7d;
 }
 
 .info__form {
@@ -47,13 +48,13 @@
   padding-bottom: 17px;
   padding-left: 16px;
 
-  border: 1px solid #E0E0E0;
+  border: 1px solid $border;
   border-radius: 5px 0 0 5px;
 
   box-sizing: border-box;
 
   &::placeholder {
-    color: #7D7D7D;
+    color: #7d7d7d;
   }
 }
 
@@ -64,12 +65,17 @@
 
   color: #ffffff;
 
-  background-color: #00AED6;
+  background-color: #00aed6;
   border: none;
   border-radius: 0 5px 5px 0;
 
   box-sizing: border-box;
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
 }
 
 .info__container {
@@ -86,6 +92,11 @@
 
 .info__icon {
   margin-bottom: 16px;
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
 }
 
 .info__icon--fb,
@@ -98,18 +109,17 @@
 }
 
 .info__icon--fb {
-  background-color: #3C5A99;
+  background-color: #3c5a99;
 }
 
 .info__icon--vk {
-  background-color: #5181B8;
+  background-color: #5181b8;
 }
 
 .info__fb,
 .info__vk,
 .info__od {
   fill: #ffffff;
-
 }
 
 .info__fb {
@@ -132,15 +142,15 @@
 }
 
 .info__icon--inst {
-  background: radial-gradient(179.06% 43.44% at -16.75% 7.2%, #3771C8 0%, #3771C8 12.8%, rgba(102, 0, 255, 0) 100%), radial-gradient(92.18% 99.11% at 26.56% 107.7%, #FFDD55 0%, #FFDD55 10%, #FF543E 50%, #C837AB 100%), #D73576;
+  background: radial-gradient(179.06% 43.44% at -16.75% 7.2%, #3771c8 0%, #3771c8 12.8%, rgba(102, 0, 255, 0) 100%), radial-gradient(92.18% 99.11% at 26.56% 107.7%, #ffdd55 0%, #ffdd55 10%, #ff543e 50%, #c837ab 100%), #d73576;
 }
 
 .info__icon--od {
-  background-color: #F7931E;
+  background-color: #f7931e;
 }
 
 .info__icon--youtube {
-  background-color: #FF0000;
+  background-color: #ff0000;
 }
 
 .info__inst {
@@ -152,7 +162,7 @@
   margin-left: 25px;
   margin-top: 13px;
 
-  stroke: #FF0000;
+  stroke: #ff0000;
   fill: #ffffff;
 }
 
@@ -162,11 +172,16 @@
 }
 
 .icon-youtube-play {
-  fill: #FF0000;
+  fill: #ff0000;
 }
 
 .info__app {
   background-color: #000000;
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
 }
 
 .info__app--apple {
@@ -206,10 +221,20 @@
   line-height: 17px;
   color: #222222;
   text-decoration: none;
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
 }
 
 .info__articles a {
   font-weight: 600;
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
 }
 
 .info__menu {

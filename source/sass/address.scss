@@ -1,13 +1,13 @@
-.adress {
+.address {
   margin-bottom: 58px;
 }
 
-.adress__box {
+.address__box {
   width: 1024px;
   margin: 0 auto;
 }
 
-.adress__box h2 {
+.address__box h2 {
   margin: 0;
   margin-bottom: 24px;
 
@@ -15,32 +15,33 @@
   font-size: 48px;
   line-height: 44px;
   letter-spacing: -0.01em;
-  color: #222222;;
+  hyphens: auto;
+  color: #222222;
 }
 
-.adress__list {
+.address__list {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 25px;
 }
 
-.adress__button {
+.address__button {
   margin-right: 8px;
   margin-bottom: 8px;
 }
 
-.adress__container {
+.address__container {
   display: flex;
   justify-content: space-between;
 }
 
-.adress__info {
+.address__info {
   width: 325px;
 }
 
-.adress__item,
-.adress__button,
-.adress__taxi {
+.address__item,
+.address__button,
+.address__taxi {
   position: relative;
   display: block;
   margin-bottom: 23px;
@@ -52,26 +53,27 @@
   text-decoration: none;
 }
 
-.adress__button {
-  margin-bottom: 8px;
-}
-
-.adress__item {
+.address__item {
   margin-top: 3px;
   margin-left: 30px;
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
 }
 
-.adress__item span {
+.address__item span {
   position: absolute;
   top: -3px;
   left: -30px;
 }
 
-.adress__item--scheme {
+.address__item--scheme {
   margin-bottom: 18px;
 }
 
-.adress__taxi {
+.address__taxi {
   width: 100%;
   padding-left: 119px;
   padding-top: 20px;
@@ -80,10 +82,15 @@
   border: 1px solid #E0E0E0;
   border-radius: 5px;
   box-sizing: border-box;
-  box-shadow: 0px 12px 16px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.08);
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
 }
 
-.adress__taxi span {
+.address__taxi span {
   position: absolute;
   display: block;
   top: 16px;
@@ -98,7 +105,7 @@
 
 @media (max-width: $tablet-width) {
 
-  .adress__box {
+  .address__box {
     width: 100%;
     margin-left: 24px;
 
@@ -110,11 +117,11 @@
     }
   }
 
-  .adress__container {
+  .address__container {
     display: block;
   }
 
-  .adress__info {
+  .address__info {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -125,25 +132,25 @@
     }
   }
 
-  .adress__map {
+  .address__map {
     margin-bottom: 24px;
   }
 
-  .adress__item {
+  .address__item {
     width: 260px;
   }
 
-  .adress__taxi {
+  .address__taxi {
     width: 450px;
     margin: 0 auto;
     padding-left: 185px;
   }
 
-  .adress__taxi span {
+  .address__taxi span {
     left: 150px;
   }
 
-  .adress--clothes .adress__box {
+  .address--clothes .address__box {
     max-width: 768px;
     margin: 0 auto;
   }
@@ -151,12 +158,12 @@
 
 @media (max-width: $mobile-width) {
 
-  .adress {
+  .address {
     margin-top: -45px;
     margin-bottom: 29px;
   }
 
-  .adress__box {
+  .address__box {
     width: 100%;
     margin-left: 0;
 
@@ -167,19 +174,19 @@
     }
   }
 
-  .adress__title,
-  .adress__list {
+  .address__title,
+  .address__list {
     width: 328px;
     margin: 0 auto;
   }
 
-  .adress__title--shops,
-  .adress__list--shops {
+  .address__title--shops,
+  .address__list--shops {
     width: 100%;
     margin: 0;
   }
 
-  .adress__box h2 {
+  .address__box h2 {
     margin-bottom: 16px;
 
     font-weight: bold;
@@ -187,20 +194,20 @@
     line-height: 39px;
   }
 
-  .adress__button {
+  .address__button {
     margin-bottom: 4px;
   }
 
-  .adress--clothes .adress__map {
+  .address--clothes .address__map {
     margin-bottom: 22px;
   }
 
-  .adress__map img {
+  .address__map img {
     width: 352px;
     height: 169px;
   }
 
-  .adress--clothes .adress__map img {
+  .address--clothes .address__map img {
     display: block;
     width: 352px;
     height: 169px;
@@ -208,43 +215,43 @@
     margin-top: -4px;
   }
 
-  .adress__container {
+  .address__container {
     display: block;
   }
 
-  .adress__info {
+  .address__info {
     display: block;
     width: 100%;
   }
 
-  .adress--clothes .adress__info {
+  .address--clothes .address__info {
     width: 328px;
     margin: 0 auto;
   }
 
-  .adress__map {
+  .address__map {
     margin-bottom: 14px;
   }
 
-  .adress__item {
+  .address__item {
     margin-left: 46px;
     width: 260px;
   }
 
-  .adress--clothes .adress__item {
+  .address--clothes .address__item {
     margin-left: 31px;
   }
 
-  .adress__taxi {
+  .address__taxi {
     width: 328px;
     padding-left: 120px;
   }
 
-  .adress__taxi span {
+  .address__taxi span {
     left: 88px;
   }
 
-  .adress--shop {
+  .address--shop {
     margin-top: 0;
   }
 }

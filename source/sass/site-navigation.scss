@@ -6,20 +6,22 @@
   border-bottom: 1px solid $border;
 
   @media (max-width: $tablet-width) {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-
-  @media (max-width: $mobile-width) {
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
 .site-navigation__logo {
+  position: relative;
+  left: 0;
+  width: 205px;
   margin-right: 5%;
   padding-top: 18px;
   padding-bottom: 10px;
+
+  @media (max-width: $tablet-width) {
+    padding-left: 3%;
+  }
 }
 
 .site-navigation__logo svg {
@@ -32,7 +34,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 61%;
+  width: 63%;
   margin: 0;
   padding: 0;
   padding-top: 20px;
@@ -44,7 +46,7 @@
   @media (max-width: $tablet-width) {
     position: absolute;
     left: 50%;
-    top: 28%;
+    top: 35%;
     display: block;
     z-index: 1;
     width: 328px;
@@ -57,7 +59,7 @@
   }
 
   @media (max-width: $mobile-width) {
-    top: 40%;
+    top: 45%;
   }
 
   &--shops {
@@ -173,14 +175,14 @@
   justify-content: space-between;
   width: 7%;
   margin: 0;
-  margin-left: 4%;
+  margin-left: 3%;
   padding: 0;
   padding-top: 24px;
   padding-bottom: 10px;
   list-style: none;
 
   @media (max-width: $tablet-width) {
-    width: 114px;
+    width: 115px;
     margin: 0;
     padding: 0;
   }
@@ -197,7 +199,8 @@
   @media (max-width: $tablet-width) {
     padding-top: 24px;
     padding-bottom: 18px;
-    padding-left: 20px;
+    padding-left: 13%;
+    padding-right: 13%;
     border-left: 1px solid $border;
   }
 }
