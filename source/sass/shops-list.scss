@@ -35,6 +35,7 @@
   font-weight: 700;
   line-height: 108%;
   letter-spacing: -0.01em;
+  hyphens: auto;
   color: $text-color;
 
   @media (max-width: $tablet-width) {

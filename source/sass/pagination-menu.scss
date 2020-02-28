@@ -4,6 +4,7 @@
 }
 
 .pagination-menu__search-form {
+  width: 75%;
   position: relative;
 
   &::before {
@@ -20,6 +21,8 @@
   }
 
   @media (max-width: $tablet-width) {
+    width: 100%;
+
     &::before {
       left: 30px;
     }
@@ -52,6 +55,9 @@
   &:hover,
   &:focus {
     opacity: 0.5;
+    border-radius: 0;
+    box-shadow: none;
+    outline: none;
   }
 
   @media (max-width: $tablet-width) {

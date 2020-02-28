@@ -5,6 +5,7 @@
 .events__box {
   width: 1024px;
   margin: 0 auto;
+  padding-top: 100px;
 }
 
 .events h2 {
@@ -16,6 +17,7 @@
   line-height: 44px;
   letter-spacing: -0.01em;
   color: #ffffff;
+  hyphens: auto;
 }
 
 .events h2 span:last-child {
