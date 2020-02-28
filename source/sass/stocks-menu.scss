@@ -11,7 +11,6 @@
       content: "";
       position: absolute;
       top: 16px;
-      //right: -30px;
       left: 215px;
       align-content: center;
       width: 19px;
@@ -24,8 +23,12 @@
 }
 
 .stocks-menu__paragraph {
+  margin: 0;
+  margin-top: 13px;
+  margin-bottom: 17px;
+  padding: 0;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 300;
   line-height: 118%;
   color: #7d7d7d;
 
@@ -48,8 +51,11 @@
   font-weight: 500;
   line-height: 108%;
   border: 1px solid $border;
-  border-right-style: none;
   border-radius: 5px 0 0 5px;
+
+  &:invalid {
+    box-shadow: none;
+  }
 
   &:hover,
   &:focus {
@@ -69,6 +75,7 @@
   line-height: 108%;
   color: $complementary-color;
   border: 1px solid $border;
+  border-left-style: none;
   border-radius: 0 5px 5px 0;
   background-color: #ffffff;
   cursor: pointer;
@@ -85,7 +92,6 @@
 
 .stocks-menu__social {
   display: flex;
-  position: absolute;
   min-width: 45%;
 
   @media (max-width: $tablet-width) {

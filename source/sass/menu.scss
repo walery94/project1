@@ -1,7 +1,7 @@
 .menu {
   width: 88.9%;
   margin: 0 auto;
-  margin-top: 32px;
+  margin-top: 43px;
   padding-left: 5.5%;
   padding-right: 5.5%;
 
@@ -47,6 +47,7 @@
   line-height: 96%;
   letter-spacing: -0.01em;
   text-decoration: none;
+  hyphens: auto;
   color: $text-color;
 
   @media (max-width: $tablet-width) {
