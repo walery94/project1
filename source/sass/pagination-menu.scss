@@ -61,6 +61,8 @@
   }
 
   @media (max-width: $tablet-width) {
+    padding-top: 17px;
+    padding-bottom: 16px;
     padding-left: 60px;
 
     &:first-of-type {

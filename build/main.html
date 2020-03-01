@@ -13,7 +13,7 @@
   <h1 class="visually-hidden">Ривьера</h1>
   <section class="site-navigation">
     <h2 class="visually-hidden">Навигация по сайту</h2>
-    <a class="site-navigation__logo" href="#">
+    <a class="site-navigation__logo">
       <svg width="205" height="24">
         <use xlink:href="#logo"></use>
       </svg>
@@ -29,18 +29,20 @@
         <svg width="20" height="20">
           <use xlink:href="#door"></use>
         </svg>
+        <span class="visually-hidden">Вход</span>
       </a></li>
       <li><a href="menu.html">
         <svg width="24" height="20">
           <use xlink:href="#menu"></use>
         </svg>
+        <span class="visually-hidden">Меню</span>
       </a></li>
     </ul>
   </section>
   <nav class="pagination">
     <h2 class="visually-hidden">Постраничная навигация</h2>
     <form class="pagination__search-form">
-      <input class="pagination__search-input" type="search" id="search" placeholder="Поиск всего">
+      <input class="pagination__search-input" type="search" id="search" placeholder="Поиск всего" aria-label="Кнопка поиска">
       <label class="visually-hidden" for="search" aria-label="Поиск"></label>
     </form>
     <ul class="pagination__list">
@@ -60,12 +62,6 @@
   </nav>
   <section class="banner">
     <h2 class="banner__title"><span>Торгово-</span>развлекательный центр<span>в Москве</span></h2>
-    <picture>
-      <!-- 1x: 360px; 2x: 720px -->
-      <source media="(max-width: 767px)" srcset="img/banner-mobile@1x.png, img/banner-mobile@2x.png 2x">
-      <!-- 1x: 1152px; 2x: 2304px -->
-      <img class="banner__image" src="img/banner-desktop@1x.png" srcset="img/banner-desktop@2x.png 2x" width="1152" height="569" alt="Ривьера">
-    </picture>
   </section>
 </header>
   <svg style="display: none">

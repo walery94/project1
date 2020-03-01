@@ -29,10 +29,7 @@
 }
 
 .map-menu__image {
-  position: relative;
-  top: -40px;
-  left: 50%;
-  margin-left: -576px;
+  margin: 0 auto;
 
   @media (max-width: $tablet-width) {
     display: none;
