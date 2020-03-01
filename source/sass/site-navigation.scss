@@ -46,20 +46,16 @@
   @media (max-width: $tablet-width) {
     position: absolute;
     left: 50%;
-    top: 35%;
+    top: 45%;
     display: block;
     z-index: 1;
-    width: 328px;
+    width: 320px;
     height: 227px;
     margin-left: -164px;
     padding: 0;
     border-radius: 5px;
     background-color: #ffffff;
     box-shadow: 0 12px 16px rgba(0, 0, 0, 0.08);
-  }
-
-  @media (max-width: $mobile-width) {
-    top: 45%;
   }
 
   &--shops {
@@ -177,12 +173,12 @@
   margin: 0;
   margin-left: 3%;
   padding: 0;
-  padding-top: 24px;
+  padding-top: 19px;
   padding-bottom: 10px;
   list-style: none;
 
   @media (max-width: $tablet-width) {
-    width: 115px;
+    width: 100px;
     margin: 0;
     padding: 0;
   }
@@ -199,7 +195,7 @@
   @media (max-width: $tablet-width) {
     padding-top: 24px;
     padding-bottom: 18px;
-    padding-left: 13%;
+    padding-left: 11%;
     padding-right: 13%;
     border-left: 1px solid $border;
   }
