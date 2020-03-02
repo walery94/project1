@@ -1,10 +1,14 @@
 .slider {
   position: relative;
-  width: 822px;
+  width: 826px;
 }
 
 .slider__list {
-  width: 822px;
+  width: 826px;
+}
+
+.slider .slick-slide {
+  margin-left: 4px;
 }
 
 .slider__button {
@@ -21,14 +25,18 @@
   border-radius: 5px;
   cursor: pointer;
   outline: none;
+
+  &:hover {
+    opacity: 0.8;
+  }
 }
 
 .slider__button--next {
-  right: 20px;
+  right: 15px;
 }
 
 .slider__button--prev {
-  left: 7px;
+  left: 15px;
 }
 
 .slider__arrow {
