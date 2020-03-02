@@ -18,6 +18,10 @@
   border-radius: 5px;
   box-sizing: border-box;
   overflow: hidden;
+
+  &:hover {
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.5);
+  }
 }
 
 .card img {
@@ -103,6 +107,10 @@
 
 .card__box:last-child {
   margin-bottom: 0;
+}
+
+.card__link:hover {
+  opacity: 0.5;
 }
 
 .card__box span {
