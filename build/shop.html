@@ -18,7 +18,7 @@
         <use xlink:href="#logo"></use>
       </svg>
     </a>
-    <ul class="site-navigation__info">
+    <ul class="site-navigation__info site-navigation__info--shops">
       <li class="site-navigation__item site-navigation__item--address"><a href="#">Автозаводская, 18</a></li>
       <li class="site-navigation__item site-navigation__item--clock"><a href="#">С 10 до 22 каждый день</a></li>
       <li class="site-navigation__item site-navigation__item--phone"><a href="tel:+74952699999">+7 495 269-99-99</a></li>
@@ -202,7 +202,7 @@
         </div>
         <div class="slider__slid">
           <picture>
-            <source media="(max-width: 767px)" srcset="img/uniclo-banner-mobile-img1@1x.png 1x, img/uniclo-banner-mobile-img1@2x.png 2x">
+            <!-- <source media="(max-width: 767px)" srcset="img/uniclo-banner-mobile-img1@1x.png 1x, img/uniclo-banner-mobile-img1@2x.png 2x"> -->
             <img src="img/uniclo-banner-desktop-img2@1x.png" srcset="img/uniclo-banner-desktop-img2@2x.png 2x" alt="Фитнес зал, тренажеры">
           </picture>
         </div>
@@ -214,7 +214,7 @@
         </div>
         <div class="slider__slid">
           <picture>
-            <source media="(max-width: 767px)" srcset="img/uniclo-banner-mobile-img1@1x.png 1x, img/uniclo-banner-mobile-img1@2x.png 2x">
+            <!-- <source media="(max-width: 767px)" srcset="img/uniclo-banner-mobile-img1@1x.png 1x, img/uniclo-banner-mobile-img1@2x.png 2x"> -->
             <img src="img/uniclo-banner-desktop-img2@1x.png" srcset="img/uniclo-banner-desktop-img2@2x.png 2x" alt="Фитнес зал, тренажеры">
           </picture>
         </div>
@@ -542,69 +542,6 @@
   </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="slick/slick.min.js"></script>
-  <script type="text/javascript">
-    $(document).ready(function(){
-      $('.slider__list').slick({
-        dots: false,
-        infinite: true,
-        speed: 300,
-        nextArrow: document.querySelector('.slider__button--next'),
-        prevArrow: document.querySelector('.slider__button--prev'),
-        slidesToShow: 2,
-        slidesToScroll: 2,
-        variableWidth: true,
-        responsive: [
-          {
-            breakpoint: 767,
-            settings: {
-              arrows : false,
-              slidesToShow: 1
-            }
-          }
-        ]
-      });
-      $(window).on('load resize', function() {
-        if ($(window).width() < 1024) {
-            $('.events__items:not(.slick-initialized)').slick({
-              dots: false,
-              infinite: true,
-              speed: 100,
-              slidesToShow: 2,
-              arrows : false,
-              variableWidth: true,
-              responsive: [
-                {
-                  breakpoint: 767,
-                  settings: {
-                    slidesToShow: 1
-                  }
-                }
-              ]
-            });
-            $('.store__items--shops:not(.slick-initialized)').slick({
-              dots: false,
-              infinite: true,
-              speed: 100,
-              slidesToShow: 2,
-              arrows : false,
-              variableWidth: true
-            });
-            $('.store__items--services:not(.slick-initialized)').slick({
-              dots: false,
-              rows: 2,
-              infinite: true,
-              speed: 100,
-              slidesToShow: 2,
-              arrows : false,
-              variableWidth: true
-            });
-        } else {
-            $(".events__items.slick-initialized").slick("unslick");
-            $(".store__items--shops.slick-initialized").slick("unslick");
-            $(".store__items--services.slick-initialized").slick("unslick");
-        }
-        });
-    });
-  </script>
+  <script src="js/slider.js"></script>
 </body>
 </html>
