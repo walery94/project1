@@ -56,7 +56,9 @@
 .address__item {
   margin-top: 3px;
   margin-left: 30px;
+}
 
+.address__item--hover {
   &:hover,
   &:focus {
     opacity: 0.5;
