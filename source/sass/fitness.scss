@@ -68,13 +68,18 @@
 .fitness__arrow {
   margin-top: 67px;
   fill: #FFFFFF;
+
+  &:hover {
+    opacity: 0.5;
+  }
 }
 
 @media (max-width: $tablet-width) {
 
   .fitness h2 {
     width: 100%;
-    margin-left: 24px;
+    padding-left: 24px;
+    box-sizing: border-box;
   }
 
   .fitness__box {
@@ -104,7 +109,7 @@
   }
 
   .fitness h2 {
-    margin-left: 16px;
+    padding-left: 16px;
   }
 
   .fitness h2 span:first-child {
