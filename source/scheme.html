@@ -3508,6 +3508,9 @@
     <symbol id="door" viewBox="0 0 18 20">
       <path d="M4.5 0.25V7.75H6V1.75H16.5V18.25H6V12.25H4.5V19.75H18V0.25H4.5ZM9.25781 6.46094L8.17969 7.53906L9.89062 9.25H0.75V10.75H9.89062L8.17969 12.4609L9.25781 13.5391L12.2578 10.5391L12.7734 10L12.2578 9.46094L9.25781 6.46094Z"/>
     </symbol>
+    <symbol id="menu" viewBox="0 0 24 20">
+      <path d="M0 0V2H24V0H0ZM0 9V11H24V9H0ZM0 18V20H24V18H0Z"/>
+    </symbol>
     <symbol id="close" viewBox="0 0 20 20">
       <path d="M1.83477 0L0 1.83477L8.16523 10L0 18.1652L1.83477 20L10 11.8348L18.1652 20L20 18.1652L11.8348 10L20 1.83477L18.1652 0L10 8.16523L1.83477 0Z"/>
     </symbol>
@@ -3533,11 +3536,11 @@
     </symbol>
   </svg>
   <div class="wrapper-menu">
-    <header class="main-header">
+    <header class="main-header main-header--scheme">
       <h1 class="visually-hidden">Ривьера</h1>
-      <section class="site-navigation">
+      <section class="site-navigation site-navigation--scheme">
         <h2 class="visually-hidden">Навигация по сайту</h2>
-        <a class="site-navigation__logo" href="#">
+        <a class="site-navigation__logo site-navigation__logo--scheme" href="main.html">
           <svg width="205" height="24">
             <use xlink:href="#logo"></use>
           </svg>
@@ -3547,32 +3550,30 @@
           <li class="site-navigation__item site-navigation__item--clock"><a href="#">С 10 до 22 каждый день</a></li>
           <li class="site-navigation__item site-navigation__item--phone"><a href="tel:+74952699999">+7 495 269-99-99</a></li>
         </ul>
-        <ul class="site-navigation__user">
-          <li>
-            <a class="site-navigation__link site-navigation__link--door" href="#">
+        <ul class="site-navigation__user site-navigation__user--scheme">
+          <li><a href="#">
             <svg width="20" height="20">
               <use xlink:href="#door"></use>
             </svg>
-          </a>
-          </li>
-          <li>
-            <a class="site-navigation__link site-navigation__link--close" href="main.html">
-            <svg width="20" height="20">
-              <use xlink:href="#close"></use>
+            <span class="visually-hidden">Вход</span>
+          </a></li>
+          <li><a href="menu.html">
+            <svg width="24" height="20">
+              <use xlink:href="#menu"></use>
             </svg>
-          </a>
-          </li>
+            <span class="visually-hidden">Меню</span>
+          </a></li>
         </ul>
       </section>
-      <nav class="pagination-menu">
+      <nav class="pagination-menu pagination-menu--scheme">
         <h2 class="visually-hidden">Постраничная навигация</h2>
-        <form class="pagination-menu__search-form">
-          <input class="pagination-menu__search-input" type="search" id="searct-all" placeholder="Поиск всего">
-          <label class="visually-hidden" for="searct-all" aria-label="Поиск всего"></label>
-          <input class="pagination-menu__search-input" type="search" id="searct" placeholder="Поиск">
-          <label class="visually-hidden" for="searct" aria-label="Поиск"></label>
+        <form class="pagination-menu__search-form pagination-menu__search-form--scheme">
+          <input class="pagination-menu__search-input pagination-menu__search-input--scheme" type="search" id="search-all" placeholder="Поиск всего">
+          <label class="visually-hidden" for="search-all" aria-label="Поиск всего"></label>
+          <input class="pagination-menu__search-input" type="search" id="search" placeholder="Поиск" aria-label="Поиск">
+          <label class="visually-hidden" for="search" aria-label="Поиск"></label>
         </form>
-        <a class="pagination-menu__scheme" href="#">Схема <span>Ривьеры</span></a>
+        <a class="pagination-menu__scheme pagination-menu__scheme--active">Схема <span>Ривьеры</span></a>
       </nav>
     </header>
   </div>
