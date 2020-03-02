@@ -14,7 +14,7 @@
   font-weight: bold;
   font-size: 48px;
   line-height: 44px;
-  letter-spacing: -0.01em;
+  letter-spacing: 0.3px;
   hyphens: auto;
   color: #222222;
 }
@@ -22,7 +22,7 @@
 .address__list {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 25px;
+  margin-bottom: 12px;
 }
 
 .address__button {
