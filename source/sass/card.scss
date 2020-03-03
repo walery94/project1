@@ -214,7 +214,7 @@
 }
 
 .card--cinema {
-  width: 238px;
+  width: calc(25% - (24px * 3/4));
   min-height: 518px;
   padding-bottom: 13px;
 }
