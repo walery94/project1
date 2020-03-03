@@ -1,9 +1,11 @@
 .store {
   margin-bottom: 64px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .store__box {
-  width: 1024px;
+  max-width: 1024px;
   margin: 0 auto;
 }
 
@@ -75,6 +77,8 @@
 
   .store {
     margin-bottom: 24px;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .store__box {
