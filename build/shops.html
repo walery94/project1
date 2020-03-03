@@ -81,19 +81,21 @@
         <svg width="20" height="20">
           <use xlink:href="#door"></use>
         </svg>
+        <span class="visually-hidden">Вход</span>
       </a></li>
       <li><a href="menu.html">
         <svg width="24" height="20">
           <use xlink:href="#menu"></use>
         </svg>
+        <span class="visually-hidden">Меню</span>
       </a></li>
     </ul>
   </section>
   <nav class="pagination">
     <h2 class="visually-hidden">Постраничная навигация</h2>
     <form class="pagination__search-form">
-      <input class="pagination__search-input" type="search" id="searct" placeholder="Поиск всего">
-      <label class="visually-hidden" for="searct" aria-label="Поиск"></label>
+      <input class="pagination__search-input" type="search" id="search" placeholder="Поиск всего" aria-label="Поиск всего">
+      <label class="visually-hidden" for="search" aria-label="Поиск"></label>
     </form>
     <ul class="pagination__list">
       <li class="pagination__item"><a class="pagination__link--shops">Магазины</a></li>
@@ -183,7 +185,7 @@
                 <use xlink:href="#clock"></use>
               </svg>
             </span>Ежедневно с 10:00 до 22:00</a>
-        <a class="address__item address__item--scheme address__item--hover"><span>
+        <a class="address__item address__item--scheme address__item--hover" href="scheme.html"><span>
               <svg width="24" height="24">
                 <use xlink:href="#floor3"></use>
               </svg>
@@ -200,7 +202,7 @@
       <div class="info__container">
         <form class="info__form" action="#">
           <div class="info__email">
-            <input type="email" name="email" id="email" placeholder="Ваша почта">
+            <input type="email" name="email" id="email" placeholder="Ваша почта" aria-label="Поле для ввода почты">
             <label for="email"></label>
           </div>
           <div class="info__submit">
