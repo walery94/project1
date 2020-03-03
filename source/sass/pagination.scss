@@ -14,16 +14,13 @@
 }
 
 .pagination a {
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 108%;
   text-decoration: none;
   color: $text-color;
 }
 
 .pagination__list {
   display: flex;
-  justify-content: space-between;
+  //justify-content: space-between;
   flex-wrap: wrap;
   width: 82%;
   margin: 0;
@@ -36,8 +33,17 @@
 }
 
 .pagination__item {
+  margin-right: 17px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 108%;
+
   &:last-of-type {
     margin-right: 0;
+  }
+
+  @media (max-width: 1120px) {
+    font-size: 14px;
   }
 }
 
@@ -52,6 +58,7 @@
 
 .pagination__search {
   display: flex;
+  justify-content: flex-end;
   flex-wrap: wrap;
   width: 190px;
   margin: 0;
@@ -83,6 +90,7 @@
     background-image: url("../img/icon-search.svg");
     background-repeat: no-repeat;
     background-position: center;
+    cursor: pointer;
   }
 
   &--floor::before {
@@ -95,6 +103,7 @@
     background-image: url("../img/icon-floor3.svg");
     background-repeat: no-repeat;
     background-position: center;
+    cursor: pointer;
   }
 
   &--shops {
