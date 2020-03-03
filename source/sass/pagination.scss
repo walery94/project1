@@ -36,8 +36,6 @@
 }
 
 .pagination__item {
-  //margin-right: 0.8%;
-
   &:last-of-type {
     margin-right: 0;
   }
@@ -128,12 +126,20 @@
 
   @media (max-width: $tablet-width) {
     display: block;
+    position: relative;
     width: 100%;
     height: 56px;
     border-bottom: 1px solid $border;
 
     &::before {
-      top: 86px;
+      top: 17px;
+      left: 30px;
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+    &::before {
+      left: 16px;
     }
   }
 }
@@ -158,5 +164,9 @@
     font-size: 24px;
     border: none;
     cursor: pointer;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-left: 50px;
   }
 }
