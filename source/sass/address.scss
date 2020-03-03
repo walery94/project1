@@ -61,7 +61,8 @@
 .address__item--hover {
   &:hover,
   &:focus {
-    opacity: 0.5;
+    color: #00aed6;
+    cursor: pointer;
   }
 }
 
@@ -88,7 +89,7 @@
 
   &:hover,
   &:focus {
-    opacity: 0.5;
+    color: #00aed6;
   }
 }
 
@@ -173,6 +174,7 @@
   .address__box {
     width: 100%;
     margin-left: 0;
+    padding-left: 16px;
 
     &--shops {
       width: 92%;
@@ -183,8 +185,9 @@
 
   .address__title,
   .address__list {
-    width: 328px;
-    margin: 0 auto;
+    width: 100%;
+    padding-right: 16px;
+    box-sizing: border-box;
   }
 
   .address__title--shops,
@@ -229,6 +232,8 @@
   .address__info {
     display: block;
     width: 100%;
+    padding-right: 16px;
+    box-sizing: border-box;
   }
 
   .address--clothes .address__info {
@@ -241,8 +246,8 @@
   }
 
   .address__item {
+    width: 79.3%;
     margin-left: 46px;
-    width: 260px;
   }
 
   .address--clothes .address__item {
@@ -250,12 +255,12 @@
   }
 
   .address__taxi {
-    width: 328px;
-    padding-left: 120px;
+    width: 100%;
+    padding-left: 36.6%;
   }
 
   .address__taxi span {
-    left: 88px;
+    left:23.2%;
   }
 
   .address--shop {

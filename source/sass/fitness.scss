@@ -125,18 +125,21 @@
   }
 
   .fitness__description {
-    width: 328px;
+    width: 100%;
     padding-top: 0;
     padding-bottom: 0;
+    padding-left: 16px;
+    padding-right: 16px;
+    box-sizing: border-box;
   }
 
   .fitness__description p {
-    width: 176px;
+    width: 53.7%;
   }
 
   .fitness__container {
     flex-direction: column;
-    width: 138px;
+    max-width: 138px;
   }
 
   .fitness__link {

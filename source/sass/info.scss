@@ -296,12 +296,20 @@
 
 @media (max-width: $mobile-width) {
 
+  .info__box {
+    width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+    box-sizing: border-box;
+  }
+
   .info__box--shops {
     padding-left: 16px;
     padding-right: 16px;
   }
 
   .info__box h2 {
+    width: 100%;
     margin-bottom: 8px;
 
     font-weight: bold;
@@ -310,7 +318,7 @@
   }
 
   .info__box p {
-    width: 313px;
+    width: 100%;
 
     font-size: 14px;
     line-height: 17px;
@@ -319,7 +327,7 @@
 
   .info__form {
     display: block;
-    width: 328px;
+    width: 100%;
     margin-bottom: 21px;
   }
 
@@ -364,6 +372,7 @@
   }
 
   .info__social {
+    width: 100%;
     margin-bottom: 49px;
   }
 
