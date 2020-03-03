@@ -21,13 +21,22 @@
   position: relative;
   left: 0;
   width: 205px;
-  margin-right: 5%;
+  //margin-right: 5%;
   padding-top: 18px;
   padding-bottom: 10px;
+
+  @media (max-width: 1060px) {
+    margin-right: 4%;
+  }
 
   @media (max-width: $tablet-width) {
     padding-left: 4%;
   }
+
+  @media (max-width: 340px) {
+    margin-right: 2%;
+  }
+
 }
 
 .site-navigation__logo--scheme {
@@ -212,7 +221,7 @@
   }
 
   @media (max-width: 340px) {
-    width: 100px;
+    width: 85px;
   }
 }
 
