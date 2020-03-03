@@ -1,9 +1,11 @@
 .events {
   margin-bottom: 64px;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 .events__box {
-  width: 1024px;
+  max-width: 1024px;
   margin: 0 auto;
   padding-top: 100px;
 }
@@ -85,6 +87,11 @@
 }
 
 @media (max-width: $tablet-width) {
+
+  .events {
+    padding-right: 0;
+    padding-left: 0;
+  }
 
   .events__box {
     width: 100%;
