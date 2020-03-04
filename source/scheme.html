@@ -3483,14 +3483,7 @@
 <body style='height: 100%;'>
   <svg style="display: none">
     <symbol id="icon-cards" viewBox="0 0 24 24">
-      <g clip-path="url(#clip0)">
-        <path d="M2 1C0.90625 1 0 1.90625 0 3V14C0 14.9219 0.640625 15.7148 1.5 15.9375L1.21875 17.3125C1.00781 18.3828 1.74219 19.4453 2.8125 19.6562L19.4688 22.9687C20.5391 23.1797 21.6328 22.4453 21.8438 21.375L23.9688 10.5937C24.1797 9.52344 23.4453 8.46094 22.375 8.25L21 7.96875V3C21 1.90625 20.0938 1 19 1H2ZM2 3H19V5H2V3ZM2 8H19V14H2V8ZM21 10L22 10.2187L21.625 12.1875L21 12.0625V10ZM20.6875 15.0625L21.0312 15.125L19.875 21L3.1875 17.7187L3.53125 16H19C19.707 16 20.332 15.6289 20.6875 15.0625Z"/>
-      </g>
-      <defs>
-        <clipPath id="clip0">
-          <rect width="24" height="24" fill="white"/>
-        </clipPath>
-      </defs>
+      <path d="M2 1C0.90625 1 0 1.90625 0 3V14C0 14.9219 0.640625 15.7148 1.5 15.9375L1.21875 17.3125C1.00781 18.3828 1.74219 19.4453 2.8125 19.6562L19.4688 22.9687C20.5391 23.1797 21.6328 22.4453 21.8438 21.375L23.9688 10.5937C24.1797 9.52344 23.4453 8.46094 22.375 8.25L21 7.96875V3C21 1.90625 20.0938 1 19 1H2ZM2 3H19V5H2V3ZM2 8H19V14H2V8ZM21 10L22 10.2187L21.625 12.1875L21 12.0625V10ZM20.6875 15.0625L21.0312 15.125L19.875 21L3.1875 17.7187L3.53125 16H19C19.707 16 20.332 15.6289 20.6875 15.0625Z"/>
     </symbol>
     <symbol id="icon-elevator" viewBox="0 0 47.01 38">
       <path d="M21,11.94a1.82,1.82,0,0,0-1.73-1.13H12.1a1.72,1.72,0,0,0-1.73,1.12L7.19,21.6a1.58,1.58,0,0,0,.92,2,1.55,1.55,0,0,0,2-.92L11,20.44s0-.23,0,.77V34.62a2.11,2.11,0,1,0,4.21,0V25.86a.07.07,0,0,1,.07-.08h.79a.07.07,0,0,1,.07.08v8.76a2.11,2.11,0,1,0,4.21,0V21.21c0-1,.09-.7.09-.7l.81,2.2a1.55,1.55,0,0,0,2,.92,1.58,1.58,0,0,0,.92-2Z"/>
@@ -4489,29 +4482,23 @@
         disabled="disabled" href="#">
       </a>
     </div>
-    <div class='controls-block'>
-      <div class='controls-block__icon controls-block__icon--atm'>
-        <i>
+    <ul class='controls-block'>
+      <li class='controls-block__icon controls-block__icon--atm'>
           <svg class="controls-block__clock" width="24" height="22">
             <use xlink:href="#icon-cards"></use>
           </svg>
-        </i>
-      </div>
-      <div class='controls-block__icon controls-block__icon--elevator'>
-        <i>
+      </li>
+      <li class='controls-block__icon controls-block__icon--elevator'>
           <svg class="controls-block__elevator" width="23" height="19">
             <use xlink:href="#icon-elevator"></use>
           </svg>
-        </i>
-      </div>
-      <div class='controls-block__icon controls-block__icon--wc'>
-        <i>
+      </li>
+      <li class='controls-block__icon controls-block__icon--wc'>
           <svg class="controls-block__wc" width="27" height="13">
             <use xlink:href="#icon-wc"></use>
           </svg>
-        </i>
-      </div>
-    </div>
+      </li>
+    </ul>
     <ul class='scheme-floors-nav scheme__control scheme__control--floors-nav' id='scheme-floors-nav'>
       <li class='scheme-floors-nav__item'>
         <a class="button button--tertiary-icon js-scheme-floor-nav" data-floor="3" href="#"><b
