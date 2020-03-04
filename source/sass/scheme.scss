@@ -1,13 +1,8 @@
 .scheme {
-  height: calc(100vh - 118px);
   width: 100%;
   position: relative;
   overflow: hidden;
   background: #d4d8d9;
-
-  @media screen and (max-width: 767px) {
-    height: calc(100vh - 126px);
-  }
 }
 
 .scheme__control {
@@ -800,10 +795,6 @@
 .touchevents .scheme-popup {
   top: 9rem;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  -o-transform: translateX(-50%);
   transform: translateX(-50%);
 }
 
