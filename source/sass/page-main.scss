@@ -27,47 +27,7 @@
 //}
 .page-main {
   position: relative;
-}
-
-.banner {
-  position: relative;
-  padding-bottom: 75px;
-
-  &::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    z-index: 1;
-    width: 100%;
-    height: 75px;
-    background-image: url("../img/wave-top.svg");
-    background-repeat: repeat-x;
-    background-size: auto 75px;
-
-    @media (max-width: $tablet-width) {
-      display: none;
-    }
-  }
-}
-
-.store--services {
-  position: relative;
-
-  &::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    z-index: -1;
-    width: 100%;
-    height: 75px;
-    background-image: url("../img/background-mini-down-desktop.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    @media (max-width: $tablet-width) {
-      display: none;
-    }
-  }
+  overflow: hidden;
 }
 
 .page-main__backgrounds {
