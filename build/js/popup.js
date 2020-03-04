@@ -95,7 +95,14 @@ $(function() {
       else {
         headerHeight = parseInt(header.getBoundingClientRect().height);
       }
+<<<<<<< HEAD
       m -= headerHeight;
+=======
+
+      m -= headerHeight
+      console.log(m)
+
+>>>>>>> master
     })), s.css({
       display: "block",
       top: m - 15 + "px",
