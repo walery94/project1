@@ -83,6 +83,12 @@
     top: 45%;
   }
 
+  &--scheme {
+    @media (max-width: $tablet-width) {
+      display: none;
+    }
+  }
+
   &--shops {
     @media (max-width: $tablet-width) {
       display: none;

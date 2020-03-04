@@ -71,6 +71,16 @@
   display: none;
 }
 
+.page-shop__mask1 {
+  -webkit-clip-path: url(#page-shop-desktop1);
+  clip-path: url(#page-shop-desktop1);
+}
+
+.page-shop__mask2 {
+  -webkit-clip-path: url(#page-shop-desktop2);
+  clip-path: url(#page-shop-desktop2);
+}
+
 @media (max-width: $tablet-width) {
 
   .page-shop__box {
@@ -149,5 +159,15 @@
 
     font-size: 14px;
     line-height: 17px;
+  }
+
+  .page-shop__mask1 {
+    -webkit-clip-path: url(#page-shop-mobile1);
+    clip-path: url(#page-shop-mobile1);
+  }
+
+  .page-shop__mask2 {
+    -webkit-clip-path: url(#page-shop-mobile2);
+    clip-path: url(#page-shop-mobile2);
   }
 }
