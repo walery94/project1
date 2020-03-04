@@ -74,6 +74,16 @@
   }
 }
 
+.fitness__mask1 {
+  -webkit-clip-path: url(#svgPath-desktop1);
+  clip-path: url(#svgPath-desktop1);
+}
+
+.fitness__mask2 {
+  -webkit-clip-path: url(#svgPath-desktop2);
+  clip-path: url(#svgPath-desktop2);
+}
+
 @media (max-width: $tablet-width) {
 
   .fitness h2 {
@@ -144,5 +154,15 @@
 
   .fitness__link {
     align-self: flex-end;
+  }
+
+  .fitness__mask1 {
+    -webkit-clip-path: url(#svgPath-mobile1);
+    clip-path: url(#svgPath-mobile1);
+  }
+
+  .fitness__mask2 {
+    -webkit-clip-path: url(#svgPath-mobile2);
+    clip-path: url(#svgPath-mobile2);
   }
 }
