@@ -55,6 +55,10 @@
   margin-bottom: 40px;
 }
 
+.events--shop .events__box {
+  padding-top: 0;
+}
+
 .events--shop .card {
   border: 1px solid #E0E0E0;
 }
@@ -66,6 +70,8 @@
 
 .events--shop .card:hover {
   background-color: #00AED6;
+  border: 1px solid #ffffff;
+  box-shadow: none;
 }
 
 .events--shop .card:hover h3,

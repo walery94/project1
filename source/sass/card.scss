@@ -21,7 +21,7 @@
   cursor: pointer;
 
   &:hover {
-    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 12px 16px rgba(0, 0, 0, 0.08);
   }
 }
 
@@ -255,7 +255,7 @@
 }
 
 .card--clothes {
-  width: 238px;
+  width: calc(25% - (24px * 3/4));
   min-height: 458px;
 
   border: 1px solid #E0E0E0;
@@ -290,6 +290,10 @@
 
   .card--shops {
     width: 238px;
+  }
+
+  .card--clothes {
+    width: calc(33% - (22px * 2/3));
   }
 }
 
@@ -352,7 +356,7 @@
   }
 
   .card--clothes {
-    width: 156px;
+    width: calc(50% - (16px * 1/2));
     min-height: 188px;
     padding-bottom: 7px;
 
@@ -360,6 +364,10 @@
 
     &:hover {
       box-shadow: 0px 12px 16px rgba(0, 0, 0, 0.08);
+    }
+
+    @media (max-width: 359px) {
+      width: 156px;
     }
   }
 
@@ -414,7 +422,7 @@
     left: -20px;
   }
 
-  .card__discount p:last-child {
+  .card__discount p:nth-child(2) {
     color: #65AA0F;
   }
 }

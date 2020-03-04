@@ -5,8 +5,11 @@
 .page-shop__box {
   display: flex;
   justify-content: space-between;
-  max-width: 1024px;
+  max-width: 1056px;
   margin: 0 auto;
+  padding-left: 16px;
+  padding-right: 16px;
+  box-sizing: border-box;
 
   &:first-child {
     margin-bottom: -36px;
@@ -84,7 +87,7 @@
     display: block;
     position: absolute;
     top: 0;
-    right: 0;
+    right: 16px;
   }
 
   .page-shop__container {
@@ -102,8 +105,14 @@
     padding-top: 14px;
   }
 
+  .page-shop .store--shop {
+    margin-bottom: 70px;
+  }
+
   .page-shop__box {
-    max-width: 328px;
+    max-width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
 
     &:first-child {
       margin-bottom: 21px;
@@ -111,7 +120,7 @@
   }
 
   .page-shop__box h2 {
-    width: 232px;
+    width: 70.7%;
     margin-bottom: 8px;
 
     font-size: 36px;
@@ -128,14 +137,14 @@
   }
 
   .page-shop__box--logo {
+    width: 100%;
     margin-bottom: 30px;
-  }
-
-  .page-shop__container {
-    width: 326px;
+    padding-left: 16px;
+    padding-right: 18px;
   }
 
   .page-shop__container p {
+    width: 100%;
     margin-bottom: 17px;
 
     font-size: 14px;

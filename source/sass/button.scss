@@ -130,6 +130,10 @@
     padding-top: 10px;
     padding-bottom: 16px;
   }
+
+  .button--more span {
+    line-height: 8px;
+  }
 }
 
 @media (max-width: $mobile-width) {
