@@ -25,25 +25,32 @@
 //    background-size: contain;
 //  }
 //}
-
 .page-main {
   position: relative;
+}
 
-  &::before {
+.banner {
+  position: relative;
+  padding-bottom: 75px;
+
+  &::after {
     content: "";
     position: absolute;
-    top: 428px;
+    bottom: 0;
     z-index: 1;
     width: 100%;
     height: 75px;
-    background-image: url("../img/background-mini-up-desktop.png");
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: url("../img/wave-top.svg");
+    background-repeat: repeat-x;
+    background-size: auto 75px;
 
     @media (max-width: $tablet-width) {
       display: none;
     }
   }
+}
+.store--services {
+  position: relative;
 
   &::after {
     content: "";
