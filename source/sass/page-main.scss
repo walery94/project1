@@ -25,10 +25,14 @@
 //    background-size: contain;
 //  }
 //}
+.page-main {
+  position: relative;
+  overflow: hidden;
+}
 
 .page-main__backgrounds {
   position: absolute;
   width: 100%;
-  min-height: 6200px;
+  min-height: 6155px;
   z-index: -1;
 }
