@@ -240,6 +240,10 @@
   width: 238px;
   min-height: 220px;
   padding-top: 26px;
+
+  @media (max-width: 1053px) {
+    width: 230px;
+  }
 }
 
 .card--services h3 {

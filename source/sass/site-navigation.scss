@@ -96,7 +96,7 @@
 
 .site-navigation__item {
   position: relative;
-  margin-right: 66px;
+  margin-right: 61px;
 
   &:nth-of-type(3) {
     margin-right: 0;
@@ -203,23 +203,14 @@
 .site-navigation__user {
   display: flex;
   justify-content: space-between;
-  width: 7%;
   margin: 0;
-  margin-left: 3%;
   padding: 0;
-  padding-top: 19px;
-  padding-bottom: 10px;
   list-style: none;
 
   @media (max-width: $tablet-width) {
     justify-content: flex-start;
-    width: 110px;
     margin: 0;
     padding: 0;
-  }
-
-  @media (max-width: 340px) {
-    width: 85px;
   }
 }
 
@@ -231,32 +222,24 @@
 }
 
 .site-navigation__user a {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 15px;
+
   &:hover,
   &:focus {
     opacity: 0.5;
+  }
+
+  @media (max-width: 350px) {
+    padding: 0 12px;
   }
 }
 
 .site-navigation__user li {
   @media (max-width: $tablet-width) {
-    padding-top: 19px;
-    padding-bottom: 13px;
-    padding-left: 11%;
-    padding-right: 11%;
     border-left: 1px solid $border;
-
-    &:first-of-type {
-      margin-right: 11px;
-    }
-  }
-
-  @media (max-width: 340px) {
-    padding-left: 10%;
-    padding-right: 10%;
-
-    &:first-of-type {
-      margin-right: 5px;
-    }
   }
 }
 
