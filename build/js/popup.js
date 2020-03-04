@@ -81,13 +81,24 @@ $(function() {
   }
 
   function i(e, t) {
-    var s = $("#scheme-popup");
+    var s = $("#scheme-popup"), headerHeight, header;
     t && (m = parseInt(t.getBoundingClientRect().top + 5), p = parseInt(t.getBoundingClientRect().left + (t.getBoundingClientRect().right - t.getBoundingClientRect().left) / 2)), v && v.includes(e.id) && _.each(v, function(e) {
       $('.js-scheme-svg-item[data-id="' + e + '"]').attr("class", function(e, t) {
-        return t + " is-active"
+        return t + " is-active";
       })
     }), s.is(":hover") || ($(".scheme-popup__list").empty(), e && _.each(e.entities, function(e) {
       n(e)
+      var header = document.querySelector('.wrapper-menu');
+      if(!header) {
+        headerHeight = 0 ;
+      }
+      else {
+        headerHeight = parseInt(header.getBoundingClientRect().height);
+      }
+
+      m -= headerHeight
+      console.log(m)
+
     })), s.css({
       display: "block",
       top: m - 15 + "px",
@@ -227,16 +238,8 @@ $(function() {
       close: function(e) {
         $(e.target).removeClass("is-open"), b.hasClass("filtered") ? w.hasClass("rotate") || $("#scheme_filters").removeClass("filter-hidden") : $(".scheme__filter--block").toggleClass("show", !1)
       }
-    }).data("ui-autocomplete")._renderItem = function(e, t) {
-      if (e.addClass("search_autocomplete"), void 0 == t.entities[0].logo) var s = "<span class='icon'><i class='" + t.icon + "'></i></span>";
-      else var s = "<img class='logo' src='" + t.entities[0].logo + "' alt='" + t.label + "' />";
-      return $("<li>").attr("data-value", t.value).append(s).append("<span>" + t.label + "</span>").appendTo(e)
-    }, void 0 !== g) {
-    var Q = _.find(gon.schemeItems, function(e) {
-      return e.id === g
-    });
-    Q && o(Q)
-  }
+    })
+  )
   $("#scheme-floors-select").on("select2:closing", function() {
     $("#select2-scheme-floors-select-results li").each(function() {
       if ($(this).find(".dot").remove(), b.val().length > 0 || b.hasClass("filtered") && b.attr("data-filter").length > 0) {
@@ -286,7 +289,7 @@ $(function() {
   }).focusout(function() {
     $(this).val().length < 1 && (u(), E.find(".mdi").addClass("mdi-magnify").removeClass("mdi-close"))
   }).on("input", function() {
-    console.log("INPUT"), $(this).val().length < 1 ? (u(), k.autocomplete("close")) : (console.log("<1"), MODERNIZR_MQ_SM || d(!1))
+    $(this).val().length < 1 ? (u(), k.autocomplete("close")) : (console.log("<1"), MODERNIZR_MQ_SM || d(!1))
   }), E.on("mouseup", function() {
     O ? k.focus() : k.hasClass("filtered") && ["final", "sub_final"].includes(R.attr("data-step")) && k.autocomplete("search")
   }), E.on("mousedown", function() {
