@@ -6,6 +6,10 @@
   }
 }
 
+.map-menu__list:last-of-type {
+  width: 250px;
+}
+
 .map-menu__link:hover,
 .map-menu__link:focus {
   color: #00aed6;
@@ -30,6 +34,9 @@
 }
 
 .map-menu__image {
+  position: relative;
+  bottom: 55px;
+  z-index: -1;
   margin: 0 auto;
 
   @media (max-width: $tablet-width) {

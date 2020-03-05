@@ -9,13 +9,21 @@
 
 .services-menu__list {
   &:first-of-type {
-    width: 188px;
-    margin-bottom: 29px;
+    width: 187px;
+    margin-bottom: 42px;
     margin-right: 24px;
   }
+}
+
+.services-menu__list:first-of-type li {
+  margin-bottom: 5px;
 }
 
 .services-menu__link:hover,
 .services-menu__list:focus {
   color: #65aa0f;
+}
+
+.services-menu__item--height {
+  line-height: 18px;
 }
