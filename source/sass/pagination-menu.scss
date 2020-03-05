@@ -1,6 +1,18 @@
 .pagination-menu {
   position: relative;
   border-bottom: 1px solid $border;
+  padding-right: 5.5%;
+  padding-left: 5.5%;
+
+  @media(min-width: $tablet-width + 1) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  @media(max-width: $tablet-width){
+    padding-right: 0;
+    padding-left: 4%;
+  }
 }
 
 .pagination-menu__search-form {
@@ -11,7 +23,7 @@
     content: "";
     position: absolute;
     top: 17px;
-    left: 65px;
+    left: 0;
     z-index: 1;
     width: 22px;
     height: 22px;
@@ -22,16 +34,6 @@
 
   @media (max-width: $tablet-width) {
     width: 100%;
-
-    &::before {
-      left: 30px;
-    }
-  }
-
-  @media (max-width: $mobile-width) {
-    &::before {
-      left: 16px;
-    }
   }
 }
 
@@ -48,7 +50,7 @@
   height: 56px;
   padding-top: 15px;
   padding-bottom: 15px;
-  padding-left: 100px;
+  padding-left: 40px;
   font-size: 24px;
   border: none;
   background-color: transparent;
@@ -101,11 +103,10 @@
 }
 
 .pagination-menu__scheme {
-  position: absolute;
-  top: 16px;
-  right: 60px;
+  position: relative;
   padding-left: 30px;
   font-size: 24px;
+  margin-right: 15px;
   font-weight: 600;
   line-height: 96%;
   text-decoration: none;
