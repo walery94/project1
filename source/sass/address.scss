@@ -107,6 +107,10 @@
   background-size: 24px 24px;
 }
 
+.address--clothes {
+  margin-top: -2px;
+}
+
 @media (max-width: $tablet-width) {
 
   .address__box {
@@ -213,6 +217,11 @@
     margin-bottom: 4px;
   }
 
+  .address--clothes {
+    margin-top: -44px;
+    margin-bottom: 31px;
+  }
+
   .address--clothes .address__map {
     margin-bottom: 22px;
   }
@@ -245,11 +254,6 @@
     padding-right: 16px;
     padding-left: 16px;
     box-sizing: border-box;
-  }
-
-  .address--clothes .address__info {
-    width: 328px;
-    margin: 0 auto;
   }
 
   .address__map {

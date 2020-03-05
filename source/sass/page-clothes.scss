@@ -1,5 +1,5 @@
 .page-clothes {
-  margin-top: 40px;
+  margin-top: 44px;
   margin-bottom: 79px;
   padding-left: 15px;
   padding-right: 15px;
@@ -27,7 +27,7 @@
 .page-clothes__box h2 sup {
   position: absolute;
   top: 0;
-  right: -26px;
+  left: 587px;
   font-weight: 600;
   font-size: 24px;
   line-height: 23px;
@@ -144,11 +144,16 @@
 
   .page-clothes__box h2 sup{
     position: absolute;
-    top: 49px;
-    right: 69px;
+    top: 0;
+    left: 433px;
 
     font-size: 16px;
     line-height: 17px;
+
+    @media (max-width: 483px) {
+      left: 200px;
+      top: 49px;
+    }
   }
 
   .page-clothes__item:nth-child(11),
