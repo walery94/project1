@@ -6,7 +6,7 @@
   width: calc(33% - (22px * 2/3));
   min-height: 545px;
 
-  padding-bottom: 21px;
+  padding-bottom: 23px;
 
   font-weight: 600;
   font-size: 12px;
@@ -143,6 +143,7 @@
 .card--shops {
   width: calc(25% - (24px * 3/4));
   min-height: 458px;
+  padding-bottom: 21px;
 }
 
 .card--shops h3 {
