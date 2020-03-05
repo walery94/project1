@@ -360,7 +360,7 @@
   }
 
   .card--clothes {
-    width: calc(50% - (16px * 1/2));
+    width: 156px;
     min-height: 188px;
     padding-bottom: 7px;
 
@@ -368,10 +368,6 @@
 
     &:hover {
       box-shadow: 0px 12px 16px rgba(0, 0, 0, 0.08);
-    }
-
-    @media (max-width: 359px) {
-      width: 156px;
     }
   }
 
