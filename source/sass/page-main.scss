@@ -7,10 +7,6 @@
   position: absolute;
   top: 0;
   width: 100%;
-  min-height: 6642px;
+  height: 100%;
   z-index: -1;
-
-  @media (max-width: $tablet-width) {
-    height: 100%;
-  }
 }
