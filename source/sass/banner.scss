@@ -35,6 +35,10 @@
       background-image: url("../img/banner-mobile@2x.png");
     }
   }
+
+  @media (max-width: $mobile-width) {
+    padding-bottom: 77px;
+  }
 }
 
 .banner::after {

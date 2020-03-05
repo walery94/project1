@@ -20,6 +20,11 @@
 
 .fitness__box {
   display: flex;
+
+  @media (min-width: 1280px) {
+    width: 1280px;
+    margin: 0 auto;
+  }
 }
 
 .fitness__slider {
@@ -120,6 +125,7 @@
 
   .fitness h2 {
     padding-left: 16px;
+    margin-bottom: 9px;
   }
 
   .fitness h2 span:first-child {
@@ -131,7 +137,7 @@
   }
 
   .fitness__slider {
-    margin-bottom: 7px;
+    margin-bottom: 0;
   }
 
   .fitness__description {
