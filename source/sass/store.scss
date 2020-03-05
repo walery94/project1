@@ -6,22 +6,7 @@
 
 .store--services {
   position: relative;
-
-  &::after {
-    content: "";
-    position: absolute;
-    bottom: 38px;
-    z-index: -1;
-    width: 100%;
-    height: 75px;
-    background-image: url("../img/wave-bottom.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    @media (max-width: 1050px) {
-      bottom: 80px;
-    }
-  }
+  margin-bottom: 0;
 }
 
 .store__box {
@@ -65,11 +50,6 @@
 
 .store__item:nth-child(4n) {
   margin-right: 0;
-}
-
-.store--services {
-  padding-bottom: 50px;
-  margin-bottom: 14px;
 }
 
 .store__container {
@@ -208,10 +188,6 @@
 
   .store--children h2 span:last-child {
     display: inline;
-  }
-
-  .store--services {
-    padding-bottom: 58px;
   }
 
   .store--services .slick-list {

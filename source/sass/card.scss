@@ -21,7 +21,7 @@
   cursor: pointer;
 
   &:hover {
-    box-shadow: 0px 12px 16px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.08);
   }
 }
 
@@ -241,7 +241,7 @@
   min-height: 220px;
   padding-top: 26px;
 
-  @media (max-width: 1053px) {
+  @media (max-width: 1100px) {
     width: 230px;
   }
 }
