@@ -262,6 +262,7 @@
 .card--clothes {
   width: calc(25% - (24px * 3/4));
   min-height: 458px;
+  padding-bottom: 21px;
 
   border: 1px solid #E0E0E0;
 
@@ -280,6 +281,7 @@
 }
 
 .card--clothes .card__box {
+  margin-bottom: 0;
   width: 188px;
 }
 
