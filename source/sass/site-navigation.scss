@@ -53,6 +53,7 @@
 .site-navigation__info {
   display: flex;
   flex-wrap: wrap;
+  z-index: 2;
   margin: 0;
   padding: 0;
   padding-top: 20px;
@@ -68,7 +69,7 @@
   @media (max-width: $tablet-width) {
     position: absolute;
     left: 50%;
-    top: 40%;
+    top: 30%;
     display: block;
     z-index: 1;
     width: 320px;
@@ -81,7 +82,7 @@
   }
 
   @media (max-width: $mobile-width) {
-    top: 45%;
+    top: 38%;
   }
 
   &--scheme {

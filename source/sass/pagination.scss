@@ -20,7 +20,6 @@
 
 .pagination__list {
   display: flex;
-  //justify-content: space-between;
   flex-wrap: wrap;
   width: 82%;
   margin: 0;
@@ -142,13 +141,7 @@
 
     &::before {
       top: 17px;
-      left: 30px;
-    }
-  }
-
-  @media (max-width: $mobile-width) {
-    &::before {
-      left: 16px;
+      left: 4%;
     }
   }
 }
@@ -169,13 +162,13 @@
     height: 56px;
     padding-top: 16px;
     padding-bottom: 15px;
-    padding-left: 64px;
+    padding-left: 70px;
     font-size: 24px;
     border: none;
     cursor: pointer;
   }
 
   @media (max-width: $mobile-width) {
-    padding-left: 50px;
+    padding-left: 55px;
   }
 }
