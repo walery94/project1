@@ -6,6 +6,7 @@
 
 .store--services {
   position: relative;
+  margin-bottom: 0;
 }
 
 .store__box {
@@ -49,11 +50,6 @@
 
 .store__item:nth-child(4n) {
   margin-right: 0;
-}
-
-.store--services {
-  padding-bottom: 50px;
-  margin-bottom: 14px;
 }
 
 .store__container {
@@ -192,10 +188,6 @@
 
   .store--children h2 span:last-child {
     display: inline;
-  }
-
-  .store--services {
-    padding-bottom: 58px;
   }
 
   .store--services .slick-list {

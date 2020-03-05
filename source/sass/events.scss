@@ -46,6 +46,13 @@
 
 .events__item {
   margin-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    .slick-track {
+      transform: initial!important;
+      width: auto!important;
+    }
+  }
 }
 
 .events__item:nth-child(3n+2) {
