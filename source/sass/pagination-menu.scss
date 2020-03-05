@@ -86,12 +86,6 @@
   }
 }
 
-//.pagination-menu__search-input::placeholder{
-//  @media (max-width: $tablet-width) {
-//    color: #ffffff;
-//  }
-//}
-
 .pagination-menu__search-input--scheme {
   @media (max-width: $tablet-width) {
     &:first-of-type {
@@ -132,9 +126,7 @@
   }
 
   @media (max-width: $tablet-width) {
-    top: 95px;
-    left: 0;
-    color: #ffffff;
+    display: none;
 
     &::before {
       display: none;
