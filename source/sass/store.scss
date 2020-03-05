@@ -164,6 +164,23 @@
 
   .store__list {
     margin-bottom: 12px;
+    padding-right: 12px;
+  }
+
+  .store--cinema .store__list {
+    margin-bottom: 13px;
+  }
+
+  .store--services .store__list {
+    margin-bottom: 16px;
+  }
+
+  .store--shops .store__list a:nth-child(11) {
+    width: 295px;
+  }
+
+  .store--services .store__list a:nth-child(2) {
+    width: 270px;
   }
 
   .store__button {

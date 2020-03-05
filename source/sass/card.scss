@@ -310,6 +310,11 @@
     overflow: hidden;
   }
 
+  .card__hit {
+    top: 6px;
+    left: 16px;
+  }
+
   .card img {
     width: 220px;
     height: 220px;
@@ -317,11 +322,11 @@
   }
 
   .card--cinema {
-    padding-bottom: 3px;
+    padding-bottom: 4px;
   }
 
   .card--cinema img {
-    margin-bottom: 20px;
+    margin-bottom: 19px;
   }
 
   .card h3 {
