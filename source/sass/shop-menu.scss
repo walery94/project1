@@ -8,6 +8,10 @@
   }
 }
 
+.shop-menu__list:last-of-type li {
+  margin-bottom: 5px;
+}
+
 .shop-menu__title {
   @media (max-width: $tablet-width) {
     display: flex;
