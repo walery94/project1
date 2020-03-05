@@ -21,7 +21,8 @@
   position: relative;
   left: 0;
   width: 205px;
-  //margin-right: 5%;
+  display: block;
+  margin-right: auto;
   padding-top: 18px;
   padding-bottom: 10px;
 
@@ -217,6 +218,9 @@
   padding: 0;
   list-style: none;
 
+  @media (min-width: $tablet-width +1) {
+    margin-right: -15px;
+  }
   @media (max-width: $tablet-width) {
     justify-content: flex-start;
     margin: 0;
