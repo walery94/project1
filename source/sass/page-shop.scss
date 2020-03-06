@@ -84,7 +84,9 @@
 @media (max-width: $tablet-width) {
 
   .page-shop__box {
-    max-width: 768px;
+    max-width: 100%;
+    padding-left: 24px;
+    padding-right: 24px;
 
     &:first-child {
       position: relative;
@@ -120,7 +122,6 @@
   }
 
   .page-shop__box {
-    max-width: 100%;
     padding-left: 16px;
     padding-right: 16px;
 

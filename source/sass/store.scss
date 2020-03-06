@@ -224,10 +224,14 @@
   }
 
   .store--shop h2 {
-    width: 327px;
+    width: 100%;
     margin-bottom: 13px;
+    margin-left: 0;
+    padding-left: 16px;
+    padding-right: 16px;
 
     font-size: 36px;
     line-height: 39px;
+    box-sizing: border-box;
   }
 }
