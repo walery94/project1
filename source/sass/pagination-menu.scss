@@ -1,6 +1,5 @@
 .pagination-menu {
   position: relative;
-  border-bottom: 1px solid $border;
   padding-right: 5.5%;
   padding-left: 5.5%;
 
@@ -9,9 +8,17 @@
     align-items: center;
     justify-content: space-between;
   }
-  @media(max-width: $tablet-width){
+  @media(max-width: $tablet-width) {
     padding-right: 0;
     padding-left: 4%;
+  }
+}
+
+.pagination-menu--border {
+  border-bottom: 1px solid $border;
+
+  @media(max-width: $tablet-width) {
+    border: none;
   }
 }
 

@@ -1,3 +1,9 @@
+.main-header {
+  @media (max-width: $tablet-width) {
+    border-bottom: 1px solid $border;
+  }
+}
+
 .main-header--scheme {
   @media (max-width: $tablet-width) {
     background-color: #ffffff;
