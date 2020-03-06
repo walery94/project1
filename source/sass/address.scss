@@ -78,10 +78,11 @@
 }
 
 .address__taxi {
+  display: flex;
+  justify-content: center;
   width: 100%;
-  padding-left: 119px;
   padding-top: 20px;
-  padding-bottom: 19px;
+  padding-bottom: 15px;
 
   border: 1px solid #E0E0E0;
   border-radius: 5px;
@@ -95,12 +96,11 @@
 }
 
 .address__taxi span {
-  position: absolute;
   display: block;
-  top: 16px;
-  left: 85px;
   width: 24px;
   height: 24px;
+  margin-top: -5px;
+  margin-right: 8px;
 
   background-image: url("../img/icon-taxi.svg");
   background-repeat: no-repeat;
@@ -165,11 +165,6 @@
   .address__taxi {
     width: 450px;
     margin: 0 auto;
-    padding-left: 185px;
-  }
-
-  .address__taxi span {
-    left: 150px;
   }
 
   .address--clothes .address__box {
@@ -216,6 +211,7 @@
 
   .address__box h2 {
     margin-bottom: 16px;
+    padding-left: 16px;
 
     font-weight: bold;
     font-size: 36px;
@@ -289,11 +285,6 @@
 
   .address__taxi {
     width: 100%;
-    padding-left: 36.6%;
-  }
-
-  .address__taxi span {
-    left:23.2%;
   }
 
   .address--shop {
