@@ -20,11 +20,10 @@
 
 .fitness__box {
   display: flex;
-
-  @media (min-width: 1280px) {
-    width: 1280px;
-    margin: 0 auto;
-  }
+  max-width: 1152px;
+  margin: 0 auto;
+  padding-right: 15px;
+  box-sizing: border-box;
 }
 
 .fitness__slider {
@@ -99,6 +98,8 @@
 
   .fitness__box {
     display: block;
+    max-width: 100%;
+    padding-right: 0;
   }
 
   .fitness__description {
