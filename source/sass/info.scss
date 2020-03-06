@@ -256,13 +256,12 @@
 @media (max-width: $tablet-width) {
 
   .info {
-    width: 675px;
+    width: 100%;
     margin: 0 auto;
   }
 
   .info__box {
     width: 100%;
-    padding-left: 16px;
     box-sizing: border-box;
 
     &--shops {
@@ -273,12 +272,27 @@
     }
   }
 
+  .info__box h2 {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .info__box p {
+    width: 100%;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
   .info__container {
     display: block;
+    width: 675px;
+    margin: 0 auto;
   }
 
   .info__notes {
-    margin-top: 0;
+    width: 675px;
+    margin: 0 auto;
+    margin-bottom: 65px;
   }
 
   .info__social {
@@ -297,7 +311,7 @@
   }
 
   .info b {
-    max-width: 768px;
+    max-width: 675px;
   }
 }
 
@@ -313,6 +327,16 @@
     padding-left: 16px;
     padding-right: 16px;
     box-sizing: border-box;
+  }
+
+  .info__box h2 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .info__box p {
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .info__box--shops {
@@ -335,6 +359,10 @@
     font-size: 14px;
     line-height: 17px;
     margin-bottom: 8px;
+  }
+
+  .info__container {
+    width: 100%;
   }
 
   .info__form {
@@ -423,6 +451,7 @@
 }
 
   .info__notes {
+    width: 100%;
     margin-bottom: 30px;
   }
 
