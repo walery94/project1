@@ -1,5 +1,5 @@
 .page-shop {
-  padding-top: 39px;
+  padding-top: 43px;
 }
 
 .page-shop__box {
@@ -17,13 +17,13 @@
 }
 
 .page-shop__box--logo {
-  margin-bottom: 44px;
+  margin-bottom: 24px;
 }
 
 .page-shop__box h2 {
   width: 659px;
   margin: 0;
-  margin-bottom: 18px;
+  margin-bottom: 16px;
 
   font-weight: bold;
   font-size: 48px;
@@ -45,7 +45,7 @@
 }
 
 .page-shop__slider {
-  margin-bottom: 22px;
+  margin-bottom: -1px;
 }
 
 .page-shop__container {
@@ -112,7 +112,7 @@
 @media (max-width: $mobile-width) {
 
   .page-shop {
-    padding-top: 14px;
+    padding-top: 13px;
   }
 
   .page-shop .store--shop {
@@ -142,13 +142,17 @@
     margin-bottom: 5px;
   }
 
+  .page-shop__button:last-child {
+    display: none;
+  }
+
   .page-shop__slider {
-    margin-bottom: 15px;
+    margin-bottom: -8px;
   }
 
   .page-shop__box--logo {
     width: 100%;
-    margin-bottom: 30px;
+    margin-bottom: 11px;
     padding-left: 16px;
     padding-right: 18px;
   }
