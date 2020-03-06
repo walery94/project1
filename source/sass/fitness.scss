@@ -20,7 +20,7 @@
 
 .fitness__box {
   display: flex;
-  max-width: 1152px;
+  max-width: 1024px;
   margin: 0 auto;
   padding-right: 15px;
   box-sizing: border-box;
@@ -36,7 +36,7 @@
   justify-content: space-between;
 
   width: 238px;
-  margin-left: 19px;
+  margin-left: 24px;
   padding-top: 27px;
   padding-bottom: 69px;
 }
@@ -150,8 +150,9 @@
     box-sizing: border-box;
   }
 
-  .fitness__description p {
-    width: 53.7%;
+  .fitness__text {
+    width: 50%;
+    padding-right: 20px;
   }
 
   .fitness__container {

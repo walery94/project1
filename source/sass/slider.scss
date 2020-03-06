@@ -1,11 +1,9 @@
 .slider {
   position: relative;
-  width: 826px;
+  width: calc(75% + 5px);
 }
 
-.slider__list {
-  width: 826px;
-}
+
 .slick-slide {
   outline: none!important;
 }
