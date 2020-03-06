@@ -69,7 +69,7 @@
   @media (max-width: $tablet-width) {
     position: absolute;
     left: 50%;
-    top: 30%;
+    top: 40%;
     display: block;
     z-index: 1;
     width: 320px;
@@ -86,7 +86,7 @@
   }
 
   @media (max-width: $mobile-width) {
-    top: 35%;
+    top: 45%;
     width: 328px;
     margin-left: -165px;
   }
@@ -220,7 +220,7 @@
     opacity: 0.5;
   }
 
-  @media (max-width: $mobile-width) {
+  @media (max-width: $tablet-width) {
     font-weight: 600;
     font-size: 16px;
   }
@@ -236,6 +236,7 @@
   @media (min-width: $tablet-width +1) {
     margin-right: -15px;
   }
+
   @media (max-width: $tablet-width) {
     justify-content: flex-start;
     margin: 0;
