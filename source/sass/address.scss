@@ -111,6 +111,10 @@
   margin-top: -2px;
 }
 
+.address--page-shop {
+  margin-top: -1px;
+}
+
 @media (max-width: $tablet-width) {
 
   .address__box {
@@ -284,5 +288,20 @@
 
   .address--shop {
     margin-top: 0;
+  }
+
+
+  .address--page-shop {
+    margin-top: -44px;
+    margin-bottom: 31px;
+  }
+
+  .address--page-shop .address__map {
+    margin-top: -5px;
+    margin-bottom: 16px;
+  }
+
+  .address--page-shop .address__item {
+    margin-left: 31px;
   }
 }
