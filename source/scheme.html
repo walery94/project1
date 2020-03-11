@@ -3505,7 +3505,7 @@
       <path d="M0 0V2H24V0H0ZM0 9V11H24V9H0ZM0 18V20H24V18H0Z"/>
     </symbol>
     <symbol id="close" viewBox="0 0 20 20">
-      <path d="M1.83477 0L0 1.83477L8.16523 10L0 18.1652L1.83477 20L10 11.8348L18.1652 20L20 18.1652L11.8348 10L20 1.83477L18.1652 0L10 8.16523L1.83477 0Z"/>
+      <path d="M1.83477 0L0 1.83477L8.16523 10L0 18.1652L1.83477 20L10 11.8348L18.1652 20L20 18.1652L11.8348 10L20 1.83477L18.1652 0L10 8.16523L1.83477 0Z" fill="#ffffff"/>
     </symbol>
     <symbol id="logo" viewBox="0 0 205 24">
       <path fill-rule="evenodd" clip-rule="evenodd" d="M189.622 14.4799L192.84 7.06432L196.058 14.4799H189.622ZM193.987 0.039362H191.764L180.834 23.9956L181.475 23.9911H185.49L188.004 18.494H197.669L200.183 23.9956H204.808L193.987 0.039362Z"/>
@@ -3543,6 +3543,8 @@
           <li class="site-navigation__item site-navigation__item--clock"><a href="#">С 10 до 22 каждый день</a></li>
           <li class="site-navigation__item site-navigation__item--phone"><a href="tel:+74952699999">+7 495 269-99-99</a></li>
         </ul>
+
+        <!--Убирается добавлением класса site-navigation__user--none-->
         <ul class="site-navigation__user site-navigation__user--scheme">
           <li><a href="#">
             <svg width="20" height="20">
@@ -3558,6 +3560,8 @@
           </a></li>
         </ul>
       </section>
+
+      <!--Фон меняется добавлением класса pagination-menu__open-->
       <nav class="pagination-menu pagination-menu--scheme">
         <h2 class="visually-hidden">Постраничная навигация</h2>
         <form class="pagination-menu__search-form pagination-menu__search-form--scheme">
@@ -3569,6 +3573,21 @@
         <a class="pagination-menu__scheme pagination-menu__scheme--active">Схема <span>Ривьеры</span></a>
       </nav>
     </header>
+
+    <!--Открывается добавлением класса search__open-->
+    <section class="search">
+      <h2 class="visually-hidden">Поиск</h2>
+      <ul class="search__list">
+        <li class="search__item"><a class="search__link" href="#">Магазины<span class="search__span">122</span></a></li>
+        <li class="search__item"><a class="search__link" href="#">Развлечения<span class="search__span">33</span></a></li>
+        <li class="search__item"><a class="search__link" href="#">Еда<span class="search__span">23</span></a></li>
+        <li class="search__item"><a class="search__link" href="#">Кино<span class="search__span">19</span></a></li>
+        <li class="search__item"><a class="search__link" href="#">Всё для детей<span class="search__span">19</span></a></li>
+        <li class="search__item"><a class="search__link" href="#">Фитнес</a></li>
+        <li class="search__item"><a class="search__link" href="#">Услуги и сервисы<span class="search__span">19</span></a></li>
+      </ul>
+    </section>
+
   </div>
   <main class='scheme'>
     <div class='scheme__container' data-scale='1' id='scheme-container'>
