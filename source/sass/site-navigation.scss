@@ -245,6 +245,10 @@
   }
 }
 
+.site-navigation__user--none {
+  display: none;
+}
+
 .site-navigation__user a {
   display: flex;
   align-items: center;

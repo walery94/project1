@@ -1,9 +1,13 @@
 .menu {
-  width: 88.9%;
+  width: 1024px;
   margin: 0 auto;
   margin-top: 43px;
   padding-left: 5.5%;
   padding-right: 5.5%;
+
+  @media (max-width: 1151px) {
+    width: 88.9%;
+  }
 
   @media (max-width: $tablet-width) {
     margin: 0;
