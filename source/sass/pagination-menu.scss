@@ -3,12 +3,13 @@
   padding-right: 5.5%;
   padding-left: 5.5%;
 
-  @media(min-width: $tablet-width + 1) {
+  @media (min-width: $tablet-width + 1) {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
-  @media(max-width: $tablet-width) {
+
+  @media (max-width: $tablet-width) {
     padding-right: 0;
     padding-left: 4%;
   }
@@ -17,8 +18,29 @@
 .pagination-menu--border {
   border-bottom: 1px solid $border;
 
-  @media(max-width: $tablet-width) {
+  @media (max-width: $tablet-width) {
     border: none;
+  }
+}
+
+.pagination-menu__open {
+  @media (max-width: $tablet-width) {
+    position: relative;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #222222;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 16px;
+      right: 30px;
+      width: 24px;
+      height: 24px;
+      background-image: url("../img/icon-close-white.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+    }
   }
 }
 
@@ -89,7 +111,6 @@
       display: block;
     }
   }
-
 }
 
 .pagination-menu__search-input--scheme {
