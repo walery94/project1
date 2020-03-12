@@ -30,8 +30,6 @@
   width: 325px;
   height: 325px;
   margin-bottom: 24px;
-
-  background-color: pink;
 }
 
 .card h3 {
@@ -260,7 +258,7 @@
 }
 
 .card--clothes {
-  width: calc(25% - (24px * 3/4));
+  width: 100%;
   min-height: 458px;
   padding-bottom: 21px;
 
@@ -300,7 +298,7 @@
   }
 
   .card--clothes {
-    width: calc(33% - (22px * 2/3));
+    width: 100%;
   }
 }
 
