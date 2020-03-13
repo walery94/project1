@@ -1,5 +1,5 @@
 .fitness {
-  margin-bottom: 17px;
+  margin-bottom: 71px;
 }
 
 .fitness h2 {
@@ -22,7 +22,6 @@
   display: flex;
   max-width: 1024px;
   margin: 0 auto;
-  padding-right: 15px;
   box-sizing: border-box;
 }
 
@@ -36,9 +35,9 @@
   justify-content: space-between;
 
   width: 238px;
-  margin-left: 24px;
+  margin-left: 12px;
   padding-top: 27px;
-  padding-bottom: 69px;
+  padding-bottom: 15px;
 }
 
 .fitness__description p {
@@ -121,7 +120,7 @@
 @media (max-width: $mobile-width) {
 
   .fitness {
-    margin-bottom: 51px;
+    margin-bottom: 16px;
   }
 
   .fitness h2 {
