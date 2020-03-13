@@ -1,7 +1,11 @@
+body.menu-opened {
+  overflow: hidden;
+}
+
 .wrapper-menu {
   @media (max-width: $tablet-width) {
     background-color: #222222;
-    height: 150vh;
+    overflow-y: auto;
   }
 }
 
