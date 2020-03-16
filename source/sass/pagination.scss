@@ -175,9 +175,10 @@
 }
 
 .pagination__search-input {
-  &:hover,
-  &:focus {
-    opacity: 0.5;
+  border-radius: 0;
+
+  &:focus,
+  &:hover {
     border-radius: 0;
     box-shadow: none;
     outline: none;
