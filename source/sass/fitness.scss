@@ -1,5 +1,23 @@
 .fitness {
+  position: relative;
   margin-bottom: 71px;
+
+  @media (max-width: $mobile-width) {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 260px;
+      left: 0;
+      width: 100%;
+      height: 500px;
+
+      background-image: url("../img/background-slider-mobile.svg");
+      background-repeat: no-repeat;
+      background-repeat: repeat-x;
+
+      z-index: 0;
+    }
+  }
 }
 
 .fitness h2 {
@@ -19,10 +37,12 @@
 }
 
 .fitness__box {
+  position: relative;
   display: flex;
   max-width: 1024px;
   margin: 0 auto;
   box-sizing: border-box;
+  z-index: 1;
 }
 
 .fitness__slider {
