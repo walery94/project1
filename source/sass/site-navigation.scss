@@ -1,7 +1,6 @@
 .site-navigation {
   display: flex;
   justify-content: space-between;
-  height: 56px;
   padding-left: 5.5%;
   padding-right: 5.5%;
   border-bottom: 1px solid $border;
@@ -13,6 +12,8 @@
 }
 
 .site-navigation--scheme {
+  height: auto;
+
   @media (max-width: $tablet-width) {
     border: 0;
   }
@@ -21,7 +22,7 @@
 .site-navigation__logo {
   position: relative;
   left: 0;
-  width: 205px;
+  width: 188px;
   display: block;
   margin-right: auto;
   padding-top: 18px;

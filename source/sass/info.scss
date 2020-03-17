@@ -1,4 +1,6 @@
 .info {
+  padding-left: 5.5%;
+  padding-right: 5.5%;
   padding-bottom: 136px;
 
   font-weight: 300;
@@ -12,7 +14,7 @@
 }
 
 .info__box {
-  width: 1024px;
+  //width: 1024px;
   margin: 0 auto;
 }
 
@@ -44,6 +46,7 @@
 
 .info__form input {
   width: 349px;
+  height: 56px;
   padding-top: 19px;
   padding-bottom: 17px;
   padding-left: 16px;
@@ -258,6 +261,8 @@
   .info {
     width: 100%;
     margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .info__box {
