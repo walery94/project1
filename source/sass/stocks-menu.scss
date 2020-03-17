@@ -39,7 +39,8 @@
 
 .stocks-menu__form {
   display: flex;
-  width: 500px;
+  width: 105%;
+  //width: 500px;
 }
 
 .stocks-menu__input {
@@ -93,7 +94,8 @@
 
 .stocks-menu__social {
   display: flex;
-  width: 500px;
+  width: 105%;
+  //width: 500px;
 
   @media (max-width: $tablet-width) {
     display: none;
