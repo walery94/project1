@@ -14,6 +14,12 @@
 }
 
 .pagination--scroll {
+  position: fixed;
+  width: 89%;
+  z-index: 100;
+  margin-top: -59px;
+  background-color: #ffffff;
+
   @media (max-width: $tablet-width) {
     position: fixed;
     width: 100%;
@@ -97,6 +103,32 @@
 
   @media (max-width: $tablet-width) {
     display: none;
+  }
+}
+
+.pagination__scroll-icons {
+  display: flex;
+  height: 56px;
+  margin: 0;
+  margin-right: 90px;
+  padding: 0;
+  list-style: none;
+
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.pagination__scroll-icons a {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
   }
 }
 
