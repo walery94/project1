@@ -12,7 +12,7 @@
 
   background-color: transparent;
 
-  border: 0.5px solid #E0E0E0;;
+  border: 0.5px solid #E0E0E0;
   border-radius: 5px;
 
   box-sizing: border-box;
@@ -134,12 +134,24 @@
   .button--more span {
     line-height: 8px;
   }
-}
-
-@media (max-width: $mobile-width) {
 
   .button--cinema {
-    letter-spacing: 0;
-    padding-bottom: 8px;
+    display: flex;
+    align-items: center;
+    width: 320px;
+    height: 56px;
+    padding-bottom: 10px;
+  }
+
+  .button--cinema:hover b {
+    color: $text-color;
+  }
+
+  .button--cinema b {
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: inherit;
+    line-height: 108%;
+    color: #00aed6;
   }
 }

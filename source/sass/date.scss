@@ -1,0 +1,141 @@
+.date {
+  margin-bottom: 50px;
+}
+
+.date__title {
+  margin: 0;
+  margin-top: 40px;
+  margin-bottom: 25px;
+  padding: 0;
+  padding-left: 5.5%;
+  padding-right: 5.5%;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 108%;
+  letter-spacing: -0.01em;
+  color: $text-color;
+
+  @media (max-width: $tablet-width) {
+    font-size: 48px;
+    line-height: 92%;
+  }
+}
+
+.date__info {
+  display: none;
+
+  @media (max-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border: 1px solid $border;
+    border-radius: 5px;
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.08);
+  }
+}
+
+.date__info a {
+  @media (max-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+    padding-top: 22px;
+    padding-bottom: 17px;
+    padding-left: 16px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 17px;
+    color: #222222;
+    text-decoration: none;
+    border-bottom: 1px solid $border;
+
+    &:hover {
+      color: #ffffff;
+      background-color: #00aed6;
+    }
+
+    &:first-child {
+      border-radius: 5px 5px 0 0;
+    }
+
+    &:last-child {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      border-bottom: none;
+      border-radius: 0 0 5px 5px;
+    }
+  }
+}
+
+.date__info span {
+  margin-right: 8px;
+}
+
+.date__info svg {
+  @media (max-width: $tablet-width) {
+    fill: #7d7d7d;
+  }
+}
+
+.date__info a:hover svg {
+  @media (max-width: $tablet-width) {
+    fill: #ffffff;
+  }
+}
+
+.date__list {
+  margin: 0;
+  margin-top: 40px;
+  padding: 0;
+  padding-left: 5.5%;
+  padding-right: 5.5%;
+  display: flex;
+  list-style: none;
+
+  @media (max-width: $tablet-width) {
+    padding-right: 0;
+  }
+}
+
+.date__link {
+  margin-right: 10px;
+  padding: 10px;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 96%;
+  text-decoration: none;
+  color: $text-color;
+  border: 1px solid $border;
+  border-radius: 5px;
+
+  &:hover,
+  &:focus {
+    background-color: #ffffff;
+    color: #00aed6;
+  }
+
+  @media (max-width: $tablet-width) {
+    color: #ffffff;
+  }
+}
+
+.date__link:hover span {
+  @media (max-width: $tablet-width) {
+    color: #7d7d7d;
+  }
+}
+
+.date__span {
+  margin-left: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 151%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #7d7d7d;
+
+  @media (max-width: $tablet-width) {
+    color: #e0e0e0;
+  }
+}

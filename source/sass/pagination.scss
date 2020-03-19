@@ -15,16 +15,15 @@
 
 .pagination--scroll {
   position: fixed;
+  top: 0;
   width: 89%;
   z-index: 100;
-  margin-top: -59px;
   background-color: #ffffff;
 
   @media (max-width: $tablet-width) {
     position: fixed;
     width: 100%;
     z-index: 100;
-    margin-top: -59px;
     border-bottom: 1px solid $border;
   }
 }
