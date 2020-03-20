@@ -6,6 +6,12 @@
   }
 }
 
+.children-menu--sitemenu {
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+}
+
 .children-menu__link:hover,
 .children-menu__link:focus {
   color: #00aed6;

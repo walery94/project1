@@ -7,6 +7,12 @@
   }
 }
 
+.services-menu--sitemenu {
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+}
+
 .services-menu__list {
   &:first-of-type {
     width: 187px;

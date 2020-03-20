@@ -1,0 +1,26 @@
+.auto-menu {
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.auto-menu__list {
+  margin: 0;
+  margin-bottom: 41px;
+  margin-top: 14px;
+  padding: 0;
+  list-style: none;
+}
+
+.auto-menu h2 {
+  margin-bottom: 42px;
+
+  &:first-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.auto-menu__link:hover,
+.auto-menu__link:focus {
+  color: #65aa0f;
+}

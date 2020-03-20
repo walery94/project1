@@ -8,6 +8,13 @@
   }
 }
 
+.shop-menu--sitemenu {
+  @media (max-width: $tablet-width) {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+}
+
 .shop-menu__list:last-of-type li {
   margin-bottom: 5px;
 }
@@ -29,6 +36,12 @@
       background-position: center;
       background-repeat: no-repeat;
     }
+  }
+}
+
+.shop-menu__title--sitemenu::after {
+  @media (max-width: $tablet-width) {
+    display: none;
   }
 }
 

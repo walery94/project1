@@ -10,3 +10,9 @@
     height: 56px;
   }
 }
+
+.wrapper-menu--sitemenu {
+  @media (max-width: $tablet-width) {
+    background-color: #ffffff;
+  }
+}
