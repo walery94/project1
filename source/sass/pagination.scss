@@ -206,6 +206,23 @@
   }
 }
 
+.pagination__search-form--sitemenu {
+  @media (max-width: $tablet-width) {
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 20px;
+      height: 20px;
+      background-image: url("../img/icon-close-gray.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+}
+
 .pagination__search-input {
   border-radius: 0;
 

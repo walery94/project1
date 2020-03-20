@@ -6,6 +6,12 @@
   }
 }
 
+.entertainment-menu--sitemenu {
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+}
+
 .entertainment-menu__link:hover,
 .entertainment-menu__link:focus {
   color: #65aa0f;
