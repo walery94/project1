@@ -182,7 +182,7 @@
   justify-content: space-between;
   list-style: none;
 
-  width: 188px;
+  max-width: 188px;
   margin: 0 auto;
   padding: 0;
 }
@@ -230,8 +230,8 @@
 }
 
 .card--cinema img {
-  width: 238px;
-  height: 238px;
+  width: 100%;
+  height: auto;
 }
 
 .card--services {
@@ -322,6 +322,8 @@
   }
 
   .card--cinema img {
+    width: 100%;
+    height: auto;
     margin-bottom: 19px;
   }
 
@@ -337,10 +339,6 @@
     max-width: 188px;
 
     margin-top: auto;
-  }
-
-  .card__items ul {
-    margin-left: 16px;
   }
 
   .card--cinema {
