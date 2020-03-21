@@ -81,6 +81,27 @@
   clip-path: url(#page-shop-desktop2);
 }
 
+.page-shop--cinema h2 {
+  width: 640px;
+  letter-spacing: 0;
+}
+
+.page-shop--cinema .page-shop__box:first-child {
+  margin-bottom: -100px;
+}
+
+.page-shop--cinema .page-shop__slider {
+  margin-bottom: -24px;
+}
+
+.page-shop--cinema .page-shop__logo {
+  margin-top: -118px;
+}
+
+.page-shop--cinema .page-shop__box--logo {
+  margin-bottom: 19px;
+}
+
 @media (max-width: $tablet-width) {
 
   .page-shop__box {
@@ -108,6 +129,14 @@
 
   .page-shop__logo {
     display: none;
+  }
+
+  .page-shop--cinema .page-shop__info {
+    display: none;
+  }
+
+  .page-shop--cinema .page-shop__box:first-child {
+    margin-bottom: 0;
   }
 }
 
