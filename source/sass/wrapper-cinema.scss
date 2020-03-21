@@ -4,6 +4,11 @@
   background-position-y: 240px;
 
   @media (max-width: $tablet-width) {
-    background-position-y: 200px;
+    background-position-y: 455px;
+  }
+
+  @media (max-width: $mobile-width) {
+    background-image: url("../img/drw.svg");
+    background-position-y: 252px;
   }
 }

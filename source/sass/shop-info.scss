@@ -24,10 +24,25 @@
   border-bottom: 1px solid #E0E0E0;
   overflow: hidden;
   white-space: nowrap;
-  
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 45px;
+    height: 57px;
+    right: 0;
+    top: 0;
+    background: linear-gradient(270deg, #ffffff 35.56%, rgba(255, 255, 255, 0) 100%);
+    border-radius: 0 5px 5px 0;
+  }
+
   &:hover {
     color: #ffffff;
     background-color: #00AED6;
+
+    &::after {
+      background: linear-gradient(270deg, #00AED6 35.56%, rgba(255, 255, 255, 0) 100%);
+    }
   }
 
   &:first-child {

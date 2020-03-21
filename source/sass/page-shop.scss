@@ -146,6 +146,10 @@
     padding-top: 13px;
   }
 
+  .page-shop--cinema {
+    padding-top: 49px;
+  }
+
   .page-shop .store--shop {
     margin-bottom: 70px;
   }
@@ -167,6 +171,18 @@
     line-height: 39px;
     word-wrap: break-word;
   }
+
+  .page-shop--cinema h2 {
+    width: 100%;
+  }
+
+  .page-shop--cinema .page-shop__slider {
+    margin-bottom: 0;
+  }
+
+  .page-shop--cinema .page-shop__box--logo {
+    margin-bottom: 31px;
+}
 
   .page-shop__list {
     margin-bottom: 5px;
