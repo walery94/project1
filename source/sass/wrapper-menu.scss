@@ -1,19 +1,18 @@
-body.menu-opened {
-  @media (max-width: $tablet-width) {
-    overflow: hidden;
-  }
-}
-
 .wrapper-menu {
   @media (max-width: $tablet-width) {
     min-height: 100vh;
     background-color: #222222;
-    overflow-y: auto;
   }
 }
 
 .wrapper-menu--scheme {
   @media (max-width: $tablet-width) {
     height: 56px;
+  }
+}
+
+.wrapper-menu--sitemenu {
+  @media (max-width: $tablet-width) {
+    background-color: #ffffff;
   }
 }
