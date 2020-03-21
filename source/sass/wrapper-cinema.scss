@@ -1,8 +1,7 @@
 .wrapper-cinema {
-  background-image: url("../img/background-purple-desktop.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position-y: 276px;
+  background-image: url("../img/background-purple-desktop1.svg");
+  background-repeat: repeat-x;
+  background-position-y: 240px;
 
   @media (max-width: $tablet-width) {
     background-position-y: 200px;
