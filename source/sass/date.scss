@@ -122,6 +122,12 @@
     color: #ffffff;
     padding: 8px 10px;
   }
+
+  &--film {
+    @media (max-width: $mobile-width) {
+      color: $text-color;
+    }
+  }
 }
 
 .date__link:hover span {
@@ -141,5 +147,11 @@
 
   @media (max-width: $mobile-width) {
     color: #e0e0e0;
+  }
+
+  &--film {
+    @media (max-width: $mobile-width) {
+      color: #7d7d7d;
+    }
   }
 }

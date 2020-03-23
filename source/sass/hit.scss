@@ -1,0 +1,46 @@
+.hit {
+  position: absolute;
+  top: 5px;
+  left: 24px;
+
+  width: 41px;
+  height: 27px;
+  padding-top: 7px;
+
+  color: #ffffff;
+  text-align: center;
+
+  background-color: #AA0061;
+  border-radius: 5px;
+  text-transform: uppercase;
+  box-sizing: border-box;
+}
+
+.hit--film {
+  left: 740px;
+  top: 10px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 13px;
+  letter-spacing: 0.04em;
+
+  @media (max-width: 871px) {
+    left: 290px;
+    top: 80px;
+  }
+
+  @media (max-width: $mobile-width) {
+    left: 555px;
+    top: 0;
+  }
+
+  @media (max-width: 638px) {
+    left: 210px;
+    top: 51px;
+  }
+
+  @media (max-width: 400px) {
+    left: 210px;
+    top: 90px;
+  }
+}
