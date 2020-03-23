@@ -1,0 +1,155 @@
+.timetable {
+  padding-left: 5.5%;
+  padding-right: 5.5%;
+  box-sizing: border-box;
+
+  @media (max-width: $tablet-width) {
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+}
+
+.timetable__box {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.timetable__date {
+  display: flex;
+  margin: 0;
+  margin-top: 23px;
+  margin-bottom: 39px;
+  padding: 0;
+  list-style: none;
+}
+
+.timetable__title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.timetable__title h3 {
+  margin: 0;
+
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 39px;
+  letter-spacing: 0;
+  color: #222222;
+}
+
+.timetable__use {
+  margin: 0;
+  margin-bottom: 27px;
+
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #7D7D7D;
+}
+
+.timetable__hall {
+  margin-bottom: 12px;
+}
+
+.timetable__items {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  margin-left: -12px;
+  margin-right: -12px;
+
+  list-style: none;
+
+  @media (max-width: $mobile-width) {
+    margin-left: -8px;
+    margin-right: -8px;
+  }
+}
+
+.timetable__item {
+  padding-left: 12px;
+  padding-right: 12px;
+  flex: 0 0 33.3%;
+  max-width: 33.3%;
+  margin-bottom: 24px;
+  box-sizing: border-box;
+
+  @media (max-width: $mobile-width) {
+    padding-left: 8px;
+    padding-right: 8px;
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-bottom: 16px;
+  }
+}
+
+.timetable__item:nth-child(6),
+.timetable__item:nth-child(7) {
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
+}
+
+.timetable__link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 16px;
+
+  background-color: #E0E0E0;
+  border-radius: 5px;
+  text-decoration: none;
+  box-sizing: border-box;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  @media (max-width: $mobile-width) {
+    background: #FFFFFF;
+    border: 1px solid #E0E0E0;
+  }
+}
+
+.timetable__time {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 23px;
+  letter-spacing: -0.01em;
+  color: #222222;
+}
+
+.timetable__cost {
+  font-size: 16px;
+  line-height: 17px;
+  color: #00AED6;
+}
+
+.timetable__active {
+  background-color: #00AED6;
+
+  @media (max-width: $mobile-width) {
+    background: #FFFFFF;
+  }
+
+  & .timetable__time {
+    color: #FFFFFF;
+
+    @media (max-width: $mobile-width) {
+      color: #222222;
+    }
+  }
+
+  & .timetable__cost {
+    color: #E0E0E0;
+
+    @media (max-width: $mobile-width) {
+      color: #00AED6;
+    }
+  }
+}
