@@ -1,0 +1,83 @@
+.adverters-info {
+  max-width: 1024px;
+  margin: 0 auto;
+  margin-top: 60px;
+  margin-bottom: 30px;
+  padding-left: 5.5%;
+  padding-right: 5.5%;
+}
+
+.adverters-info__title {
+  width: 570px;
+  margin: 0;
+  margin-bottom: 24px;
+  padding: 0;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 108%;
+  letter-spacing: -0.01em;
+  color: $text-color;
+
+  @media (max-width: $tablet-width) {
+    width: auto;
+    font-size: 36px;
+  }
+}
+
+.adverters-info__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.adverters-info__item {
+  margin-right: 7px;
+  padding: 7px;
+  border: 1px solid $border;
+  border-radius: 5px;
+
+  &:last-of-type {
+    margin-left: auto;
+    margin-right: 0;
+    border: none;
+  }
+
+  @media (max-width: $tablet-width) {
+    &:last-of-type {
+      width: 100%;
+      margin-top: 15px;
+      margin-left: -12px;
+    }
+  }
+}
+
+.adverters-info__link {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 108%;
+  color: $text-color;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: #00aed6;
+  }
+}
+
+.adverters-info__link--mail {
+  position: relative;
+  padding-left: 35px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 7px;
+    width: 19px;
+    height: 18px;
+    background-image: url("../img/icon-mail-blue.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
