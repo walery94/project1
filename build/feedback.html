@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Adverterts</title>
+  <title>Feedback</title>
   <link rel="stylesheet" type="text/css" href="slick/slick.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -162,105 +162,52 @@
       </clipPath>
     </defs>
   </symbol>
+  <symbol id="download" viewBox="0 0 17 20">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.875 7.125H16.375L8.5 15L0.625 7.125H5.125V0.375H11.875V7.125ZM0.625 19.5V17.25H16.375V19.5H0.625Z" fill="#00AED6"></path>
+  </symbol>
 </svg>
-<main class="adverters">
-  <section class="adverters-info">
-    <h2 class="adverters-info__title">Рекламодателям и арендаторам</h2>
-    <ul class="adverters-info__list">
-      <li class="adverters-info__item"><a class="adverters-info__link" href="#">Рекламодателям</a></li>
-      <li class="adverters-info__item"><a class="adverters-info__link" href="#">Арендаторам</a></li>
-      <li class="adverters-info__item"><a class="adverters-info__link adverters-info__link--mail" href="#">marketing@riviera.su</a></li>
+<main class="arendators">
+  <section class="feedback">
+    <h2 class="feedback__title">Обратная связь</h2>
+    <p class="feedback__paragraph">Мы всегда рады ответить на любые вопросы о работе нашего ТРЦ Ривьера. Задать вопрос можно по телефону или заполнив форму онлайн.</p>
+    <ul class="feedback__list">
+      <li class="feedback__item">
+        <svg width="21" height="20">
+          <use xlink:href="#icon-phone"></use>
+        </svg>
+        <a class="feedback__link" href="tel:+74952699999">+7 495 269-99-99</a>
+      </li>
+      <li class="feedback__item">
+        <svg width="24" height="24">
+          <use xlink:href="#icon-clock"></use>
+        </svg>
+        <a class="feedback__link" href="#">С 10 до 22 каждый день</a>
+      </li>
     </ul>
   </section>
-  <section class="advantages">
-    <h2 class="visually-hidden">Преимущества</h2>
-    <div class="advantages__wrapper">
-      <h3 class="advantages__title">Яркий и динамияный фасад</h3>
-      <p class="advantages__paragraph">Медиафасад ТРЦ «Ривьера», сооруженный с использованием последних технических достижений и современных световых эффектов, привлекает внимание пешеходов и автомобилистов, проезжающих по ТТК.</p>
-      <div class="advantages__box advantages__box--desktop">
-        <p class="advantages__info advantages__info--number">10</p>
-        <p class="advantages__info">фасадов</p>
-      </div>
-    </div>
-    <div class="advantages__wrapper">
-      <h3 class="advantages__title">Удобное местоположение</h3>
-      <p class="advantages__paragraph">ТРЦ находтся в непосредственной близости от легендарного завода «ЗИЛ», стремительно развивающихся жилых кварталов и студенческих городков расширяет потенциальную аудиторию до нескольких сотен тысяч человек ежедневно.</p>
-      <div class="advantages__box advantages__box--desktop">
-        <p class="advantages__info advantages__info--number">14</p>
-        <p class="advantages__info">тотемов с экранами</p>
-      </div>
-    </div>
-    <div class="advantages__wrapper">
-      <h3 class="advantages__title">Современное оснащение</h3>
-      <p class="advantages__paragraph">В распоряжении ТРЦ находится 10 современных медиафасадов, 14 рекламных экранов, 8 лайтбоксов на фасаде и огромный прозрачный медиаэкран высотой 15 метров, расположенный в просторном атриуме первого этажа.</p>
-      <div class="advantages__box advantages__box--desktop">
-        <p class="advantages__info advantages__info--number">8</p>
-        <p class="advantages__info">лайтбоксов на фасаде</p>
-      </div>
-    </div>
-    <div class="advantages__mobile">
-      <div class="advantages__box advantages__box--mobile">
-        <p class="advantages__info advantages__info--number">10</p>
-        <p class="advantages__info">фасадов</p>
-      </div>
-      <div class="advantages__box advantages__box--mobile">
-        <p class="advantages__info advantages__info--number">14</p>
-        <p class="advantages__info">тотемов с экранами</p>
-      </div>
-      <div class="advantages__box advantages__box--mobile">
-        <p class="advantages__info advantages__info--number">8</p>
-        <p class="advantages__info">лайтбоксов на фасаде</p>
-      </div>
-    </div>
-  </section>
   <form class="form" method="post">
-    <h2 class="form__title">Стать рекламодателем</h2>
+    <h2 class="visually-hidden">Обратная взязь</h2>
     <div class="form__row">
-      <label for="email">Адрес электронной почты <span>*</span></label>
+      <label for="name">Имя</label>
+      <input class="form__input" id="name" type="text" aria-label="Категория бренда">
+    </div>
+    <div class="form__row">
+      <label for="email">Электронная почта</label>
       <input class="form__input" id="email" type="email" aria-label="Адрес электронной почты">
     </div>
     <div class="form__row">
-      <label for="advertising">Вид рекламы <span>*</span></label>
-      <input class="form__input" id="advertising" type="text" aria-label="Вид рекламы">
+      <label for="phone">Номер телефона</label>
+      <input class="form__input" id="phone" type="tel">
     </div>
     <div class="form__row">
-      <label>Тип компании <span>*</span></label>
-      <div class="form__radio-wrapper">
-        <div class="form__radio-inner-wrapper">
-          <input class="form__input" name="type" value="agency" id="agency" type="radio">
-          <label class="form__radio-label form__radio-label--agency" for="agency">Рекламное агенство</label>
-        </div>
-        <div class="form__radio-inner-wrapper">
-          <input class="form__input" name="type" value="tenant" id="tenant" type="radio">
-          <label class="form__radio-label form__radio-label--tenant" for="tenant">Арендатор ТРЦ</label>
-        </div>
-        <div class="form__radio-inner-wrapper">
-          <input class="form__input" name="type" value="brand" id="brand" type="radio">
-          <label class="form__radio-label form__radio-label--brand" for="brand">Внешний бренд</label>
-        </div>
-      </div>
-    </div>
-    <div class="form__row">
-      <label for="site">Сайт</label>
-      <input class="form__input" id="site" type="text" aria-label="Сайт">
-    </div>
-    <div class="form__row">
-      <label for="position">Должность</label>
-      <input class="form__input" id="position" type="text" aria-label="Должность">
-    </div>
-    <div class="form__row">
-      <label for="phone">Телефон <span>*</span></label>
-      <input class="form__input" id="phone" type="tel" aria-label="Телефон">
-    </div>
-    <div class="form__row">
-      <label for="comments">Комментарии</label>
-      <textarea name="comments" id="comments" cols="30" rows="8"></textarea>
+      <label for="question">Ваш вопрос о ТРЦ Ривьера</label>
+      <textarea name="question" id="question" cols="30" rows="8"></textarea>
     </div>
     <div class="form__row form__row--checkbox form__row--margin">
       <input class="form__checkbox" name="consent" id="checkbox" type="checkbox">
       <label class="form__agreement" for="checkbox">Нажимая на кнопку, я принимаю условия <a href="#">пользовательского соглашения</a> и даю согласие на обработку моих персональных данных</label>
     </div>
-    <button class="form__button button">Отправить</button>
+    <button class="form__button button">Отправить письмо</button>
   </form>
 </main>
 <footer class="page-footer">
@@ -381,3 +328,4 @@
 <script src="js/scroll.js"></script>
 </body>
 </html>
+

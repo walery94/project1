@@ -227,16 +227,16 @@
       <label>Тип компании <span>*</span></label>
       <div class="form__radio-wrapper">
         <div class="form__radio-inner-wrapper">
-          <input class="form__input" name="agency" id="agency" type="radio">
-          <label for="agency">Рекламное агенство</label>
+          <input class="form__input" name="type" value="agency" id="agency" type="radio">
+          <label class="form__radio-label form__radio-label--agency" for="agency">Рекламное агенство</label>
         </div>
         <div class="form__radio-inner-wrapper">
-          <input class="form__input" name="tenant" id="tenant" type="radio">
-          <label for="tenant">Арендатор ТРЦ</label>
+          <input class="form__input" name="type" value="tenant" id="tenant" type="radio">
+          <label class="form__radio-label form__radio-label--tenant" for="tenant">Арендатор ТРЦ</label>
         </div>
         <div class="form__radio-inner-wrapper">
-          <input class="form__input" name="brand" id="brand" type="radio">
-          <label for="brand">Внешний бренд</label>
+          <input class="form__input" name="type" value="brand" id="brand" type="radio">
+          <label class="form__radio-label form__radio-label--brand" for="brand">Внешний бренд</label>
         </div>
       </div>
     </div>
@@ -254,12 +254,11 @@
     </div>
     <div class="form__row">
       <label for="comments">Комментарии</label>
-      <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+      <textarea name="comments" id="comments" cols="30" rows="8"></textarea>
     </div>
-    <div class="form__row form__row--checkbox">
+    <div class="form__row form__row--checkbox form__row--margin">
       <input class="form__checkbox" name="consent" id="checkbox" type="checkbox">
-      <label for="checkbox"></label>
-      <div class="form__agreement">Нажимая на кнопку, я принимаю условия <a href="#">пользовательского соглашения</a> и даю согласие на обработку моих персональных данных</div>
+      <label class="form__agreement" for="checkbox">Нажимая на кнопку, я принимаю условия <a href="#">пользовательского соглашения</a> и даю согласие на обработку моих персональных данных</label>
     </div>
     <button class="form__button button">Отправить</button>
   </form>
