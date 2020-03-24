@@ -243,40 +243,40 @@
       </li>
     </ul>
   </section>
-<form class="form" method="post">
+<form class="form form--arendators" method="post">
   <h2 class="form__title">Стать арендатором</h2>
   <div class="form__row">
     <label for="email">Адрес электронной почты <span>*</span></label>
     <input class="form__input" id="email" type="email" aria-label="Адрес электронной почты">
   </div>
   <div class="form__row">
-    <label for="advertising">Категория бренда <span>*</span></label>
-    <input class="form__input" id="advertising" type="text" aria-label="Категория бренда">
+    <label for="category">Категория бренда <span>*</span></label>
+    <input class="form__input" id="category" type="text" aria-label="Категория бренда">
   </div>
   <div class="form__row">
-    <label>Тип компании <span>*</span></label>
+    <label>Вид аренды <span>*</span></label>
     <div class="form__radio-wrapper">
       <div class="form__radio-inner-wrapper">
-        <input class="form__input" name="agency" id="agency" type="radio">
-        <label for="agency">Помещения</label>
+        <input class="form__input" name="type" value="room" id="room" type="radio">
+        <label class="form__radio-label form__radio-label--room" for="room">Помещения</label>
       </div>
       <div>
-        <input class="form__input" name="tenant" id="tenant" type="radio">
-        <label for="tenant">Островная аренда</label>
+        <input class="form__input" name="type" value="rent" id="rent" type="radio">
+        <label class="form__radio-label form__radio-label--rent" for="rent">Островная аренда</label>
       </div>
     </div>
   </div>
   <div class="form__row">
-    <label for="site">Необходимая площадь <span>*</span></label>
-    <input class="form__input" id="site" type="text" aria-label="Сайт">
+    <label for="area">Необходимая площадь <span>*</span></label>
+    <input class="form__input" id="area" type="text" aria-label="Сайт">
   </div>
   <div class="form__row">
-    <label for="position">Средний чек (в рублях)</label>
-    <input class="form__input" id="position" type="text" aria-label="Необходимая площадь">
+    <label for="receipt">Средний чек (в рублях)</label>
+    <input class="form__input" id="receipt" type="text" aria-label="Необходимая площадь">
   </div>
   <div class="form__row">
-    <label for="phone">Ожидаемый уровень продаж (млн/мес)</label>
-    <input class="form__input" id="phone" type="tel" aria-label="Ожидаемый уровень продаж">
+    <label for="sales">Ожидаемый уровень продаж (млн/мес)</label>
+    <input class="form__input" id="sales" aria-label="Ожидаемый уровень продаж">
   </div>
   <div class="form__row">
     <label for="competitors">Основные конкуренты <span>*</span></label>
@@ -304,12 +304,11 @@
   </div>
   <div class="form__row">
     <label for="comments">Комментарии</label>
-    <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+    <textarea name="comments" id="comments" cols="30" rows="8"></textarea>
   </div>
   <div class="form__row form__row--checkbox">
     <input class="form__checkbox" name="consent" id="checkbox" type="checkbox">
-    <label for="checkbox"></label>
-    <div class="form__agreement">Нажимая на кнопку, я принимаю условия <a href="#">пользовательского соглашения</a> и даю согласие на обработку моих персональных данных</div>
+    <label class="form__agreement" for="checkbox">Нажимая на кнопку, я принимаю условия <a href="#">пользовательского соглашения</a> и даю согласие на обработку моих персональных данных</label>
   </div>
   <button class="form__button button">Отправить</button>
 </form>

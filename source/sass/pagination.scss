@@ -14,14 +14,14 @@
 }
 
 .pagination--scroll {
-  // position: fixed;
+  position: fixed;
   top: 0;
   width: 89%;
   z-index: 100;
   background-color: #ffffff;
 
   @media (max-width: $tablet-width) {
-    // position: fixed;
+    position: fixed;
     width: 100%;
     z-index: 100;
     border-bottom: 1px solid $border;
@@ -202,23 +202,6 @@
 
     &::before {
       top: 17px;
-    }
-  }
-}
-
-.pagination__search-form--sitemenu {
-  @media (max-width: $tablet-width) {
-
-    &::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 20px;
-      height: 20px;
-      background-image: url("../img/icon-close-gray.svg");
-      background-position: center;
-      background-repeat: no-repeat;
     }
   }
 }
