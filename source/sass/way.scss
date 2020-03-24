@@ -1,0 +1,199 @@
+.way {
+  padding-top: 37px;
+  margin-bottom: 3px;
+  @media (max-width: $mobile-width) {
+    padding-top: 23px;
+    margin-bottom: 64px;
+  }
+}
+
+.way__box {
+  padding-left: 5.5%;
+  padding-right: 5.5%;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+
+  @media (max-width: $tablet-width) {
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 23px;
+  }
+}
+
+.way__container {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.way h2 {
+  position: relative;
+  margin: 0 0 25px;
+  padding-right: 41px;
+
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 69px;
+  letter-spacing: .3px;
+  hyphens: auto;
+  color: #222;
+
+  box-sizing: border-box;
+
+  @media (max-width: $mobile-width) {
+    font-size: 48px;
+    line-height: 44px;
+    letter-spacing: 0;
+    color: #222222;
+  }
+}
+
+.way__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.way__button {
+  display: flex;
+  margin-right: 7px;
+  margin-bottom: 8px;
+  color: #222222;
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 2px;
+  }
+}
+
+.way__button p {
+  width: 16px;
+  height: 16px;
+  margin: 0;
+  margin-right: 4px;
+  background-image: url("../img/icon-taxi.svg");
+  background-repeat: no-repeat;
+  background-size: 16px 16px;
+}
+
+.way__map {
+  max-width: 1152px;
+  margin: 0 auto;
+  margin-bottom: 17px;
+}
+
+.way__map img {
+  width: 100%;
+  height: auto;
+}
+
+.way__options {
+  display: flex;
+
+  @media (max-width: $mobile-width) {
+    display: block;
+  }
+}
+
+.way__adress {
+  margin-bottom: 24px;
+}
+
+.way__adress dl {
+  margin: 0;
+}
+
+.way__adress dt {
+  margin-bottom: 4px;
+
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: #7D7D7D;
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 0;
+  }
+}
+
+.way__adress dd {
+  margin-left: 0;
+
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 39px;
+  letter-spacing: 0;
+  color: #222222;
+
+  @media (max-width: $mobile-width) {
+    font-size: 24px;
+    line-height: 23px;
+  }
+}
+
+.way__item h3 {
+  margin: 0;
+  margin-bottom: 16px;
+
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 23px;
+  letter-spacing: -0.01em;
+  color: #222222;
+}
+
+.way__item dl {
+  margin: 0;
+}
+
+.way__item dt {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.way__item dd {
+  margin-left: 0;
+  font-weight: 300;
+  line-height: 19px;
+  margin-bottom: 19px;
+}
+
+.way__item--east {
+  max-width: 437px;
+  margin-right: 87px;
+
+  & dt:first-child {
+    color: #3DAF28;
+  }
+
+  & dt:nth-child(2) {
+    color: orange;
+  }
+
+  & dt:last-child {
+    color: blue;
+  }
+
+  @media (max-width: $mobile-width) {
+    max-width: 100%;
+    margin-right: 0;
+    margin-bottom: 24px;
+  }
+}
+
+.way__item--west {
+  max-width: 466px;
+
+  & dt:first-child {
+    color: red;
+  }
+
+  & dt:last-child {
+    color: purple;
+  }
+
+  @media (max-width: $mobile-width) {
+    max-width: 100%;
+  }
+}

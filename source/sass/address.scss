@@ -118,6 +118,14 @@
   margin-top: -1px;
 }
 
+.address__title--way {
+  display: none;
+}
+
+.address__list--way .address__button:first-child {
+  display: none;
+}
+
 @media (max-width: $tablet-width) {
 
   .address {
@@ -309,5 +317,9 @@
 
   .address--page-shop .address__item {
     margin-left: 31px;
+  }
+
+  .address--way {
+    margin-bottom: 127px;
   }
 }
