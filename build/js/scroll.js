@@ -21,7 +21,6 @@ $(document).ready(function(){
 	}
 	
 	var checkYOffsetDesktop = function () {
-		console.log(window.pageYOffset);
 		if (window.pageYOffset < 56) {
 			paginationSearch.removeClass('visually-hidden');
 			paginationScrollIcons.addClass('visually-hidden');

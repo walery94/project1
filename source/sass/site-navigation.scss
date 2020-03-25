@@ -48,12 +48,6 @@
   }
 }
 
-.site-navigation__logo svg {
-  @media (max-width: $tablet-width) {
-    fill: #00b2ff;
-  }
-}
-
 .site-navigation__logo--sitemenu svg {
   @media (max-width: $tablet-width) {
     fill: #222222;
@@ -305,6 +299,22 @@
   }
 }
 
+.site-navigation__close-menu--closed {
+  display: none;
+}
+
+.site-navigation__close-menu--opened {
+  display: block;
+}
+
+.site-navigation__open-menu--closed {
+  display: none;
+}
+
+.site-navigation__open-menu--opened {
+  display: block;
+}
+
 .site-navigation__link {
   &:hover,
   &:focus {
@@ -325,5 +335,25 @@
 
   @media (max-width: $tablet-width) {
     fill: #ffffff;
+  }
+}
+
+.site-navigation__icon--close {
+  fill: #00aed6;
+}
+
+.site-navigation__icon--white {
+  @media (max-width: $tablet-width) {
+    fill: #ffffff;
+  }
+}
+
+.site-navigation__icon-logo {
+  fill: #222222;
+}
+
+.site-navigation__icon-logo--blue {
+  @media (max-width: $tablet-width) {
+    fill: #00aed6;
   }
 }

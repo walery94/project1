@@ -1,4 +1,4 @@
-.pagination {
+.pagination--opened {
   display: flex;
   justify-content: space-between;
   min-height: 56px;
@@ -26,6 +26,10 @@
     z-index: 100;
     border-bottom: 1px solid $border;
   }
+}
+
+.pagination--closed {
+  display: none;
 }
 
 .pagination a {
