@@ -8,51 +8,51 @@
   <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
-<div class="wrapper-menu--scheme">
-  <header class="main-header main-header--scheme">
-    <h1 class="visually-hidden">Ривьера</h1>
-    <section class="site-navigation site-navigation--scheme">
-      <h2 class="visually-hidden">Навигация по сайту</h2>
-      <a class="site-navigation__logo site-navigation__logo--scheme" href="main.html">
-        <svg width="205" height="24">
-          <use xlink:href="#logo"></use>
+<header class="main-header header-index">
+  <h1 class="visually-hidden">Ривьера</h1>
+  <section class="site-navigation">
+    <h2 class="visually-hidden">Навигация по сайту</h2>
+    <a class="site-navigation__logo">
+      <svg width="205" height="24">
+        <use xlink:href="#logo"></use>
+      </svg>
+    </a>
+    <ul class="site-navigation__info">
+      <li class="site-navigation__item site-navigation__item--address"><a href="#">Автозаводская, 18</a></li>
+      <li class="site-navigation__item site-navigation__item--clock"><a href="#">С 10 до 22 каждый день</a></li>
+      <li class="site-navigation__item site-navigation__item--phone"><a href="tel:+74952699999">+7 495 269-99-99</a></li>
+      <li class="site-navigation__item site-navigation__item--floor"><a href="scheme.html">Схема Ривьеры</a></li>
+    </ul>
+    <ul class="site-navigation__user">
+      <li><a href="#">
+        <svg width="20" height="20">
+          <use xlink:href="#door"></use>
         </svg>
-      </a>
-      <ul class="site-navigation__info menu__info site-navigation__info--none">
-        <li class="site-navigation__item site-navigation__item--address"><a href="#">Автозаводская, 18</a></li>
-        <li class="site-navigation__item site-navigation__item--clock"><a href="#">С 10 до 22 каждый день</a></li>
-        <li class="site-navigation__item site-navigation__item--phone"><a href="tel:+74952699999">+7 495 269-99-99</a></li>
-      </ul>
-
-      <!--Убирается добавлением класса site-navigation__user--none-->
-      <ul class="site-navigation__user site-navigation__user--scheme site-navigation__user--none">
-        <li><a href="#">
-          <svg width="20" height="20">
-            <use xlink:href="#door"></use>
-          </svg>
-          <span class="visually-hidden">Вход</span>
-        </a></li>
-        <li><a href="menu.html">
-          <svg width="24" height="20">
-            <use xlink:href="#menu"></use>
-          </svg>
-          <span class="visually-hidden">Меню</span>
-        </a></li>
-      </ul>
-    </section>
-
-    <!--Фон меняется добавлением класса pagination-menu__open-->
-    <nav class="pagination-menu pagination-menu--scheme pagination-menu__open">
-      <h2 class="visually-hidden">Постраничная навигация</h2>
-      <form class="pagination-menu__search-form pagination-menu__search-form--scheme">
-        <input class="pagination-menu__search-input pagination-menu__search-input--scheme" type="search" id="search-all" placeholder="Поиск всего">
-        <label class="visually-hidden" for="search-all" aria-label="Поиск всего"></label>
-        <input class="pagination-menu__search-input" type="search" id="search" placeholder="Поиск" aria-label="Поиск">
-        <label class="visually-hidden" for="search" aria-label="Поиск"></label>
-      </form>
-      <a class="pagination-menu__scheme pagination-menu__scheme--active">Схема <span>Ривьеры</span></a>
-    </nav>
-  </header>
+        <span class="visually-hidden">Вход</span>
+      </a></li>
+      <li><a href="menu.html">
+        <svg width="24" height="20">
+          <use xlink:href="#menu"></use>
+        </svg>
+        <span class="visually-hidden">Меню</span>
+      </a></li>
+    </ul>
+  </section>
+  <nav class="pagination-menu">
+    <h2 class="visually-hidden">Постраничная навигация</h2>
+    <form class="pagination-menu__search-form">
+      <input class="pagination-menu__search-input" type="search" id="search-all" placeholder="Поиск всего">
+      <label class="visually-hidden" for="search-all" aria-label="Поиск всего"></label>
+      <input class="pagination-menu__search-input" type="search" id="search" placeholder="Поиск" aria-label="Поиск">
+      <label class="visually-hidden" for="search" aria-label="Поиск"></label>
+    </form>
+    <a class="pagination-menu__close" href="#">
+      <svg width="20" height="20">
+        <use xlink:href="#icon-close"></use>
+      </svg>
+    </a>
+  </nav>
+</header>
 
   <!--Открывается добавлением класса search-shop__open-->
   <section class="search-shop search-shop__open">
@@ -120,7 +120,6 @@
     </ul>
   </section>
 
-</div>
 <body>
   <svg style="display: none;">
     <symbol id="icon-clock" viewBox="0 0 24 24">
@@ -206,6 +205,9 @@
         <path d="M0 0H16V16H0V0Z" fill="white"/>
         </clipPath>
         </defs>
+    </symbol>
+    <symbol id="icon-close" viewBox="0 0 20 20">
+      <path d="M1.83477 0L0 1.83477L8.16523 10L0 18.1652L1.83477 20L10 11.8348L18.1652 20L20 18.1652L11.8348 10L20 1.83477L18.1652 0L10 8.16523L1.83477 0Z" fill="#7D7D7D"/>
     </symbol>
   </svg>
   <main class="page-main">
@@ -329,6 +331,5 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="slick/slick.min.js"></script>
   <script src="js/slider.js"></script>
-  <script src="js/scroll.js"></script>
 </body>
 </html>
