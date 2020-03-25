@@ -206,3 +206,17 @@
     display: none;
   }
 }
+
+.pagination-menu__close {
+  position: absolute;
+  top: 16px;
+  right: 5.5%;
+
+  &:hover {
+    opacity: 0,5;
+  }
+
+  @media (max-width: $tablet-width) {
+    right: 16px;
+  }
+}

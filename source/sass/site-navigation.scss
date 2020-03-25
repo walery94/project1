@@ -23,14 +23,14 @@
 .site-navigation__logo {
   position: relative;
   left: 0;
-  width: 100px;
+  width: 200px;
   display: block;
   margin-right: auto;
   padding-top: 18px;
   padding-bottom: 10px;
 
   @media (max-width: 1060px) {
-    margin-right: 16%;
+    margin-right: 6%;
   }
 
   @media (max-width: $tablet-width) {
