@@ -39,6 +39,7 @@
   border-radius: 5px;
 
   @media (max-width: $tablet-width) {
+    justify-content: flex-start;
     width: auto;
     margin-bottom: 16px;
 
@@ -82,7 +83,7 @@
     text-align: left;
 
     &::before {
-      left: 17px;
+      left: 21px;
     }
   }
 }
