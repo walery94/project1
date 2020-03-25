@@ -1,9 +1,10 @@
 .advantages {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   max-width: 1024px;
   margin: 0 auto;
-  margin-bottom: 56px;
+  margin-bottom: 36px;
   padding-left: 5.5%;
   padding-right: 5.5%;
 
@@ -24,9 +25,10 @@
   flex-direction: column;
   justify-content: space-between;
   width: 31%;
+  margin-bottom: 20px;
   margin-right: 24px;
 
-  &:nth-of-type(3) {
+  &:nth-of-type(3n) {
     margin-right: 0;
   }
 
@@ -77,9 +79,11 @@
 .advantages__box--arendators {
   width: 27%;
   margin-bottom: 24px;
+  margin-right: auto;
 
   @media (max-width: $tablet-width) {
     width: auto;
+    margin-right: 0;
   }
 }
 
