@@ -23,15 +23,11 @@
 .site-navigation__logo {
   position: relative;
   left: 0;
-  width: 100px;
+  width: 200px;
   display: block;
-  margin-right: auto;
+  margin-right: 7%;
   padding-top: 18px;
   padding-bottom: 10px;
-
-  @media (max-width: 1060px) {
-    margin-right: 16%;
-  }
 
   @media (max-width: $tablet-width) {
     padding-left: 4%;
@@ -45,12 +41,6 @@
 .site-navigation__logo--scheme {
   @media (max-width: $tablet-width) {
     display: none;
-  }
-}
-
-.site-navigation__logo svg {
-  @media (max-width: $tablet-width) {
-    fill: #00b2ff;
   }
 }
 
@@ -325,5 +315,25 @@
 
   @media (max-width: $tablet-width) {
     fill: #ffffff;
+  }
+}
+
+.site-navigation__icon--close {
+  fill: #00aed6;
+}
+
+.site-navigation__icon--white {
+  @media (max-width: $tablet-width) {
+    fill: #ffffff;
+  }
+}
+
+.site-navigation__icon-logo {
+  fill: #222222;
+}
+
+.site-navigation__icon-logo--blue {
+  @media (max-width: $tablet-width) {
+    fill: #00aed6;
   }
 }

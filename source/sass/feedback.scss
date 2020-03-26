@@ -4,6 +4,10 @@
   margin-bottom: 28px;
   padding-left: 5.5%;
   padding-right: 5.5%;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 24px;
+  }
 }
 
 .feedback__title {
@@ -14,10 +18,12 @@
   font-size: 64px;
   font-weight: 700;
   line-height: 108%;
-  letter-spacing: -0.01em;
+  letter-spacing: 0.6px;
   color: $text-color;
 
   @media (max-width: $tablet-width) {
+    margin-top: 15px;
+    margin-bottom: 18px;
     font-size: 36px;
   }
 }
@@ -34,6 +40,7 @@
 
   @media (max-width: $tablet-width) {
     width: auto;
+    margin-bottom: 28px;
   }
 }
 
@@ -46,7 +53,7 @@
 }
 
 .feedback__item {
-  margin-right: 32px;
+  margin-right: 38px;
   display: flex;
   align-items: center;
 
@@ -56,7 +63,7 @@
 
   @media (max-width: $tablet-width) {
     width: 100%;
-    margin-bottom: 23px;
+    margin-bottom: 18px;
   }
 }
 

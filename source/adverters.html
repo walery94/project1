@@ -8,75 +8,7 @@
   <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
-<body>
-<header class="main-header header-index">
-  <h1 class="visually-hidden">Ривьера</h1>
-  <section class="site-navigation">
-    <h2 class="visually-hidden">Навигация по сайту</h2>
-    <a class="site-navigation__logo">
-      <svg width="205" height="24">
-        <use xlink:href="#logo"></use>
-      </svg>
-    </a>
-    <ul class="site-navigation__info site-navigation__info--none">
-      <li class="site-navigation__item site-navigation__item--address"><a href="#">Автозаводская, 18</a></li>
-      <li class="site-navigation__item site-navigation__item--clock"><a href="#">С 10 до 22 каждый день</a></li>
-      <li class="site-navigation__item site-navigation__item--phone"><a href="tel:+74952699999">+7 495 269-99-99</a></li>
-      <li class="site-navigation__item site-navigation__item--floor"><a href="scheme.html">Схема Ривьеры</a></li>
-    </ul>
-    <ul class="site-navigation__user site-navigation__user--scroll">
-      <li><a href="#">
-        <svg width="20" height="20">
-          <use xlink:href="#door"></use>
-        </svg>
-        <span class="visually-hidden">Вход</span>
-      </a></li>
-      <li><a href="menu.html">
-        <svg width="24" height="20">
-          <use xlink:href="#menu"></use>
-        </svg>
-        <span class="visually-hidden">Меню</span>
-      </a></li>
-    </ul>
-  </section>
-  <nav class="pagination pagination--scroll">
-    <h2 class="visually-hidden">Постраничная навигация</h2>
-    <form class="pagination__search-form">
-      <input class="pagination__search-input" type="search" id="search" placeholder="Поиск всего" aria-label="Кнопка поиска">
-      <label class="visually-hidden" for="search" aria-label="Поиск"></label>
-    </form>
-    <ul class="pagination__list">
-      <li class="pagination__item"><a href="shops.html">Магазины</a></li>
-      <li class="pagination__item"><a href="#">Развлечения</a></li>
-      <li class="pagination__item"><a href="#">Еда</a></li>
-      <li class="pagination__item"><a href="#">Кино</a></li>
-      <li class="pagination__item"><a href="#">Всё для детей</a></li>
-      <li class="pagination__item"><a href="#">Фитнес</a></li>
-      <li class="pagination__item"><a href="#">Услуги и сервисы</a></li>
-      <li class="pagination__item"><a href="#">Акции и события</a></li>
-    </ul>
-    <ul class="pagination__search">
-      <li class="pagination__link pagination__link--search"><a href="menu.html#search-all">Поиск</a></li>
-      <li class="pagination__link pagination__link--floor"><a href="scheme.html">Схема</a></li>
-    </ul>
-    <ul class="pagination__scroll-icons">
-      <li>
-        <a href="#">
-          <svg width="22" height="22">
-            <use xlink:href="#loupe"></use>
-          </svg>
-        </a>
-      </li>
-      <li>
-        <a href="scheme.html">
-          <svg width="24" height="24">
-            <use xlink:href="#icon-floor3"></use>
-          </svg>
-        </a>
-      </li>
-    </ul>
-  </nav>
-</header>
+<body class="menu-closed">
 <svg style="display: none;">
   <symbol id="icon-clock" viewBox="0 0 24 24">
     <path d="M12 0C5.37109 0 0 5.37109 0 12C0 18.6289 5.37109 24 12 24C18.6289 24 24 18.6289 24 12C24 5.37109 18.6289 0 12 0ZM12 2C17.5234 2 22 6.47656 22 12C22 17.5234 17.5234 22 12 22C6.47656 22 2 17.5234 2 12C2 6.47656 6.47656 2 12 2ZM10.9375 3.875L10.5 12.0625L10.5938 12.9375L16.75 18.375L17.7188 17.375L12.625 11.9688L12.1875 3.875H10.9375Z"/>
@@ -130,23 +62,23 @@
     <path d="M0 0V18H24V0H0ZM2 2H22V4.1875L12 9.1875L2 4.1875V2ZM2 6.4375L11.5625 11.1875L12 11.4062L12.4375 11.1875L22 6.4375V16H2V6.4375Z"/>
   </symbol>
   <symbol id="door" viewBox="0 0 18 20">
-    <path d="M4.5 0.25V7.75H6V1.75H16.5V18.25H6V12.25H4.5V19.75H18V0.25H4.5ZM9.25781 6.46094L8.17969 7.53906L9.89062 9.25H0.75V10.75H9.89062L8.17969 12.4609L9.25781 13.5391L12.2578 10.5391L12.7734 10L12.2578 9.46094L9.25781 6.46094Z" fill="#222222"/>
+    <path d="M4.5 0.25V7.75H6V1.75H16.5V18.25H6V12.25H4.5V19.75H18V0.25H4.5ZM9.25781 6.46094L8.17969 7.53906L9.89062 9.25H0.75V10.75H9.89062L8.17969 12.4609L9.25781 13.5391L12.2578 10.5391L12.7734 10L12.2578 9.46094L9.25781 6.46094Z"/>
   </symbol>
   <symbol id="menu" viewBox="0 0 24 20">
     <path d="M0 0V2H24V0H0ZM0 9V11H24V9H0ZM0 18V20H24V18H0Z" fill="#222222"/>
   </symbol>
   <symbol id="loupe" viewBox="0 0 22 22">
-    <path d="M9.07992 0.440002C4.56867 0.440002 0.919922 4.08875 0.919922 8.6C0.919922 13.1113 4.56867 16.76 9.07992 16.76C10.6905 16.76 12.1812 16.2875 13.4449 15.485L19.3399 21.38L21.3799 19.34L15.5599 13.535C16.6062 12.1625 17.2399 10.4619 17.2399 8.6C17.2399 4.08875 13.5912 0.440002 9.07992 0.440002ZM9.07992 2.36C12.5355 2.36 15.3199 5.14438 15.3199 8.6C15.3199 12.0556 12.5355 14.84 9.07992 14.84C5.6243 14.84 2.83992 12.0556 2.83992 8.6C2.83992 5.14438 5.6243 2.36 9.07992 2.36Z" fill="#222222"/>
+    <path d="M9.07992 0.440002C4.56867 0.440002 0.919922 4.08875 0.919922 8.6C0.919922 13.1113 4.56867 16.76 9.07992 16.76C10.6905 16.76 12.1812 16.2875 13.4449 15.485L19.3399 21.38L21.3799 19.34L15.5599 13.535C16.6062 12.1625 17.2399 10.4619 17.2399 8.6C17.2399 4.08875 13.5912 0.440002 9.07992 0.440002ZM9.07992 2.36C12.5355 2.36 15.3199 5.14438 15.3199 8.6C15.3199 12.0556 12.5355 14.84 9.07992 14.84C5.6243 14.84 2.83992 12.0556 2.83992 8.6C2.83992 5.14438 5.6243 2.36 9.07992 2.36Z"/>
   </symbol>
   <symbol id="logo" viewBox="0 0 205 24">
-    <path fill-rule="evenodd" clip-rule="evenodd" d="M189.622 14.4799L192.84 7.06432L196.058 14.4799H189.622ZM193.987 0.039362H191.764L180.834 23.9956L181.475 23.9911H185.49L188.004 18.494H197.669L200.183 23.9956H204.808L193.987 0.039362Z" fill="#222222"/>
-    <path fill-rule="evenodd" clip-rule="evenodd" d="M77.2687 19.1349C76.5241 19.6645 75.5488 19.9255 74.3546 19.9255H68.9978V13.8029H73.4318C74.1017 13.8029 74.7716 13.8649 75.414 13.9723C76.0147 14.0631 76.5426 14.2456 76.9867 14.491C77.4017 14.7231 77.7112 15.0166 77.9532 15.4097C78.1754 15.7655 78.2844 16.2519 78.2699 16.8614C78.2553 17.9302 77.9296 18.6863 77.2687 19.1349ZM68.9978 4.11358H73.7993C74.3566 4.11358 74.866 4.18423 75.3283 4.29582C75.7562 4.42562 76.1275 4.59861 76.4332 4.83243C76.7101 5.04439 76.912 5.32167 77.0759 5.6724C77.2377 6.04809 77.3179 6.49555 77.3179 7.03161C77.3179 7.55673 77.2306 8.00251 77.063 8.32605C76.8919 8.65464 76.6626 8.91874 76.353 9.12285C76.0366 9.34406 75.6213 9.50947 75.1445 9.62554C74.6222 9.73516 74.0506 9.7974 73.4318 9.7974H68.9978V4.11358ZM79.6528 11.4443C80.0717 11.077 80.4213 10.6531 80.7014 10.1717C81.2458 9.21621 81.5185 8.1298 81.5185 6.93433C81.5185 5.7554 81.3238 4.72057 80.9418 3.85088C80.5487 2.96269 79.9937 2.21973 79.2853 1.65451C78.5973 1.09182 77.7783 0.683049 76.8516 0.413899C75.9617 0.168581 74.9806 0.0309219 73.9504 0.0309219H64.7676V23.9956H74.8733C75.9527 23.9956 76.97 23.856 77.8766 23.5406C78.8195 23.2395 79.6421 22.7783 80.3156 22.1671C80.9945 21.5598 81.535 20.7997 81.9193 19.9247C82.3049 19.041 82.4999 18.0202 82.4999 16.8738C82.4999 15.3559 82.0994 14.0474 81.3222 12.9776C80.8706 12.3627 80.3156 11.8424 79.6528 11.4443Z" fill="#222222"/>
-    <path fill-rule="evenodd" clip-rule="evenodd" d="M109.748 17.4344C109.546 17.9337 109.267 18.3697 108.9 18.7375C108.529 19.0885 108.077 19.386 107.575 19.5924C107.065 19.813 106.492 19.9221 105.871 19.9221C104.899 19.9341 103.93 19.9394 102.944 19.9341C102.233 19.9221 101.513 19.9221 100.813 19.9221V11.7399H105.886C106.521 11.7399 107.1 11.8347 107.608 12.0225C108.11 12.2185 108.543 12.4868 108.915 12.8493C109.284 13.1829 109.546 13.5979 109.75 14.0846C109.95 14.5727 110.052 15.1393 110.052 15.7351C110.052 16.3612 109.95 16.9261 109.748 17.4344ZM111.903 9.96117C111.177 9.21652 110.293 8.65243 109.257 8.25179C108.241 7.85956 107.105 7.64985 105.886 7.64985H100.813V0.0379601H96.6628V23.9959H105.886C107.109 23.9959 108.252 23.7834 109.271 23.3536C110.303 22.9434 111.194 22.3449 111.925 21.5996C112.653 20.8522 113.225 19.9651 113.607 18.9558C114 17.9619 114.199 16.8713 114.199 15.7344C114.199 14.5796 113.988 13.5064 113.592 12.5245C113.196 11.5405 112.631 10.6803 111.903 9.96117Z" fill="#222222"/>
-    <path fill-rule="evenodd" clip-rule="evenodd" d="M131.183 13.6679H140.736V9.62109H131.183V4.08249H141.068V0.0379601H126.949V23.9959H141.413V19.8238H131.183V13.6679Z" fill="#222222"/>
-    <path fill-rule="evenodd" clip-rule="evenodd" d="M13.2802 10.2495C13.0693 10.7898 12.7705 11.2555 12.4011 11.6284C12.0336 12.0181 11.593 12.308 11.0852 12.5219C10.5793 12.7355 10.0151 12.8435 9.40321 12.8435H4.17019V4.12133C4.93456 4.12133 5.68629 4.11207 6.42731 4.09189C7.43585 4.08796 8.41692 4.08796 9.40321 4.12133C10.033 4.12133 10.601 4.21777 11.1143 4.4373C11.6241 4.66243 12.0682 4.96578 12.4412 5.3496C12.8125 5.72136 13.0858 6.15957 13.2912 6.69114C13.4934 7.20757 13.5988 7.81709 13.5988 8.4622C13.5988 9.11041 13.4934 9.70506 13.2802 10.2495ZM15.4859 2.50951C14.7542 1.74467 13.8588 1.12142 12.8286 0.692186C11.8074 0.266593 10.6517 0.0198727 9.41739 0.0198727H0V23.9991H4.20251V16.9463H9.40283C10.6404 16.9463 11.7781 16.7287 12.7976 16.2967C13.8242 15.8593 14.7215 15.2574 15.4461 14.5122C16.1758 13.7487 16.751 12.846 17.1404 11.8137C17.5409 10.8055 17.7375 9.68515 17.7375 8.5292C17.7375 7.37551 17.5447 6.26835 17.1588 5.2296C16.7801 4.18132 16.2085 3.27294 15.4859 2.50951Z" fill="#222222"/>
-    <path fill-rule="evenodd" clip-rule="evenodd" d="M169.038 10.2495C168.84 10.7898 168.535 11.2555 168.171 11.6284C167.8 12.0181 167.365 12.308 166.855 12.5219C166.346 12.7355 165.778 12.8435 165.17 12.8435H159.933V4.12132C160.692 4.12132 161.453 4.11207 162.195 4.09188C163.195 4.08796 164.176 4.08796 165.17 4.12132C165.794 4.12132 166.366 4.21777 166.877 4.43729C167.383 4.66242 167.833 4.96578 168.204 5.3496C168.568 5.72136 168.852 6.15957 169.051 6.69114C169.262 7.20757 169.365 7.81708 169.365 8.4622C169.365 9.1104 169.252 9.70506 169.038 10.2495ZM171.245 2.50651C170.518 1.74168 169.626 1.11843 168.594 0.689191C167.567 0.263599 166.415 0.0168781 165.18 0.0168781H155.77V23.9961H159.968V16.9433H165.17C166.4 16.9433 167.537 16.7257 168.561 16.2937C169.585 15.8563 170.474 15.2544 171.211 14.5092C171.941 13.7457 172.509 12.843 172.911 11.8107C173.302 10.8025 173.51 9.68215 173.51 8.52621C173.51 7.37251 173.312 6.26535 172.929 5.2266C172.538 4.17832 171.977 3.26994 171.245 2.50651Z" fill="#222222"/>
-    <path fill-rule="evenodd" clip-rule="evenodd" d="M48.4429 0V0.786422C48.4429 5.0317 47.0083 7.6475 45.0879 9.56687C43.7394 10.9031 42.1574 11.886 40.6468 12.8169C38.2386 14.3014 35.9216 15.7453 34.7038 18.497C34.1506 19.7547 33.8301 21.2979 33.8301 23.2357V23.9964H34.7038V23.0692C34.7623 17.5152 37.5651 15.7859 41.1019 13.5988C42.4342 12.7779 43.8251 11.9006 45.0879 10.7991V23.9964H49.3217V0H48.4429Z" fill="#222222"/>
-    <path fill-rule="evenodd" clip-rule="evenodd" d="M39.3756 10.6039C41.7673 9.1267 43.9316 7.79441 45.0874 5.2986C45.6408 4.10734 45.9613 2.64215 45.9613 0.786422V0H45.0874V0.786422C45.0874 6.02783 42.5045 7.63123 38.9334 9.82705C37.5154 10.7004 36.0303 11.6312 34.7032 12.8244V0.0114949H30.4658V23.9964H31.3453V23.2357C31.3453 18.8015 32.7776 16.0553 34.7032 14.0757C36.1177 12.6329 37.7868 11.5908 39.3756 10.6039Z" fill="#222222"/>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M189.622 14.4799L192.84 7.06432L196.058 14.4799H189.622ZM193.987 0.039362H191.764L180.834 23.9956L181.475 23.9911H185.49L188.004 18.494H197.669L200.183 23.9956H204.808L193.987 0.039362Z"/>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M77.2687 19.1349C76.5241 19.6645 75.5488 19.9255 74.3546 19.9255H68.9978V13.8029H73.4318C74.1017 13.8029 74.7716 13.8649 75.414 13.9723C76.0147 14.0631 76.5426 14.2456 76.9867 14.491C77.4017 14.7231 77.7112 15.0166 77.9532 15.4097C78.1754 15.7655 78.2844 16.2519 78.2699 16.8614C78.2553 17.9302 77.9296 18.6863 77.2687 19.1349ZM68.9978 4.11358H73.7993C74.3566 4.11358 74.866 4.18423 75.3283 4.29582C75.7562 4.42562 76.1275 4.59861 76.4332 4.83243C76.7101 5.04439 76.912 5.32167 77.0759 5.6724C77.2377 6.04809 77.3179 6.49555 77.3179 7.03161C77.3179 7.55673 77.2306 8.00251 77.063 8.32605C76.8919 8.65464 76.6626 8.91874 76.353 9.12285C76.0366 9.34406 75.6213 9.50947 75.1445 9.62554C74.6222 9.73516 74.0506 9.7974 73.4318 9.7974H68.9978V4.11358ZM79.6528 11.4443C80.0717 11.077 80.4213 10.6531 80.7014 10.1717C81.2458 9.21621 81.5185 8.1298 81.5185 6.93433C81.5185 5.7554 81.3238 4.72057 80.9418 3.85088C80.5487 2.96269 79.9937 2.21973 79.2853 1.65451C78.5973 1.09182 77.7783 0.683049 76.8516 0.413899C75.9617 0.168581 74.9806 0.0309219 73.9504 0.0309219H64.7676V23.9956H74.8733C75.9527 23.9956 76.97 23.856 77.8766 23.5406C78.8195 23.2395 79.6421 22.7783 80.3156 22.1671C80.9945 21.5598 81.535 20.7997 81.9193 19.9247C82.3049 19.041 82.4999 18.0202 82.4999 16.8738C82.4999 15.3559 82.0994 14.0474 81.3222 12.9776C80.8706 12.3627 80.3156 11.8424 79.6528 11.4443Z"/>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M109.748 17.4344C109.546 17.9337 109.267 18.3697 108.9 18.7375C108.529 19.0885 108.077 19.386 107.575 19.5924C107.065 19.813 106.492 19.9221 105.871 19.9221C104.899 19.9341 103.93 19.9394 102.944 19.9341C102.233 19.9221 101.513 19.9221 100.813 19.9221V11.7399H105.886C106.521 11.7399 107.1 11.8347 107.608 12.0225C108.11 12.2185 108.543 12.4868 108.915 12.8493C109.284 13.1829 109.546 13.5979 109.75 14.0846C109.95 14.5727 110.052 15.1393 110.052 15.7351C110.052 16.3612 109.95 16.9261 109.748 17.4344ZM111.903 9.96117C111.177 9.21652 110.293 8.65243 109.257 8.25179C108.241 7.85956 107.105 7.64985 105.886 7.64985H100.813V0.0379601H96.6628V23.9959H105.886C107.109 23.9959 108.252 23.7834 109.271 23.3536C110.303 22.9434 111.194 22.3449 111.925 21.5996C112.653 20.8522 113.225 19.9651 113.607 18.9558C114 17.9619 114.199 16.8713 114.199 15.7344C114.199 14.5796 113.988 13.5064 113.592 12.5245C113.196 11.5405 112.631 10.6803 111.903 9.96117Z" />
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M131.183 13.6679H140.736V9.62109H131.183V4.08249H141.068V0.0379601H126.949V23.9959H141.413V19.8238H131.183V13.6679Z"/>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M13.2802 10.2495C13.0693 10.7898 12.7705 11.2555 12.4011 11.6284C12.0336 12.0181 11.593 12.308 11.0852 12.5219C10.5793 12.7355 10.0151 12.8435 9.40321 12.8435H4.17019V4.12133C4.93456 4.12133 5.68629 4.11207 6.42731 4.09189C7.43585 4.08796 8.41692 4.08796 9.40321 4.12133C10.033 4.12133 10.601 4.21777 11.1143 4.4373C11.6241 4.66243 12.0682 4.96578 12.4412 5.3496C12.8125 5.72136 13.0858 6.15957 13.2912 6.69114C13.4934 7.20757 13.5988 7.81709 13.5988 8.4622C13.5988 9.11041 13.4934 9.70506 13.2802 10.2495ZM15.4859 2.50951C14.7542 1.74467 13.8588 1.12142 12.8286 0.692186C11.8074 0.266593 10.6517 0.0198727 9.41739 0.0198727H0V23.9991H4.20251V16.9463H9.40283C10.6404 16.9463 11.7781 16.7287 12.7976 16.2967C13.8242 15.8593 14.7215 15.2574 15.4461 14.5122C16.1758 13.7487 16.751 12.846 17.1404 11.8137C17.5409 10.8055 17.7375 9.68515 17.7375 8.5292C17.7375 7.37551 17.5447 6.26835 17.1588 5.2296C16.7801 4.18132 16.2085 3.27294 15.4859 2.50951Z"/>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M169.038 10.2495C168.84 10.7898 168.535 11.2555 168.171 11.6284C167.8 12.0181 167.365 12.308 166.855 12.5219C166.346 12.7355 165.778 12.8435 165.17 12.8435H159.933V4.12132C160.692 4.12132 161.453 4.11207 162.195 4.09188C163.195 4.08796 164.176 4.08796 165.17 4.12132C165.794 4.12132 166.366 4.21777 166.877 4.43729C167.383 4.66242 167.833 4.96578 168.204 5.3496C168.568 5.72136 168.852 6.15957 169.051 6.69114C169.262 7.20757 169.365 7.81708 169.365 8.4622C169.365 9.1104 169.252 9.70506 169.038 10.2495ZM171.245 2.50651C170.518 1.74168 169.626 1.11843 168.594 0.689191C167.567 0.263599 166.415 0.0168781 165.18 0.0168781H155.77V23.9961H159.968V16.9433H165.17C166.4 16.9433 167.537 16.7257 168.561 16.2937C169.585 15.8563 170.474 15.2544 171.211 14.5092C171.941 13.7457 172.509 12.843 172.911 11.8107C173.302 10.8025 173.51 9.68215 173.51 8.52621C173.51 7.37251 173.312 6.26535 172.929 5.2266C172.538 4.17832 171.977 3.26994 171.245 2.50651Z"/>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M48.4429 0V0.786422C48.4429 5.0317 47.0083 7.6475 45.0879 9.56687C43.7394 10.9031 42.1574 11.886 40.6468 12.8169C38.2386 14.3014 35.9216 15.7453 34.7038 18.497C34.1506 19.7547 33.8301 21.2979 33.8301 23.2357V23.9964H34.7038V23.0692C34.7623 17.5152 37.5651 15.7859 41.1019 13.5988C42.4342 12.7779 43.8251 11.9006 45.0879 10.7991V23.9964H49.3217V0H48.4429Z"/>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M39.3756 10.6039C41.7673 9.1267 43.9316 7.79441 45.0874 5.2986C45.6408 4.10734 45.9613 2.64215 45.9613 0.786422V0H45.0874V0.786422C45.0874 6.02783 42.5045 7.63123 38.9334 9.82705C37.5154 10.7004 36.0303 11.6312 34.7032 12.8244V0.0114949H30.4658V23.9964H31.3453V23.2357C31.3453 18.8015 32.7776 16.0553 34.7032 14.0757C36.1177 12.6329 37.7868 11.5908 39.3756 10.6039Z"/>
     <path fill-rule="evenodd" clip-rule="evenodd" d="M40.2392 12.0994C41.9665 11.0323 43.7136 9.94788 45.0879 8.38345C46.6024 6.64183 47.64 4.32658 47.64 0.786422V0H46.7664V0.786422C46.7664 3.51016 46.1146 5.4458 45.0879 6.94014C43.763 8.86652 41.8044 10.0746 39.7951 11.3231C37.973 12.4417 36.129 13.5879 34.7038 15.2827C33.1877 17.0885 32.1555 19.5209 32.1555 23.2357V23.9964H33.0256V23.2357C33.0256 20.3654 33.6735 18.3355 34.7038 16.7672C36.0781 14.6841 38.1241 13.4098 40.2392 12.0994Z" fill="#00AED6"/>
   </symbol>
   <symbol id="map-mall" viewBox="0 0 16 16">
@@ -162,7 +94,110 @@
       </clipPath>
     </defs>
   </symbol>
+  <symbol id="close" viewBox="0 0 20 20">
+    <path d="M1.83477 0L0 1.83477L8.16523 10L0 18.1652L1.83477 20L10 11.8348L18.1652 20L20 18.1652L11.8348 10L20 1.83477L18.1652 0L10 8.16523L1.83477 0Z"/>
+  </symbol>
+  <symbol id="address" viewBox="0 0 24 24">
+    <path d="M12 0C8.69922 0 6 2.69922 6 6C6 11.1992 12 20.5938 12 20.5938C12 20.5938 18 11.1016 18 6C18 2.69922 15.3008 0 12 0ZM12 4C13.1016 4 14 4.89844 14 6C14 7.10157 13.1016 8 12 8C10.8984 8 10 7.10157 10 6C10 4.89844 10.8984 4 12 4ZM6.28125 16.0625C4.58203 16.3711 3.12891 16.8203 2.0625 17.375C1.52734 17.6524 1.09375 17.9375 0.75 18.3125C0.40625 18.6875 0.15625 19.1602 0.15625 19.6875C0.15625 20.4844 0.675781 21.1289 1.34375 21.5938C2.01172 22.0586 2.88281 22.4336 3.9375 22.75C6.05078 23.3789 8.88672 23.75 12 23.75C15.1133 23.75 17.9492 23.3789 20.0625 22.75C21.1172 22.4336 21.9883 22.0586 22.6562 21.5938C23.3242 21.1289 23.8437 20.4844 23.8437 19.6875C23.8437 19.1524 23.5977 18.668 23.25 18.2813C22.9023 17.8945 22.4727 17.582 21.9375 17.3125C20.8672 16.7695 19.4102 16.3711 17.7187 16.0625L17.4687 17.5313C19.0742 17.8242 20.3984 18.2227 21.25 18.6563C21.6758 18.8711 21.9883 19.0938 22.1562 19.2813C22.3242 19.4688 22.3437 19.5742 22.3437 19.6875C22.3437 19.7891 22.2422 20.0547 21.7812 20.375C21.3203 20.6953 20.582 21.0274 19.625 21.3125C17.7109 21.8828 14.9883 22.25 12 22.25C9.01172 22.25 6.28906 21.8828 4.375 21.3125C3.41797 21.0274 2.67969 20.6953 2.21875 20.375C1.75781 20.0547 1.65625 19.7891 1.65625 19.6875C1.65625 19.6172 1.67187 19.5313 1.84375 19.3438C2.01562 19.1563 2.32031 18.9102 2.75 18.6875C3.60937 18.2422 4.93359 17.8203 6.53125 17.5313L6.28125 16.0625Z"/>
+  </symbol>
+  <symbol id="clock" viewBox="0 0 24 24">
+    <path d="M12 0C5.37109 0 0 5.37109 0 12C0 18.6289 5.37109 24 12 24C18.6289 24 24 18.6289 24 12C24 5.37109 18.6289 0 12 0ZM12 2C17.5234 2 22 6.47656 22 12C22 17.5234 17.5234 22 12 22C6.47656 22 2 17.5234 2 12C2 6.47656 6.47656 2 12 2ZM10.9375 3.875L10.5 12.0625L10.5938 12.9375L16.75 18.375L17.7188 17.375L12.625 11.9688L12.1875 3.875H10.9375Z"/>
+  </symbol>
+  <symbol id="phone" viewBox="0 0 21 20">
+    <path d="M1.53128 1.90735e-06C0.000281929 1.90735e-06 0.00979756 0.792002 0.00979756 1C-0.000202437 6 2.33889 10.8281 5.75589 14.2441C9.17289 17.6601 14 20.0002 19 19.9902C19.208 19.9902 20 19.9997 20 18.4687V14.2715C20 13.7725 19.6259 13.3546 19.1289 13.3066C18.2889 13.2246 17.002 13.059 16 12.75C15.548 12.611 15.1989 12.4831 14.9239 12.3691C14.6899 12.2721 14.4241 12.3249 14.2461 12.5039L11.9434 14.8066C10.5164 14.0346 9.21325 13.0638 8.07425 11.9258C6.93525 10.7878 5.96439 9.48364 5.19339 8.05664L7.49613 5.75391C7.67513 5.57491 7.72689 5.30917 7.63089 5.07617C7.51689 4.80117 7.38903 4.452 7.25003 4C6.94203 2.998 6.77539 1.7111 6.69339 0.871095C6.64539 0.374096 6.22755 1.90735e-06 5.72855 1.90735e-06H1.53128ZM16 1.5V4H12V6H16V8.5L20.5 5L16 1.5Z"/>
+  </symbol>
 </svg>
+<header class="main-header">
+  <h1 class="visually-hidden">Ривьера</h1>
+  <section class="site-navigation">
+    <h2 class="visually-hidden">Навигация по сайту</h2>
+    <a class="site-navigation__logo">
+      <svg class="site-navigation__icon-logo" width="205" height="24">
+        <use xlink:href="#logo"></use>
+      </svg>
+    </a>
+    <ul class="site-navigation__info site-navigation__info--none">
+      <li class="site-navigation__item site-navigation__item--address"><a href="#">Автозаводская, 18</a></li>
+      <li class="site-navigation__item site-navigation__item--clock"><a href="#">С 10 до 22 каждый день</a></li>
+      <li class="site-navigation__item site-navigation__item--phone"><a href="tel:+74952699999">+7 495 269-99-99</a></li>
+      <li class="site-navigation__item site-navigation__item--floor"><a href="scheme.html">Схема Ривьеры</a></li>
+    </ul>
+    <ul class="site-navigation__user site-navigation__user--scroll">
+      <li>
+        <a class="site-navigation__link" href="#">
+        <svg class="site-navigation__icon" width="20" height="20">
+          <use xlink:href="#door"></use>
+        </svg>
+        <span class="visually-hidden">Вход</span>
+      </a>
+      </li>
+      <li class="site-navigation__open-menu">
+        <a class="site-navigation__link" href="#">
+        <svg width="24" height="20">
+          <use xlink:href="#menu"></use>
+        </svg>
+        <span class="visually-hidden">Меню</span>
+      </a>
+      </li>
+      <li class="site-navigation__close-menu">
+        <a class="site-navigation__link" href="#">
+          <svg class="site-navigation__icon site-navigation__icon--close" width="24" height="20">
+            <use xlink:href="#close"></use>
+          </svg>
+          <span class="visually-hidden">Закрыть меню</span>
+        </a>
+      </li>
+    </ul>
+  </section>
+  <nav class="pagination pagination--scroll">
+    <h2 class="visually-hidden">Постраничная навигация</h2>
+    <form class="pagination__search-form">
+      <input class="pagination__search-input" type="search" id="search" placeholder="Поиск всего" aria-label="Кнопка поиска">
+      <label class="visually-hidden" for="search" aria-label="Поиск"></label>
+    </form>
+    <ul class="pagination__list">
+      <li class="pagination__item"><a href="shops.html">Магазины</a></li>
+      <li class="pagination__item"><a href="#">Развлечения</a></li>
+      <li class="pagination__item"><a href="#">Еда</a></li>
+      <li class="pagination__item"><a href="#">Кино</a></li>
+      <li class="pagination__item"><a href="#">Всё для детей</a></li>
+      <li class="pagination__item"><a href="#">Фитнес</a></li>
+      <li class="pagination__item"><a href="#">Услуги и сервисы</a></li>
+      <li class="pagination__item"><a href="#">Акции и события</a></li>
+    </ul>
+    <ul class="pagination__search">
+      <li class="pagination__link pagination__link--search"><a href="menu.html#search-all">Поиск</a></li>
+      <li class="pagination__link pagination__link--floor"><a href="scheme.html">Схема</a></li>
+    </ul>
+    <ul class="pagination__scroll-icons">
+      <li>
+        <a href="#">
+          <svg width="22" height="22">
+            <use xlink:href="#loupe"></use>
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a href="scheme.html">
+          <svg width="24" height="24">
+            <use xlink:href="#icon-floor3"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <nav class="pagination-menu pagination-menu--border">
+    <h2 class="visually-hidden">Постраничная навигация</h2>
+    <form class="pagination-menu__search-form">
+      <input class="pagination-menu__search-input" type="search" id="search-all" placeholder="Поиск всего" aria-label="Поиск">
+      <label class="visually-hidden" for="search-all" aria-label="Поиск всего"></label>
+      <input class="pagination-menu__search-input" type="search" id="search-menu" placeholder="Поиск" aria-label="Поиск">
+      <label class="visually-hidden" for="search-menu" aria-label="Поиск"></label>
+    </form>
+    <a class="pagination-menu__scheme" href="scheme.html">Схема <span>Ривьеры</span></a>
+  </nav>
+</header>
+<div class="main-wrapper main-wrapper__opened">
 <main class="adverters">
   <section class="adverters-info">
     <h2 class="adverters-info__title">Рекламодателям и арендаторам</h2>
@@ -176,15 +211,15 @@
     <h2 class="visually-hidden">Преимущества</h2>
     <div class="advantages__wrapper">
       <h3 class="advantages__title">Яркий и динамияный фасад</h3>
-      <p class="advantages__paragraph">Медиафасад ТРЦ &laquo;Ривьера&raquo;, сооруженный с&nbsp;использованием последних технических достижений и&nbsp;современных световых эффектов, привлекает внимание пешеходов и&nbsp;автомобилистов, проезжающих по&nbsp;ТТК.</p>
-      <div class="advantages__box advantages__box--desktop">
+      <p class="advantages__paragraph advantages__paragraph--adverters">Медиафасад ТРЦ &laquo;Ривьера&raquo;, сооруженный с&nbsp;использованием последних технических достижений и&nbsp;современных световых эффектов, привлекает внимание пешеходов и&nbsp;автомобилистов, проезжающих по&nbsp;ТТК.</p>
+      <div class="advantages__box advantages__box--desktop advantages__box--margin">
         <p class="advantages__info advantages__info--number">10</p>
         <p class="advantages__info">фасадов</p>
       </div>
     </div>
     <div class="advantages__wrapper">
       <h3 class="advantages__title">Удобное местоположение</h3>
-      <p class="advantages__paragraph">ТРЦ находтся в&nbsp;непосредственной близости от&nbsp;легендарного завода &laquo;ЗИЛ&raquo;, стремительно развивающихся жилых кварталов и&nbsp;студенческих городков расширяет потенциальную аудиторию до&nbsp;нескольких сотен тысяч человек ежедневно.</p>
+      <p class="advantages__paragraph advantages__paragraph--adverters">ТРЦ находтся в&nbsp;непосредственной близости от&nbsp;легендарного завода &laquo;ЗИЛ&raquo;, стремительно развивающихся жилых кварталов и&nbsp;студенческих городков расширяет потенциальную аудиторию до&nbsp;нескольких сотен тысяч человек ежедневно.</p>
       <div class="advantages__box advantages__box--desktop">
         <p class="advantages__info advantages__info--number">14</p>
         <p class="advantages__info">тотемов с экранами</p>
@@ -192,7 +227,7 @@
     </div>
     <div class="advantages__wrapper">
       <h3 class="advantages__title">Современное оснащение</h3>
-      <p class="advantages__paragraph">В&nbsp;распоряжении ТРЦ находится 10&nbsp;современных медиафасадов, 14&nbsp;рекламных экранов, 8&nbsp;лайтбоксов на&nbsp;фасаде и&nbsp;огромный прозрачный медиаэкран высотой 15&nbsp;метров, расположенный в&nbsp;просторном атриуме первого этажа.</p>
+      <p class="advantages__paragraph advantages__paragraph--adverters">В&nbsp;распоряжении ТРЦ находится 10&nbsp;современных медиафасадов, 14&nbsp;рекламных экранов, 8&nbsp;лайтбоксов на&nbsp;фасаде и&nbsp;огромный прозрачный медиаэкран высотой 15&nbsp;метров, расположенный в&nbsp;просторном атриуме первого этажа.</p>
       <div class="advantages__box advantages__box--desktop">
         <p class="advantages__info advantages__info--number">8</p>
         <p class="advantages__info">лайтбоксов на фасаде</p>
@@ -213,44 +248,44 @@
       </div>
     </div>
   </section>
-  <form class="form" method="post">
+  <form class="form" method="get">
     <h2 class="form__title">Стать рекламодателем</h2>
     <div class="form__row">
       <label for="email">Адрес электронной почты <span>*</span></label>
-      <input class="form__input" id="email" type="email" aria-label="Адрес электронной почты" required>
+      <input class="form__input form__input--adverters" id="email" type="email" aria-label="Адрес электронной почты" required>
     </div>
     <div class="form__row">
       <label for="advertising">Вид рекламы <span>*</span></label>
-      <input class="form__input" id="advertising" type="text" aria-label="Вид рекламы" required>
+      <input class="form__input form__input--adverters" id="advertising" type="text" aria-label="Вид рекламы" required>
     </div>
     <div class="form__row">
       <label>Тип компании <span>*</span></label>
       <div class="form__radio-wrapper">
         <div class="form__radio-inner-wrapper">
-          <input class="form__input" name="type" value="agency" id="agency" type="radio" required>
+          <input class="form__input form__input--adverters" name="type" value="agency" id="agency" type="radio" required>
           <label class="form__radio-label form__radio-label--agency" for="agency">Рекламное агенство</label>
         </div>
         <div class="form__radio-inner-wrapper">
-          <input class="form__input" name="type" value="tenant" id="tenant" type="radio" required>
+          <input class="form__input form__input--adverters" name="type" value="tenant" id="tenant" type="radio" required>
           <label class="form__radio-label form__radio-label--tenant" for="tenant">Арендатор ТРЦ</label>
         </div>
         <div class="form__radio-inner-wrapper">
-          <input class="form__input" name="type" value="brand" id="brand" type="radio" required>
+          <input class="form__input form__input--adverters" name="type" value="brand" id="brand" type="radio" required>
           <label class="form__radio-label form__radio-label--brand" for="brand">Внешний бренд</label>
         </div>
       </div>
     </div>
     <div class="form__row">
       <label for="site">Сайт</label>
-      <input class="form__input" id="site" type="text" aria-label="Сайт">
+      <input class="form__input form__input--adverters" id="site" type="text" aria-label="Сайт">
     </div>
     <div class="form__row">
       <label for="position">Должность</label>
-      <input class="form__input" id="position" type="text" aria-label="Должность">
+      <input class="form__input form__input--adverters" id="position" type="text" aria-label="Должность">
     </div>
     <div class="form__row">
       <label for="phone">Телефон <span>*</span></label>
-      <input class="form__input" id="phone" type="tel" aria-label="Телефон" required>
+      <input class="form__input form__input--adverters" id="phone" type="tel" aria-label="Телефон" required>
     </div>
     <div class="form__row">
       <label for="comments">Комментарии</label>
@@ -375,9 +410,229 @@
     <b>&#169; 2009–2020 Ривьера</b>
   </section>
 </footer>
+</div>
+
+<div class="wrapper-menu">
+  <section class="menu">
+    <div class="menu__section-wrapper">
+      <section class="shop-menu">
+        <h2 class="visually-hidden">Магазины</h2>
+        <a class="shop-menu__title menu__title" href="#">Магазины</a>
+        <div class="shop-menu__inner-wrapper menu__inner-wrapper">
+          <ul class="shop-menu__list menu__list">
+            <li class="shop-menu__item menu__item"><a class="shop-menu__link menu__link" href="#">Со скидками<span class="menu__span">8</span></a></li>
+            <li class="shop-menu__item menu__item"><a class="shop-menu__link menu__link" href="#">Одежда<span class="menu__span">434</span></a></li>
+            <li class="shop-menu__item menu__item"><a class="shop-menu__link menu__link" href="#">Подарки<span class="menu__span">16</span></a></li>
+            <li class="shop-menu__item menu__item"><a class="shop-menu__link menu__link" href="#">Обувь<span class="menu__span">243</span></a></li>
+            <li class="shop-menu__item menu__item"><a class="shop-menu__link menu__link" href="#">Бытовая техника и электроника<span class="menu__span">6</span></a></li>
+            <li class="shop-menu__item menu__item"><a class="shop-menu__link menu__link" href="#">Детские товары<span class="menu__span">17</span></a></li>
+            <li class="shop-menu__item menu__item"><a class="shop-menu__link menu__link" href="#">Мебель<span class="menu__span">3</span></a></li>
+            <li class="shop-menu__item menu__item"><a class="shop-menu__link menu__link" href="#">Необычные вещи<span class="menu__span">3</span></a></li>
+            <li class="shop-menu__item menu__item"><a class="shop-menu__link menu__link" href="#">Зоомагазин</a></li>
+            <li class="shop-menu__item menu__item"><a class="shop-menu__link menu__link" href="#">Нижнее белье, домашняя одежда и купальники<span class="menu__span">8</span></a></li>
+            <li class="shop-menu__item menu__item"><a class="shop-menu__link menu__link" href="#">Сумки и аксессуары<span class="menu__span">21</span></a></li>
+          </ul>
+          <ul class="shop-menu__list menu__list">
+            <li class="shop-menu__item menu__item"><a class="shop-menu__link menu__link" href="#">Часы<span class="menu__span">2</span></a></li>
+            <li class="shop-menu__item menu__item"><a class="shop-menu__link menu__link" href="#">Косметика и парфюмерия<span class="menu__span">8</span></a></li>
+            <li class="shop-menu__item menu__item"><a class="shop-menu__link menu__link" href="#">Книги<span class="menu__span">3</span></a></li>
+            <li class="shop-menu__item menu__item"><a class="shop-menu__link menu__link" href="#">Товары для дома<span class="menu__span">5</span></a></li>
+            <li class="shop-menu__item menu__item"><a class="shop-menu__link menu__link" href="#">Аптеки<span class="menu__span">2</span></a></li>
+            <li class="shop-menu__item menu__item"><a class="shop-menu__link menu__link" href="#">Салоны сотовой связи<span class="menu__span">4</span></a></li>
+            <li class="shop-menu__item menu__item"><a class="shop-menu__link menu__link" href="#">Продукты</a></li>
+            <li class="shop-menu__item menu__item"><a class="shop-menu__link menu__link" href="#">Товары для праздников<span class="menu__span">6</span></a></li>
+            <li class="shop-menu__item menu__item"><a class="shop-menu__link menu__link" href="#">Табак<span class="menu__span">2</span></a></li>
+            <li class="shop-menu__item menu__item"><a class="shop-menu__link menu__link" href="#">Спорт<span class="menu__span">4</span></a></li>
+            <li class="shop-menu__item menu__item"><a class="shop-menu__link menu__link" href="#">Салоны оптики<span class="menu__span">2</span></a></li>
+            <li class="shop-menu__item menu__item"><a class="shop-menu__link menu__link" href="#">Туризм и активный отдых<span class="menu__span">3</span></a></li>
+          </ul>
+        </div>
+      </section>
+      <div class="menu__wrapper">
+        <section class="entertainment-menu">
+          <h2 class="visually-hidden">Развлечения</h2>
+          <a class="entertainment-menu__title menu__title" href="#">Развлечения</a>
+          <div class="entertainment-menu__inner-wrapper menu__inner-wrapper">
+            <ul class="entertainment-menu__list menu__list">
+              <li class="entertainment-menu__item menu__item"><a class="entertainment-menu__link menu__link" href="#">Бластеры</a></li>
+              <li class="entertainment-menu__item menu__item"><a class="entertainment-menu__link menu__link" href="#">Парки и города<span class="menu__span">8</span></a></li>
+              <li class="entertainment-menu__item menu__item"><a class="entertainment-menu__link menu__link" href="#">Танцы<span class="menu__span">3</span></a></li>
+              <li class="entertainment-menu__item menu__item"><a class="entertainment-menu__link menu__link" href="#">Киберзона<span class="menu__span">5</span></a></li>
+            </ul>
+            <ul class="entertainment-menu__list menu__list">
+              <li class="entertainment-menu__item menu__item"><a class="entertainment-menu__link menu__link" href="#">Батуты<span class="menu__span">2</span></a></li>
+              <li class="entertainment-menu__item menu__item"><a class="entertainment-menu__link menu__link" href="#">Авто<span class="menu__span">2</span></a></li>
+              <li class="entertainment-menu__item menu__item"><a class="entertainment-menu__link menu__link" href="#">Животные<span class="menu__span">2</span></a></li>
+              <li class="entertainment-menu__item menu__item"><a class="entertainment-menu__link menu__link" href="#">Для малышей<span class="menu__span">2</span></a></li>
+            </ul>
+          </div>
+        </section>
+        <section class="food-menu">
+          <h2 class="visually-hidden">Еда</h2>
+          <a class="food-menu__title menu__title" href="#">Еда</a>
+          <div class="food-menu__inner-wrapper menu__inner-wrapper">
+            <ul class="food-menu__list menu__list">
+              <li class="food-menu__item menu__item"><a class="food-menu__link menu__link" href="#">Кафе<span class="menu__span">2</span></a></li>
+              <li class="food-menu__item menu__item"><a class="food-menu__link menu__link" href="#">Рестораны<span class="menu__span">8</span></a></li>
+              <li class="food-menu__item menu__item"><a class="food-menu__link menu__link" href="#">Кофейни<span class="menu__span">3</span></a></li>
+              <li class="food-menu__item menu__item"><a class="food-menu__link menu__link" href="#">Фастфуд<span class="menu__span">5</span></a></li>
+            </ul>
+            <ul class="food-menu__list menu__list">
+              <li class="food-menu__item menu__item"><a class="food-menu__link menu__link" href="#">Японская кухня<span class="menu__span">2</span></a></li>
+              <li class="food-menu__item menu__item"><a class="food-menu__link menu__link" href="#">Пицца<span class="menu__span">2</span></a></li>
+              <li class="food-menu__item menu__item"><a class="food-menu__link menu__link" href="#">Мороженое и сладости<span class="menu__span">2</span></a></li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </div>
+    <div class="menu__section-wrapper">
+      <section class="cinema-menu">
+        <h2 class="visually-hidden">Кино</h2>
+        <a class="cinema-menu__title menu__title" href="#">Кино</a>
+        <div class="cinema-menu__inner-wrapper menu__inner-wrapper">
+          <ul class="cinema-menu__list menu__list">
+            <li class="cinema-menu__item menu__item"><a class="cinema-menu__link menu__link" href="#">Сегодня<span class="menu__span">9 фев, вс</span></a></li>
+            <li class="cinema-menu__item menu__item"><a class="cinema-menu__link menu__link" href="#">Завтра<span class="menu__span">10 фев, Пн</span></a></li>
+            <li class="cinema-menu__item menu__item"><a class="cinema-menu__link menu__link" href="#">Послезавтра<span class="menu__span">11 фев, вт</span></a></li>
+          </ul>
+          <ul class="cinema-menu__list menu__list">
+            <li class="cinema-menu__item menu__item"><a class="cinema-menu__link menu__link" href="#">Камуфляж и шпионаж<span class="menu__span menu__span--hit">Хит</span></a></li>
+            <li class="cinema-menu__item menu__item"><a class="cinema-menu__link menu__link" href="#">Тролль: История с хвостом</a></li>
+            <li class="cinema-menu__item menu__item cinema-menu__item--height"><a class="cinema-menu__link menu__link" href="#">Playmobil Фильм: Через вселенные</a></li>
+          </ul>
+        </div>
+      </section>
+      <section class="children-menu">
+        <h2 class="visually-hidden">Все для детей</h2>
+        <a class="children-menu__title menu__title" href="#">Всё для детей</a>
+        <div class="children-menu__inner-wrapper menu__inner-wrapper">
+          <ul class="children-menu__list menu__list">
+            <li class="children-menu__item menu__item"><a class="children-menu__link menu__link" href="#">Развлечения<span class="menu__span">2</span></a></li>
+            <li class="children-menu__item menu__item"><a class="children-menu__link menu__link" href="#">Товары<span class="menu__span">8</span></a></li>
+            <li class="children-menu__item menu__item"><a class="children-menu__link menu__link" href="#">Еда<span class="menu__span">3</span></a></li>
+          </ul>
+          <ul class="children-menu__list menu__list">
+            <li class="children-menu__item menu__item"><a class="children-menu__link menu__link" href="#">Услуги<span class="menu__span">2</span></a></li>
+            <li class="children-menu__item menu__item"><a class="children-menu__link menu__link" href="#">Мероприятия<span class="menu__span">2</span></a></li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <div class="menu__section-wrapper">
+      <section class="services-menu">
+        <h2 class="visually-hidden">Услуги и сервисы</h2>
+        <a class="services-menu__title menu__title" href="#">Услуги и сервисы</a>
+        <div class="services-menu__inner-wrapper menu__inner-wrapper">
+          <ul class="services-menu__list menu__list">
+            <li class="services-menu__item menu__item"><a class="services-menu__link menu__link" href="#">Бесплатные<span class="menu__span">2</span></a></li>
+            <li class="services-menu__item menu__item services-menu__item--height"><a class="services-menu__link menu__link" href="#">Банки, банкоматы, терминалы и обмен валюты<span class="menu__span">8</span></a></li>
+            <li class="services-menu__item menu__item"><a class="services-menu__link menu__link" href="#">Авто и транспорт<span class="menu__span">11</span></a></li>
+            <li class="services-menu__item menu__item"><a class="services-menu__link menu__link" href="#">Детям<span class="menu__span">8</span></a></li>
+            <li class="services-menu__item menu__item"><a class="services-menu__link menu__link" href="#">Туалеты</a></li>
+            <li class="services-menu__item menu__item"><a class="services-menu__link menu__link" href="#">Гардероб</a></li>
+            <li class="services-menu__item menu__item"><a class="services-menu__link menu__link" href="#">Wi-Fi</a></li>
+            <li class="services-menu__item menu__item services-menu__item--height"><a class="services-menu__link menu__link" href="#">Интернет, ТВ, телефоны и гаджеты<span class="menu__span">5</span></a></li>
+            <li class="services-menu__item menu__item"><a class="services-menu__link menu__link" href="#">Бытовые услуги<span class="menu__span">15</span></a></li>
+          </ul>
+          <ul class="services-menu__list menu__list">
+            <li class="services-menu__item menu__item"><a class="services-menu__link menu__link" href="#">Гравировка</a></li>
+            <li class="services-menu__item menu__item services-menu__item--height"><a class="services-menu__link menu__link" href="#">Обслуживание лыж и сноубордов</a></li>
+            <li class="services-menu__item menu__item"><a class="services-menu__link menu__link" href="#">Оптика<span class="menu__span">2</span></a></li>
+            <li class="services-menu__item menu__item"><a class="services-menu__link menu__link" href="#">Красота и спорт<span class="menu__span">6</span></a></li>
+            <li class="services-menu__item menu__item"><a class="services-menu__link menu__link" href="#">Турагентства<span class="menu__span">2</span></a></li>
+            <li class="services-menu__item menu__item"><a class="services-menu__link menu__link" href="#">Фотоуслуги</a></li>
+            <li class="services-menu__item menu__item"><a class="services-menu__link menu__link" href="#">Для малышей<span class="menu__span">6</span></a></li>
+            <li class="services-menu__item menu__item"><a class="services-menu__link menu__link" href="#">Ювелирный ломбард</a></li>
+            <li class="services-menu__item menu__item"><a class="services-menu__link menu__link" href="#">Бюро находок</a></li>
+            <li class="services-menu__item menu__item"><a class="services-menu__link menu__link" href="#">Стойка информации</a></li>
+          </ul>
+        </div>
+      </section>
+      <div class="menu__wrapper">
+        <section class="fitness-menu">
+          <h2 class="fitness-menu__title menu__title">Фитнес-клуб 24×7 Lomov Gym<a href="#" class="fitness-menu__icon">–2 этаж</a></h2>
+          <p class="fitness-menu__paragraph">Лучший фитнес-проект 2018 года, победитель в номинации «Стартап и инновации 2018», вошел в топ-5 лучших фитнес-клубов России с дизайнерским интерьером.</p>
+        </section>
+        <section class="stocks-menu">
+          <h2 class="visually-hidden">Акции и события</h2>
+          <a class="stocks-menu__title menu__title" href="#">Акции и события</a>
+          <p class="stocks-menu__paragraph">Рассылка актуальных скидок и акций в ваших любимых магазинах, а также событий Ривьеры.</p>
+          <form class="stocks-menu__form" method="get">
+            <input class="stocks-menu__input" type="email" id="email-menu" placeholder="Ваша почта">
+            <label class="visually-hidden" for="email-menu" aria-label="Ваша почта"></label>
+            <button class="stocks-menu__button">Подписаться</button>
+          </form>
+          <div class="stocks-menu__social">
+            <a href="#" class="stocks-menu__icon stocks-menu__icon--fb"><span class="visually-hidden">Перейти на фейсбук</span></a>
+            <a href="#" class="stocks-menu__icon stocks-menu__icon--vk"><span class="visually-hidden">Перейти на вконтакте</span></a>
+            <a href="#" class="stocks-menu__icon stocks-menu__icon--inst"><span class="visually-hidden">Перейти на инстаграм</span></a>
+            <a href="#" class="stocks-menu__icon stocks-menu__icon--od"><span class="visually-hidden">Перейти на одноклассники</span></a>
+            <a href="#" class="stocks-menu__icon stocks-menu__icon--youtube"><span class="visually-hidden">Перейти на ютьюб</span></a>
+            <a href="#" class="stocks-menu__app stocks-menu__app--apple"><span class="visually-hidden">Перейти к приложению в App Store</span></a>
+            <a href="#" class="stocks-menu__app stocks-menu__app--google"><span class="visually-hidden">Перейти к приложению в Google Play</span></a>
+          </div>
+        </section>
+      </div>
+      <section class="map-menu">
+        <h2 class="map-menu__title menu__title">Как попасть в Ривьеру</h2>
+        <div class="map-menu__inner-wrapper menu__inner-wrapper">
+          <ul class="map-menu__list menu__list">
+            <li class="map-menu__item menu__item"><a class="map-menu__link menu__link" href="#">Как добраться</a></li>
+            <li class="map-menu__item menu__item"><a class="map-menu__link menu__link" href="#">Парковки</a></li>
+            <li class="map-menu__item menu__item"><a class="map-menu__link map-menu__link--taxi menu__link" href="#"><span></span>Заказать такси</a></li>
+          </ul>
+          <ul class="map-menu__list menu__list">
+            <li class="map-menu__item menu__item"><a class="map-menu__link menu__link" href="#">Арендаторам и рекламодателям</a></li>
+            <li class="map-menu__item menu__item"><a class="map-menu__link menu__link" href="#">Соцсети и обратная связь</a></li>
+          </ul>
+        </div>
+        <picture>
+          <!-- 1x: 1152px; 2x: 1304px -->
+          <img class="map-menu__image" src="img/map-desktop@1x.png" srcset="img/map-desktop@2x.png 2x" width="1152" height="532" alt="Как попасть в Ривьеру">
+        </picture>
+      </section>
+    </div>
+    <section class="address-menu">
+      <h2 class="visually-hidden">Адрес Ривьеры</h2>
+      <ul class="address-menu__list">
+        <li class="address-menu__item address-menu__item--address">
+          <a class="address-menu__link" href="#">Автозаводская, 18
+            <svg width="24" height="24">
+              <use xlink:href="#address"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="address-menu__item address-menu__item--clock">
+          <a class="address-menu__link" href="#">С 10 до 22 каждый день
+            <svg width="24" height="24">
+              <use xlink:href="#clock"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="address-menu__item address-menu__item--phone">
+          <a class="address-menu__link" href="tel:+74952699999">+7 495 269-99-99
+            <svg width="21" height="20">
+              <use xlink:href="#phone"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </section>
+  </section>
+  <footer class="footer-menu">
+    <h2 class="visually-hidden">Навигация по сайту</h2>
+    <a class="footer-menu__link" href="#">Карта сайта</a>
+    <a class="footer-menu__link footer-menu__link--gallery" href="#">Галерея</a>
+    <a class="footer-menu__link footer-menu__link--advertising" href="#">Арендаторам и рекламодателям</a>
+    <a class="footer-menu__link" href="#">English version</a>
+    <a class="footer-menu__link" href="#">© 2009–2020 Ривьера</a>
+  </footer>
+</div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="slick/slick.min.js"></script>
 <script src="js/slider.js"></script>
 <script src="js/scroll.js"></script>
+<script src="js/open-menu.js"></script>
 </body>
 </html>
