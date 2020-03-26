@@ -26,8 +26,6 @@ $(document).ready(function(){
         dots: false,
         infinite: true,
         speed: 300,
-        nextArrow: document.querySelector('.slider__button--next'),
-        prevArrow: document.querySelector('.slider__button--prev'),
         slidesToShow: 2,
         slidesToScroll: 2,
         variableWidth: true,
