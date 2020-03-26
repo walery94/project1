@@ -8,7 +8,7 @@
   <link rel="stylesheet" type="text/css" href="slick/slick.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
-<body>
+<body class="menu-closed">
 <svg style="display: none;">
   <symbol id="icon-clock" viewBox="0 0 24 24">
     <path d="M12 0C5.37109 0 0 5.37109 0 12C0 18.6289 5.37109 24 12 24C18.6289 24 24 18.6289 24 12C24 5.37109 18.6289 0 12 0ZM12 2C17.5234 2 22 6.47656 22 12C22 17.5234 17.5234 22 12 22C6.47656 22 2 17.5234 2 12C2 6.47656 6.47656 2 12 2ZM10.9375 3.875L10.5 12.0625L10.5938 12.9375L16.75 18.375L17.7188 17.375L12.625 11.9688L12.1875 3.875H10.9375Z"></path>
@@ -131,7 +131,7 @@
         <span class="visually-hidden">Вход</span>
       </a>
       </li>
-      <li class="site-navigation__open-menu--opened">
+      <li class="site-navigation__open-menu">
         <a class="site-navigation__link" href="#">
         <svg width="24" height="20">
           <use xlink:href="#menu"></use>
@@ -139,7 +139,7 @@
         <span class="visually-hidden">Меню</span>
       </a>
       </li>
-      <li class="site-navigation__close-menu--closed">
+      <li class="site-navigation__close-menu">
         <a class="site-navigation__link" href="#">
           <svg class="site-navigation__icon site-navigation__icon--close" width="24" height="20">
             <use xlink:href="#close"></use>
@@ -149,7 +149,7 @@
       </li>
     </ul>
   </section>
-  <nav class="pagination pagination--scroll pagination--opened">
+  <nav class="pagination pagination--scroll">
     <h2 class="visually-hidden">Постраничная навигация</h2>
     <form class="pagination__search-form">
       <input class="pagination__search-input" type="search" id="search" placeholder="Поиск всего" aria-label="Кнопка поиска">
@@ -186,7 +186,7 @@
       </li>
     </ul>
   </nav>
-  <nav class="pagination-menu pagination-menu--border pagination-menu--closed">
+  <nav class="pagination-menu pagination-menu--border">
     <h2 class="visually-hidden">Постраничная навигация</h2>
     <form class="pagination-menu__search-form">
       <input class="pagination-menu__search-input" type="search" id="search-all" placeholder="Поиск всего" aria-label="Поиск">
@@ -197,7 +197,7 @@
     <a class="pagination-menu__scheme" href="scheme.html">Схема <span>Ривьеры</span></a>
   </nav>
 </header>
-<div class="main-wrapper main-wrapper__opened">
+<div class="main-wrapper">
   <main class="page-main">
     <section class="banner">
       <h2 class="banner__title"><span>Торгово-</span>развлекательный центр<span>в Москве</span></h2>
@@ -1448,7 +1448,11 @@
   </footer>
 </div>
 
-<div class="wrapper-menu__close">
+
+
+
+
+<div class="wrapper-menu">
   <section class="menu">
     <div class="menu__section-wrapper">
       <section class="shop-menu">

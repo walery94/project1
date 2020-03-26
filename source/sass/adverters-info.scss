@@ -5,6 +5,11 @@
   margin-bottom: 30px;
   padding-left: 5.5%;
   padding-right: 5.5%;
+
+  @media (max-width: $tablet-width) {
+    margin-top: 15px;
+    margin-bottom: 19px;
+  }
 }
 
 .adverters-info__title {
@@ -15,7 +20,7 @@
   font-size: 64px;
   font-weight: 700;
   line-height: 108%;
-  letter-spacing: -0.01em;
+  letter-spacing: 0.6px;
   color: $text-color;
 
   @media (max-width: $tablet-width) {
@@ -34,7 +39,7 @@
 
 .adverters-info__item {
   margin-right: 7px;
-  padding: 7px;
+  padding: 6px 11px;
   border: 1px solid $border;
   border-radius: 5px;
 
@@ -47,8 +52,8 @@
   @media (max-width: $tablet-width) {
     &:last-of-type {
       width: 100%;
-      margin-top: 15px;
-      margin-left: -12px;
+      margin-top: 10px;
+      margin-left: -20px;
     }
   }
 }

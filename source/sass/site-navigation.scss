@@ -25,13 +25,9 @@
   left: 0;
   width: 200px;
   display: block;
-  margin-right: auto;
+  margin-right: 7%;
   padding-top: 18px;
   padding-bottom: 10px;
-
-  @media (max-width: 1060px) {
-    margin-right: 6%;
-  }
 
   @media (max-width: $tablet-width) {
     padding-left: 4%;
@@ -297,22 +293,6 @@
   @media (max-width: $tablet-width) {
     height: 56px;
   }
-}
-
-.site-navigation__close-menu--closed {
-  display: none;
-}
-
-.site-navigation__close-menu--opened {
-  display: block;
-}
-
-.site-navigation__open-menu--closed {
-  display: none;
-}
-
-.site-navigation__open-menu--opened {
-  display: block;
 }
 
 .site-navigation__link {
