@@ -1,17 +1,10 @@
-.wrapper-menu__open {
+.wrapper-menu {
   display: block;
 
   @media (max-width: $tablet-width) {
-    position: fixed;
-    top: 114px;
-    width: 100%;
     min-height: 100vh;
     background-color: #222222;
   }
-}
-
-.wrapper-menu__close {
-  display: none;
 }
 
 .wrapper-menu--scheme {
