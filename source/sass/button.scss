@@ -153,3 +153,10 @@
     color: #00aed6;
   }
 }
+
+@media (max-width: $mobile-width) {
+
+  .button--more {
+    width: 100%;
+  }
+}
