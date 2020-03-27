@@ -241,7 +241,7 @@
 }
 
 .card--services h3 {
-  width: 180px;
+  width: 187px;
 }
 
 .card--services b {
@@ -421,11 +421,5 @@
 
   .card__discount p:nth-child(2) {
     color: #65AA0F;
-  }
-}
-
-@media (max-width: 560px) {
-  .card--services {
-    min-height: 180px;
   }
 }

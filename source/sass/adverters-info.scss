@@ -9,6 +9,8 @@
   @media (max-width: $tablet-width) {
     margin-top: 15px;
     margin-bottom: 19px;
+    padding-left: 4%;
+    padding-right: 4%;
   }
 }
 
@@ -21,11 +23,16 @@
   font-weight: 700;
   line-height: 108%;
   letter-spacing: 0.6px;
+  hyphens: auto;
   color: $text-color;
 
   @media (max-width: $tablet-width) {
     width: auto;
     font-size: 36px;
+  }
+
+  @media (max-width: 324px) {
+    font-size: 34px;
   }
 }
 
@@ -38,6 +45,8 @@
 }
 
 .adverters-info__item {
+  height: 36px;
+  box-sizing: border-box;
   margin-right: 7px;
   padding: 6px 11px;
   border: 1px solid $border;
@@ -46,6 +55,8 @@
   &:last-of-type {
     margin-left: auto;
     margin-right: 0;
+    padding: 0;
+    padding-top: 10px;
     border: none;
   }
 
@@ -53,7 +64,13 @@
     &:last-of-type {
       width: 100%;
       margin-top: 10px;
-      margin-left: -20px;
+      margin-left: -4px;
+    }
+  }
+
+  @media (max-width: 326px) {
+    &:first-of-type {
+      margin-bottom: 10px;
     }
   }
 }
