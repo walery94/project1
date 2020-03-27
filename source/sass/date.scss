@@ -13,13 +13,13 @@
 
 .date__title {
   margin: 0;
-  margin-top: 37px;
-  margin-bottom: 34px;
+  margin-top: 36px;
+  margin-bottom: 35px;
   padding: 0;
   font-size: 64px;
   font-weight: 700;
   line-height: 108%;
-  letter-spacing: 0;
+  letter-spacing: 0.2px;
   color: $text-color;
 
   @media (max-width: $tablet-width) {
