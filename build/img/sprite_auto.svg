@@ -84,6 +84,8 @@
 
 </symbol><symbol id="icon-arrow-pink" viewBox="0 0 19 8">
 <path d="M14.8766 0L14.0735 0.768171L16.5264 3.32583H0V4.44317H16.5046L14.0735 6.98337L14.8766 7.75154L18.5996 3.87577L14.8766 0Z" fill="#F24595"/>
+</symbol><symbol id="icon-arrow-white" viewBox="0 0 19 8">
+<path d="M14.8766 0L14.0735 0.768171L16.5264 3.32583H0V4.44317H16.5046L14.0735 6.98337L14.8766 7.75154L18.5996 3.87577L14.8766 0Z" fill="white"/>
 </symbol><symbol id="icon-arrow" viewBox="0 0 19 8">
 <path d="M14.8766 0L14.0735 0.768171L16.5264 3.32583H0V4.44317H16.5046L14.0735 6.98337L14.8766 7.75154L18.5996 3.87577L14.8766 0Z" fill="#00AED6"/>
 </symbol><symbol id="icon-cards" viewBox="0 0 24 24">

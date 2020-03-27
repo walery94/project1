@@ -1,0 +1,91 @@
+.schedule {
+  display: flex;
+  align-items: center;
+  min-height: 59px;
+  margin: 0 auto;
+  padding-left: 5.5%;
+  padding-right: 5.5%;
+  border-bottom: 1px solid $border;
+
+  @media (max-width: $tablet-width) {
+    padding-left: 4%;
+    padding-right: 4%;
+    border-bottom: none;
+    background-color: #00aed6;
+  }
+}
+
+.schedule__list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.schedule__item {
+  margin-right: 9px;
+  padding: 10px;
+  border: 1px solid $border;
+  border-radius: 5px;
+
+  @media (max-width: $tablet-width) {
+    margin-right: 3px;
+    padding: 5px 9px;
+  }
+}
+
+.schedule__link {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 96%;
+  text-decoration: none;
+  letter-spacing: -0.01em;
+  color: $text-color;
+
+  &:hover {
+    color: #00aed6;
+  }
+
+  @media (max-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 108%;
+    color: #ffffff;
+  }
+}
+
+.schedule__item,
+.schedule__link {
+  @media (max-width: $tablet-width) {
+    &:hover {
+      background-color: #ffffff;
+    }
+  }
+}
+
+.schedule__span {
+  font-size: 12px;
+  line-height: 151%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #7d7d7d;
+
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.schedule__button {
+  margin-left: auto;
+
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+.schedule__button svg {
+  fill: #222222;
+
+  @media (max-width: $tablet-width) {
+    fill: #ffffff;
+  }
+}
