@@ -71,15 +71,7 @@ $(document).ready(function(){
         speed: 100,
         slidesToShow: 2,
         arrows : false,
-        variableWidth: true,
-        responsive: [
-          {
-            breakpoint: 1023,
-            settings: {
-              slidesToShow: 1
-            }
-          }
-        ]
+        variableWidth: true
       });
     } else {
       $('.date__slider.slick-initialized').slick("unslick");

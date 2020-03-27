@@ -143,14 +143,6 @@
     }
   }
 
-  // .address__box h2 {
-  //   padding-left: 24px;
-  // }
-
-  // .address__list {
-  //   padding-left: 24px;
-  // }
-
   .address__container {
     display: block;
     width: 675px;
@@ -209,8 +201,6 @@
   .address__title,
   .address__list {
     width: 100%;
-    // padding-right: 16px;
-    // padding-left: 16px;
     box-sizing: border-box;
   }
 
@@ -222,7 +212,6 @@
 
   .address__box h2 {
     margin-bottom: 16px;
-    // padding-left: 16px;
 
     font-weight: bold;
     font-size: 36px;
@@ -242,7 +231,7 @@
     margin-bottom: 31px;
   }
 
-  .address--clothes .address__map {
+  .address--clothes {
     margin-bottom: 22px;
   }
 
@@ -272,13 +261,11 @@
   .address__info {
     display: block;
     width: 100%;
-    // padding-right: 16px;
-    // padding-left: 16px;
     box-sizing: border-box;
   }
 
   .address__map {
-    margin-bottom: 14px;
+    margin-bottom: 26px;
   }
 
   .address__item {

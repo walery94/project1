@@ -4,7 +4,11 @@
   padding-top: 63px;
 
   @media (max-width: $tablet-width) {
-    padding-top: 85px;
+    padding-top: 0;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-top: 9px;
   }
 
   &::before {
