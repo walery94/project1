@@ -25,6 +25,7 @@ $(document).ready(function(){
       $('.date__slider:not(.slick-initialized)').slick({
         dots: false,
         infinite: true,
+        arrows: false,
         speed: 300,
         slidesToShow: 2,
         slidesToScroll: 2,
@@ -70,7 +71,15 @@ $(document).ready(function(){
         speed: 100,
         slidesToShow: 2,
         arrows : false,
-        variableWidth: true
+        variableWidth: true,
+        responsive: [
+          {
+            breakpoint: 1023,
+            settings: {
+              slidesToShow: 1
+            }
+          }
+        ]
       });
     } else {
       $('.date__slider.slick-initialized').slick("unslick");

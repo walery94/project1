@@ -1,6 +1,4 @@
 .info {
-  max-width: 1024px;
-  margin: 0 auto;
   padding-left: 5.5%;
   padding-right: 5.5%;
   padding-bottom: 136px;
@@ -9,6 +7,7 @@
   font-size: 16px;
   line-height: 17px;
   color: #222222;
+  box-sizing: border-box;
 
   &--shops {
     padding-bottom: 0;
@@ -16,6 +15,7 @@
 }
 
 .info__box {
+  max-width: 1024px;
   margin: 0 auto;
 }
 
@@ -263,8 +263,8 @@
   .info {
     width: 100%;
     margin: 0 auto;
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 4%;
+    padding-right: 4%;
   }
 
   .info__box {
@@ -274,20 +274,11 @@
     &--shops {
       width: 92%;
       margin-left: 0;
-      padding-left: 30px;
-      padding-right: 30px;
     }
   }
 
-  .info__box h2 {
-    padding-left: 24px;
-    padding-right: 24px;
-  }
-
   .info__box p {
-    padding-left: 24px;
-    padding-right: 24px;
-    box-sizing: border-box;
+    width: 100%;
   }
 
   .info__container {
@@ -308,10 +299,10 @@
     margin-left: 0;
   }
 
-  .info__copyright {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
+  // .info__copyright {
+  //   padding-left: 30px;
+  //   padding-right: 30px;
+  // }
 
   .info--clothes .info__box {
     max-width: 768px;
@@ -332,8 +323,8 @@
 
   .info__box {
     width: 100%;
-    padding-left: 16px;
-    padding-right: 16px;
+    // padding-left: 16px;
+    // padding-right: 16px;
     box-sizing: border-box;
   }
 
@@ -347,10 +338,10 @@
     padding-right: 0;
   }
 
-  .info__box--shops {
-    padding-left: 16px;
-    padding-right: 16px;
-  }
+  // .info__box--shops {
+  //   padding-left: 16px;
+  //   padding-right: 16px;
+  // }
 
   .info__box h2 {
     width: 100%;
