@@ -1,12 +1,11 @@
 .address {
-  max-width: 1024px;
-  margin: 0 auto;
   margin-bottom: 58px;
   padding-left: 5.5%;
   padding-right: 5.5%;
 }
 
 .address__box {
+  max-width: 1024px;
   margin: 0 auto;
 }
 
@@ -129,13 +128,12 @@
 @media (max-width: $tablet-width) {
 
   .address {
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 4%;
+    padding-right: 4%;
   }
 
   .address__box {
     width: 100%;
-    box-sizing: border-box;
 
     &--shops {
       width: 92%;
@@ -145,13 +143,13 @@
     }
   }
 
-  .address__box h2 {
-    padding-left: 24px;
-  }
+  // .address__box h2 {
+  //   padding-left: 24px;
+  // }
 
-  .address__list {
-    padding-left: 24px;
-  }
+  // .address__list {
+  //   padding-left: 24px;
+  // }
 
   .address__container {
     display: block;
@@ -211,8 +209,8 @@
   .address__title,
   .address__list {
     width: 100%;
-    padding-right: 16px;
-    padding-left: 16px;
+    // padding-right: 16px;
+    // padding-left: 16px;
     box-sizing: border-box;
   }
 
@@ -224,7 +222,7 @@
 
   .address__box h2 {
     margin-bottom: 16px;
-    padding-left: 16px;
+    // padding-left: 16px;
 
     font-weight: bold;
     font-size: 36px;
@@ -274,8 +272,8 @@
   .address__info {
     display: block;
     width: 100%;
-    padding-right: 16px;
-    padding-left: 16px;
+    // padding-right: 16px;
+    // padding-left: 16px;
     box-sizing: border-box;
   }
 
