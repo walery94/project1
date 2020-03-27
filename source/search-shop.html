@@ -8,117 +8,7 @@
   <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
-<header class="main-header header-index">
-  <h1 class="visually-hidden">Ривьера</h1>
-  <section class="site-navigation">
-    <h2 class="visually-hidden">Навигация по сайту</h2>
-    <a class="site-navigation__logo">
-      <svg width="205" height="24">
-        <use xlink:href="#logo"></use>
-      </svg>
-    </a>
-    <ul class="site-navigation__info">
-      <li class="site-navigation__item site-navigation__item--address"><a href="#">Автозаводская, 18</a></li>
-      <li class="site-navigation__item site-navigation__item--clock"><a href="#">С 10 до 22 каждый день</a></li>
-      <li class="site-navigation__item site-navigation__item--phone"><a href="tel:+74952699999">+7 495 269-99-99</a></li>
-      <li class="site-navigation__item site-navigation__item--floor"><a href="scheme.html">Схема Ривьеры</a></li>
-    </ul>
-    <ul class="site-navigation__user">
-      <li><a href="#">
-        <svg width="20" height="20">
-          <use xlink:href="#door"></use>
-        </svg>
-        <span class="visually-hidden">Вход</span>
-      </a></li>
-      <li><a href="#">
-        <svg width="24" height="20">
-          <use xlink:href="#menu"></use>
-        </svg>
-        <span class="visually-hidden">Меню</span>
-      </a></li>
-    </ul>
-  </section>
-  <nav class="pagination-menu">
-    <h2 class="visually-hidden">Постраничная навигация</h2>
-    <form class="pagination-menu__search-form">
-      <input class="pagination-menu__search-input" type="search" id="search-all" placeholder="Поиск всего">
-      <label class="visually-hidden" for="search-all" aria-label="Поиск всего"></label>
-    </form>
-    <a class="pagination-menu__close" href="#">
-      <svg width="20" height="20">
-        <use xlink:href="#icon-close"></use>
-      </svg>
-    </a>
-  </nav>
-</header>
-
-  <!--Открывается добавлением класса search-shop__open-->
-  <section class="search-shop search-shop__open">
-    <h2 class="visually-hidden">Поиск</h2>
-    <ul class="search-shop__list">
-      <li class="search-shop__item">
-        <a class="search-shop__link" href="#">
-          <img class="search-shop__img" src="img/search-children.png" width="60px" height="60px" alt="">
-          <div class="search-shop__box">
-            <p class="search-shop__type">новости</p>
-            <h3 class="search-shop__title">До 25 сентября снижены цены на товары для школы</h3>
-            <p class="search-shop__date">25 августа 2019 — 25 сентября 2019</p>
-          </div>
-        </a>
-      </li>
-      <li class="search-shop__item">
-        <a class="search-shop__link" href="#">
-          <img class="search-shop__img" src="img/search-starbucks.png" width="60px" height="60px" alt="">
-          <div class="search-shop__box">
-            <p class="search-shop__type">еда</p>
-            <h3 class="search-shop__title">Starbucks</h3>
-          </div>
-        </a>
-      </li>
-      <li class="search-shop__item">
-        <a class="search-shop__link" href="#">
-          <img class="search-shop__img" src="img/search-samsung.png" width="60px" height="60px" alt="">
-          <div class="search-shop__box">
-            <p class="search-shop__type">акции</p>
-            <h3 class="search-shop__title">Наушники в подарок от&nbsp;Samsung</h3>
-            <p class="search-shop__date">3 декабря 2019 — 31 декабря 2019</p>
-          </div>
-        </a>
-      </li>
-      <li class="search-shop__item">
-        <a class="search-shop__link" href="#">
-          <img class="search-shop__img" src="img/search-blue.png" width="60px" height="60px" alt="">
-          <div class="search-shop__box">
-            <p class="search-shop__type">магазины</p>
-            <h3 class="search-shop__title">Button Blue</h3>
-            <p class="search-shop__date">11 декабря 2019 — 20 декабря 2020</p>
-          </div>
-        </a>
-      </li>
-      <li class="search-shop__item">
-        <a class="search-shop__link" href="#">
-          <img class="search-shop__img" src="img/search-children.png" width="60px" height="60px" alt="">
-          <div class="search-shop__box">
-            <p class="search-shop__type">новости</p>
-            <h3 class="search-shop__title">До 25 сентября снижены цены на товары для школы</h3>
-            <p class="search-shop__date">25 августа 2019 — 25 сентября 2019</p>
-          </div>
-        </a>
-      </li>
-      <li class="search-shop__item">
-        <a class="search-shop__link" href="#">
-          <img class="search-shop__img" src="img/search-starbucks.png" width="60px" height="60px" alt="">
-          <div class="search-shop__box">
-            <p class="search-shop__type">акции</p>
-            <h3 class="search-shop__title">Время суши</h3>
-            <p class="search-shop__date">25 августа 2019 — 25 сентября 2019</p>
-          </div>
-        </a>
-      </li>
-    </ul>
-  </section>
-
-<body>
+<body class="stop-scroll ">
   <svg style="display: none;">
     <symbol id="icon-clock" viewBox="0 0 24 24">
       <path d="M12 0C5.37109 0 0 5.37109 0 12C0 18.6289 5.37109 24 12 24C18.6289 24 24 18.6289 24 12C24 5.37109 18.6289 0 12 0ZM12 2C17.5234 2 22 6.47656 22 12C22 17.5234 17.5234 22 12 22C6.47656 22 2 17.5234 2 12C2 6.47656 6.47656 2 12 2ZM10.9375 3.875L10.5 12.0625L10.5938 12.9375L16.75 18.375L17.7188 17.375L12.625 11.9688L12.1875 3.875H10.9375Z"/>
@@ -208,9 +98,250 @@
       <path d="M1.83477 0L0 1.83477L8.16523 10L0 18.1652L1.83477 20L10 11.8348L18.1652 20L20 18.1652L11.8348 10L20 1.83477L18.1652 0L10 8.16523L1.83477 0Z" fill="#7D7D7D"/>
     </symbol>
   </svg>
+  <header class="main-header header-index">
+    <h1 class="visually-hidden">Ривьера</h1>
+    <section class="site-navigation">
+      <h2 class="visually-hidden">Навигация по сайту</h2>
+      <a class="site-navigation__logo">
+        <svg width="205" height="24">
+          <use xlink:href="#logo"></use>
+        </svg>
+      </a>
+      <ul class="site-navigation__info">
+        <li class="site-navigation__item site-navigation__item--address"><a href="#">Автозаводская, 18</a></li>
+        <li class="site-navigation__item site-navigation__item--clock"><a href="#">С 10 до 22 каждый день</a></li>
+        <li class="site-navigation__item site-navigation__item--phone"><a href="tel:+74952699999">+7 495 269-99-99</a></li>
+        <li class="site-navigation__item site-navigation__item--floor"><a href="scheme.html">Схема Ривьеры</a></li>
+      </ul>
+      <ul class="site-navigation__user">
+        <li><a href="#">
+          <svg width="20" height="20">
+            <use xlink:href="#door"></use>
+          </svg>
+          <span class="visually-hidden">Вход</span>
+        </a></li>
+        <li><a href="#">
+          <svg width="24" height="20">
+            <use xlink:href="#menu"></use>
+          </svg>
+          <span class="visually-hidden">Меню</span>
+        </a></li>
+      </ul>
+    </section>
+    <nav class="pagination-menu">
+      <h2 class="visually-hidden">Постраничная навигация</h2>
+      <form class="pagination-menu__search-form">
+        <input class="pagination-menu__search-input" type="search" id="search-all" placeholder="Поиск всего">
+        <label class="visually-hidden" for="search-all" aria-label="Поиск всего"></label>
+      </form>
+      <a class="pagination-menu__close" href="#">
+        <svg width="20" height="20">
+          <use xlink:href="#icon-close"></use>
+        </svg>
+      </a>
+    </nav>
+  </header>
+
+  <!--Открывается добавлением класса search-shop__open-->
+  <section class="search-shop search-shop__open">
+    <h2 class="visually-hidden">Поиск</h2>
+    <ul class="search-shop__list">
+      <li class="search-shop__item">
+        <a class="search-shop__link" href="#">
+          <img class="search-shop__img" src="img/search-children.png" alt="">
+          <div class="search-shop__box">
+            <p class="search-shop__type">новости</p>
+            <h3 class="search-shop__title">До 25 сентября снижены цены на товары для школы</h3>
+            <p class="search-shop__date">25 августа 2019 — 25 сентября 2019</p>
+          </div>
+        </a>
+      </li>
+      <li class="search-shop__item">
+        <a class="search-shop__link" href="#">
+          <img class="search-shop__img" src="img/search-starbucks.png" alt="">
+          <div class="search-shop__box">
+            <p class="search-shop__type">еда</p>
+            <h3 class="search-shop__title">Starbucks</h3>
+          </div>
+        </a>
+      </li>
+      <li class="search-shop__item">
+        <a class="search-shop__link" href="#">
+          <img class="search-shop__img" src="img/search-samsung.png" alt="">
+          <div class="search-shop__box">
+            <p class="search-shop__type">акции</p>
+            <h3 class="search-shop__title">Наушники в подарок от&nbsp;Samsung</h3>
+            <p class="search-shop__date">3 декабря 2019 — 31 декабря 2019</p>
+          </div>
+        </a>
+      </li>
+      <li class="search-shop__item">
+        <a class="search-shop__link" href="#">
+          <img class="search-shop__img" src="img/search-blue.png" alt="">
+          <div class="search-shop__box">
+            <p class="search-shop__type">магазины</p>
+            <h3 class="search-shop__title">Button Blue</h3>
+            <p class="search-shop__date">11 декабря 2019 — 20 декабря 2020</p>
+          </div>
+        </a>
+      </li>
+      <li class="search-shop__item">
+        <a class="search-shop__link" href="#">
+          <img class="search-shop__img" src="img/search-children.png" alt="">
+          <div class="search-shop__box">
+            <h3 class="search-shop__title">Present Kids</h3>
+            <p class="search-shop__date">25 августа 2019 — 25 сентября 2019</p>
+          </div>
+        </a>
+      </li>
+      <li class="search-shop__item">
+        <a class="search-shop__link" href="#">
+          <img class="search-shop__img" src="img/search-starbucks.png" alt="">
+          <div class="search-shop__box">
+            <p class="search-shop__type">акции</p>
+            <h3 class="search-shop__title">Время суши</h3>
+            <p class="search-shop__date">25 августа 2019 — 25 сентября 2019</p>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </section>
   <main class="page-main">
     <section class="banner">
       <h2 class="banner__title"><span>Торгово-</span>развлекательный центр<span>в Москве</span></h2>
+    </section>
+    <section class="events events--search">
+      <div class="events__box">
+        <h2><span>Акции и события</span><span>События</span></h2>
+        <div class="events__list">
+          <a class="events__button button" href="#">Все</a>
+          <a class="events__button button" href="#">Скидки и акции</a>
+          <a class="events__button button" href="#">Мероприятия</a>
+          <a class="events__button button" href="#">Новости</a>
+        </div>
+        <div class="events__items">
+          <article class="events__item card">
+            <picture>
+              <source media="(max-width: 767px)" srcset="img/events-mobile-fest@1x.png 1x, img/events-mobile-fest@2x.png 2x">
+              <img src="img/events-desktop-girl@1x.png" srcset="img/events-desktop-girl@2x.png 2x" alt="Фото события" width="325">
+            </picture>
+            <h3>Beauty day в Ривьере</h3>
+            <div class="card__case">
+              <div class="card__box">
+                <span>
+                  <svg class="card__clock" width="16" height="16">
+                    <use xlink:href="#icon-clock"></use>
+                  </svg>
+                </span>
+                <p>8 февраля, 15:00</p>
+                <a class="card__link" href="#">
+                  <svg class="card__arrow" width="19" height="8">
+                    <use xlink:href="#icon-arrow"></use>
+                  </svg>
+                  <span class="visually-hidden">Перейти</span>
+                </a>
+              </div>
+            </div>
+          </article>
+          <article class="events__item card">
+            <picture>
+              <source media="(max-width: 767px)" srcset="img/events-mobile-girl@1x.png 1x, img/events-mobile-girl@2x.png 2x">
+              <img src="img/events-desktop-comp@1x.png" srcset="img/events-desktop-comp@2x.png 2x" alt="Фото события" width="325">
+            </picture>
+            <h3>Бесплатные детские мастер-классы в&nbsp;феврале</h3>
+            <div class="card__case">
+              <div class="card__box">
+                <span>
+                  <svg class="card__clock" width="16" height="16">
+                    <use xlink:href="#icon-clock"></use>
+                  </svg>
+                </span>
+                <p>Весь февраль</p>
+                <a class="card__link" href="#">
+                  <svg class="card__arrow" width="19" height="8">
+                    <use xlink:href="#icon-arrow"></use>
+                  </svg>
+                  <span class="visually-hidden">Перейти</span>
+                </a>
+              </div>
+            </div>
+          </article>
+          <article class="events__item card">
+            <picture>
+              <source media="(max-width: 767px)" srcset="img/events-mobile-teen@1x.png, img/events-mobile-teen@2x.png 2x">
+              <img src="img/events-desktop-meat@1x.png" srcset="img/events-desktop-meat@2x.png 2x" alt="Фото события" width="325">
+            </picture>
+            <h3>День рождения ресторана «Мясо & Рыба»</h3>
+            <div class="card__case">
+              <div class="card__box">
+                <span>
+                  <svg class="card__clock" width="16" height="16">
+                    <use xlink:href="#icon-clock"></use>
+                  </svg>
+                </span>
+                <p>21–22 февраля</p>
+                <a class="card__link" href="#">
+                  <svg class="card__arrow" width="19" height="8">
+                    <use xlink:href="#icon-arrow"></use>
+                  </svg>
+                  <span class="visually-hidden">Перейти</span>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+        <article class="subscription">
+          <div class="subscription__container">
+            <div class="subscription__latter">
+              <h3>Будьте в курсе всего</h3>
+              <form class="subscription__form" action="#">
+                <div class="subscription__email">
+                  <input type="email" name="email" id="email" placeholder="Ваша почта" aria-label="Поле для введения почты">
+                  <label for="email"></label>
+                </div>
+                <button class="subscription__button" type="submit">Подписаться</button>
+              </form>
+              <p>Рассылка актуальных скидок и&nbsp;акций в ваших любимых магазинах, а также событий Ривьеры.</p>
+            </div>
+          </div>
+          <div class="subscription__container">
+            <div class="subscription__social">
+              <h3>Ривьера в соцсетях</h3>
+              <div class="subscription__list">
+                <a href="#" class="subscription__icon subscription__icon--fb"><span class="visually-hidden">Перейти на фейсбук</span>
+                  <svg class="subscription__fb" width="12" height="24">
+                    <use xlink:href="#icon-fb"></use>
+                  </svg>
+                </a>
+                <a href="#" class="subscription__icon subscription__icon--vk"><span class="visually-hidden">Перейти на вконтакте</span>
+                  <svg class="subscription__vk" width="31" height="18">
+                    <use xlink:href="#icon-vk"></use>
+                  </svg>
+                </a>
+                <a href="#" class="subscription__icon subscription__icon--inst"><span class="visually-hidden">Перейти на инстаграм</span>
+                </a>
+                <a href="#" class="subscription__icon subscription__icon--od"><span class="visually-hidden">Перейти на одноклассники</span>
+                  <svg class="subscription__od" width="17" height="28">
+                    <use xlink:href="#icon-od"></use>
+                  </svg>
+                </a>
+                <a href="#" class="subscription__icon subscription__icon--youtube"><span class="visually-hidden">Перейти на ютьюб</span>
+                  <svg class="subscription__youtube" width="27" height="19">
+                    <use xlink:href="#icon-youtube-subscription"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="subscription__apps">
+              <h3>Наши приложения</h3>
+              <div class="subscription__items">
+                <a href="#" class="subscription__app subscription__app--apple"><span class="visually-hidden">Перейти к приложению в App Store</span></a>
+                <a href="#" class="subscription__app subscription__app--android"><span class="visually-hidden">Перейти к приложению в Google Play</span></a>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
     </section>
     <div class="overlay"></div>
   </main>

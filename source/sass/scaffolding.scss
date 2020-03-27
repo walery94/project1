@@ -54,3 +54,7 @@ select {
   -moz-appearance: none;
   appearance: none;
 }
+
+.stop-scroll {
+  overflow: hidden;
+}
