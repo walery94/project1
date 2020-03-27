@@ -1,7 +1,7 @@
 .events {
   z-index: 1;
   margin-bottom: 63px;
-  padding-top: 20px;
+  padding-top: 14px;
   padding-right: 5.5%;
   padding-left: 5.5%;
 }
@@ -103,6 +103,7 @@
 @media (max-width: $tablet-width) {
 
   .events {
+    padding-top: 20px;
     padding-right: 0;
     padding-left: 0;
   }

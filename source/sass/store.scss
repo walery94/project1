@@ -25,10 +25,14 @@
   font-weight: bold;
   font-size: 48px;
   line-height: 44px;
-  letter-spacing: 0.3px;
+  letter-spacing: 0.6px;
   hyphens: auto;
   color: #ffffff;
   word-break: break-word;
+}
+
+.store__box--cinema h2 {
+  margin-bottom: 20px;
 }
 
 .store__list {
@@ -49,7 +53,7 @@
 
 .store__item {
   margin-right: 24px;
-  margin-bottom: 24px;
+  margin-bottom: 23px;
 }
 
 .store__item:nth-child(4n) {
@@ -93,6 +97,10 @@
   .store h2 {
     margin-left: 24px;
     margin-bottom: 17px;
+  }
+
+  .store__box--cinema h2 {
+    margin-bottom: 14px;
   }
 
   .store__list {
@@ -172,7 +180,7 @@
   }
 
   .store--cinema .store__list {
-    margin-bottom: 13px;
+    margin-bottom: 8px;
   }
 
   .store--services .store__list {

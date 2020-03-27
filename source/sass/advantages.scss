@@ -15,12 +15,9 @@
   @media (max-width: $tablet-width) {
     display: flex;
     flex-direction: column;
-    margin-bottom: 0;
-  }
-
-  @media (max-width: $mobile-width) {
-    padding-left: 16px;
-    padding-right: 16px;
+    margin-bottom: 24px;
+    padding-left: 4%;
+    padding-right: 4%;
   }
 }
 
@@ -53,6 +50,7 @@
   font-weight: 500;
   line-height: 96%;
   letter-spacing: -0.01em;
+  hyphens: auto;
   color: $text-color;
 
   @media (max-width: $tablet-width) {
@@ -70,10 +68,6 @@
 
   @media (max-width: $tablet-width) {
     margin-bottom: 0;
-
-    &:last-of-type {
-      width: 105%;
-    }
   }
 }
 
