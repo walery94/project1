@@ -16,6 +16,10 @@
     width: 100%;
     border-radius: 0;
   }
+
+  @media (max-width: $mobile-width) {
+    max-height: 528px;
+  }
 }
 
 .search-shop__open {
@@ -30,7 +34,7 @@
 
 .search-shop__item {
   padding-top: 16px;
-  padding-bottom: 20px;
+  padding-bottom: 16px;
   padding-left: 16px;
   padding-right: 25px;
   border-bottom: 1px solid $border;
@@ -40,12 +44,30 @@
   &:focus {
     opacity: 0.5;
   }
+
+  &:first-child {
+    padding-bottom: 22px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-top: 24px;
+    padding-right: 30px;
+    padding-bottom: 23px;
+  }
+
+  &:first-child {
+    padding-bottom: 25px;
+  }
 }
 
 .search-shop__img {
   width: 60px;
   height: 60px;
   margin-right: 8px;
+
+  @media (max-width: $mobile-width) {
+    margin-right: 16px;
+  }
 }
 
 .search-shop__link {

@@ -1,9 +1,9 @@
 .way {
-  padding-top: 37px;
-  margin-bottom: 3px;
+  padding-top: 36px;
+  margin-bottom: 25px;
   @media (max-width: $mobile-width) {
-    padding-top: 23px;
-    margin-bottom: 64px;
+    padding-top: 22px;
+    margin-bottom: 85px;
   }
 }
 
@@ -30,13 +30,13 @@
 
 .way h2 {
   position: relative;
-  margin: 0 0 25px;
+  margin: 0 0 26px;
   padding-right: 41px;
 
   font-weight: 700;
   font-size: 64px;
   line-height: 69px;
-  letter-spacing: .3px;
+  letter-spacing: .6px;
   hyphens: auto;
   color: #222;
 
@@ -45,7 +45,7 @@
   @media (max-width: $mobile-width) {
     font-size: 48px;
     line-height: 44px;
-    letter-spacing: 0;
+    letter-spacing: 0.6px;
     color: #222222;
   }
 }
@@ -122,7 +122,7 @@
   font-weight: bold;
   font-size: 36px;
   line-height: 39px;
-  letter-spacing: 0;
+  letter-spacing: 0.3;
   color: #222222;
 
   @media (max-width: $mobile-width) {
@@ -163,18 +163,6 @@
   max-width: 437px;
   margin-right: 87px;
 
-  & dt:first-child {
-    color: #3DAF28;
-  }
-
-  & dt:nth-child(2) {
-    color: orange;
-  }
-
-  & dt:last-child {
-    color: blue;
-  }
-
   @media (max-width: $mobile-width) {
     max-width: 100%;
     margin-right: 0;
@@ -182,18 +170,30 @@
   }
 }
 
+.way__item--east dl:nth-child(2) dt {
+  color: #3DAF28;
+}
+
+.way__item--east dl:nth-child(3) dt {
+  color: orange;
+}
+
+.way__item--east dl:last-child dt {
+  color: rgb(28, 159, 246);
+}
+
 .way__item--west {
   max-width: 466px;
-
-  & dt:first-child {
-    color: red;
-  }
-
-  & dt:last-child {
-    color: purple;
-  }
 
   @media (max-width: $mobile-width) {
     max-width: 100%;
   }
+}
+
+.way__item--west dl:nth-child(2) dt {
+  color: #ED544E;
+}
+
+.way__item--west dl:last-child dt {
+  color: rgb(202, 9, 202);
 }
