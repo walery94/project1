@@ -8,7 +8,7 @@
   <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
-<body class="menu-closed">
+<body class="menu-closed schedule-closed">
 <svg style="display: none;">
   <symbol id="icon-clock" viewBox="0 0 24 24">
     <path d="M12 0C5.37109 0 0 5.37109 0 12C0 18.6289 5.37109 24 12 24C18.6289 24 24 18.6289 24 12C24 5.37109 18.6289 0 12 0ZM12 2C17.5234 2 22 6.47656 22 12C22 17.5234 17.5234 22 12 22C6.47656 22 2 17.5234 2 12C2 6.47656 6.47656 2 12 2ZM10.9375 3.875L10.5 12.0625L10.5938 12.9375L16.75 18.375L17.7188 17.375L12.625 11.9688L12.1875 3.875H10.9375Z"/>
@@ -186,6 +186,8 @@
       </li>
     </ul>
   </nav>
+
+  <!-- Навигация меню -->
   <nav class="pagination-menu pagination-menu--border">
     <h2 class="visually-hidden">Постраничная навигация</h2>
     <form class="pagination-menu__search-form">
@@ -195,6 +197,38 @@
       <label class="visually-hidden" for="search-menu" aria-label="Поиск"></label>
     </form>
     <a class="pagination-menu__scheme" href="scheme.html">Схема <span>Ривьеры</span></a>
+  </nav>
+
+  <!-- Навигация графика работы -->
+  <nav class="schedule">
+    <ul class="schedule__list">
+      <li class="schedule__item">
+        <a class="schedule__link" href="#">Пн <span class="schedule__span">24 фев</span></a>
+      </li>
+      <li class="schedule__item">
+        <a class="schedule__link" href="#">Вт <span class="schedule__span">25 фев</span></a>
+      </li>
+      <li class="schedule__item">
+        <a class="schedule__link" href="#">Ср <span class="schedule__span">26 фев</span></a>
+      </li>
+      <li class="schedule__item">
+        <a class="schedule__link" href="#">Чт <span class="schedule__span">27 фев</span></a>
+      </li>
+      <li class="schedule__item">
+        <a class="schedule__link" href="#">Пт <span class="schedule__span">28 фев</span></a>
+      </li>
+      <li class="schedule__item">
+        <a class="schedule__link" href="#">Сб <span class="schedule__span">29 фев</span></a>
+      </li>
+      <li class="schedule__item">
+        <a class="schedule__link" href="#">Вс <span class="schedule__span">1 мар</span></a>
+      </li>
+    </ul>
+    <a class="schedule__button" href="#">
+      <svg class="site-navigation__icon site-navigation__icon--close" width="24" height="20">
+        <use xlink:href="#close"></use>
+      </svg>
+    </a>
   </nav>
 </header>
 <div class="main-wrapper main-wrapper__opened">
@@ -370,6 +404,45 @@
   </footer>
 </div>
 
+<!-- График работы -->
+<main class="schedule-main">
+  <div class="overlay overlay--schedule"></div>
+  <div class="schedule-wave">
+    <section class="schedule-info">
+      <h2 class="visually-hidden">График работы</h2>
+      <ul class="schedule-info__list">
+        <li class="schedule-info__item">
+          <a class="schedule-info__link" href="#">Стейк-хаус BB Grill</a>
+          <span class="schedule-info__span">10:00 - 23:00</span>
+        </li>
+        <li class="schedule-info__item">
+          <a class="schedule-info__link" href="#">Ресторан быстрого питания Burger King</a>
+          <span class="schedule-info__span">10:00 - 22:00</span>
+        </li>
+        <li class="schedule-info__item">
+          <a class="schedule-info__link" href="#">Фитнес центр LOMOV Gym</a>
+          <span class="schedule-info__span">круглосуточно</span>
+        </li>
+      </ul>
+      <ul class="schedule-info__list">
+        <li class="schedule-info__item">
+          <a class="schedule-info__link" href="#">Электрический картинг Black Star Karting</a>
+          <span class="schedule-info__span">пн-чт 10:00 - 00:00, пт-сб 10:00 - 02:00</span>
+        </li>
+        <li class="schedule-info__item">
+          <a class="schedule-info__link" href="#">Игровой центр Cyberspace</a>
+          <span class="schedule-info__span">пн-чт 10:00 - 00:00, пт-сб 10:00 - 05:30</span>
+        </li>
+        <li class="schedule-info__item">
+          <a class="schedule-info__link" href="#">Парковка</a>
+          <span class="schedule-info__span">круглосуточно</span>
+        </li>
+      </ul>
+    </section>
+  </div>
+</main>
+
+<!-- Меню -->
 <div class="wrapper-menu">
   <section class="menu">
     <div class="menu__section-wrapper">
@@ -592,5 +665,6 @@
 <script src="js/slider.js"></script>
 <script src="js/scroll.js"></script>
 <script src="js/open-menu.js"></script>
+<script src="js/schedule.js"></script>
 </body>
 </html>

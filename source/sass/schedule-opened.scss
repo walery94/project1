@@ -1,0 +1,30 @@
+.schedule-closed {
+  .schedule {
+    display: none;
+  }
+
+  .schedule-main {
+    display: none;
+  }
+}
+
+.schedule-opened {
+  position: fixed;
+  width: 100%;
+
+  .schedule {
+    display: flex;
+  }
+
+  .schedule-main {
+    display: block;
+  }
+
+  .pagination {
+    display: none;
+  }
+
+  .pagination-menu--scheme {
+    display: none;
+  }
+}
