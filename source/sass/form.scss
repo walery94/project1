@@ -316,13 +316,17 @@
   color: #ffffff;
   background-color: #00aed6;
 
+  @media (max-width: 500px) {
+    width: 100%;
+  }
+}
+
+.form__button--display {
   &:last-of-type {
     display: none;
   }
 
-  @media (max-width: 500px) {
-    width: 100%;
-
+  @media (max-width: $tablet-width) {
     &:first-of-type {
       display: none;
     }
