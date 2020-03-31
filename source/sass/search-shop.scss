@@ -47,12 +47,16 @@
 
   &:first-child {
     padding-bottom: 22px;
+
+    @media (max-width: $mobile-width) {
+      padding-bottom: 24px;
+    }
   }
 
   @media (max-width: $mobile-width) {
     padding-top: 24px;
     padding-right: 30px;
-    padding-bottom: 23px;
+    padding-bottom: 24px;
   }
 }
 
