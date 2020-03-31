@@ -6,7 +6,7 @@
   padding-right: 5.5%;
 
   @media (max-width: $tablet-width) {
-    margin-bottom: 39px;
+    margin-bottom: 43px;
     padding-left: 4%;
     padding-right: 4%;
   }
@@ -24,8 +24,9 @@
   color: $text-color;
 
   @media (max-width: $tablet-width) {
-    margin-bottom: 32px;
+    margin-bottom: 28px;
     font-size: 36px;
+    line-height: 100%;
   }
 
   @media (max-width: 324px) {
@@ -111,8 +112,7 @@
 
 .form__checkbox {
   position: absolute;
-  left: 51%;
-  bottom: 6%;
+  left: 2%;
   overflow: hidden;
   clip: rect(0 0 0 0);
   margin: -1px;
@@ -126,7 +126,7 @@
 
 .form__checkbox + label {
   position: relative;
-  cursor: pointer;
+  //cursor: pointer;
 }
 
 .form__checkbox + label::before {
@@ -137,6 +137,7 @@
   height: 22px;
   border: 1px solid $border;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .form__checkbox:checked + label::after {
@@ -164,9 +165,9 @@
   line-height: 118%;
   color: #7d7d7d;
 
-  &:hover {
-    opacity: 0.5;
-  }
+  //&:hover {
+  //  opacity: 0.5;
+  //}
 
   @media (max-width: 360px) {
     width: 290px;
@@ -178,10 +179,10 @@
   font-weight: 500;
   line-height: 118%;
   text-decoration: none;
-  color: #7d7d7d;
+  color: #00aed6;
 
   &:hover {
-    color: #00aed6;
+    opacity: 0.5;
   }
 }
 
