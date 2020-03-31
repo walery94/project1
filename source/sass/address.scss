@@ -61,6 +61,15 @@
   margin-left: 30px;
 }
 
+.address__item--time {
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: #00aed6;
+  }
+}
+
 .address__item--hover {
   &:hover,
   &:focus {
