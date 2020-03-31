@@ -125,6 +125,10 @@
   color: #7D7D7D;
 }
 
+.button--film {
+  display: none;
+}
+
 @media (max-width: $tablet-width) {
 
   .button--more {
@@ -161,6 +165,17 @@
 
   .button--more {
     width: 100%;
+  }
+
+  .button--film {
+    display: block;
+    width: 100%;
+    padding-top: 18px;
+    padding-bottom: 20px;
+    
+    font-weight: 600;
+    color: #00AED6;
+    text-align: center;
   }
 
   .button--cinema {

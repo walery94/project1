@@ -234,7 +234,7 @@
 <div class="main-wrapper main-wrapper__opened">
   <main class="film">
     <div class="film__box">
-      <div class="film__container">
+      <div class="film__container film__container--header">
         <h2>Плохие парни навсегда<sup class="film__hit hit hit--film">хит</sup></h2>
         <div class="film__technology">
           <div class="technology">
@@ -245,48 +245,49 @@
           <p class="film__genre">комедия/экшн</p>
         </div>
       </div>
+      <a href="#" class="button button--film">Выбрать сеанс и купить билет</a>
     </div>
     <div class="film__slider slider slider--shop">
       <div class="slider__list">
         <div class="slider__slid">
           <picture>
             <source media="(max-width: 767px)" srcset="img/film-banner2-mobile@1x.png 1x, img/film-banner2-mobile@2x.png 2x">
-            <img class="film__mask1" src="img/film-banner2-desktop@1x.png" srcset="img/film-banner2-desktop@2x.png 2x" alt="Фотография входа магазина Uniclo">
-            <svg height="0" width="0">
-              <defs>
-                  <clipPath id="film-desktop1">
-                    <path d="M.14.126c11.346.662 28.498 7.142 41.141 3.842C53.004-.379 70.758 8.254 88.29 8.738l-.052 113.756c-15.42 1.218-30.837-.046-45.285-2.241-14.286-3.304-28.742-9.026-42.817-3.608z" fill="none" stroke="#000" stroke-width=".265"/>
-                  </clipPath>
-              </defs>
-            </svg>
-            <svg height="0" width="0">
-              <defs>
-                  <clipPath id="film-mobile1">
-                    <path d="M.356 265.357L.47 12.18c36.087 2.424 94.726 22.509 146.93 8.24C202 4.488 275.724.176 275.627.526l.085 245.277c-75.386-9.792-109.253-1.597-144.585 6.914C63.63 269.414 3.452 269.18.356 265.356z" fill="none" stroke="#000" stroke-width=".243"/>
-                  </clipPath>
-              </defs>
-            </svg>
+            <img class="film__mask1" src="img/film-banner2-desktop@1x.png" srcset="img/film-banner2-desktop@2x.png 2x" alt="Фотография фильма">
           </picture>
+          <svg height="0" width="0">
+            <defs>
+              <clipPath id="film-desktop1">
+                <path d="M.62 12.815c45.36 2.569 112.247 25.921 161.993 5.1C257.836-16.494 285.13 27.797 352.956 30.5l-.133 447.614c-61.654 4.724-123.292-.177-181.058-8.696-57.118-12.82-114.914-27.935-171.19-6.913z" fill="none" stroke="#000" stroke-width="1.042"/>
+              </clipPath>
+            </defs>
+          </svg>
+          <svg height="0" width="0">
+            <defs>
+              <clipPath id="film-mobile1">
+                <path d="M.544 10.426c33.699 5.497 67.397 14.04 101.096 13.598 40.342-.495 68.77-9.206 100.18-15.86l.01 228.469c-50.191-1.974-99.92 9.576-145.935 22.5-19.584 4.624-36.052 3.7-55.402 1.82z" fill="none" stroke="#000" stroke-width="1.022"/>
+              </clipPath>
+            </defs>
+          </svg>
         </div>
         <div class="slider__slid">
           <picture>
-            <!-- <source media="(max-width: 767px)" srcset="img/uniclo-banner-mobile-img1@1x.png 1x, img/uniclo-banner-mobile-img1@2x.png 2x"> -->
-            <img class="film__mask2" src="img/film-banner1-desktop@1x.png" srcset="img/film-banner1-desktop@2x.png 2x" alt="Фотография магазина Uniclo">
-            <svg height="0" width="0">
-              <defs>
-                  <clipPath id="film-desktop2">
-                    <path d="M.189 12.681c37.198 2.901 73.69-1.598 110.193-5.99 25.058-3.141 50.542-8.54 76.84-6.008 6.551.839 17.957 1.861 26.772 3.068l-.074 116.73c-17.278 2.316-34.585 3.505-51.863-.171-23.079-5.43-45.33-6.556-66.775-6.444-33.66.09-63.443 8.485-95.164 12.728z" fill="none" stroke="#000" stroke-width=".265"/>
-                  </clipPath>
-              </defs>
-            </svg>
-            <svg height="0" width="0">
-              <defs>
-                  <clipPath id="film-mobile2">
-                    <path d="M.293 246.044L.56.425c38.822-1.42 81.156 9.99 150.215 17.997 55.749 5.744 129.483-4.817 124.853-5.897l-.665 250.777c-72.452-7.107-108.97-20.385-148.085-15.336C32.075 260.053 67.25 256.31.293 246.044z" fill="none" stroke="#000" stroke-width=".243"/>
-                  </clipPath>
-              </defs>
-            </svg>
+            <!-- <source media="(max-width: 767px)" srcset="img/film-banner1-mobile@1x.png 1x, img/film-banner1-mobile@2x.png 2x"> -->
+            <img class="film__mask2" src="img/film-banner1-desktop@1x.png" srcset="img/film-banner1-desktop@2x.png 2x" alt="Фотография фильма">
           </picture>
+          <svg height="0" width="0">
+            <defs>
+              <clipPath id="film-desktop2">
+                <path d="M.552 30.86c148.687 11.063 294.791 12.155 440.702-4.592C541.416 14.292 643.28-6.294 748.402 3.363c26.185 3.197 72.107 7.095 107.342 11.697l-.057 445.082c-69.064 8.83-138.812 13.328-207.876-.686-92.253-20.705-181.194-24.996-266.918-24.567-134.545.339-253.46 26.604-380.257 42.779z" fill="none" stroke="#000" stroke-width="1.033"/>
+              </clipPath>
+            </defs>
+          </svg>
+          <svg height="0" width="0">
+            <defs>
+              <clipPath id="film-mobile2">
+                <path d="M.186 10.325C81.905-3.317 100.756-.502 144.66 3.468c35.145 2.906 105.133 32.477 172.906 19.795 48.519-12.05 100.828-20.432 147.967-7.801l.003 248.338c-47.559-4.513-85.296-15.081-123.431-19.723-67.536-6.753-127.27 15.963-200.452 20.88-27.885 3.58-89.403-27.563-141.444-28.387z" fill="none" stroke="#000" stroke-width=".265"/>
+              </clipPath>
+            </defs>
+          </svg>
         </div>
         <div class="slider__slid">
           <picture>
@@ -296,21 +297,11 @@
         </div>
         <div class="slider__slid">
           <picture>
-            <!-- <source media="(max-width: 767px)" srcset="img/uniclo-banner-mobile-img1@1x.png 1x, img/uniclo-banner-mobile-img1@2x.png 2x"> -->
+            <!-- <source media="(max-width: 767px)" srcset="img/film-banner1-mobile@1x.png 1x, img/film-banner1-mobile@2x.png 2x"> -->
             <img class="film__mask2" src="img/film-banner1-desktop@1x.png" srcset="img/film-banner1-desktop@2x.png 2x" alt="Фотография входа магазина Uniclo">
           </picture>
         </div>
       </div>
-      <button class="slider__button slider__button--next" type="button">
-        <svg class="slider__arrow" width="28" height="12">
-          <use xlink:href="#icon-arrow"></use>
-        </svg>
-      </button>
-      <button class="slider__button slider__button--prev" type="button">
-        <svg class="slider__arrow" width="28" height="12">
-          <use xlink:href="#icon-arrow"></use>
-        </svg>
-      </button>
     </div>
     <div class="film__box">
       <div class="film__container film__container--description">
