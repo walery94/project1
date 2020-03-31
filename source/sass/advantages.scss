@@ -15,7 +15,7 @@
   @media (max-width: $tablet-width) {
     display: flex;
     flex-direction: column;
-    margin-bottom: 24px;
+    margin-bottom: 5px;
     padding-left: 4%;
     padding-right: 4%;
   }
@@ -57,7 +57,7 @@
   color: $text-color;
 
   @media (max-width: $tablet-width) {
-    margin-bottom: 18px;
+    margin-bottom: 17px;
   }
 }
 
@@ -73,6 +73,12 @@
   @media (max-width: $tablet-width) {
     width: auto;
     margin-bottom: 0;
+  }
+}
+
+.advantages__paragraph--spacing {
+  @media (max-width: $tablet-width) {
+    letter-spacing: -0.1px;
   }
 }
 

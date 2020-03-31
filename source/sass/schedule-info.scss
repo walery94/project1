@@ -2,8 +2,7 @@
   position: relative;
   display: flex;
   max-width: 1024px;
-  margin: 0 auto;
-  padding-top: 32px;
+  padding-top: 30px;
   padding-left: 5.5%;
   padding-right: 5.5%;
 
@@ -33,7 +32,7 @@
 
 .schedule-info__item {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   width: 330px;
   margin-bottom: 30px;
 
@@ -44,11 +43,11 @@
 
 .schedule-info__link {
   position: relative;
+  width: 100%;
   margin-bottom: 21px;
   font-size: 24px;
   font-weight: 500;
   line-height: 96%;
-  letter-spacing: -0.01em;
   text-decoration: none;
   color: #ffffff;
 
@@ -67,8 +66,13 @@
   }
 }
 
+.schedule-info__link--margin {
+  @media (max-width: $tablet-width) {
+    margin-bottom: 24px;
+  }
+}
+
 .schedule-info__span {
-  width: max-content;
   padding: 7px;
   font-size: 12px;
   font-weight: 600;
