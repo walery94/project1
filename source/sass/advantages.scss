@@ -26,7 +26,7 @@
   flex-direction: column;
   width: 31%;
   margin-bottom: 20px;
-  margin-right: 30px;
+  margin-right: 33px;
 
   &:nth-of-type(3n) {
     margin-right: 0;
@@ -34,6 +34,10 @@
 
   &--arendators {
     justify-content: flex-start;
+  }
+
+  @media (max-width: 1100px) {
+    margin-right: 30px;
   }
 
   @media (max-width: $tablet-width) {
@@ -49,7 +53,6 @@
   font-size: 24px;
   font-weight: 500;
   line-height: 96%;
-  letter-spacing: -0.01em;
   hyphens: auto;
   color: $text-color;
 
@@ -59,6 +62,7 @@
 }
 
 .advantages__paragraph {
+  width: 330px;
   margin: 0;
   margin-bottom: 10px;
   padding: 0;
@@ -67,6 +71,7 @@
   line-height: 120%;
 
   @media (max-width: $tablet-width) {
+    width: auto;
     margin-bottom: 0;
   }
 }
@@ -93,6 +98,10 @@
   width: 27%;
   margin-bottom: 21px;
   margin-right: auto;
+
+  &:nth-of-type(3n) {
+    margin-right: 0;
+  }
 
   @media (max-width: $tablet-width) {
     width: auto;

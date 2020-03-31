@@ -32,6 +32,10 @@
     margin-right: 3px;
     padding: 5px 9px;
   }
+
+  @media (max-width: 359px) {
+    padding: 5px 7px;
+  }
 }
 
 .schedule__link {
