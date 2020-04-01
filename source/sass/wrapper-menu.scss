@@ -5,6 +5,10 @@
     min-height: 100vh;
     background-color: #222222;
   }
+
+  @media (max-width: $mobile-width) {
+    min-height: 150vh;
+  }
 }
 
 .wrapper-menu--scheme {

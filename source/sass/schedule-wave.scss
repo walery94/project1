@@ -1,12 +1,12 @@
 .schedule-wave {
   position: absolute;
-  top: 118px;
+  top: 116px;
   width: 100%;
   z-index: 10000;
   background: #00aed6;
 
   @media (max-width: $tablet-width) {
-    top: 116px;
+    top: 113px;
   }
 
   &::after {
