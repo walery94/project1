@@ -7,6 +7,7 @@ $(document).ready(function(){
 	var buttonClockFooter = $('.address__item--time');
 	var buttonClockShop = $('.page-shop__link--clock');
 	var buttonClockCinema = $('.shop-info__link--clock');
+	var buttonClockMenu = $('.address-menu__item--clock');
 	var buttonClose = $('.schedule__button');
 	
 	var ESC = 27;
@@ -34,6 +35,13 @@ $(document).ready(function(){
 	
 	if (buttonClockCinema) {
 		buttonClockCinema.on('click', function (evt) {
+			evt.preventDefault();
+			body.addClass('schedule-opened');
+		});
+	}
+	
+	if (buttonClockMenu) {
+		buttonClockMenu.on('click', function (evt) {
 			evt.preventDefault();
 			body.addClass('schedule-opened');
 		});

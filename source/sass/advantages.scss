@@ -24,6 +24,7 @@
 .advantages__wrapper {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   width: 31%;
   margin-bottom: 20px;
   margin-right: 33px;
@@ -47,8 +48,9 @@
 }
 
 .advantages__title {
+  width: 101%;
   margin: 0;
-  margin-bottom: 27px;
+  margin-bottom: 26px;
   padding: 0;
   font-size: 24px;
   font-weight: 500;

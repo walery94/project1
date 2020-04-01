@@ -1,7 +1,7 @@
 .schedule {
   display: flex;
   align-items: center;
-  min-height: 59px;
+  min-height: 56px;
   margin: 0 auto;
   padding-left: 5.5%;
   padding-right: 5.5%;
@@ -9,7 +9,7 @@
 
   @media (max-width: $tablet-width) {
     padding-left: 4%;
-    padding-right: 4%;
+    padding-right: 15px;
     border-bottom: none;
     background-color: #00aed6;
   }
@@ -86,13 +86,13 @@
 
 .schedule__button {
   margin-left: auto;
-  margin-right: 3px;
 
   &:hover {
     opacity: 0.5;
   }
 
   @media (max-width: $tablet-width) {
+    margin-top: 5px;
     margin-right: 0;
   }
 }
