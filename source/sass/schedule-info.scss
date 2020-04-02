@@ -67,6 +67,8 @@
 }
 
 .schedule-info__link--margin {
+  margin-bottom: 24px;
+
   @media (max-width: $tablet-width) {
     margin-bottom: 24px;
   }
