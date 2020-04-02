@@ -134,6 +134,8 @@
 }
 
 .timetable__time {
+  margin: 0;
+
   font-weight: 600;
   font-size: 24px;
   line-height: 23px;
@@ -142,9 +144,12 @@
 }
 
 .timetable__cost {
+  margin: 0;
+
   font-size: 16px;
   line-height: 17px;
   color: #00AED6;
+  fill: #00AED6;
 }
 
 .timetable__active {
@@ -164,9 +169,11 @@
 
   & .timetable__cost {
     color: #E0E0E0;
+    fill: #E0E0E0;
 
     @media (max-width: $mobile-width) {
       color: #00AED6;
+      fill: #00AED6;
     }
   }
 }
