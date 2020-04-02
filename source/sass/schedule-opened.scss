@@ -11,6 +11,18 @@
 .schedule-opened {
   position: fixed;
   width: 100%;
+  height: 100%;
+
+
+  @media (max-width: $tablet-width) {
+    position: relative;
+  }
+
+  .site-navigation__user--scroll {
+    @media (max-width: $tablet-width) {
+      position: relative;
+    }
+  }
 
   .schedule {
     display: flex;
