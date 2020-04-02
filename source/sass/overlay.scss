@@ -1,5 +1,6 @@
 .overlay {
   position: fixed;
+  display: none;
   top: 115px;
   left: 0;
   z-index: 50;
@@ -12,10 +13,6 @@
 
 .overlay--opened {
   display: block;
-}
-
-.overlay--closed {
-  display: none;
 }
 
 .overlay--schedule {

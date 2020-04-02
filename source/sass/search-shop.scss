@@ -3,7 +3,7 @@
   position: absolute;
   top: 130px;
   left: 5.5%;
-  z-index: 100;
+  z-index: 1001;
   width: 346px;
   max-height: 398px;
   background: #ffffff;
@@ -22,7 +22,7 @@
   }
 }
 
-.search-shop__open {
+.search-shop__opened {
   display: block;
 }
 
