@@ -1,5 +1,6 @@
 .main-header {
   @media (max-width: $tablet-width) {
+    z-index: 1000;
     border-bottom: 1px solid $border;
   }
 }
