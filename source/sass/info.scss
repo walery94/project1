@@ -284,12 +284,12 @@
   .info__container {
     display: block;
     width: 675px;
-    margin: 0 auto;
+    margin: 0;
   }
 
   .info__notes {
     width: 675px;
-    margin: 0 auto;
+    margin: 0;
     margin-bottom: 65px;
   }
 
@@ -299,11 +299,6 @@
     margin-left: 0;
   }
 
-  // .info__copyright {
-  //   padding-left: 30px;
-  //   padding-right: 30px;
-  // }
-
   .info--clothes .info__box {
     max-width: 768px;
     margin: 0 auto;
@@ -311,6 +306,7 @@
 
   .info b {
     max-width: 675px;
+    margin: 0;
   }
 }
 
@@ -323,8 +319,6 @@
 
   .info__box {
     width: 100%;
-    // padding-left: 16px;
-    // padding-right: 16px;
     box-sizing: border-box;
   }
 
@@ -337,11 +331,6 @@
     padding-left: 0;
     padding-right: 0;
   }
-
-  // .info__box--shops {
-  //   padding-left: 16px;
-  //   padding-right: 16px;
-  // }
 
   .info__box h2 {
     width: 100%;
