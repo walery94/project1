@@ -8,7 +8,7 @@ $(document).ready(function(){
   var fieldSearch = $('.pagination-menu__search-input');
 
   /**
-   * Открытие меню при клике на бургер
+   * Открытие меню при клике на бургер.
    */
 	if (buttonOpenMenu) {
 		buttonOpenMenu.on('click', function (evt) {
