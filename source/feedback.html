@@ -8,7 +8,7 @@
   <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
-<body class="menu-closed schedule-closed">
+<body class="menu-closed">
 <svg style="display: none;">
   <symbol id="icon-clock" viewBox="0 0 24 24">
     <path d="M12 0C5.37109 0 0 5.37109 0 12C0 18.6289 5.37109 24 12 24C18.6289 24 24 18.6289 24 12C24 5.37109 18.6289 0 12 0ZM12 2C17.5234 2 22 6.47656 22 12C22 17.5234 17.5234 22 12 22C6.47656 22 2 17.5234 2 12C2 6.47656 6.47656 2 12 2ZM10.9375 3.875L10.5 12.0625L10.5938 12.9375L16.75 18.375L17.7188 17.375L12.625 11.9688L12.1875 3.875H10.9375Z"/>
@@ -120,10 +120,18 @@
       </svg>
     </a>
     <ul class="site-navigation__info site-navigation__info--none">
-      <li class="site-navigation__item site-navigation__item--address"><a href="#">Автозаводская, 18</a></li>
-      <li class="site-navigation__item site-navigation__item--clock"><a href="#">С 10 до 22 каждый день</a></li>
-      <li class="site-navigation__item site-navigation__item--phone"><a href="tel:+74952699999">+7 495 269-99-99</a></li>
-      <li class="site-navigation__item site-navigation__item--floor"><a href="scheme.html">Схема Ривьеры</a></li>
+      <li class="site-navigation__item site-navigation__item--address">
+        <a class="site-navigation__address-link site-navigation__address-link--address" href="#">Автозаводская, 18</a>
+      </li>
+      <li class="site-navigation__item site-navigation__item--clock">
+        <a class="site-navigation__address-link site-navigation__address-link--clock" href="#">С 10 до 22 каждый день</a>
+      </li>
+      <li class="site-navigation__item site-navigation__item--phone">
+        <a class="site-navigation__address-link site-navigation__address-link--phone" href="tel:+74952699999">+7 495 269-99-99</a>
+      </li>
+      <li class="site-navigation__item site-navigation__item--floor">
+        <a class="site-navigation__address-link site-navigation__address-link--floor" href="scheme.html">Схема Ривьеры</a>
+      </li>
     </ul>
     <ul class="site-navigation__user site-navigation__user--scroll">
       <li>
@@ -238,44 +246,38 @@
 <div class="main-wrapper main-wrapper__opened">
 <main class="arendators">
   <section class="feedback">
-    <h2 class="feedback__title">Обратная связь</h2>
+    <h2>Обратная связь</h2>
     <p class="feedback__paragraph">Мы&nbsp;всегда рады ответить на&nbsp;любые вопросы о&nbsp;работе нашего ТРЦ Ривьера. Задать вопрос можно по&nbsp;телефону или заполнив форму онлайн.</p>
     <ul class="feedback__list">
       <li class="feedback__item">
-        <svg width="21" height="20">
-          <use xlink:href="#icon-phone"></use>
-        </svg>
-        <a class="feedback__link" href="tel:+74952699999">+7 495 269-99-99</a>
+        <a class="feedback__link feedback__link--phone" href="tel:+74952699999">+7 495 269-99-99</a>
       </li>
       <li class="feedback__item">
-        <svg width="24" height="24">
-          <use xlink:href="#icon-clock"></use>
-        </svg>
-        <a class="feedback__link" href="#">С 10 до 22 каждый день</a>
+        <a class="feedback__link feedback__link--clock" href="#">С 10 до 22 каждый день</a>
       </li>
     </ul>
   </section>
-  <form class="form" method="get">
+  <form class="form" method="post">
     <h2 class="visually-hidden">Обратная взязь</h2>
     <div class="form__row">
       <label for="name">Имя</label>
-      <input class="form__input" id="name" type="text" aria-label="Категория бренда">
+      <input id="name" type="text" aria-label="Категория бренда">
     </div>
     <div class="form__row">
       <label for="email">Электронная почта</label>
-      <input class="form__input" id="email" type="email" aria-label="Адрес электронной почты">
+      <input id="email" type="email" aria-label="Адрес электронной почты">
     </div>
     <div class="form__row">
-      <label for="phone">Номер телефона</label>
-      <input class="form__input" id="phone" type="tel">
+      <label for="phone-feedback">Номер телефона</label>
+      <input id="phone-feedback" type="tel">
     </div>
     <div class="form__row">
       <label for="question">Ваш вопрос о ТРЦ Ривьера</label>
       <textarea name="question" id="question" cols="30" rows="8"></textarea>
     </div>
     <div class="form__row form__row--checkbox form__row--margin">
-      <input class="form__checkbox" name="consent" id="checkbox" type="checkbox">
-      <label class="form__agreement" for="checkbox">Нажимая на кнопку, я принимаю условия <a href="#">пользовательского соглашения</a> и даю согласие на обработку моих персональных данных</label>
+      <input name="consent" id="checkbox" type="checkbox">
+      <label for="checkbox">Нажимая на кнопку, я принимаю условия <a href="#">пользовательского соглашения</a> и даю согласие на обработку моих персональных данных</label>
     </div>
     <button class="form__button form__button--display button">Отправить письмо</button>
     <button class="form__button form__button--display button">Отправить</button>
@@ -440,7 +442,9 @@
     <div class="menu__section-wrapper">
       <section class="shop-menu">
         <h2 class="visually-hidden">Магазины</h2>
-        <a class="shop-menu__title menu__title" href="#">Магазины</a>
+        <a class="menu__links" href="#">
+          <h3>Магазины</h3>
+        </a>
         <div class="shop-menu__inner-wrapper menu__inner-wrapper">
           <ul class="shop-menu__list menu__list">
             <li class="shop-menu__item menu__item"><a class="shop-menu__link menu__link" href="#">Со скидками<span class="menu__span">8</span></a></li>
@@ -474,7 +478,9 @@
       <div class="menu__wrapper">
         <section class="entertainment-menu">
           <h2 class="visually-hidden">Развлечения</h2>
-          <a class="entertainment-menu__title menu__title" href="#">Развлечения</a>
+          <a class="menu__links" href="#">
+            <h3>Развлечения</h3>
+          </a>
           <div class="entertainment-menu__inner-wrapper menu__inner-wrapper">
             <ul class="entertainment-menu__list menu__list">
               <li class="entertainment-menu__item menu__item"><a class="entertainment-menu__link menu__link" href="#">Бластеры</a></li>
@@ -492,7 +498,9 @@
         </section>
         <section class="food-menu">
           <h2 class="visually-hidden">Еда</h2>
-          <a class="food-menu__title menu__title" href="#">Еда</a>
+          <a class="menu__links" href="#">
+            <h3>Еда</h3>
+          </a>
           <div class="food-menu__inner-wrapper menu__inner-wrapper">
             <ul class="food-menu__list menu__list">
               <li class="food-menu__item menu__item"><a class="food-menu__link menu__link" href="#">Кафе<span class="menu__span">2</span></a></li>
@@ -512,7 +520,9 @@
     <div class="menu__section-wrapper">
       <section class="cinema-menu">
         <h2 class="visually-hidden">Кино</h2>
-        <a class="cinema-menu__title menu__title" href="#">Кино</a>
+        <a class="menu__links" href="#">
+          <h3>Кино</h3>
+        </a>
         <div class="cinema-menu__inner-wrapper menu__inner-wrapper">
           <ul class="cinema-menu__list menu__list">
             <li class="cinema-menu__item menu__item"><a class="cinema-menu__link menu__link" href="#">Сегодня<span class="menu__span">9 фев, вс</span></a></li>
@@ -528,7 +538,9 @@
       </section>
       <section class="children-menu">
         <h2 class="visually-hidden">Все для детей</h2>
-        <a class="children-menu__title menu__title" href="#">Всё для детей</a>
+        <a class="menu__links" href="#">
+          <h3>Всё для детей</h3>
+        </a>
         <div class="children-menu__inner-wrapper menu__inner-wrapper">
           <ul class="children-menu__list menu__list">
             <li class="children-menu__item menu__item"><a class="children-menu__link menu__link" href="#">Развлечения<span class="menu__span">2</span></a></li>
@@ -545,7 +557,9 @@
     <div class="menu__section-wrapper">
       <section class="services-menu">
         <h2 class="visually-hidden">Услуги и сервисы</h2>
-        <a class="services-menu__title menu__title" href="#">Услуги и сервисы</a>
+        <a class="menu__links" href="#">
+          <h3>Услуги и сервисы</h3>
+        </a>
         <div class="services-menu__inner-wrapper menu__inner-wrapper">
           <ul class="services-menu__list menu__list">
             <li class="services-menu__item menu__item"><a class="services-menu__link menu__link" href="#">Бесплатные<span class="menu__span">2</span></a></li>
@@ -579,12 +593,14 @@
         </section>
         <section class="stocks-menu">
           <h2 class="visually-hidden">Акции и события</h2>
-          <a class="stocks-menu__title menu__title" href="#">Акции и события</a>
+          <a class="menu__links" href="#">
+            <h3>Акции и события</h3>
+          </a>
           <p class="stocks-menu__paragraph">Рассылка актуальных скидок и акций в ваших любимых магазинах, а также событий Ривьеры.</p>
           <form class="stocks-menu__form" method="get">
             <input class="stocks-menu__input" type="email" id="email-menu" placeholder="Ваша почта">
             <label class="visually-hidden" for="email-menu" aria-label="Ваша почта"></label>
-            <button class="stocks-menu__button">Подписаться</button>
+            <button class="stocks-menu__button" type="button">Подписаться</button>
           </form>
           <div class="stocks-menu__social">
             <a href="#" class="stocks-menu__icon stocks-menu__icon--fb"><span class="visually-hidden">Перейти на фейсбук</span></a>
@@ -734,12 +750,16 @@
 
 <!--Overlay-->
 <div class="overlay overlay--closed"></div>
+
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://unpkg.com/imask"></script>
 <script src="slick/slick.min.js"></script>
 <script src="js/slider.js"></script>
 <script src="js/scroll.js"></script>
 <script src="js/open-menu.js"></script>
 <script src="js/schedule.js"></script>
+<script src="js/imask.js"></script>
 </body>
 </html>
 

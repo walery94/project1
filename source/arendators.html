@@ -8,7 +8,7 @@
   <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
-<body class="menu-closed schedule-closed">
+<body class="menu-closed">
 <svg style="display: none;">
   <symbol id="icon-clock" viewBox="0 0 24 24">
     <path d="M12 0C5.37109 0 0 5.37109 0 12C0 18.6289 5.37109 24 12 24C18.6289 24 24 18.6289 24 12C24 5.37109 18.6289 0 12 0ZM12 2C17.5234 2 22 6.47656 22 12C22 17.5234 17.5234 22 12 22C6.47656 22 2 17.5234 2 12C2 6.47656 6.47656 2 12 2ZM10.9375 3.875L10.5 12.0625L10.5938 12.9375L16.75 18.375L17.7188 17.375L12.625 11.9688L12.1875 3.875H10.9375Z"/>
@@ -120,10 +120,18 @@
       </svg>
     </a>
     <ul class="site-navigation__info site-navigation__info--none">
-      <li class="site-navigation__item site-navigation__item--address"><a href="#">Автозаводская, 18</a></li>
-      <li class="site-navigation__item site-navigation__item--clock"><a href="#">С 10 до 22 каждый день</a></li>
-      <li class="site-navigation__item site-navigation__item--phone"><a href="tel:+74952699999">+7 495 269-99-99</a></li>
-      <li class="site-navigation__item site-navigation__item--floor"><a href="scheme.html">Схема Ривьеры</a></li>
+      <li class="site-navigation__item site-navigation__item--address">
+        <a class="site-navigation__address-link site-navigation__address-link--address" href="#">Автозаводская, 18</a>
+      </li>
+      <li class="site-navigation__item site-navigation__item--clock">
+        <a class="site-navigation__address-link site-navigation__address-link--clock" href="#">С 10 до 22 каждый день</a>
+      </li>
+      <li class="site-navigation__item site-navigation__item--phone">
+        <a class="site-navigation__address-link site-navigation__address-link--phone" href="tel:+74952699999">+7 495 269-99-99</a>
+      </li>
+      <li class="site-navigation__item site-navigation__item--floor">
+        <a class="site-navigation__address-link site-navigation__address-link--floor" href="scheme.html">Схема Ривьеры</a>
+      </li>
     </ul>
     <ul class="site-navigation__user site-navigation__user--scroll">
       <li>
@@ -238,7 +246,7 @@
 <div class="main-wrapper">
 <main class="arendators">
   <section class="adverters-info">
-    <h2 class="adverters-info__title">Рекламодателям и арендаторам</h2>
+    <h2>Рекламодателям и арендаторам</h2>
     <ul class="adverters-info__list">
       <li class="adverters-info__item"><a class="adverters-info__link" href="#">Рекламодателям</a></li>
       <li class="adverters-info__item"><a class="adverters-info__link" href="#">Арендаторам</a></li>
@@ -288,6 +296,7 @@
     </div>
  </section>
   <section class="presentation">
+    <h2 class="visually-hidden">Скачать презентацию</h2>
     <ul class="presentation__list presentation__list--desktop">
       <li class="presentation__item">
         <a class="presentation__link" href="#">
@@ -313,74 +322,74 @@
       </li>
     </ul>
   </section>
-<form class="form form--arendators" method="get">
-  <h2 class="form__title">Стать арендатором</h2>
+<form class="form form--arendators" method="post">
+  <h2>Стать арендатором</h2>
   <div class="form__row">
     <label for="email">Адрес электронной почты <span>*</span></label>
-    <input class="form__input" id="email" type="email" aria-label="Адрес электронной почты" required>
+    <input id="email" type="email" aria-label="Адрес электронной почты" required>
   </div>
   <div class="form__row">
     <label for="category">Категория бренда <span>*</span></label>
-    <input class="form__input" id="category" type="text" aria-label="Категория бренда" required>
+    <input id="category" type="text" aria-label="Категория бренда" required>
   </div>
   <div class="form__row">
     <label>Вид аренды <span>*</span></label>
     <div class="form__radio-wrapper">
       <div class="form__radio-inner-wrapper">
-        <input class="form__input" name="type" value="room" id="room" type="radio" required>
+        <input name="type" value="room" id="room" type="radio" required>
         <label class="form__radio-label form__radio-label--room" for="room">Помещения</label>
       </div>
       <div>
-        <input class="form__input" name="type" value="rent" id="rent" type="radio" required>
+        <input name="type" value="rent" id="rent" type="radio" required>
         <label class="form__radio-label form__radio-label--rent" for="rent">Островная аренда</label>
       </div>
     </div>
   </div>
   <div class="form__row">
     <label for="area">Необходимая площадь <span>*</span></label>
-    <input class="form__input" id="area" type="text" aria-label="Сайт" required>
+    <input id="area" type="text" aria-label="Сайт" required>
   </div>
   <div class="form__row">
     <label for="receipt">Средний чек (в рублях)</label>
-    <input class="form__input" id="receipt" type="text" aria-label="Необходимая площадь">
+    <input id="receipt" type="text" aria-label="Необходимая площадь">
   </div>
   <div class="form__row">
     <label for="sales">Ожидаемый уровень продаж (млн/мес)</label>
-    <input class="form__input" id="sales" aria-label="Ожидаемый уровень продаж">
+    <input id="sales" aria-label="Ожидаемый уровень продаж">
   </div>
   <div class="form__row">
     <label for="competitors">Основные конкуренты <span>*</span></label>
-    <input class="form__input" id="competitors" type="tel" aria-label="Основные конкуренты" required>
+    <input id="competitors" type="tel" aria-label="Основные конкуренты" required>
   </div>
   <div class="form__row">
     <label for="time">Время на строительно-монтажные работы <span>*</span></label>
-    <input class="form__input" id="time" type="tel" aria-label="Время на строительно-монтажные работы" required>
+    <input id="time" type="tel" aria-label="Время на строительно-монтажные работы" required>
   </div>
   <div class="form__row">
     <label for="date">Желаемая дата начала коммерческой деятельности <span>*</span></label>
-    <input class="form__input" id="date" type="tel" aria-label="Желаемая дата начала коммерческой деятельности" required>
+    <input id="date" type="tel" aria-label="Желаемая дата начала коммерческой деятельности" required>
   </div>
   <div class="form__row">
     <label for="brands">Другие бренды в портфолио арендатора <span>*</span></label>
-    <input class="form__input" id="brands" type="tel" aria-label="Другие бренды в портфолио арендатора" required>
+    <input id="brands" type="tel" aria-label="Другие бренды в портфолио арендатора" required>
   </div>
   <div class="form__row">
     <label for="tel">Сайт, должность, телефон <span>*</span></label>
-    <input class="form__input" id="tel" type="tel" aria-label="Сайт, должность, телефон" required>
+    <input id="tel" type="tel" aria-label="Сайт, должность, телефон" required>
   </div>
   <div class="form__row">
     <label for="shopping-center">В каких ТЦ еще представлен бренд?<span>*</span></label>
-    <input class="form__input" id="shopping-center" type="tel" aria-label="В каких ТЦ еще представлен бренд?" required>
+    <input id="shopping-center" type="tel" aria-label="В каких ТЦ еще представлен бренд?" required>
   </div>
   <div class="form__row">
     <label for="comments">Комментарии</label>
     <textarea name="comments" id="comments" cols="30" rows="8"></textarea>
   </div>
   <div class="form__row form__row--checkbox">
-    <input class="form__checkbox" name="consent" id="checkbox" type="checkbox">
-    <label class="form__agreement" for="checkbox">Нажимая на кнопку, я принимаю условия <a href="#">пользовательского соглашения</a> и даю согласие на обработку моих персональных данных</label>
+    <input name="consent" id="checkbox" type="checkbox">
+    <label for="checkbox">Нажимая на кнопку, я принимаю условия <a href="#">пользовательского соглашения</a> и даю согласие на обработку моих персональных данных</label>
   </div>
-  <button class="form__button button">Отправить</button>
+  <button class="form__button button" type="submit">Отправить</button>
 </form>
 </main>
 <footer class="page-footer">
@@ -542,7 +551,9 @@
     <div class="menu__section-wrapper">
       <section class="shop-menu">
         <h2 class="visually-hidden">Магазины</h2>
-        <a class="shop-menu__title menu__title" href="#">Магазины</a>
+        <a class="menu__links" href="#">
+          <h3>Магазины</h3>
+        </a>
         <div class="shop-menu__inner-wrapper menu__inner-wrapper">
           <ul class="shop-menu__list menu__list">
             <li class="shop-menu__item menu__item"><a class="shop-menu__link menu__link" href="#">Со скидками<span class="menu__span">8</span></a></li>
@@ -576,7 +587,9 @@
       <div class="menu__wrapper">
         <section class="entertainment-menu">
           <h2 class="visually-hidden">Развлечения</h2>
-          <a class="entertainment-menu__title menu__title" href="#">Развлечения</a>
+          <a class="menu__links" href="#">
+            <h3>Развлечения</h3>
+          </a>
           <div class="entertainment-menu__inner-wrapper menu__inner-wrapper">
             <ul class="entertainment-menu__list menu__list">
               <li class="entertainment-menu__item menu__item"><a class="entertainment-menu__link menu__link" href="#">Бластеры</a></li>
@@ -594,7 +607,9 @@
         </section>
         <section class="food-menu">
           <h2 class="visually-hidden">Еда</h2>
-          <a class="food-menu__title menu__title" href="#">Еда</a>
+          <a class="menu__links" href="#">
+            <h3>Еда</h3>
+          </a>
           <div class="food-menu__inner-wrapper menu__inner-wrapper">
             <ul class="food-menu__list menu__list">
               <li class="food-menu__item menu__item"><a class="food-menu__link menu__link" href="#">Кафе<span class="menu__span">2</span></a></li>
@@ -614,7 +629,9 @@
     <div class="menu__section-wrapper">
       <section class="cinema-menu">
         <h2 class="visually-hidden">Кино</h2>
-        <a class="cinema-menu__title menu__title" href="#">Кино</a>
+        <a class="menu__links" href="#">
+          <h3>Кино</h3>
+        </a>
         <div class="cinema-menu__inner-wrapper menu__inner-wrapper">
           <ul class="cinema-menu__list menu__list">
             <li class="cinema-menu__item menu__item"><a class="cinema-menu__link menu__link" href="#">Сегодня<span class="menu__span">9 фев, вс</span></a></li>
@@ -630,7 +647,9 @@
       </section>
       <section class="children-menu">
         <h2 class="visually-hidden">Все для детей</h2>
-        <a class="children-menu__title menu__title" href="#">Всё для детей</a>
+        <a class="menu__links" href="#">
+          <h3>Всё для детей</h3>
+        </a>
         <div class="children-menu__inner-wrapper menu__inner-wrapper">
           <ul class="children-menu__list menu__list">
             <li class="children-menu__item menu__item"><a class="children-menu__link menu__link" href="#">Развлечения<span class="menu__span">2</span></a></li>
@@ -647,7 +666,9 @@
     <div class="menu__section-wrapper">
       <section class="services-menu">
         <h2 class="visually-hidden">Услуги и сервисы</h2>
-        <a class="services-menu__title menu__title" href="#">Услуги и сервисы</a>
+        <a class="menu__links" href="#">
+          <h3>Услуги и сервисы</h3>
+        </a>
         <div class="services-menu__inner-wrapper menu__inner-wrapper">
           <ul class="services-menu__list menu__list">
             <li class="services-menu__item menu__item"><a class="services-menu__link menu__link" href="#">Бесплатные<span class="menu__span">2</span></a></li>
@@ -681,12 +702,14 @@
         </section>
         <section class="stocks-menu">
           <h2 class="visually-hidden">Акции и события</h2>
-          <a class="stocks-menu__title menu__title" href="#">Акции и события</a>
+          <a class="menu__links" href="#">
+            <h3>Акции и события</h3>
+          </a>
           <p class="stocks-menu__paragraph">Рассылка актуальных скидок и акций в ваших любимых магазинах, а также событий Ривьеры.</p>
           <form class="stocks-menu__form" method="get">
             <input class="stocks-menu__input" type="email" id="email-menu" placeholder="Ваша почта">
             <label class="visually-hidden" for="email-menu" aria-label="Ваша почта"></label>
-            <button class="stocks-menu__button">Подписаться</button>
+            <button class="stocks-menu__button" type="button">Подписаться</button>
           </form>
           <div class="stocks-menu__social">
             <a href="#" class="stocks-menu__icon stocks-menu__icon--fb"><span class="visually-hidden">Перейти на фейсбук</span></a>

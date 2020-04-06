@@ -7,10 +7,12 @@
 
   @media (max-width: $tablet-width) {
     margin-bottom: 24px;
+    padding-left: 4%;
+    padding-right: 4%;
   }
 }
 
-.feedback__title {
+.feedback h2 {
   margin: 0;
   margin-top: 36px;
   margin-bottom: 27px;
@@ -64,16 +66,13 @@
 
   @media (max-width: $tablet-width) {
     width: 100%;
-    margin-bottom: 18px;
+    margin-bottom: 27px;
   }
 }
 
-.feedback__item svg {
-  fill: #00aed6;
-}
-
 .feedback__link {
-  padding-left: 8px;
+  position: relative;
+  padding-left: 32px;
   font-size: 16px;
   line-height: 108%;
   text-decoration: none;
@@ -83,5 +82,29 @@
   &:focus {
     opacity: 0.5;
   }
+}
+
+.feedback__link--phone::before {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  background-image: url("../img/icon-phone.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.feedback__link--clock::before {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  background-image: url("../img/icon-clock.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 

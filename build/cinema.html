@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
-<body class="menu-closed schedule-closed">
+<body class="menu-closed">
   <svg style="display: none;">
     <symbol id="door" viewBox="0 0 18 20">
       <path d="M4.5 0.25V7.75H6V1.75H16.5V18.25H6V12.25H4.5V19.75H18V0.25H4.5ZM9.25781 6.46094L8.17969 7.53906L9.89062 9.25H0.75V10.75H9.89062L8.17969 12.4609L9.25781 13.5391L12.2578 10.5391L12.7734 10L12.2578 9.46094L9.25781 6.46094Z"></path>
@@ -105,12 +105,19 @@
           <use xlink:href="#logo"></use>
         </svg>
       </a>
-      <ul class="site-navigation__info site-navigation__info--shops site-navigation__info--none">
-        <li class="site-navigation__item site-navigation__item--address"><a href="#">Автозаводская, 18</a></li>
-        <li class="site-navigation__item site-navigation__item--clock"><a href="#">С 10 до 22 каждый день</a></li>
-        <li class="site-navigation__item site-navigation__item--phone"><a href="tel:+74952699999">+7 495 269-99-99</a>
+      <ul class="site-navigation__info site-navigation__info--none">
+        <li class="site-navigation__item site-navigation__item--address">
+          <a class="site-navigation__address-link site-navigation__address-link--address" href="#">Автозаводская, 18</a>
         </li>
-        <li class="site-navigation__item site-navigation__item--floor"><a href="#">Схема Ривьеры</a></li>
+        <li class="site-navigation__item site-navigation__item--clock">
+          <a class="site-navigation__address-link site-navigation__address-link--clock" href="#">С 10 до 22 каждый день</a>
+        </li>
+        <li class="site-navigation__item site-navigation__item--phone">
+          <a class="site-navigation__address-link site-navigation__address-link--phone" href="tel:+74952699999">+7 495 269-99-99</a>
+        </li>
+        <li class="site-navigation__item site-navigation__item--floor">
+          <a class="site-navigation__address-link site-navigation__address-link--floor" href="scheme.html">Схема Ривьеры</a>
+        </li>
       </ul>
       <ul class="site-navigation__user site-navigation__user--scroll">
         <li>
@@ -860,6 +867,7 @@ c-21.9,3.2-172.8,7.8-262,6.7C246.2,447.4,106.5,421,0,427.9L0,427.9z"></path>
         <b>&#169; 2009–2020 Ривьера</b>
       </section>
     </footer>
+  </div>
 
     <!-- График работы -->
     <div class="schedule-main">
@@ -906,52 +914,45 @@ c-21.9,3.2-172.8,7.8-262,6.7C246.2,447.4,106.5,421,0,427.9L0,427.9z"></path>
         <div class="menu__section-wrapper">
           <section class="shop-menu">
             <h2 class="visually-hidden">Магазины</h2>
-            <a class="shop-menu__title menu__title" href="#">Магазины</a>
+            <a class="menu__links" href="#">
+              <h3>Магазины</h3>
+            </a>
             <div class="shop-menu__inner-wrapper menu__inner-wrapper">
               <ul class="shop-menu__list menu__list">
                 <li class="shop-menu__item menu__item"><a class="shop-menu__link menu__link" href="#">Со скидками<span class="menu__span">8</span></a></li>
                 <li class="shop-menu__item menu__item"><a class="shop-menu__link menu__link" href="#">Одежда<span class="menu__span">434</span></a></li>
                 <li class="shop-menu__item menu__item"><a class="shop-menu__link menu__link" href="#">Подарки<span class="menu__span">16</span></a></li>
                 <li class="shop-menu__item menu__item"><a class="shop-menu__link menu__link" href="#">Обувь<span class="menu__span">243</span></a></li>
-                <li class="shop-menu__item menu__item"><a class="shop-menu__link menu__link" href="#">Бытовая техника и
-                    электроника<span class="menu__span">6</span></a></li>
-                <li class="shop-menu__item menu__item"><a class="shop-menu__link menu__link" href="#">Детские
-                    товары<span class="menu__span">17</span></a></li>
+                <li class="shop-menu__item menu__item"><a class="shop-menu__link menu__link" href="#">Бытовая техника и электроника<span class="menu__span">6</span></a></li>
+                <li class="shop-menu__item menu__item"><a class="shop-menu__link menu__link" href="#">Детские товары<span class="menu__span">17</span></a></li>
                 <li class="shop-menu__item menu__item"><a class="shop-menu__link menu__link" href="#">Мебель<span class="menu__span">3</span></a></li>
-                <li class="shop-menu__item menu__item"><a class="shop-menu__link menu__link" href="#">Необычные
-                    вещи<span class="menu__span">3</span></a></li>
-                <li class="shop-menu__item menu__item"><a class="shop-menu__link menu__link" href="#">Зоомагазин</a>
-                </li>
-                <li class="shop-menu__item menu__item"><a class="shop-menu__link menu__link" href="#">Нижнее белье,
-                    домашняя одежда и купальники<span class="menu__span">8</span></a></li>
-                <li class="shop-menu__item menu__item"><a class="shop-menu__link menu__link" href="#">Сумки и
-                    аксессуары<span class="menu__span">21</span></a></li>
+                <li class="shop-menu__item menu__item"><a class="shop-menu__link menu__link" href="#">Необычные вещи<span class="menu__span">3</span></a></li>
+                <li class="shop-menu__item menu__item"><a class="shop-menu__link menu__link" href="#">Зоомагазин</a></li>
+                <li class="shop-menu__item menu__item"><a class="shop-menu__link menu__link" href="#">Нижнее белье, домашняя одежда и купальники<span class="menu__span">8</span></a></li>
+                <li class="shop-menu__item menu__item"><a class="shop-menu__link menu__link" href="#">Сумки и аксессуары<span class="menu__span">21</span></a></li>
               </ul>
               <ul class="shop-menu__list menu__list">
                 <li class="shop-menu__item menu__item"><a class="shop-menu__link menu__link" href="#">Часы<span class="menu__span">2</span></a></li>
-                <li class="shop-menu__item menu__item"><a class="shop-menu__link menu__link" href="#">Косметика и
-                    парфюмерия<span class="menu__span">8</span></a></li>
+                <li class="shop-menu__item menu__item"><a class="shop-menu__link menu__link" href="#">Косметика и парфюмерия<span class="menu__span">8</span></a></li>
                 <li class="shop-menu__item menu__item"><a class="shop-menu__link menu__link" href="#">Книги<span class="menu__span">3</span></a></li>
-                <li class="shop-menu__item menu__item"><a class="shop-menu__link menu__link" href="#">Товары для
-                    дома<span class="menu__span">5</span></a></li>
+                <li class="shop-menu__item menu__item"><a class="shop-menu__link menu__link" href="#">Товары для дома<span class="menu__span">5</span></a></li>
                 <li class="shop-menu__item menu__item"><a class="shop-menu__link menu__link" href="#">Аптеки<span class="menu__span">2</span></a></li>
-                <li class="shop-menu__item menu__item"><a class="shop-menu__link menu__link" href="#">Салоны сотовой
-                    связи<span class="menu__span">4</span></a></li>
+                <li class="shop-menu__item menu__item"><a class="shop-menu__link menu__link" href="#">Салоны сотовой связи<span class="menu__span">4</span></a></li>
                 <li class="shop-menu__item menu__item"><a class="shop-menu__link menu__link" href="#">Продукты</a></li>
-                <li class="shop-menu__item menu__item"><a class="shop-menu__link menu__link" href="#">Товары для
-                    праздников<span class="menu__span">6</span></a></li>
+                <li class="shop-menu__item menu__item"><a class="shop-menu__link menu__link" href="#">Товары для праздников<span class="menu__span">6</span></a></li>
                 <li class="shop-menu__item menu__item"><a class="shop-menu__link menu__link" href="#">Табак<span class="menu__span">2</span></a></li>
                 <li class="shop-menu__item menu__item"><a class="shop-menu__link menu__link" href="#">Спорт<span class="menu__span">4</span></a></li>
                 <li class="shop-menu__item menu__item"><a class="shop-menu__link menu__link" href="#">Салоны оптики<span class="menu__span">2</span></a></li>
-                <li class="shop-menu__item menu__item"><a class="shop-menu__link menu__link" href="#">Туризм и активный
-                    отдых<span class="menu__span">3</span></a></li>
+                <li class="shop-menu__item menu__item"><a class="shop-menu__link menu__link" href="#">Туризм и активный отдых<span class="menu__span">3</span></a></li>
               </ul>
             </div>
           </section>
           <div class="menu__wrapper">
             <section class="entertainment-menu">
               <h2 class="visually-hidden">Развлечения</h2>
-              <a class="entertainment-menu__title menu__title" href="#">Развлечения</a>
+              <a class="menu__links" href="#">
+                <h3>Развлечения</h3>
+              </a>
               <div class="entertainment-menu__inner-wrapper menu__inner-wrapper">
                 <ul class="entertainment-menu__list menu__list">
                   <li class="entertainment-menu__item menu__item"><a class="entertainment-menu__link menu__link" href="#">Бластеры</a></li>
@@ -969,7 +970,9 @@ c-21.9,3.2-172.8,7.8-262,6.7C246.2,447.4,106.5,421,0,427.9L0,427.9z"></path>
             </section>
             <section class="food-menu">
               <h2 class="visually-hidden">Еда</h2>
-              <a class="food-menu__title menu__title" href="#">Еда</a>
+              <a class="menu__links" href="#">
+                <h3>Еда</h3>
+              </a>
               <div class="food-menu__inner-wrapper menu__inner-wrapper">
                 <ul class="food-menu__list menu__list">
                   <li class="food-menu__item menu__item"><a class="food-menu__link menu__link" href="#">Кафе<span class="menu__span">2</span></a></li>
@@ -978,11 +981,9 @@ c-21.9,3.2-172.8,7.8-262,6.7C246.2,447.4,106.5,421,0,427.9L0,427.9z"></path>
                   <li class="food-menu__item menu__item"><a class="food-menu__link menu__link" href="#">Фастфуд<span class="menu__span">5</span></a></li>
                 </ul>
                 <ul class="food-menu__list menu__list">
-                  <li class="food-menu__item menu__item"><a class="food-menu__link menu__link" href="#">Японская
-                      кухня<span class="menu__span">2</span></a></li>
+                  <li class="food-menu__item menu__item"><a class="food-menu__link menu__link" href="#">Японская кухня<span class="menu__span">2</span></a></li>
                   <li class="food-menu__item menu__item"><a class="food-menu__link menu__link" href="#">Пицца<span class="menu__span">2</span></a></li>
-                  <li class="food-menu__item menu__item"><a class="food-menu__link menu__link" href="#">Мороженое и
-                      сладости<span class="menu__span">2</span></a></li>
+                  <li class="food-menu__item menu__item"><a class="food-menu__link menu__link" href="#">Мороженое и сладости<span class="menu__span">2</span></a></li>
                 </ul>
               </div>
             </section>
@@ -991,7 +992,9 @@ c-21.9,3.2-172.8,7.8-262,6.7C246.2,447.4,106.5,421,0,427.9L0,427.9z"></path>
         <div class="menu__section-wrapper">
           <section class="cinema-menu">
             <h2 class="visually-hidden">Кино</h2>
-            <a class="cinema-menu__title menu__title" href="#">Кино</a>
+            <a class="menu__links" href="#">
+              <h3>Кино</h3>
+            </a>
             <div class="cinema-menu__inner-wrapper menu__inner-wrapper">
               <ul class="cinema-menu__list menu__list">
                 <li class="cinema-menu__item menu__item"><a class="cinema-menu__link menu__link" href="#">Сегодня<span class="menu__span">9 фев, вс</span></a></li>
@@ -999,17 +1002,17 @@ c-21.9,3.2-172.8,7.8-262,6.7C246.2,447.4,106.5,421,0,427.9L0,427.9z"></path>
                 <li class="cinema-menu__item menu__item"><a class="cinema-menu__link menu__link" href="#">Послезавтра<span class="menu__span">11 фев, вт</span></a></li>
               </ul>
               <ul class="cinema-menu__list menu__list">
-                <li class="cinema-menu__item menu__item"><a class="cinema-menu__link menu__link" href="#">Камуфляж и
-                    шпионаж<span class="menu__span menu__span--hit">Хит</span></a></li>
-                <li class="cinema-menu__item menu__item"><a class="cinema-menu__link menu__link" href="#">Тролль:
-                    История с хвостом</a></li>
+                <li class="cinema-menu__item menu__item"><a class="cinema-menu__link menu__link" href="#">Камуфляж и шпионаж<span class="menu__span menu__span--hit">Хит</span></a></li>
+                <li class="cinema-menu__item menu__item"><a class="cinema-menu__link menu__link" href="#">Тролль: История с хвостом</a></li>
                 <li class="cinema-menu__item menu__item cinema-menu__item--height"><a class="cinema-menu__link menu__link" href="#">Playmobil Фильм: Через вселенные</a></li>
               </ul>
             </div>
           </section>
           <section class="children-menu">
             <h2 class="visually-hidden">Все для детей</h2>
-            <a class="children-menu__title menu__title" href="#">Всё для детей</a>
+            <a class="menu__links" href="#">
+              <h3>Всё для детей</h3>
+            </a>
             <div class="children-menu__inner-wrapper menu__inner-wrapper">
               <ul class="children-menu__list menu__list">
                 <li class="children-menu__item menu__item"><a class="children-menu__link menu__link" href="#">Развлечения<span class="menu__span">2</span></a></li>
@@ -1026,72 +1029,59 @@ c-21.9,3.2-172.8,7.8-262,6.7C246.2,447.4,106.5,421,0,427.9L0,427.9z"></path>
         <div class="menu__section-wrapper">
           <section class="services-menu">
             <h2 class="visually-hidden">Услуги и сервисы</h2>
-            <a class="services-menu__title menu__title" href="#">Услуги и сервисы</a>
+            <a class="menu__links" href="#">
+              <h3>Услуги и сервисы</h3>
+            </a>
             <div class="services-menu__inner-wrapper menu__inner-wrapper">
               <ul class="services-menu__list menu__list">
                 <li class="services-menu__item menu__item"><a class="services-menu__link menu__link" href="#">Бесплатные<span class="menu__span">2</span></a></li>
                 <li class="services-menu__item menu__item services-menu__item--height"><a class="services-menu__link menu__link" href="#">Банки, банкоматы, терминалы и обмен валюты<span class="menu__span">8</span></a></li>
-                <li class="services-menu__item menu__item"><a class="services-menu__link menu__link" href="#">Авто и
-                    транспорт<span class="menu__span">11</span></a></li>
+                <li class="services-menu__item menu__item"><a class="services-menu__link menu__link" href="#">Авто и транспорт<span class="menu__span">11</span></a></li>
                 <li class="services-menu__item menu__item"><a class="services-menu__link menu__link" href="#">Детям<span class="menu__span">8</span></a></li>
                 <li class="services-menu__item menu__item"><a class="services-menu__link menu__link" href="#">Туалеты</a></li>
                 <li class="services-menu__item menu__item"><a class="services-menu__link menu__link" href="#">Гардероб</a></li>
-                <li class="services-menu__item menu__item"><a class="services-menu__link menu__link" href="#">Wi-Fi</a>
-                </li>
+                <li class="services-menu__item menu__item"><a class="services-menu__link menu__link" href="#">Wi-Fi</a></li>
                 <li class="services-menu__item menu__item services-menu__item--height"><a class="services-menu__link menu__link" href="#">Интернет, ТВ, телефоны и гаджеты<span class="menu__span">5</span></a></li>
-                <li class="services-menu__item menu__item"><a class="services-menu__link menu__link" href="#">Бытовые
-                    услуги<span class="menu__span">15</span></a></li>
+                <li class="services-menu__item menu__item"><a class="services-menu__link menu__link" href="#">Бытовые услуги<span class="menu__span">15</span></a></li>
               </ul>
               <ul class="services-menu__list menu__list">
                 <li class="services-menu__item menu__item"><a class="services-menu__link menu__link" href="#">Гравировка</a></li>
                 <li class="services-menu__item menu__item services-menu__item--height"><a class="services-menu__link menu__link" href="#">Обслуживание лыж и сноубордов</a></li>
                 <li class="services-menu__item menu__item"><a class="services-menu__link menu__link" href="#">Оптика<span class="menu__span">2</span></a></li>
-                <li class="services-menu__item menu__item"><a class="services-menu__link menu__link" href="#">Красота и
-                    спорт<span class="menu__span">6</span></a></li>
+                <li class="services-menu__item menu__item"><a class="services-menu__link menu__link" href="#">Красота и спорт<span class="menu__span">6</span></a></li>
                 <li class="services-menu__item menu__item"><a class="services-menu__link menu__link" href="#">Турагентства<span class="menu__span">2</span></a></li>
                 <li class="services-menu__item menu__item"><a class="services-menu__link menu__link" href="#">Фотоуслуги</a></li>
-                <li class="services-menu__item menu__item"><a class="services-menu__link menu__link" href="#">Для
-                    малышей<span class="menu__span">6</span></a></li>
-                <li class="services-menu__item menu__item"><a class="services-menu__link menu__link" href="#">Ювелирный
-                    ломбард</a></li>
-                <li class="services-menu__item menu__item"><a class="services-menu__link menu__link" href="#">Бюро
-                    находок</a></li>
-                <li class="services-menu__item menu__item"><a class="services-menu__link menu__link" href="#">Стойка
-                    информации</a></li>
+                <li class="services-menu__item menu__item"><a class="services-menu__link menu__link" href="#">Для малышей<span class="menu__span">6</span></a></li>
+                <li class="services-menu__item menu__item"><a class="services-menu__link menu__link" href="#">Ювелирный ломбард</a></li>
+                <li class="services-menu__item menu__item"><a class="services-menu__link menu__link" href="#">Бюро находок</a></li>
+                <li class="services-menu__item menu__item"><a class="services-menu__link menu__link" href="#">Стойка информации</a></li>
               </ul>
             </div>
           </section>
           <div class="menu__wrapper">
             <section class="fitness-menu">
               <h2 class="fitness-menu__title menu__title">Фитнес-клуб 24×7 Lomov Gym<a href="#" class="fitness-menu__icon">–2 этаж</a></h2>
-              <p class="fitness-menu__paragraph">Лучший фитнес-проект 2018 года, победитель в номинации «Стартап и
-                инновации 2018», вошел в топ-5 лучших фитнес-клубов России с дизайнерским интерьером.</p>
+              <p class="fitness-menu__paragraph">Лучший фитнес-проект 2018 года, победитель в номинации «Стартап и инновации 2018», вошел в топ-5 лучших фитнес-клубов России с дизайнерским интерьером.</p>
             </section>
             <section class="stocks-menu">
               <h2 class="visually-hidden">Акции и события</h2>
-              <a class="stocks-menu__title menu__title" href="#">Акции и события</a>
-              <p class="stocks-menu__paragraph">Рассылка актуальных скидок и акций в ваших любимых магазинах, а также
-                событий Ривьеры.</p>
+              <a class="menu__links" href="#">
+                <h3>Акции и события</h3>
+              </a>
+              <p class="stocks-menu__paragraph">Рассылка актуальных скидок и акций в ваших любимых магазинах, а также событий Ривьеры.</p>
               <form class="stocks-menu__form" method="get">
                 <input class="stocks-menu__input" type="email" id="email-menu" placeholder="Ваша почта">
                 <label class="visually-hidden" for="email-menu" aria-label="Ваша почта"></label>
-                <button class="stocks-menu__button">Подписаться</button>
+                <button class="stocks-menu__button" type="button">Подписаться</button>
               </form>
               <div class="stocks-menu__social">
-                <a href="#" class="stocks-menu__icon stocks-menu__icon--fb"><span class="visually-hidden">Перейти на
-                    фейсбук</span></a>
-                <a href="#" class="stocks-menu__icon stocks-menu__icon--vk"><span class="visually-hidden">Перейти на
-                    вконтакте</span></a>
-                <a href="#" class="stocks-menu__icon stocks-menu__icon--inst"><span class="visually-hidden">Перейти на
-                    инстаграм</span></a>
-                <a href="#" class="stocks-menu__icon stocks-menu__icon--od"><span class="visually-hidden">Перейти на
-                    одноклассники</span></a>
-                <a href="#" class="stocks-menu__icon stocks-menu__icon--youtube"><span class="visually-hidden">Перейти
-                    на ютьюб</span></a>
-                <a href="#" class="stocks-menu__app stocks-menu__app--apple"><span class="visually-hidden">Перейти к
-                    приложению в App Store</span></a>
-                <a href="#" class="stocks-menu__app stocks-menu__app--google"><span class="visually-hidden">Перейти к
-                    приложению в Google Play</span></a>
+                <a href="#" class="stocks-menu__icon stocks-menu__icon--fb"><span class="visually-hidden">Перейти на фейсбук</span></a>
+                <a href="#" class="stocks-menu__icon stocks-menu__icon--vk"><span class="visually-hidden">Перейти на вконтакте</span></a>
+                <a href="#" class="stocks-menu__icon stocks-menu__icon--inst"><span class="visually-hidden">Перейти на инстаграм</span></a>
+                <a href="#" class="stocks-menu__icon stocks-menu__icon--od"><span class="visually-hidden">Перейти на одноклассники</span></a>
+                <a href="#" class="stocks-menu__icon stocks-menu__icon--youtube"><span class="visually-hidden">Перейти на ютьюб</span></a>
+                <a href="#" class="stocks-menu__app stocks-menu__app--apple"><span class="visually-hidden">Перейти к приложению в App Store</span></a>
+                <a href="#" class="stocks-menu__app stocks-menu__app--google"><span class="visually-hidden">Перейти к приложению в Google Play</span></a>
               </div>
             </section>
           </div>
@@ -1099,16 +1089,13 @@ c-21.9,3.2-172.8,7.8-262,6.7C246.2,447.4,106.5,421,0,427.9L0,427.9z"></path>
             <h2 class="map-menu__title menu__title">Как попасть в Ривьеру</h2>
             <div class="map-menu__inner-wrapper menu__inner-wrapper">
               <ul class="map-menu__list menu__list">
-                <li class="map-menu__item menu__item"><a class="map-menu__link menu__link" href="#">Как добраться</a>
-                </li>
+                <li class="map-menu__item menu__item"><a class="map-menu__link menu__link" href="#">Как добраться</a></li>
                 <li class="map-menu__item menu__item"><a class="map-menu__link menu__link" href="#">Парковки</a></li>
                 <li class="map-menu__item menu__item"><a class="map-menu__link map-menu__link--taxi menu__link" href="#"><span></span>Заказать такси</a></li>
               </ul>
               <ul class="map-menu__list menu__list">
-                <li class="map-menu__item menu__item"><a class="map-menu__link menu__link" href="#">Арендаторам и
-                    рекламодателям</a></li>
-                <li class="map-menu__item menu__item"><a class="map-menu__link menu__link" href="#">Соцсети и обратная
-                    связь</a></li>
+                <li class="map-menu__item menu__item"><a class="map-menu__link menu__link" href="#">Арендаторам и рекламодателям</a></li>
+                <li class="map-menu__item menu__item"><a class="map-menu__link menu__link" href="#">Соцсети и обратная связь</a></li>
               </ul>
             </div>
             <picture>
@@ -1153,7 +1140,6 @@ c-21.9,3.2-172.8,7.8-262,6.7C246.2,447.4,106.5,421,0,427.9L0,427.9z"></path>
         <a class="footer-menu__link" href="#">© 2009–2020 Ривьера</a>
       </footer>
     </div>
-  </div>
 
   <!--Поиск по магазинам-->
   <section class="search-shop">
