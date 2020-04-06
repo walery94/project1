@@ -12,7 +12,7 @@
   }
 }
 
-.form__title {
+.form h2 {
   margin: 0;
   margin-bottom: 32px;
   padding: 0;
@@ -67,7 +67,7 @@
   color: #aa0061;
 }
 
-.form__input {
+.form__row input {
   display: block;
   box-sizing: border-box;
   width: 100%;
@@ -110,7 +110,7 @@
   }
 }
 
-.form__checkbox {
+.form input[type=checkbox] {
   position: absolute;
   left: 2%;
   overflow: hidden;
@@ -124,12 +124,12 @@
   clip-path: inset(100%);
 }
 
-.form__checkbox + label {
+.form input[type=checkbox] + label {
   position: relative;
   //cursor: pointer;
 }
 
-.form__checkbox + label::before {
+.form input[type=checkbox] + label::before {
   content: "";
   position: absolute;
   left: 0;
@@ -140,7 +140,7 @@
   cursor: pointer;
 }
 
-.form__checkbox:checked + label::after {
+.form input[type=checkbox]:checked + label::after {
   content: "";
   position: absolute;
   left: 7px;
@@ -152,11 +152,11 @@
   transform: rotate(-45deg);
 }
 
-.form__checkbox + label::after {
+.form input[type=checkbox] + label::after {
   content: none;
 }
 
-.form__agreement {
+.form__row--checkbox label {
   position: relative;
   margin-bottom: 35px;
   padding-left: 34px;
@@ -165,16 +165,12 @@
   line-height: 118%;
   color: #7d7d7d;
 
-  //&:hover {
-  //  opacity: 0.5;
-  //}
-
   @media (max-width: 360px) {
     width: 290px;
   }
 }
 
-.form__agreement a {
+.form__row--checkbox label a {
   font-size: 16px;
   font-weight: 500;
   line-height: 118%;
@@ -200,8 +196,7 @@
 
 .form [type="radio"] {
   position: absolute;
-  left: 51%;
-  bottom: -55%;
+  left: 35%;
   overflow: hidden;
   clip: rect(0 0 0 0);
   margin: -1px;
