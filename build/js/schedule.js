@@ -2,6 +2,8 @@
 
 $(document).ready(function(){
 	
+	// График работы
+	
 	var body = $('body');
 	var buttonClock = $('.site-navigation__item--clock');
 	var buttonClockFooter = $('.address__item--time');
@@ -18,42 +20,42 @@ $(document).ready(function(){
 			body.addClass('schedule-opened');
 		});
 	}
-	
+
 	if (buttonClockFooter) {
 		buttonClockFooter.on('click', function (evt) {
 			evt.preventDefault();
 			body.addClass('schedule-opened');
 		});
 	}
-	
+
 	if (buttonClockShop) {
 		buttonClockShop.on('click', function (evt) {
 			evt.preventDefault();
 			body.addClass('schedule-opened');
 		});
 	}
-	
+
 	if (buttonClockCinema) {
 		buttonClockCinema.on('click', function (evt) {
 			evt.preventDefault();
 			body.addClass('schedule-opened');
 		});
 	}
-	
+
 	if (buttonClockMenu) {
 		buttonClockMenu.on('click', function (evt) {
 			evt.preventDefault();
 			body.addClass('schedule-opened');
 		});
 	}
-	
+
 	if (buttonClose) {
 		buttonClose.on('click', function (evt) {
 			evt.preventDefault();
 			body.removeClass('schedule-opened');
 		});
 	}
-	
+
 	window.addEventListener('keydown', function (evt) {
 		if (evt.keyCode === ESC) {
 			evt.preventDefault();

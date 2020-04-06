@@ -3480,7 +3480,7 @@
     </div>
   </noscript>
 </head>
-<body style="height: 100%;" class="schedule-closed">
+<body style="height: 100%;">
   <svg style="display: none">
     <symbol id="close" viewBox="0 0 20 20">
       <path d="M1.83477 0L0 1.83477L8.16523 10L0 18.1652L1.83477 20L10 11.8348L18.1652 20L20 18.1652L11.8348 10L20 1.83477L18.1652 0L10 8.16523L1.83477 0Z"></path>
@@ -3531,7 +3531,7 @@
       <path d="M1.53128 1.90735e-06C0.000281929 1.90735e-06 0.00979756 0.792002 0.00979756 1C-0.000202437 6 2.33889 10.8281 5.75589 14.2441C9.17289 17.6601 14 20.0002 19 19.9902C19.208 19.9902 20 19.9997 20 18.4687V14.2715C20 13.7725 19.6259 13.3546 19.1289 13.3066C18.2889 13.2246 17.002 13.059 16 12.75C15.548 12.611 15.1989 12.4831 14.9239 12.3691C14.6899 12.2721 14.4241 12.3249 14.2461 12.5039L11.9434 14.8066C10.5164 14.0346 9.21325 13.0638 8.07425 11.9258C6.93525 10.7878 5.96439 9.48364 5.19339 8.05664L7.49613 5.75391C7.67513 5.57491 7.72689 5.30917 7.63089 5.07617C7.51689 4.80117 7.38903 4.452 7.25003 4C6.94203 2.998 6.77539 1.7111 6.69339 0.871095C6.64539 0.374096 6.22755 1.90735e-06 5.72855 1.90735e-06H1.53128ZM16 1.5V4H12V6H16V8.5L20.5 5L16 1.5Z"></path>
     </symbol>
   </svg>
-  <div class="wrapper-menu--scheme">
+  <div class="wrapper-menu wrapper-menu--scheme">
     <header class="main-header main-header--scheme">
       <h1 class="visually-hidden">Ривьера</h1>
       <section class="site-navigation site-navigation--scheme">
@@ -3541,10 +3541,19 @@
             <use xlink:href="#logo"></use>
           </svg>
         </a>
-        <ul class="site-navigation__info menu__info site-navigation__info--none">
-          <li class="site-navigation__item site-navigation__item--address"><a href="#">Автозаводская, 18</a></li>
-          <li class="site-navigation__item site-navigation__item--clock"><a href="#">С 10 до 22 каждый день</a></li>
-          <li class="site-navigation__item site-navigation__item--phone"><a href="tel:+74952699999">+7 495 269-99-99</a></li>
+        <ul class="site-navigation__info site-navigation__info--none">
+          <li class="site-navigation__item site-navigation__item--address">
+            <a class="site-navigation__address-link site-navigation__address-link--address" href="#">Автозаводская, 18</a>
+          </li>
+          <li class="site-navigation__item site-navigation__item--clock">
+            <a class="site-navigation__address-link site-navigation__address-link--clock" href="#">С 10 до 22 каждый день</a>
+          </li>
+          <li class="site-navigation__item site-navigation__item--phone">
+            <a class="site-navigation__address-link site-navigation__address-link--phone" href="tel:+74952699999">+7 495 269-99-99</a>
+          </li>
+          <li class="site-navigation__item site-navigation__item--floor">
+            <a class="site-navigation__address-link site-navigation__address-link--floor" href="scheme.html">Схема Ривьеры</a>
+          </li>
         </ul>
 
         <!--Убирается добавлением класса site-navigation__user--none-->

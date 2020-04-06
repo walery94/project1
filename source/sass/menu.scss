@@ -49,7 +49,11 @@
   display: flex;
 }
 
-.menu__title {
+.menu__links {
+  text-decoration: none;
+}
+
+.menu__links h3 {
   display: block;
   margin: 0;
   padding: 0;
@@ -72,7 +76,7 @@
   }
 }
 
-.menu__title--sitemenu {
+.menu__links--sitemenu h3 {
   @media (max-width: $tablet-width) {
     color: $text-color;
   }

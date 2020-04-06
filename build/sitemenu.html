@@ -7,7 +7,7 @@
   <title>Site menu</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
-<body class="schedule-closed">
+<body>
 <svg style="display: none">
   <symbol id="door" viewBox="0 0 18 20">
     <path d="M4.5 0.25V7.75H6V1.75H16.5V18.25H6V12.25H4.5V19.75H18V0.25H4.5ZM9.25781 6.46094L8.17969 7.53906L9.89062 9.25H0.75V10.75H9.89062L8.17969 12.4609L9.25781 13.5391L12.2578 10.5391L12.7734 10L12.2578 9.46094L9.25781 6.46094Z"></path>
@@ -58,10 +58,18 @@
         </svg>
       </a>
       <ul class="site-navigation__info site-navigation__info--none">
-        <li class="site-navigation__item site-navigation__item--address"><a href="#">Автозаводская, 18</a></li>
-        <li class="site-navigation__item site-navigation__item--clock"><a href="#">С 10 до 22 каждый день</a></li>
-        <li class="site-navigation__item site-navigation__item--phone"><a href="tel:+74952699999">+7 495 269-99-99</a></li>
-        <li class="site-navigation__item site-navigation__item--floor"><a href="scheme.html">Схема Ривьеры</a></li>
+        <li class="site-navigation__item site-navigation__item--address">
+          <a class="site-navigation__address-link site-navigation__address-link--address" href="#">Автозаводская, 18</a>
+        </li>
+        <li class="site-navigation__item site-navigation__item--clock">
+          <a class="site-navigation__address-link site-navigation__address-link--clock" href="#">С 10 до 22 каждый день</a>
+        </li>
+        <li class="site-navigation__item site-navigation__item--phone">
+          <a class="site-navigation__address-link site-navigation__address-link--phone" href="tel:+74952699999">+7 495 269-99-99</a>
+        </li>
+        <li class="site-navigation__item site-navigation__item--floor">
+          <a class="site-navigation__address-link site-navigation__address-link--floor" href="scheme.html">Схема Ривьеры</a>
+        </li>
       </ul>
       <ul class="site-navigation__user site-navigation__user--scroll">
         <li><a href="#">
@@ -153,11 +161,15 @@
     <div class="menu__section-wrapper">
       <section class="scheme-menu">
         <h2 class="visually-hidden">Схема</h2>
-        <a class="scheme-menu__title menu__title menu__title--sitemenu" href="#">Схема</a>
+        <a class="menu__links menu__links--sitemenu" href="#">
+          <h3>Схема</h3>
+        </a>
       </section>
       <section class="shop-menu shop-menu--sitemenu">
         <h2 class="visually-hidden">Магазины</h2>
-        <a class="shop-menu__title shop-menu__title--sitemenu menu__title menu__title--sitemenu" href="#">Магазины</a>
+        <a class="menu__links menu__links--sitemenu" href="#">
+          <h3>Магазины</h3>
+        </a>
         <div class="shop-menu__inner-wrapper menu__inner-wrapper">
           <ul class="shop-menu__list menu__list menu__list--sitemenu">
             <li class="shop-menu__item menu__item menu__item--sitemenu"><a class="shop-menu__link menu__link" href="#">Одежда</a></li>
@@ -185,7 +197,9 @@
       <div class="menu__wrapper">
         <section class="food-menu food-menu--sitemenu">
           <h2 class="visually-hidden">Еда</h2>
-          <a class="food-menu__title menu__title menu__title--sitemenu" href="#">Еда</a>
+          <a class="menu__links menu__links--sitemenu" href="#">
+            <h3>Еда</h3>
+          </a>
           <div class="food-menu__inner-wrapper menu__inner-wrapper">
             <ul class="food-menu__list menu__list menu__list--sitemenu">
               <li class="food-menu__item menu__item menu__item--sitemenu"><a class="food-menu__link menu__link" href="#">Кафе</a></li>
@@ -201,7 +215,9 @@
         </section>
         <section class="entertainment-menu entertainment-menu--sitemenu">
           <h2 class="visually-hidden">Развлечения</h2>
-          <a class="entertainment-menu__title menu__title menu__title--sitemenu" href="#">Развлечения</a>
+          <a class="menu__links menu__links--sitemenu" href="#">
+            <h3>Развлечения</h3>
+          </a>
           <div class="entertainment-menu__inner-wrapper menu__inner-wrapper">
             <ul class="entertainment-menu__list menu__list">
               <li class="entertainment-menu__item menu__item"><a class="entertainment-menu__link menu__link" href="#">Картинг</a></li>
@@ -219,7 +235,9 @@
     <div class="menu__section-wrapper">
       <section class="services-menu services-menu--sitemenu">
         <h2 class="visually-hidden">Сервисы</h2>
-        <a class="services-menu__title menu__title menu__title--sitemenu" href="#">Сервисы</a>
+        <a class="menu__links menu__links--sitemenu" href="#">
+          <h3>Сервисы</h3>
+        </a>
         <div class="services-menu__inner-wrapper menu__inner-wrapper">
           <ul class="services-menu__list menu__list">
             <li class="services-menu__item menu__item"><a class="services-menu__link menu__link" href="#">Стойка информации</a></li>
@@ -239,7 +257,9 @@
       </section>
       <section class="children-menu children-menu--sitemenu">
         <h2 class="visually-hidden">Все для детей</h2>
-        <a class="children-menu__title menu__title menu__title--sitemenu" href="#">Всё для детей</a>
+        <a class="menu__links menu__links--sitemenu" href="#">
+          <h3>Всё для детей</h3>
+        </a>
         <div class="children-menu__inner-wrapper menu__inner-wrapper">
           <ul class="children-menu__list menu__list">
             <li class="children-menu__item menu__item"><a class="children-menu__link menu__link" href="#">Развлечения</a></li>
@@ -257,7 +277,9 @@
     <div class="menu__section-wrapper">
       <section class="services-menu services-menu--sitemenu">
         <h2 class="visually-hidden">Услуги</h2>
-        <a class="services-menu__title menu__title menu__title--sitemenu" href="#">Услуги</a>
+        <a class="menu__links menu__links--sitemenu" href="#">
+          <h3>Услуги</h3>
+        </a>
         <div class="services-menu__inner-wrapper menu__inner-wrapper">
           <ul class="services-menu__list menu__list">
             <li class="services-menu__item menu__item services-menu__item--height"><a class="services-menu__link menu__link" href="#">Автомойка</a></li>
@@ -280,7 +302,9 @@
       <div class="menu__wrapper">
         <section class="auto-menu">
           <h2 class="visually-hidden">Парковка и транспорт</h2>
-          <a class="auto-menu__title menu__title menu__title--sitemenu" href="#">Парковка и транспорт</a>
+          <a class="menu__links menu__links--sitemenu" href="#">
+            <h3>Парковка и транспорт</h3>
+          </a>
           <ul class="auto-menu__list">
             <li class="auto-menu__item menu__item"><a class="auto-menu__link menu__link" href="#">Парковка</a></li>
             <li class="auto-menu__item menu__item"><a class="auto-menu__link menu__link" href="#">Бесплатная парковка Белкакар</a></li>
@@ -291,11 +315,15 @@
         </section>
         <section class="fitness-menu fitness-menu--sitemenu">
           <h2 class="visually-hidden">Фитнес и йога</h2>
-          <a class="menu__title fitness-menu__title--sitemenu" href="#">Фитнес и йога</a>
+          <a class="menu__links menu__links--sitemenu" href="#">
+            <h3>Фитнес и йога</h3>
+          </a>
         </section>
         <section class="cinema-menu cinema-menu--sitemenu">
           <h2 class="visually-hidden">Кино</h2>
-          <a class="menu__title cinema-menu__title--sitemenu" href="#">Кино</a>
+          <a class="menu__links menu__links--sitemenu" href="#">
+            <h3>Кино</h3>
+          </a>
         </section>
       </div>
     </div>

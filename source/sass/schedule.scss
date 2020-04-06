@@ -1,5 +1,5 @@
 .schedule {
-  display: flex;
+  display: none;
   align-items: center;
   min-height: 56px;
   margin: 0 auto;
@@ -13,6 +13,10 @@
     border-bottom: none;
     background-color: #00aed6;
   }
+}
+
+.schedule-main {
+  display: none;
 }
 
 .schedule__list {

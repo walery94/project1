@@ -1,6 +1,9 @@
 'use strict';
 
 $(document).ready(function(){
+	
+	// Скролл
+	
 	var pagination = $('.pagination');
 	var inputSearch = $('#search');
 	var paginationSearch = $('.pagination__search');
@@ -33,5 +36,19 @@ $(document).ready(function(){
 	if (paginationSearch && paginationScrollIcons) {
 		$(document).scroll(checkYOffsetDesktop);
 		checkYOffsetDesktop();
+	}
+	
+	// Валидация чекбокса
+	
+	var checkbox = document.querySelector('input[type=checkbox]');
+	
+	if (checkbox) {
+		checkbox.addEventListener('change', function () {
+			if (checkbox.checked) {
+				checkbox.setCustomValidity('');
+			} else {
+				checkbox.setCustomValidity('Дайте согласие на обработку персональных данных');
+			}
+		});
 	}
 });
