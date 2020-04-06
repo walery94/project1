@@ -13,6 +13,8 @@
 
   &:first-child {
     margin-bottom: -36px;
+    align-items: flex-start;
+    min-height: 227px;
   }
 }
 
