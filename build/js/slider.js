@@ -46,6 +46,8 @@ $(document).ready(function(){
         speed: 100,
         slidesToShow: 2,
         arrows : false,
+        autoplay: true,
+        autoplaySpeed: 3000,
         variableWidth: true,
         responsive: [
           {

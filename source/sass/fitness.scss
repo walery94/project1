@@ -32,6 +32,11 @@
   color: #ffffff;
 }
 
+.fitness h2 a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
 .fitness h2 span:last-child {
   display: none;
 }
@@ -60,13 +65,15 @@
   padding-bottom: 15px;
 }
 
-.fitness__description p {
+.fitness__description a {
   margin: 0;
 
   font-weight: normal;
   font-size: 16px;
   line-height: 17px;
   color: #FFFFFF;
+
+  text-decoration: none;
 }
 
 .fitness__container {
@@ -80,12 +87,14 @@
   padding: 0;
 }
 
-.fitness__container li {
+.fitness__container li a {
   margin-bottom: 4px;
   font-weight: 600;
   font-size: 16px;
   line-height: 17px;
   color: #FFFFFF;
+
+  text-decoration: none;
 }
 
 .fitness__arrow {

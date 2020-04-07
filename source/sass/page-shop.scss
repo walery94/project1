@@ -18,6 +18,14 @@
   }
 }
 
+.page-shop__box:first-child + .page-shop__box--logo {
+  margin-top: 70px;
+}
+
+.page-shop__box:first-child + .page-shop__box--logo .page-shop__logo {
+  margin-top: 0;
+}
+
 .page-shop__box--logo {
   margin-bottom: 24px;
 }
