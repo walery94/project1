@@ -12,7 +12,6 @@
       height: 300px;
 
       background-image: url("../img/background-slider-mobile.svg");
-      background-repeat: no-repeat;
       background-repeat: repeat-x;
 
       z-index: 0;
@@ -107,11 +106,15 @@
 }
 
 .fitness__mask1 {
+  width: 390px;
+  height: 404px;
   -webkit-clip-path: url(#svgPath-desktop1);
   clip-path: url(#svgPath-desktop1);
 }
 
 .fitness__mask2 {
+  width: 433px;
+  height: 404px;
   -webkit-clip-path: url(#svgPath-desktop2);
   clip-path: url(#svgPath-desktop2);
 }
@@ -196,11 +199,15 @@
   }
 
   .fitness__mask1 {
+    width: 242px;
+    height: 327px;
     -webkit-clip-path: url(#svgPath-mobile1);
     clip-path: url(#svgPath-mobile1);
   }
 
   .fitness__mask2 {
+    width: 350px;
+    height: 327px;
     -webkit-clip-path: url(#svgPath-mobile2);
     clip-path: url(#svgPath-mobile2);
   }

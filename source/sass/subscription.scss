@@ -103,10 +103,15 @@
   border-radius: 5px;
 }
 
+.subscription__list {
+  flex-wrap: wrap;
+}
+
 .subscription__icon {
   width: 55px;
   height: 46px;
   border-right: 1px solid #E0E0E0;
+  box-sizing: border-box;
 }
 
 .subscription__icon:hover,

@@ -138,20 +138,28 @@
 }
 
 .film__mask1 {
+  width: 334px;
+  height: 480px;
   -webkit-clip-path: url(#film-desktop1);
   clip-path: url(#film-desktop1);
 
   @media (max-width: $mobile-width) {
+    width: 191px;
+    height: 267px;
     -webkit-clip-path: url(#film-mobile1);
     clip-path: url(#film-mobile1);
   }
 }
 
 .film__mask2 {
+  width: 809px;
+  height: 494px;
   -webkit-clip-path: url(#film-desktop2);
   clip-path: url(#film-desktop2);
 
   @media (max-width: $mobile-width) {
+    width: 450px;
+    height: 275px;
     -webkit-clip-path: url(#film-mobile2);
     clip-path: url(#film-mobile2);
   }
