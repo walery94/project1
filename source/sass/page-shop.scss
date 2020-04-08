@@ -82,11 +82,15 @@
 }
 
 .page-shop__mask1 {
+  width: 650px;
+  height: 489px;
   -webkit-clip-path: url(#page-shop-desktop1);
   clip-path: url(#page-shop-desktop1);
 }
 
 .page-shop__mask2 {
+  width: 494px;
+  height: 489px;
   -webkit-clip-path: url(#page-shop-desktop2);
   clip-path: url(#page-shop-desktop2);
 }
@@ -105,7 +109,7 @@
 }
 
 .page-shop--cinema .page-shop__slider {
-  margin-bottom: -24px;
+  margin-bottom: -2px;
 }
 
 .page-shop--cinema .page-shop__logo {
@@ -151,6 +155,7 @@
 
   .page-shop--cinema .page-shop__box:first-child {
     margin-bottom: 0;
+    min-height: auto;
   }
 }
 
@@ -226,11 +231,15 @@
   }
 
   .page-shop__mask1 {
+    width: 276px;
+    height: 268px;
     -webkit-clip-path: url(#page-shop-mobile1);
     clip-path: url(#page-shop-mobile1);
   }
 
   .page-shop__mask2 {
+    width: 270px;
+    height: 268px;
     -webkit-clip-path: url(#page-shop-mobile2);
     clip-path: url(#page-shop-mobile2);
   }

@@ -158,15 +158,18 @@
 
 .card__list {
   display: flex;
+  flex-wrap: wrap;
   width: 188px;
   margin: 0 auto;
   margin-top: auto;
-  margin-bottom: 4px;
+  margin-bottom: 9px;
 }
 
 .card__list p {
   padding: 7px 8px;
+  margin: 0;
   margin-right: 8px;
+  margin-bottom: 8px;
 
   font-weight: 600;
   text-transform: uppercase;
