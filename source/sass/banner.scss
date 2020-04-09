@@ -7,6 +7,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: -84px;
+  transition: all 0.5s ease;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/banner-desktop@2x.png");
