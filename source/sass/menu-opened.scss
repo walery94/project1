@@ -1,10 +1,18 @@
 .menu-closed {
+  .scheme {
+    display: block;
+  }
+
   .wrapper-menu {
     display: none;
   }
 
   .pagination-menu {
     display: none;
+  }
+
+  .pagination-menu--scheme {
+    display: flex;
   }
 
   .pagination-menu__search-input {
@@ -23,12 +31,28 @@
     }
   }
 
+  .pagination-menu__search-input--scheme {
+    &:last-of-type {
+      display: block;
+    }
+  }
+
+  .pagination-menu__scheme--none {
+    @media (max-width: $tablet-width) {
+      display: none;
+    }
+  }
+
   .site-navigation__close-menu {
     display: none;
   }
 }
 
 .menu-opened {
+  .scheme {
+    display: none;
+  }
+
   .main-wrapper {
     display: none;
   }
@@ -107,6 +131,12 @@
   .site-navigation__info {
     @media (max-width: $tablet-width) {
       display: none;
+    }
+  }
+
+  .pagination-menu__scheme--none {
+    @media (max-width: $tablet-width) {
+      display: block;
     }
   }
 }

@@ -155,11 +155,11 @@
   }
 }
 
-.pagination-menu__scheme--none {
-  @media (max-width: $tablet-width) {
-    display: none;
-  }
-}
+//.pagination-menu__scheme--none {
+//  @media (max-width: $tablet-width) {
+//    display: none;
+//  }
+//}
 
 .pagination-menu__scheme--active::after {
   opacity: 1;
