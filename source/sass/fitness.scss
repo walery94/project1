@@ -96,6 +96,11 @@
   text-decoration: none;
 }
 
+.fitness__link {
+  display: flex;
+  align-items: flex-end;
+}
+
 .fitness__arrow {
   margin-top: 67px;
   fill: #FFFFFF;

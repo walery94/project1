@@ -6,6 +6,11 @@
 
 .slick-slide {
   outline: none!important;
+  display: flex!important;
+}
+
+.store--services .slick-slide {
+  display: block!important;
 }
 
 .slider .slick-slide {
