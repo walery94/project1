@@ -27,8 +27,8 @@
 
 .card img {
   display: block;
-  width: 325px;
-  height: 325px;
+  width: 100%;
+  height: auto;
   margin-bottom: 24px;
 }
 
@@ -148,8 +148,8 @@
 }
 
 .card--shops img {
-  width: 238px;
-  height: 238px;
+  width: 100%;
+  height: auto;
 }
 
 .card--shops .card__box {
@@ -272,8 +272,8 @@
 }
 
 .card--clothes img {
-  width: 238px;
-  height: 238px;
+  width: 100%;
+  height: auto;
 }
 
 .card--clothes .card__box {
