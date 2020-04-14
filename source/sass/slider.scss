@@ -3,14 +3,13 @@
   width: calc(75% + 5px);
 }
 
-
 .slick-slide {
-  outline: none!important;
-  display: flex!important;
+  outline: none;
+  display: flex;
 }
 
 .store--services .slick-slide {
-  display: block!important;
+  display: block;
 }
 
 .slider .slick-slide {
@@ -50,7 +49,7 @@
 }
 
 .slider__arrow {
-  fill: #00AED6;
+  fill: #00aed6;
 }
 
 .slider__button--prev .slider__arrow {
@@ -82,7 +81,6 @@
 }
 
 @media (max-width: $tablet-width) {
-
   .slider {
     position: relative;
     width: 100%;
@@ -102,7 +100,6 @@
 }
 
 @media (max-width: $mobile-width) {
-
   .slider .slick-slide {
     margin-left: 4px;
   }

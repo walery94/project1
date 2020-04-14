@@ -118,7 +118,7 @@
     height: 3px;
     background: #00b2ff;
     opacity: 0;
-    transition: opacity .3s ease;
+    transition: opacity 3s ease;
   }
 
   &:hover,
@@ -177,7 +177,7 @@
   right: 5.5%;
 
   &:hover {
-    opacity: 0,5;
+    opacity: 0.5;
   }
 
   @media (max-width: $tablet-width) {

@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: column;
 
-  width: calc(33.15% - (22px * 2/3));
+  width: calc(33.15% - (22px * 2 / 3));
   min-height: 545px;
 
   padding-bottom: 23px;
@@ -55,7 +55,7 @@
   color: #ffffff;
   text-align: center;
 
-  background-color: #AA0061;
+  background-color: #aa0061;
   border-radius: 5px;
   text-transform: uppercase;
   box-sizing: border-box;
@@ -68,10 +68,10 @@
   padding: 8px 0 6px 22px;
 
   font-weight: 500;
-  color: #65AA0F;
+  color: #65aa0f;
   text-transform: uppercase;
 
-  border: 0.5px solid #65AA0F;
+  border: 0.5px solid #65aa0f;
   border-radius: 5px;
   box-sizing: border-box;
 
@@ -85,7 +85,7 @@
     height: 6px;
 
     background-color: transparent;
-    border: 1px solid #65AA0F;
+    border: 1px solid #65aa0f;
     border-radius: 50%;
   }
 }
@@ -130,15 +130,15 @@
 
 .card__clock,
 .card__floor {
-  fill: #7D7D7D;
+  fill: #7d7d7d;
 }
 
 .card__arrow {
-  fill: #00AED6;
+  fill: #00aed6;
 }
 
 .card--shops {
-  width: calc(25% - (24px * 3/4));
+  width: calc(25% - (24px * 3 / 4));
   min-height: 458px;
   padding-bottom: 21px;
 }
@@ -173,9 +173,9 @@
 
   font-weight: 600;
   text-transform: uppercase;
-  color: #AA0061;
+  color: #aa0061;
 
-  border: 0.5px solid #AA0061;
+  border: 0.5px solid #aa0061;
   border-radius: 5px;
 }
 
@@ -205,7 +205,7 @@
   width: 4px;
   height: 4px;
 
-  background-color: #CC0000;
+  background-color: #cc0000;
   border-radius: 50%;
 }
 
@@ -214,7 +214,7 @@
 }
 
 .card--cinema {
-  width: calc(25% - (24px * 3/4));
+  width: calc(25% - (24px * 3 / 4));
   min-height: 518px;
   padding-bottom: 13px;
 }
@@ -224,7 +224,7 @@
   margin: 0 auto;
   font-weight: 600;
   text-transform: uppercase;
-  color: #7D7D7D;
+  color: #7d7d7d;
 }
 
 .card--cinema h3 {
@@ -238,7 +238,7 @@
 }
 
 .card--services {
-  width: calc(25% - (24px * 3/4));
+  width: calc(25% - (24px * 3 / 4));
   min-height: 220px;
   padding-top: 26px;
 }
@@ -260,10 +260,10 @@
   min-height: 458px;
   padding-bottom: 21px;
 
-  border: 1px solid #E0E0E0;
+  border: 1px solid #e0e0e0;
 
   &:hover {
-    box-shadow: 0px 12px 16px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.08);
   }
 }
 
@@ -287,7 +287,6 @@
 }
 
 @media (max-width: $tablet-width) {
-
   .card {
     width: 325px;
   }
@@ -321,6 +320,7 @@
   }
 
   .card--cinema {
+    min-height: 500px;
     padding-bottom: 4px;
   }
 
@@ -344,10 +344,6 @@
     margin-top: auto;
   }
 
-  .card--cinema {
-    min-height: 500px;
-  }
-
   .card--cinema span {
     margin-left: 16px;
     margin-bottom: 3px;
@@ -364,10 +360,10 @@
     min-height: 188px;
     padding-bottom: 7px;
 
-    border: 1px solid #E0E0E0;
+    border: 1px solid #e0e0e0;
 
     &:hover {
-      box-shadow: 0px 12px 16px rgba(0, 0, 0, 0.08);
+      box-shadow: 0 12px 16px rgba(0, 0, 0, 0.08);
     }
   }
 
@@ -387,7 +383,7 @@
 
   .card--clothes .card__case {
     margin-top: 0;
-    border-top: 1px solid #E0E0E0;
+    border-top: 1px solid #e0e0e0;
   }
 
   .card--clothes .card__box {
@@ -423,6 +419,6 @@
   }
 
   .card__discount p:nth-child(2) {
-    color: #65AA0F;
+    color: #65aa0f;
   }
 }

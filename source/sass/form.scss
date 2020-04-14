@@ -110,7 +110,7 @@
   }
 }
 
-.form input[type=checkbox] {
+.form input[type="checkbox"] {
   position: absolute;
   left: 2%;
   overflow: hidden;
@@ -124,12 +124,12 @@
   clip-path: inset(100%);
 }
 
-.form input[type=checkbox] + label {
+.form input[type="checkbox"] + label {
   position: relative;
   //cursor: pointer;
 }
 
-.form input[type=checkbox] + label::before {
+.form input[type="checkbox"] + label::before {
   content: "";
   position: absolute;
   left: 0;
@@ -140,7 +140,7 @@
   cursor: pointer;
 }
 
-.form input[type=checkbox]:checked + label::after {
+.form input[type="checkbox"]:checked + label::after {
   content: "";
   position: absolute;
   left: 7px;
@@ -152,7 +152,7 @@
   transform: rotate(-45deg);
 }
 
-.form input[type=checkbox] + label::after {
+.form input[type="checkbox"] + label::after {
   content: none;
 }
 
@@ -254,6 +254,15 @@
     border-radius: 0 5px 5px 0;
   }
 
+  &--room {
+    border-right: none;
+    border-radius: 5px 0 0 5px;
+  }
+
+  &--rent {
+    border-radius: 0 5px 5px 0;
+  }
+
   @media (max-width: $tablet-width) {
     &--agency {
       border-right: 1px solid $border;
@@ -269,20 +278,7 @@
       border-top: none;
       border-radius: 0 0 5px 5px;
     }
-  }
-}
 
-.form__radio-label {
-  &--room {
-    border-right: none;
-    border-radius: 5px 0 0 5px;
-  }
-
-  &--rent {
-    border-radius: 0 5px 5px 0;
-  }
-
-  @media (max-width: $tablet-width) {
     &--room {
       border-right: 1px solid $border;
       border-radius: 5px 5px 0 0;
