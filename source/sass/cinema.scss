@@ -40,7 +40,6 @@
 }
 
 @media (max-width: $tablet-width) {
-
   .cinema__column {
     flex: 0 0 33%;
     max-width: 33%;
@@ -56,12 +55,11 @@
 
   .cinema__column:nth-child(5),
   .cinema__column:nth-child(6) {
-  display: none;
+    display: none;
   }
 }
 
 @media (max-width: $mobile-width) {
-
   .cinema {
     padding-left: 16px;
     padding-right: 16px;
@@ -88,7 +86,7 @@
 
   .cinema__column:nth-child(4),
   .cinema__column:nth-child(3) {
-  display: none;
+    display: none;
   }
 
   .cinema__column .cinema__item span {

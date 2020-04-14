@@ -259,7 +259,6 @@
 }
 
 @media (max-width: $tablet-width) {
-
   .info {
     width: 100%;
     margin: 0 auto;
@@ -311,7 +310,6 @@
 }
 
 @media (max-width: $mobile-width) {
-
   .info {
     width: 100%;
     padding-bottom: 91px;
@@ -327,19 +325,10 @@
   }
 
   .info__box h2 {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  .info__box p {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  .info__box h2 {
     width: 100%;
     margin-bottom: 8px;
-
+    padding-left: 0;
+    padding-right: 0;
     font-weight: bold;
     font-size: 36px;
     line-height: 39px;
@@ -347,6 +336,8 @@
 
   .info__box p {
     width: 100%;
+    padding-left: 0;
+    padding-right: 0;
 
     font-size: 14px;
     line-height: 17px;
@@ -409,38 +400,38 @@
     margin-bottom: 49px;
   }
 
-.info__icon--fb,
-.info__icon--vk,
-.info__app {
-  width: 47.6%;
-  height: 56px;
-}
+  .info__icon--fb,
+  .info__icon--vk,
+  .info__app {
+    width: 47.6%;
+    height: 56px;
+  }
 
-.info__fb {
-  margin-left: calc((100% - 19px) / 2);
-}
+  .info__fb {
+    margin-left: calc((100% - 19px) / 2);
+  }
 
-.info__vk {
-  margin-left: calc((100% - 54px) / 2);
-}
+  .info__vk {
+    margin-left: calc((100% - 54px) / 2);
+  }
 
-.info__icon--inst,
-.info__icon--od,
-.info__icon--youtube {
-  width: 30.2%;
-}
+  .info__icon--inst,
+  .info__icon--od,
+  .info__icon--youtube {
+    width: 30.2%;
+  }
 
-.info__inst {
-  margin-left: calc((100% - 36px) / 2);
-}
+  .info__inst {
+    margin-left: calc((100% - 36px) / 2);
+  }
 
-.info__youtube {
-  margin-left: calc((100% - 46px) / 2);
-}
+  .info__youtube {
+    margin-left: calc((100% - 46px) / 2);
+  }
 
-.info__od {
-  margin-left: calc((100% - 21px) / 2);
-}
+  .info__od {
+    margin-left: calc((100% - 21px) / 2);
+  }
 
   .info__notes {
     width: 100%;
