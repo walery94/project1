@@ -8,6 +8,7 @@ $(document).ready(function () {
   var position = 1;
   var isMobile = $(window).width() < 1024;
 
+  //Смена слайдеров через delay секунд
   setTimeout(function request() {
     var image = isMobile ? imagesMobile : images;
     $('.banner').css('opacity', '0');
