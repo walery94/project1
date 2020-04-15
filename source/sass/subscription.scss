@@ -41,7 +41,7 @@
   font-weight: 300;
   font-size: 16px;
   line-height: 19px;
-  color: #7D7D7D;
+  color: #7d7d7d;
 }
 
 .subscription__form {
@@ -57,13 +57,13 @@
   padding-bottom: 13px;
   padding-left: 16px;
 
-  border: 1px solid #E0E0E0;
+  border: 1px solid #e0e0e0;
   border-radius: 5px 0 0 5px;
 
   box-sizing: border-box;
 
   &::placeholder {
-    color: #7D7D7D;
+    color: #7d7d7d;
   }
 }
 
@@ -75,9 +75,9 @@
   font-weight: 600;
   font-size: 16px;
   line-height: 17px;
-  color: #00AED6;
+  color: #00aed6;
 
-  border: 1px solid #E0E0E0;
+  border: 1px solid #e0e0e0;
   border-left: none;
   border-radius: 0 5px 5px 0;
   background-color: transparent;
@@ -99,7 +99,7 @@
 .subscription__items {
   display: flex;
 
-  border: 1px solid #E0E0E0;
+  border: 1px solid #e0e0e0;
   border-radius: 5px;
 }
 
@@ -110,7 +110,7 @@
 .subscription__icon {
   width: 55px;
   height: 46px;
-  border-right: 1px solid #E0E0E0;
+  border-right: 1px solid #e0e0e0;
   box-sizing: border-box;
 }
 
@@ -122,19 +122,19 @@
 .subscription__fb {
   margin-top: 12px;
   margin-left: 23px;
-  fill: #3C5A99;
+  fill: #3c5a99;
 }
 
 .subscription__vk {
   margin-top: 15px;
   margin-left: 13px;
-  fill: #5181B8;
+  fill: #5181b8;
 }
 
 .subscription__od {
   margin-top: 11px;
   margin-left: 20px;
-  fill: #F7931E;
+  fill: #f7931e;
 }
 
 .subscription__youtube {
@@ -151,8 +151,8 @@
 
 .subscription__icon--youtube {
   border-right: none;
-  stroke: #E0E0E0;
-  fill: #FF0000;
+  stroke: #e0e0e0;
+  fill: #ff0000;
 }
 
 .subscription__app {
@@ -166,10 +166,10 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: 92px 23px;
-  border-right: 1px solid #E0E0E0;
+  border-right: 1px solid #e0e0e0;
 }
 
-.subscription__app--android{
+.subscription__app--android {
   width: 142px;
 
   background-image: url("../img/google-play.svg");
@@ -179,7 +179,6 @@
 }
 
 @media (max-width: $tablet-width) {
-
   .subscription {
     margin-left: 24px;
   }
@@ -190,7 +189,6 @@
 }
 
 @media (max-width: $mobile-width) {
-
   .subscription {
     display: none;
   }

@@ -48,8 +48,8 @@
 
   @media (min-width: $tablet-width) {
     .slick-track {
-      transform: initial!important;
-      width: auto!important;
+      transform: initial;
+      width: auto;
     }
   }
 }
@@ -68,7 +68,7 @@
 }
 
 .events--shop .card {
-  border: 1px solid #E0E0E0;
+  border: 1px solid #e0e0e0;
 }
 
 .events--shop h2 {
@@ -77,7 +77,7 @@
 }
 
 .events--shop .card:hover {
-  background-color: #00AED6;
+  background-color: #00aed6;
   border: 1px solid #ffffff;
   box-shadow: none;
 }
@@ -101,11 +101,10 @@
 }
 
 .events--search {
-  background-color: #00AED6;
+  background-color: #00aed6;
 }
 
 @media (max-width: $tablet-width) {
-
   .events {
     padding-top: 20px;
     padding-right: 0;
@@ -123,6 +122,7 @@
   .events h2 span:last-child {
     display: inline;
   }
+
   .events h2 span:first-child {
     display: none;
   }
@@ -152,7 +152,6 @@
 }
 
 @media (max-width: $mobile-width) {
-
   .events {
     margin-bottom: 28px;
   }
@@ -197,9 +196,5 @@
   .events--shop h2 {
     font-size: 36px;
     line-height: 39px;
-  }
-
-  .events--shop {
-    margin-bottom: 26px;
   }
 }

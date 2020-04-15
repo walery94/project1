@@ -3,7 +3,7 @@
 
   background-color: #ffffff;
   border-radius: 5px;
-  box-shadow: 0px 12px 16px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.08);
   z-index: 10;
 }
 
@@ -21,7 +21,7 @@
   color: #222222;
   text-decoration: none;
 
-  border-bottom: 1px solid #E0E0E0;
+  border-bottom: 1px solid #e0e0e0;
   overflow: hidden;
   white-space: nowrap;
 
@@ -38,10 +38,10 @@
 
   &:hover {
     color: #ffffff;
-    background-color: #00AED6;
+    background-color: #00aed6;
 
     &::after {
-      background: linear-gradient(270deg, #00AED6 35.56%, rgba(255, 255, 255, 0) 100%);
+      background: linear-gradient(270deg, #00aed6 35.56%, rgba(255, 255, 255, 0) 100%);
     }
   }
 
@@ -62,7 +62,7 @@
 }
 
 .shop-info span svg {
-  fill: #7D7D7D;
+  fill: #7d7d7d;
 }
 
 .shop-info a:hover svg {
@@ -70,7 +70,6 @@
 }
 
 @media (max-width: $mobile-width) {
-
   .shop-info {
     width: 100%;
   }

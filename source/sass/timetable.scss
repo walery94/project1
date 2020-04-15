@@ -55,7 +55,7 @@
   font-weight: 300;
   font-size: 14px;
   line-height: 17px;
-  color: #7D7D7D;
+  color: #7d7d7d;
 
   @media (max-width: $tablet-width) {
     margin-bottom: 15px;
@@ -117,7 +117,7 @@
   width: 100%;
   padding: 16px;
 
-  background-color: #E0E0E0;
+  background-color: #e0e0e0;
   border-radius: 5px;
   text-decoration: none;
   box-sizing: border-box;
@@ -128,8 +128,8 @@
   }
 
   @media (max-width: $mobile-width) {
-    background: #FFFFFF;
-    border: 1px solid #E0E0E0;
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
   }
 }
 
@@ -148,19 +148,19 @@
 
   font-size: 16px;
   line-height: 17px;
-  color: #00AED6;
-  fill: #00AED6;
+  color: #00aed6;
+  fill: #00aed6;
 }
 
 .timetable__active {
-  background-color: #00AED6;
+  background-color: #00aed6;
 
   @media (max-width: $mobile-width) {
-    background: #FFFFFF;
+    background: #ffffff;
   }
 
   & .timetable__time {
-    color: #FFFFFF;
+    color: #ffffff;
 
     @media (max-width: $mobile-width) {
       color: #222222;
@@ -168,12 +168,12 @@
   }
 
   & .timetable__cost {
-    color: #E0E0E0;
-    fill: #E0E0E0;
+    color: #e0e0e0;
+    fill: #e0e0e0;
 
     @media (max-width: $mobile-width) {
-      color: #00AED6;
-      fill: #00AED6;
+      color: #00aed6;
+      fill: #00aed6;
     }
   }
 }
