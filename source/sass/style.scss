@@ -1,9 +1,9 @@
-@import "Vendor/normalize";
+@import "vendor/normalize";
 @import "./variables.scss";
 @import "./fonts.scss";
 @import "./scaffolding.scss";
 @import "./button.scss";
-@import "Vendor/slick";
+@import "vendor/slick";
 @import "./page-main.scss";
 @import "./events.scss";
 @import "./card.scss";
@@ -37,7 +37,7 @@
 @import "./page-clothes.scss";
 @import "./page-shop.scss";
 @import "./shop-info.scss";
-@import "Vendor/scheme";
+@import "scheme";
 @import "./page-footer";
 @import "./search";
 @import "./wrapper-cinema";
