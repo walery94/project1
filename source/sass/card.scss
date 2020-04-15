@@ -64,7 +64,7 @@
 .card b {
   position: relative;
   width: 136px;
-  margin-left: 24px;
+  margin-left: calc((100% - 190px) * 0.55);
   padding: 8px 0 6px 22px;
 
   font-weight: 500;
@@ -289,6 +289,10 @@
 @media (max-width: $tablet-width) {
   .card {
     width: 325px;
+  }
+
+  .card b {
+    margin-left: 24px;
   }
 
   .card--shops {
