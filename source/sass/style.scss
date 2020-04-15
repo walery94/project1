@@ -37,7 +37,7 @@
 @import "./page-clothes.scss";
 @import "./page-shop.scss";
 @import "./shop-info.scss";
-@import "scheme";
+@import "vendor/scheme";
 @import "./page-footer";
 @import "./search";
 @import "./wrapper-cinema";
@@ -58,7 +58,7 @@
 @import "./overlay.scss";
 @import "./feedback";
 @import "./menu-opened";
-@import "./schedule";
+@import "schedule";
 @import "./schedule-info";
 @import "./schedule-wave";
 @import "./schedule-opened";
