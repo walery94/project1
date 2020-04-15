@@ -10,42 +10,49 @@ $(document).ready(function () {
   var buttonClockMenu = $('.address-menu__item--clock');
   var buttonClose = $('.schedule__button');
   var ESC = 27;
+
   if (buttonClock) {
     buttonClock.on('click', function (evt) {
       evt.preventDefault();
       body.addClass('schedule-opened');
     });
   }
+
   if (buttonClockFooter) {
     buttonClockFooter.on('click', function (evt) {
       evt.preventDefault();
       body.addClass('schedule-opened');
     });
   }
+
   if (buttonClockShop) {
     buttonClockShop.on('click', function (evt) {
       evt.preventDefault();
       body.addClass('schedule-opened');
     });
   }
+
   if (buttonClockCinema) {
     buttonClockCinema.on('click', function (evt) {
       evt.preventDefault();
       body.addClass('schedule-opened');
     });
   }
+
   if (buttonClockMenu) {
     buttonClockMenu.on('click', function (evt) {
       evt.preventDefault();
       body.addClass('schedule-opened');
     });
   }
+
   if (buttonClose) {
     buttonClose.on('click', function (evt) {
       evt.preventDefault();
       body.removeClass('schedule-opened');
     });
   }
+
   window.addEventListener('keydown', function (evt) {
     if (evt.keyCode === ESC) {
       evt.preventDefault();
