@@ -6,16 +6,16 @@ $(document).ready(function () {
     $('.banner').vegas({
       autoplay: true,
       slides: [
-        {src: '../../img/banner-desktop@1x.png'},
-        {src: '../../img/uniclo-banner-desktop-img1@1x.png'},
+        {src: '../img/banner-desktop@1x.png'},
+        {src: '../img/uniclo-banner-desktop-img1@1x.png'},
       ]
     });
   } else {
     $('.banner').vegas({
       autoplay: true,
       slides: [
-        {src: '../../img/banner-mobile@1x.png'},
-        {src: '../../img/uniclo-banner-mobile-img1@1x.png'},
+        {src: '../img/banner-mobile@1x.png'},
+        {src: '../img/uniclo-banner-mobile-img1@1x.png'},
       ]
     });
   }
