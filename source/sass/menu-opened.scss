@@ -49,6 +49,10 @@
 }
 
 .menu-opened {
+  .main-header--scheme {
+    position: relative;
+  }
+
   .scheme {
     display: none;
   }
@@ -79,6 +83,10 @@
     @media (max-width: $tablet-width) {
       display: none;
     }
+  }
+
+  .pagination-menu__scheme::after {
+    display: none;
   }
 
   .site-navigation {
