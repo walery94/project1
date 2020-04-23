@@ -12,7 +12,8 @@
 }
 
 .main-header--scheme {
-  @media (max-width: $tablet-width) {
-    background-color: #ffffff;
-  }
+  position: absolute;
+  z-index: 1000;
+  width: 100%;
+  background-color: #ffffff;
 }
