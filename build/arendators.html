@@ -419,10 +419,12 @@
         <div class="address__container">
           <div class="address__map">
             <picture>
+              <source type="image/webp" media="(max-width: 767px)" srcset="img/map-mobile@1x.webp 1x, img/map-mobile@2x.webp 2x">
+              <source type="image/webp" srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x">
               <!--1x: 352px, 2x: 169px-->
               <source media="(max-width: 767px)" srcset="img/map-mobile@1x.png 1x, img/map-mobile@2x.png 2x">
               <!--1x: 1202x560px, 2x: 2404x1120px-->
-              <img src="img/map-desktop@1x.png" srcset="img/map-desktop@2x.png 2x" alt="Карта подъезда к Ривьере" width="675">
+              <img src="img/map-desktop@1x.png" srcset="img/map-desktop@2x.png 2x" alt="Карта подъезда к Ривьере" width="675" loading="lazy">
             </picture>
           </div>
           <div class="address__info">
@@ -777,8 +779,9 @@
           </ul>
         </div>
         <picture>
+          <source type="image/webp" srcset="img/map-desktop@1x.png 1x, img/map-desktop@2x.png 2x">
           <!-- 1x: 1152px; 2x: 1304px -->
-          <img class="map-menu__image" src="img/map-desktop@1x.png" srcset="img/map-desktop@2x.png 2x" width="1152" height="532" alt="Как попасть в Ривьеру">
+          <img class="map-menu__image" src="img/map-desktop@1x.png" srcset="img/map-desktop@2x.png 2x" width="1152" height="532" alt="Как попасть в Ривьеру" loading="lazy">
         </picture>
       </section>
     </div>
@@ -825,7 +828,10 @@
   <ul class="search-shop__list">
     <li class="search-shop__item">
       <a class="search-shop__link" href="#">
-        <img class="search-shop__img" src="img/search-children.png" alt="">
+        <picture>
+          <source type="image/webp" srcset="img/search-children.webp">
+          <img class="search-shop__img" src="img/search-children.png" alt="" loading="lazy">
+        </picture>
         <div class="search-shop__box">
           <p class="search-shop__type">новости</p>
           <h3 class="search-shop__title">До 25 сентября снижены цены на товары для школы</h3>
@@ -835,7 +841,11 @@
     </li>
     <li class="search-shop__item">
       <a class="search-shop__link" href="#">
-        <img class="search-shop__img" src="img/search-starbucks.png" alt="">
+        <picture>
+          <source type="image/webp" srcset="img/search-samsung.webp">
+          <img class="search-shop__img" src="img/search-samsung.png" alt="" loading="lazy">
+        </picture>
+        <img class="search-shop__img" src="img/search-starbucks.png" alt="" loading="lazy">
         <div class="search-shop__box">
           <p class="search-shop__type">еда</p>
           <h3 class="search-shop__title">Starbucks</h3>
@@ -844,7 +854,10 @@
     </li>
     <li class="search-shop__item">
       <a class="search-shop__link" href="#">
-        <img class="search-shop__img" src="img/search-samsung.png" alt="">
+        <picture>
+          <source type="image/webp" srcset="img/search-samsung.webp">
+          <img class="search-shop__img" src="img/search-samsung.png" alt="" loading="lazy">
+        </picture>
         <div class="search-shop__box">
           <p class="search-shop__type">акции</p>
           <h3 class="search-shop__title">Наушники в подарок от&nbsp;Samsung</h3>
@@ -854,7 +867,10 @@
     </li>
     <li class="search-shop__item">
       <a class="search-shop__link" href="#">
-        <img class="search-shop__img" src="img/search-blue.png" alt="">
+        <picture>
+          <source type="image/webp" srcset="img/search-blue.webp">
+          <img class="search-shop__img" src="img/search-blue.png" alt="" loading="lazy">
+        </picture>
         <div class="search-shop__box">
           <p class="search-shop__type">магазины</p>
           <h3 class="search-shop__title">Button Blue</h3>
@@ -864,7 +880,10 @@
     </li>
     <li class="search-shop__item">
       <a class="search-shop__link" href="#">
-        <img class="search-shop__img" src="img/search-children.png" alt="">
+        <picture>
+          <source type="image/webp" srcset="img/search-children.webp">
+          <img class="search-shop__img" src="img/search-children.png" alt="" loading="lazy">
+        </picture>
         <div class="search-shop__box">
           <h3 class="search-shop__title">Present Kids</h3>
           <p class="search-shop__date">25 августа 2019 — 25 сентября 2019</p>
@@ -873,7 +892,10 @@
     </li>
     <li class="search-shop__item">
       <a class="search-shop__link" href="#">
-        <img class="search-shop__img" src="img/search-starbucks.png" alt="">
+        <picture>
+          <source type="image/webp" srcset="img/search-starbucks.webp">
+          <img class="search-shop__img" src="img/search-starbucks.png" alt="" loading="lazy">
+        </picture>
         <div class="search-shop__box">
           <p class="search-shop__type">акции</p>
           <h3 class="search-shop__title">Время суши</h3>
@@ -903,7 +925,7 @@
 <div class="overlay overlay--closed"></div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="js/vendor/vegas.min.js"></script>
-<script src="js/main.js"></script>
+<script src="js/vendor/vegas.min.js" defer=""></script>
+<script src="js/main.js" async=""></script>
 </body>
 </html>
